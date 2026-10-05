@@ -262,6 +262,32 @@ def generate_tokens_scss(tokens_dir: Path, output_file: Path):
     lines.append(f"  --w7-groupbox-legend-color: {gb.get('legendColor', '#003399')};")
     lines.append("")
 
+    # Combobox & Dropdown
+    combo = colors.get("controls", {}).get("combobox", {})
+    lines.append("  /* --- Form Controls: Combobox & Dropdown --- */")
+    lines.append(f"  --w7-combobox-btn-bg: {combo.get('buttonBg', '')};")
+    lines.append(f"  --w7-combobox-btn-border: {combo.get('buttonBorder', '1px solid #707070')};")
+    lines.append(f"  --w7-combobox-btn-hover-bg: {combo.get('buttonHoverBg', '')};")
+    lines.append(f"  --w7-combobox-btn-hover-border: {combo.get('buttonHoverBorder', '1px solid #3c7fb1')};")
+    lines.append(f"  --w7-combobox-btn-pressed-bg: {combo.get('buttonPressedBg', '')};")
+    lines.append(f"  --w7-combobox-btn-pressed-border: {combo.get('buttonPressedBorder', '1px solid #2c628b')};")
+    v_combo = colors.get("vistaControls", {}).get("combobox", {})
+    lines.append(f"  --w7-vista-combobox-btn-bg: {v_combo.get('buttonBg', '')};")
+    lines.append(f"  --w7-vista-combobox-btn-hover-bg: {v_combo.get('buttonHoverBg', '')};")
+    lines.append(f"  --w7-vista-combobox-btn-hover-glow: {v_combo.get('hoverGlow', '')};")
+    lines.append("")
+
+    # Listbox
+    lb = colors.get("controls", {}).get("listbox", {})
+    lines.append("  /* --- Form Controls: Listbox --- */")
+    lines.append(f"  --w7-listbox-border: {lb.get('border', '1px solid #8e8f8f')};")
+    lines.append(f"  --w7-listbox-bg: {lb.get('bg', '#ffffff')};")
+    lines.append(f"  --w7-listbox-selected-bg: {lb.get('selectedBg', '')};")
+    lines.append(f"  --w7-listbox-selected-border: {lb.get('selectedBorder', '1px solid #84acdd')};")
+    lines.append(f"  --w7-listbox-hover-bg: {lb.get('hoverBg', '')};")
+    lines.append(f"  --w7-listbox-hover-border: {lb.get('hoverBorder', '1px solid #e5f3fb')};")
+    lines.append("")
+
     # Progress Bars
     prog = colors.get("progress", {})
     lines.append("  /* --- Progress Bar --- */")
@@ -358,6 +384,10 @@ def generate_tokens_scss(tokens_dir: Path, output_file: Path):
     lines.append(f"  --w7-metric-spinner-width: {ctrl_m.get('spinner', {}).get('widthPx', 16)}px;")
     lines.append(f"  --w7-metric-groupbox-radius: {ctrl_m.get('groupbox', {}).get('borderRadiusPx', 3)}px;")
     lines.append(f"  --w7-metric-groupbox-padding: {ctrl_m.get('groupbox', {}).get('paddingPx', '10px')};")
+    combo_m = ctrl_m.get("combobox", {})
+    lines.append(f"  --w7-metric-combobox-btn-width: {combo_m.get('buttonWidthPx', 17)}px;")
+    lines.append(f"  --w7-metric-combobox-height: {combo_m.get('heightPx', 23)}px;")
+    lines.append(f"  --w7-metric-combobox-radius: {combo_m.get('borderRadiusPx', 3)}px;")
     lines.append("  --w7-metric-scrollbar-width: 17px;")
     lines.append(f"  --w7-metric-ribbon-height: {metrics.get('ribbon', {}).get('heightPx', 92)}px;")
     lines.append(f"  --w7-metric-ribbon-tab-height: {metrics.get('ribbon', {}).get('tabHeightPx', 24)}px;")

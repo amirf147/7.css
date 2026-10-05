@@ -211,6 +211,11 @@ Phase 2 introduces Vista-specific visual adaptations to form controls without br
 5. **Sliders / Trackbars (`gui/_slider.scss`):**
    - Under `[data-theme="vista"] input[type="range"]`:
      - Metallic rounded thumb with blue center highlight.
+6. **Dropdowns, Comboboxes & Listboxes (`gui/_dropdown.scss`, `gui/_combobox.scss`, `gui/_listbox.scss`):**
+   - Under `[data-theme="vista"]`:
+     - Select dropdowns apply the split-horizon glossy button gradient and aqua hover glow (`0 0 5px rgba(0, 160, 240, 0.7)`).
+     - Combobox trigger buttons inherit Vista glossy styling.
+     - Multiselect listbox options apply Vista cyan-bordered hover states.
 
 ### 4.2 Phase 2 Verification Suite (`scripts/verify_stage_2.py`)
 

@@ -44,12 +44,14 @@ graph TD
    - Reconstruct push buttons with authentic 6-state multi-stop linear gradients and breathing pulse animation.
    - Implement Command Links (`.command-link`) with green circular glyphs, 12pt instruction headers, and 9pt secondary descriptions.
    - Rebuild checkboxes, radio buttons, text fields, group boxes, sliders, spinners, and progress bars.
-   - Implement Windows Vista form control adaptations (split-horizon glossy pill buttons, aqua hover glows, Vista pulse keyframes, and Vista Aurora progress bars).
+   - Rebuild dropdown menus (`select:not([multiple])`), editable comboboxes (`.combobox`), and multiselect listboxes (`select[multiple]`, `[role="listbox"]`) with 17px user32 button geometry and vector OEM arrow glyphs.
+   - Implement Windows Vista form control adaptations (split-horizon glossy pill buttons, aqua hover glows, Vista pulse keyframes, Vista Aurora progress bars, and Vista dropdown/combobox button gloss).
 
 4. **Phase 3: Structural Shell & Window Compositing**
    - Implement authentic Aero Glass title bars utilizing `backdrop-filter: blur(20px)` and specular reflection highlight masks.
    - Implement GDI+ style text halos (`DrawThemeTextEx`) using multi-layered white glow drop-shadow filters.
    - Construct 4-state caption buttons (Minimize, Maximize, Restore, Close) with cyan and crimson radial back-glow shaders.
+   - Implement Windows Vista window frame adaptations: 8px restored corner radius, 7px frame thickness, solid black maximized window frames (`#000000`), 43x19px caption buttons with amber/orange close button glow, and non-composited Vista Basic fallback (`[data-theme="vista-basic"]`).
    - Build standard Task Dialog layouts with distinct 12pt primary instruction headers and `#f0f0f0` commit button footer bars.
 
 5. **Phase 4: Complex Navigation & Explorer Controls**
@@ -57,19 +59,18 @@ graph TD
    - Implement the Explorer Breadcrumb Bar with split-segment hover states and drop-down menu chevrons.
    - Build ListView column headers with sort direction indicators, row selection states, and marquee selection rectangles.
    - Build the Explorer Command Bar and Split Buttons.
+   - Implement Windows Vista navigation styling: Vista glossy split-pill Command Bar buttons, glossy Breadcrumb Bar segments, and classic menu bar adaptations for Vista applets.
    - Build systems layout primitives including Action Panes (`.action-pane`), splitters (`.splitter`), and Control Panel category grids (`.category-grid`, `.task-links`).
    - Reconstruct the Windows Ribbon Framework (Scenic Ribbon / Navigation Ribbons): Application Button (`.ribbon-app-btn`), Quick Access Toolbar (`.qat`), Ribbon Tab Strip (`.ribbon-tabs`), Ribbon Groups/Chunks (`.ribbon-chunk`), Dialog Box Launchers (`.ribbon-dialog-launcher`), Large 32px Buttons (`.ribbon-btn-large`), Small 16px Clustered Buttons (`.ribbon-btn-small`), Split Buttons, and In-Ribbon Galleries.
 
 6. **Phase 5: Status, Feedback & Multimedia**
-   - Rebuild gel progress bars with the 50% sharp horizon specular gradient and translating pulse shimmer.
-   - Support Normal (Green), Paused (Yellow), and Error (Red) progress states.
-   - Construct standard Balloon notifications, ScreenTips, and Infobars.
-   - Integrate Web Audio API helpers for native UI feedback sounds (`Windows Navigation Start.wav`, `Windows Balloon.wav`).
+   - Construct standard Balloon notifications, ScreenTips, and Infobars with Windows 7 and Windows Vista styling variants.
+   - Integrate Web Audio API helpers for native UI feedback sounds supporting both Windows 7 default and Windows Vista sound schemes (`Windows Navigation Start.wav`, `Windows Balloon.wav`, `Windows Exclamation.wav`).
 
 7. **Phase 6: Visual Regression & Release Packaging**
-   - Execute pixel-difference comparison against Windows 7 SP1 native screenshots at 96 DPI.
+   - Execute dual pixel-difference comparison against Windows 7 SP1 and Windows Vista native screenshots at 96 DPI.
    - Validate accessibility compliance (WCAG 2.1 AA contrast ratios and ARIA attributes).
-   - Rebuild documentation site (`docs/`) with live interactive control playgrounds and code generators.
+   - Rebuild documentation site (`docs/`) with live interactive control playgrounds, code generators, and theme switchers (Windows 7 Aero, Windows 7 Basic, Windows Vista Aero, Windows Vista Basic).
    - Ship reference layout templates for Event Viewer (MMC 3-pane), Control Panel (Category Grid), and Scenic Ribbon Applets (WordPad 7 and MS Paint 7) in `examples/` and documentation.
    - Produce final distribution artifacts (`dist/7.css`, `dist/7.scoped.css`, `dist/7.inline.css`).
 
@@ -477,17 +478,25 @@ Normal Button Profile (Top to Bottom):
 
 ### 5.1 Audit of Existing `7.css` Components
 
-| Component File | Current State & Deficiencies | Required Overhaul Action |
+| Component File | Restoration Status & Phase | Architectural Summary |
 | :--- | :--- | :--- |
-| `gui/_variables.scss` | 37 lines. Lacks glass tokens, DWM tints, dialog font metrics, and progress variants. | Expand into complete token architecture. |
-| `gui/_button.scss` | Employs artificial opacity transitions (`&::before`, `&::after`). Pulsing is a basic inset shadow. | Replace with 6-state multi-stop gradients and breathing keyframe pulse. |
-| `gui/_window.scss` | Contains hardcoded 36-line stripe hack. Caption buttons use approximations. Lacks glass blur. | Implement `backdrop-filter`, SVG specular masks, and genuine caption button graphics. |
-| `gui/_progressbar.scss` | Uses inaccurate radial gradient stops. Lacks the 50% split gel horizon and pulse sheen. | Rebuild with green, yellow, red variants and shimmer translation keyframes. |
-| `gui/_treeview.scss` | Employs classic Windows 98/XP `+` and `-` square glyphs. | Replace with Vista/7 triangular chevrons (`GLPS_CLOSED`, `GLPS_OPENED`). |
-| `gui/_listview.scss` | Missing column sort chevrons, header separators, and row selection states. | Add sort chevron glyphs and multi-state column headers. |
-| `gui/_tabs.scss` | Only supports top tabs. Lacks bottom/left/right orientations. | Implement 4-directional tab styling and active pane integration. |
-| `gui/_scrollbar.scss` | Uses hardcoded CSS approximations without authentic pill grippers. | Rebuild thumb graphics with 3-dot grip. |
-| `gui/_combobox.scss` | Inaccurate dropdown button arrow styling. | Align with 17px dropdown button and user32 glyph metrics. |
+| `gui/_variables.scss` | Complete (Phase 1) | Rebuilt with full CSS custom property token dictionary and backwards-compatibility aliases. |
+| `gui/_button.scss` | Complete (Phase 2) | Rebuilt with 6-state multi-stop gradients, cyan breathing pulse, command links, and Vista glossy pill styling. |
+| `gui/_checkbox.scss` | Complete (Phase 2) | Rebuilt with vector checkmark and indeterminate glyphs, state machine, and Vista aqua glow. |
+| `gui/_radiobutton.scss` | Complete (Phase 2) | Rebuilt with radial convex gradients, vector bullet, and Vista aqua glow. |
+| `gui/_textbox.scss` | Complete (Phase 2) | Rebuilt with tokenized borders, hover, focus glows, and Vista focus accents. |
+| `gui/_slider.scss` | Complete (Phase 2) | Rebuilt with inset groove track, metallic thumb, cross-browser WebKit/Gecko support, and Vista blue glow. |
+| `gui/_spinner.scss` | Complete (Phase 2) | Rebuilt with spin-box container, split up/down chevrons, and Vista hover overrides. |
+| `gui/_progressbar.scss` | Complete (Phase 2) | Rebuilt with green, yellow, red variants, shimmer translation keyframes, and Vista Aurora styling. |
+| `gui/_groupbox.scss` | Complete (Phase 2) | Rebuilt with etched groove border and Segoe UI title header. |
+| `gui/_dropdown.scss` | Complete (Phase 2) | Rebuilt with 17px dropdown button, OEM combo arrow, tokenized states, and Vista split-horizon styling. |
+| `gui/_combobox.scss` | Complete (Phase 2) | Rebuilt with composite text input, attached 17px button, vector arrow, and Vista overrides. |
+| `gui/_listbox.scss` | Complete (Phase 2) | Rebuilt with tokenized border, Explorer row selection states, and Vista hover highlights. |
+| `gui/_window.scss` | Pending (Phase 3) | Target for `backdrop-filter: blur(20px)`, SVG specular masks, caption button back-glows, and Vista window frames. |
+| `gui/_scrollbar.scss` | Pending (Phase 4) | Rebuild thumb graphics with 3-dot grip and vector arrow buttons. |
+| `gui/_treeview.scss` | Pending (Phase 4) | Replace classic `+`/`-` boxes with authentic Vista/7 triangular chevrons (`GLPS_CLOSED`, `GLPS_OPENED`). |
+| `gui/_listview.scss` | Pending (Phase 4) | Add column sort chevrons, multi-state headers, and marquee selection rectangle. |
+| `gui/_tabs.scss` | Pending (Phase 4) | Implement 4-directional tab styling and active pane integration. |
 
 ---
 

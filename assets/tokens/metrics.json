@@ -91,6 +91,11 @@
       "borderRadiusPx": 3,
       "legendPaddingPx": "0 4px",
       "paddingPx": "10px"
+    },
+    "combobox": {
+      "buttonWidthPx": 17,
+      "heightPx": 23,
+      "borderRadiusPx": 3
     }
   },
   "ribbon": {

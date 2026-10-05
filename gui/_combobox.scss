@@ -1,36 +1,88 @@
+/* ========================================================================== */
+/* Windows 7 Aero - Editable Combobox                                        */
+/* ========================================================================== */
+
 .combobox {
   position: relative;
-  display: inline-block;
+  display: inline-flex;
+  vertical-align: middle;
+  height: var(--w7-metric-combobox-height, 23px);
+  box-sizing: border-box;
 
   input[type="text"] {
-    padding-right: 20px;
+    height: 100%;
+    padding-right: 22px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    box-sizing: border-box;
     width: 100%;
+
+    &:focus {
+      z-index: 2;
+    }
   }
 
   button {
     position: absolute;
     right: 0;
+    top: 0;
+    bottom: 0;
     padding: 0;
-    min-width: 16px;
+    margin: 0;
+    width: var(--w7-metric-combobox-btn-width, 17px);
+    min-width: var(--w7-metric-combobox-btn-width, 17px) !important;
+    height: 100%;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
-    background: url("icon/button-down.svg") center no-repeat, var(--w7-el-grad);
+    border: 1px solid var(--w7-input-border);
+    border-left: 1px solid #d9d9d9;
+    background: url("icon/dropdown-arrow.svg") center no-repeat, var(--w7-combobox-btn-bg);
+    box-sizing: border-box;
+    z-index: 1;
 
-    &::before {
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0;
-      background: url("icon/button-down.svg") center no-repeat, var(--w7-el-grad-h);
+    &::before,
+    &::after {
+      display: none;
     }
 
-    &::after {
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0;
-      background: url("icon/button-down.svg") center no-repeat, var(--w7-el-grad-a);
+    &:hover {
+      border-color: var(--w7-combobox-btn-hover-border);
+      border-left-color: #bce6fd;
+      background: url("icon/dropdown-arrow.svg") center no-repeat, var(--w7-combobox-btn-hover-bg);
+      box-shadow: 0 0 3px rgba(60, 127, 177, 0.4);
+    }
+
+    &:active {
+      border-color: var(--w7-combobox-btn-pressed-border);
+      border-left-color: #98d1ef;
+      background: url("icon/dropdown-arrow.svg") center no-repeat, var(--w7-combobox-btn-pressed-bg);
+      box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
     }
 
     &:focus {
       box-shadow: none;
       outline: none;
+    }
+
+    &:disabled {
+      border-color: var(--w7-color-disabled-border);
+      border-left-color: var(--w7-color-disabled-border);
+      background: url("icon/dropdown-arrow-disabled.svg") center no-repeat, var(--w7-input-bg-disabled);
+    }
+  }
+
+  /* --- Windows Vista Theming Overrides --- */
+  [data-theme="vista"] &,
+  &[data-theme="vista"] {
+    button {
+      background: url("icon/dropdown-arrow.svg") center no-repeat, var(--w7-vista-combobox-btn-bg);
+      border-left-color: #dcdcdc;
+
+      &:hover {
+        background: url("icon/dropdown-arrow.svg") center no-repeat, var(--w7-vista-combobox-btn-hover-bg);
+        border-left-color: #bce6fb;
+        box-shadow: var(--w7-vista-combobox-btn-hover-glow);
+      }
     }
   }
 }

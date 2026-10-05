@@ -1,34 +1,66 @@
+/* ========================================================================== */
+/* Windows 7 Aero - Listbox & Multiselect Lists                              */
+/* ========================================================================== */
+
 [role="listbox"],
 select[multiple] {
-  background: #fff;
-  border: 1px solid #c0c1cd;
+  background: var(--w7-listbox-bg, #ffffff);
+  border: 1px solid var(--w7-listbox-border, #8e8f8f);
+  border-radius: 2px;
   display: block;
   font: var(--w7-font);
-  overflow-y: scroll;
-
-  &.has-shadow {
-    box-shadow: 4px 4px 3px -2px #999;
-  }
-
-  &.has-hover {
-    li:hover {
-      background-color: #2a90ff;
-      color: #fff;
-    }
-  }
+  overflow-y: auto;
+  box-sizing: border-box;
+  padding: 1px;
+  color: var(--w7-color-window-text, #000000);
 
   &:focus {
     outline: none;
+    border-color: var(--w7-input-border-focus, #3d7bad);
+    box-shadow: 0 0 3px rgba(61, 123, 173, 0.5);
+  }
+
+  &.has-shadow {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
   }
 
   [role="option"],
   option {
-    padding: 2px;
+    padding: 2px 5px;
+    border-radius: 2px;
+    border: 1px solid transparent;
+    color: var(--w7-color-window-text, #000000);
+    box-sizing: border-box;
 
-    &[aria-selected],
-    &:focus {
-      background-color: #2a90ff;
-      color: #fff;
+    &:hover {
+      background: var(--w7-listbox-hover-bg);
+      border-color: var(--w7-listbox-hover-border);
+      color: #000000;
+    }
+
+    &:checked,
+    &[aria-selected="true"] {
+      background: var(--w7-listbox-selected-bg);
+      border-color: var(--w7-listbox-selected-border);
+      color: #000000;
+    }
+  }
+
+  &:disabled,
+  &[aria-disabled="true"] {
+    background: var(--w7-input-bg-disabled, #f4f4f4);
+    border-color: var(--w7-color-disabled-border, #adb2b5);
+    color: var(--w7-color-disabled-text, #838383);
+    cursor: not-allowed;
+  }
+
+  /* --- Windows Vista Theming Overrides --- */
+  [data-theme="vista"] &,
+  &[data-theme="vista"] {
+    [role="option"]:hover,
+    option:hover {
+      background: linear-gradient(to bottom, #f3fbff 0%, #e0f2fd 100%);
+      border-color: #bce6fd;
     }
   }
 }

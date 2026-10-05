@@ -1,46 +1,100 @@
+/* ========================================================================== */
+/* Windows 7 Aero - Dropdown Select Controls                                  */
+/* ========================================================================== */
+
 select:not([multiple]) {
   font: var(--w7-font);
-  padding: 2px 3px;
-  border: 1px solid var(--w7-el-bd);
-  border-radius: var(--w7-el-bdr);
-  box-shadow: var(--w7-el-sd);
+  height: var(--w7-metric-combobox-height, 23px);
+  padding: 1px 22px 1px 6px;
+  border: 1px solid var(--w7-input-border);
+  border-radius: var(--w7-metric-combobox-radius, 3px);
   box-sizing: border-box;
-  color: #222;
+  color: var(--w7-color-window-text);
+  background-color: var(--w7-input-bg);
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   position: relative;
-  padding-right: 30px;
-  background: url("./icon/dropdown-arrow.svg"), var(--w7-el-grad);
-  background-position: center right;
+  vertical-align: middle;
+
+  /* Composite background:
+     1. Dropdown arrow SVG (centered in 17px right button area)
+     2. 17px button surface gradient
+     3. 1px inner divider between text field and button
+  */
+  background-image:
+    url("icon/dropdown-arrow.svg"),
+    var(--w7-combobox-btn-bg),
+    linear-gradient(to bottom, #d9d9d9, #d9d9d9);
+  background-position:
+    right 1px center,
+    right 0 top 0,
+    right 17px top 0;
+  background-size:
+    16px 17px,
+    17px 100%,
+    1px 100%;
   background-repeat: no-repeat;
 
   &:not(:disabled) {
     &:hover {
-      border-color: var(--w7-el-bd-h);
-      background-image: url("./icon/dropdown-arrow.svg"), var(--w7-el-grad-h);
+      border-color: var(--w7-combobox-btn-hover-border);
+      background-image:
+        url("icon/dropdown-arrow.svg"),
+        var(--w7-combobox-btn-hover-bg),
+        linear-gradient(to bottom, #bce6fd, #bce6fd);
+      box-shadow: 0 0 3px rgba(60, 127, 177, 0.4);
     }
 
     &:active {
-      outline: none;
-      border-color: var(--w7-el-bd-a);
-      box-shadow: var(--w7-el-sd-a);
-      background-image: url("./icon/dropdown-arrow.svg"), var(--w7-el-grad-a);
+      border-color: var(--w7-combobox-btn-pressed-border);
+      background-image:
+        url("icon/dropdown-arrow.svg"),
+        var(--w7-combobox-btn-pressed-bg),
+        linear-gradient(to bottom, #98d1ef, #98d1ef);
+      box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
     }
 
     &:focus {
-      box-shadow: inset 0 0 0 2px #98d1ef;
-      outline: 1px dotted #000;
-      outline-offset: -4px;
+      outline: none;
+      border-color: var(--w7-input-border-focus);
+      box-shadow: 0 0 3px rgba(61, 123, 173, 0.6);
     }
   }
 
   &:disabled {
-    background: url("./icon/dropdown-arrow-disabled.svg"), var(--w7-el-bg-d);
-    background-position: center right;
-    background-repeat: no-repeat;
-    border-color: var(--w7-el-bd-d);
-    color: var(--w7-el-c-d);
+    background-color: var(--w7-input-bg-disabled);
+    border-color: var(--w7-color-disabled-border);
+    color: var(--w7-color-disabled-text);
+    background-image:
+      url("icon/dropdown-arrow-disabled.svg"),
+      linear-gradient(to bottom, var(--w7-input-bg-disabled), var(--w7-input-bg-disabled)),
+      linear-gradient(to bottom, var(--w7-color-disabled-border), var(--w7-color-disabled-border));
+    cursor: not-allowed;
     opacity: 1;
+  }
+
+  /* --- Windows Vista Theming Overrides --- */
+  [data-theme="vista"] &,
+  &[data-theme="vista"] {
+    background-image:
+      url("icon/dropdown-arrow.svg"),
+      var(--w7-vista-combobox-btn-bg),
+      linear-gradient(to bottom, #dcdcdc, #dcdcdc);
+
+    &:not(:disabled) {
+      &:hover {
+        background-image:
+          url("icon/dropdown-arrow.svg"),
+          var(--w7-vista-combobox-btn-hover-bg),
+          linear-gradient(to bottom, #bce6fb, #bce6fb);
+        box-shadow: var(--w7-vista-combobox-btn-hover-glow);
+      }
+
+      &:focus {
+        border-color: #3d7bad;
+        box-shadow: 0 0 4px rgba(0, 160, 240, 0.7);
+      }
+    }
   }
 }

@@ -63,11 +63,31 @@ All controls support native Windows 7 Aero styling by default and adapt automati
 - Etched groove border with 1px inner white highlight.
 - Text header legend rendered in Segoe UI with `#003399` title color.
 
+### 2.9 Dropdowns (`gui/_dropdown.scss`)
+- Rebuilt `select:not([multiple])` with authentic Windows 7 composite background:
+  - 17px right button area with push button linear gradient stops.
+  - Centered 7x4px OEM combo arrow vector (`dropdown-arrow.svg`).
+  - 1px vertical divider between white text area and dropdown button.
+- 23px standard height (`--w7-metric-combobox-height`), 3px border radius.
+- Under `[data-theme="vista"]`, applies glossy split-horizon button gradient on the dropdown segment and aqua hover glow (`0 0 5px rgba(0, 160, 240, 0.7)`).
+
+### 2.10 Editable Comboboxes (`gui/_combobox.scss`)
+- Compound `.combobox` container integrating text input and attached 17px dropdown button (`--w7-metric-combobox-btn-width`).
+- Seamless border joining with 1px divider, focus z-index elevation, and disabled state styling.
+- Under `[data-theme="vista"]`, button inherits Vista glossy split-horizon gradient and hover glow.
+
+### 2.11 Multiselect Listboxes (`gui/_listbox.scss`)
+- Rebuilt `select[multiple]` and `[role="listbox"]` with tokenized border (`--w7-listbox-border`) and white background.
+- Option rows support Windows 7 Explorer item highlight styling:
+  - Hover: `linear-gradient(to bottom, #f2f8fc 0%, #e1f0f9 100%)` with `#e5f3fb` border.
+  - Selected (`:checked`, `[aria-selected="true"]`): `linear-gradient(to bottom, #edf4fc 0%, #dbeaf9 100%)` with `#84acdd` border.
+- Under `[data-theme="vista"]`, option rows apply Vista cyan hover highlights.
+
 ---
 
 ## 3. Verification & Test Harness Audit
 
-The test script `scripts/verify_stage_2.py` validates compliance across 51 individual checkpoints:
+The test script `scripts/verify_stage_2.py` validates compliance across 60 individual checkpoints:
 
 ```
 === PHASE 2 VERIFICATION AUDIT ===
@@ -115,6 +135,18 @@ The test script `scripts/verify_stage_2.py` validates compliance across 51 indiv
 [PASS] _progressbar.scss exists
 [PASS] _progressbar.scss implements progressbar role
 [PASS] _progressbar.scss contains Vista Aurora progress bar styling
+[PASS] _dropdown.scss exists
+[PASS] _combobox.scss exists
+[PASS] _listbox.scss exists
+[PASS] _dropdown.scss references --w7-combobox-btn-bg
+[PASS] _dropdown.scss embeds dropdown arrow
+[PASS] _dropdown.scss contains Vista theme overrides
+[PASS] _combobox.scss implements .combobox
+[PASS] _combobox.scss references --w7-metric-combobox-btn-width
+[PASS] _combobox.scss contains Vista theme overrides
+[PASS] _listbox.scss references --w7-listbox-border
+[PASS] _listbox.scss references --w7-listbox-selected-bg
+[PASS] _listbox.scss contains Vista theme overrides
 [PASS] dist/7.css exists
 [PASS] dist/7.css contains command-link
 [PASS] dist/7.css contains spin-box

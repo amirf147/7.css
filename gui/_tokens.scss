@@ -181,6 +181,25 @@
   --w7-groupbox-highlight: inset 0 1px 0 #ffffff;
   --w7-groupbox-legend-color: #003399;
 
+  /* --- Form Controls: Combobox & Dropdown --- */
+  --w7-combobox-btn-bg: linear-gradient(to bottom, #f2f2f2 0%, #ebebeb 50%, #dddddd 51%, #cfcfcf 100%);
+  --w7-combobox-btn-border: 1px solid #707070;
+  --w7-combobox-btn-hover-bg: linear-gradient(to bottom, #eaf6fd 0%, #d9f0fc 50%, #bee6fd 51%, #a7d9f5 100%);
+  --w7-combobox-btn-hover-border: 1px solid #3c7fb1;
+  --w7-combobox-btn-pressed-bg: linear-gradient(to bottom, #e5f4fc 0%, #c4e5f6 50%, #98d1ef 51%, #68b3db 100%);
+  --w7-combobox-btn-pressed-border: 1px solid #2c628b;
+  --w7-vista-combobox-btn-bg: linear-gradient(to bottom, #ffffff 0%, #ececec 49%, #e0e0e0 50%, #d2d2d2 100%);
+  --w7-vista-combobox-btn-hover-bg: linear-gradient(to bottom, #f3fbff 0%, #e6f6fd 49%, #d2effc 50%, #bce6fb 100%);
+  --w7-vista-combobox-btn-hover-glow: 0 0 5px rgba(0, 160, 240, 0.7);
+
+  /* --- Form Controls: Listbox --- */
+  --w7-listbox-border: 1px solid #8e8f8f;
+  --w7-listbox-bg: #ffffff;
+  --w7-listbox-selected-bg: linear-gradient(to bottom, #edf4fc 0%, #dbeaf9 100%);
+  --w7-listbox-selected-border: 1px solid #84acdd;
+  --w7-listbox-hover-bg: linear-gradient(to bottom, #f2f8fc 0%, #e1f0f9 100%);
+  --w7-listbox-hover-border: 1px solid #e5f3fb;
+
   /* --- Progress Bar --- */
   --w7-progress-normal-chunk: linear-gradient(to bottom, #a7e089 0%, #76c84c 50%, #52ab2a 51%, #6bc040 100%);
   --w7-progress-normal-border: 1px solid #4a9126;
@@ -255,6 +274,9 @@
   --w7-metric-spinner-width: 16px;
   --w7-metric-groupbox-radius: 3px;
   --w7-metric-groupbox-padding: 10px;
+  --w7-metric-combobox-btn-width: 17px;
+  --w7-metric-combobox-height: 23px;
+  --w7-metric-combobox-radius: 3px;
   --w7-metric-scrollbar-width: 17px;
   --w7-metric-ribbon-height: 92px;
   --w7-metric-ribbon-tab-height: 24px;

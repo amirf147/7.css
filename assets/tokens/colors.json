@@ -167,6 +167,22 @@
       "border": "1px solid #d9d9d9",
       "highlight": "inset 0 1px 0 #ffffff",
       "legendColor": "#003399"
+    },
+    "combobox": {
+      "buttonBg": "linear-gradient(to bottom, #f2f2f2 0%, #ebebeb 50%, #dddddd 51%, #cfcfcf 100%)",
+      "buttonBorder": "1px solid #707070",
+      "buttonHoverBg": "linear-gradient(to bottom, #eaf6fd 0%, #d9f0fc 50%, #bee6fd 51%, #a7d9f5 100%)",
+      "buttonHoverBorder": "1px solid #3c7fb1",
+      "buttonPressedBg": "linear-gradient(to bottom, #e5f4fc 0%, #c4e5f6 50%, #98d1ef 51%, #68b3db 100%)",
+      "buttonPressedBorder": "1px solid #2c628b"
+    },
+    "listbox": {
+      "border": "1px solid #8e8f8f",
+      "bg": "#ffffff",
+      "selectedBg": "linear-gradient(to bottom, #edf4fc 0%, #dbeaf9 100%)",
+      "selectedBorder": "1px solid #84acdd",
+      "hoverBg": "linear-gradient(to bottom, #f2f8fc 0%, #e1f0f9 100%)",
+      "hoverBorder": "1px solid #e5f3fb"
     }
   },
   "progress": {
@@ -409,6 +425,11 @@
         "border": "1px solid #1c6ba0",
         "outerGlow": "0 0 8px rgba(0, 160, 240, 0.85), inset 0 0 4px #ffffff"
       }
+    },
+    "combobox": {
+      "buttonBg": "linear-gradient(to bottom, #ffffff 0%, #ececec 49%, #e0e0e0 50%, #d2d2d2 100%)",
+      "buttonHoverBg": "linear-gradient(to bottom, #f3fbff 0%, #e6f6fd 49%, #d2effc 50%, #bce6fb 100%)",
+      "hoverGlow": "0 0 5px rgba(0, 160, 240, 0.7)"
     }
   }
 }

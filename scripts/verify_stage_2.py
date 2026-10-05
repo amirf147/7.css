@@ -110,6 +110,30 @@ def test_progressbar_scss():
     check("_progressbar.scss contains Vista Aurora progress bar styling", '[data-theme="vista"]' in pb_content)
 
 
+def test_dropdown_combobox_listbox_scss():
+    dd_path = ROOT_DIR / "gui" / "_dropdown.scss"
+    cb_path = ROOT_DIR / "gui" / "_combobox.scss"
+    lb_path = ROOT_DIR / "gui" / "_listbox.scss"
+    check("_dropdown.scss exists", dd_path.is_file())
+    check("_combobox.scss exists", cb_path.is_file())
+    check("_listbox.scss exists", lb_path.is_file())
+
+    dd_content = dd_path.read_text(encoding="utf-8")
+    check("_dropdown.scss references --w7-combobox-btn-bg", "--w7-combobox-btn-bg" in dd_content)
+    check("_dropdown.scss embeds dropdown arrow", "dropdown-arrow.svg" in dd_content)
+    check("_dropdown.scss contains Vista theme overrides", '[data-theme="vista"]' in dd_content)
+
+    cb_content = cb_path.read_text(encoding="utf-8")
+    check("_combobox.scss implements .combobox", ".combobox" in cb_content)
+    check("_combobox.scss references --w7-metric-combobox-btn-width", "--w7-metric-combobox-btn-width" in cb_content)
+    check("_combobox.scss contains Vista theme overrides", '[data-theme="vista"]' in cb_content)
+
+    lb_content = lb_path.read_text(encoding="utf-8")
+    check("_listbox.scss references --w7-listbox-border", "--w7-listbox-border" in lb_content)
+    check("_listbox.scss references --w7-listbox-selected-bg", "--w7-listbox-selected-bg" in lb_content)
+    check("_listbox.scss contains Vista theme overrides", '[data-theme="vista"]' in lb_content)
+
+
 def test_build_artifacts():
     dist_dir = ROOT_DIR / "dist"
     for bundle_name in ["7.css", "7.scoped.css", "7.inline.css"]:
@@ -136,6 +160,7 @@ def main():
     test_input_groupbox_scss()
     test_slider_spinner_scss()
     test_progressbar_scss()
+    test_dropdown_combobox_listbox_scss()
     test_build_artifacts()
     test_safety_check()
     print("=== ALL PHASE 2 CHECKS PASSED ===")
