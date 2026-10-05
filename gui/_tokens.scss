@@ -96,6 +96,68 @@
   --w7-input-bg: #ffffff;
   --w7-input-bg-disabled: #f4f4f4;
 
+  /* --- Form Controls: Checkbox --- */
+  --w7-checkbox-bg: linear-gradient(to bottom, #f5f5f5 0%, #e8e8e8 50%, #d8d8d8 51%, #e5e5e5 100%);
+  --w7-checkbox-border: 1px solid #8e8f8f;
+  --w7-checkbox-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1), inset 0 0 0 1px rgba(255, 255, 255, 0.8);
+  --w7-checkbox-hover-bg: linear-gradient(to bottom, #eaf6fd 0%, #d9f0fc 50%, #bee6fd 51%, #a7d9f5 100%);
+  --w7-checkbox-hover-border: 1px solid #3c7fb1;
+  --w7-checkbox-hover-shadow: 0 0 3px rgba(60, 127, 177, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  --w7-checkbox-pressed-bg: linear-gradient(to bottom, #e5f4fc 0%, #c4e5f6 50%, #98d1ef 51%, #68b3db 100%);
+  --w7-checkbox-pressed-border: 1px solid #2c628b;
+  --w7-checkbox-pressed-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25);
+  --w7-checkbox-disabled-bg: #f4f4f4;
+  --w7-checkbox-disabled-border: 1px solid #adb2b5;
+  --w7-checkbox-glyph-color: #1e395b;
+  --w7-checkbox-disabled-glyph-color: #838383;
+
+  /* --- Form Controls: Radio Button --- */
+  --w7-radio-bg: radial-gradient(circle at 40% 35%, #ffffff 0%, #f0f0f0 45%, #d8d8d8 85%, #cccccc 100%);
+  --w7-radio-border: 1px solid #8e8f8f;
+  --w7-radio-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1), inset 0 0 0 1px rgba(255, 255, 255, 0.8);
+  --w7-radio-hover-bg: radial-gradient(circle at 40% 35%, #f6fbfe 0%, #d9f0fc 45%, #bee6fd 85%, #a7d9f5 100%);
+  --w7-radio-hover-border: 1px solid #3c7fb1;
+  --w7-radio-hover-shadow: 0 0 3px rgba(60, 127, 177, 0.6);
+  --w7-radio-pressed-bg: radial-gradient(circle at 40% 35%, #e5f4fc 0%, #c4e5f6 45%, #98d1ef 85%, #68b3db 100%);
+  --w7-radio-pressed-border: 1px solid #2c628b;
+  --w7-radio-pressed-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25);
+  --w7-radio-disabled-bg: #f4f4f4;
+  --w7-radio-disabled-border: 1px solid #adb2b5;
+  --w7-radio-bullet-color: #1e395b;
+  --w7-radio-bullet-gradient: radial-gradient(circle at 35% 35%, #597d9e 0%, #1e395b 70%);
+  --w7-radio-disabled-bullet-color: #838383;
+
+  /* --- Form Controls: Slider / Trackbar --- */
+  --w7-slider-track-bg: #d9d9d9;
+  --w7-slider-track-border: 1px solid #9c9c9c;
+  --w7-slider-track-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.15);
+  --w7-slider-thumb-bg: linear-gradient(to bottom, #f2f2f2 0%, #ebebeb 50%, #dddddd 51%, #cfcfcf 100%);
+  --w7-slider-thumb-border: 1px solid #707070;
+  --w7-slider-thumb-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  --w7-slider-thumb-hover-bg: linear-gradient(to bottom, #eaf6fd 0%, #d9f0fc 50%, #bee6fd 51%, #a7d9f5 100%);
+  --w7-slider-thumb-hover-border: 1px solid #3c7fb1;
+  --w7-slider-thumb-hover-shadow: 0 0 4px rgba(60, 127, 177, 0.6);
+  --w7-slider-thumb-pressed-bg: linear-gradient(to bottom, #e5f4fc 0%, #c4e5f6 50%, #98d1ef 51%, #68b3db 100%);
+  --w7-slider-thumb-pressed-border: 1px solid #2c628b;
+  --w7-slider-thumb-pressed-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
+  --w7-slider-tick-color: #9c9c9c;
+
+  /* --- Form Controls: Spin Button --- */
+  --w7-spinner-btn-bg: linear-gradient(to bottom, #f2f2f2 0%, #ebebeb 50%, #dddddd 51%, #cfcfcf 100%);
+  --w7-spinner-btn-border: 1px solid #707070;
+  --w7-spinner-btn-hover-bg: linear-gradient(to bottom, #eaf6fd 0%, #d9f0fc 50%, #bee6fd 51%, #a7d9f5 100%);
+  --w7-spinner-btn-hover-border: 1px solid #3c7fb1;
+  --w7-spinner-btn-pressed-bg: linear-gradient(to bottom, #e5f4fc 0%, #c4e5f6 50%, #98d1ef 51%, #68b3db 100%);
+  --w7-spinner-btn-pressed-border: 1px solid #2c628b;
+  --w7-spinner-arrow-color: #333333;
+  --w7-spinner-arrow-hover-color: #1e395b;
+  --w7-spinner-arrow-disabled-color: #838383;
+
+  /* --- Form Controls: Group Box --- */
+  --w7-groupbox-border: 1px solid #d9d9d9;
+  --w7-groupbox-highlight: inset 0 1px 0 #ffffff;
+  --w7-groupbox-legend-color: #003399;
+
   /* --- Progress Bar --- */
   --w7-progress-normal-chunk: linear-gradient(to bottom, #a7e089 0%, #76c84c 50%, #52ab2a 51%, #6bc040 100%);
   --w7-progress-normal-border: 1px solid #4a9126;
@@ -157,6 +219,12 @@
   --w7-metric-checkbox-size: 13px;
   --w7-metric-radio-size: 13px;
   --w7-metric-command-link-glyph: 24px;
+  --w7-metric-slider-track-height: 4px;
+  --w7-metric-slider-thumb-width: 11px;
+  --w7-metric-slider-thumb-height: 21px;
+  --w7-metric-spinner-width: 16px;
+  --w7-metric-groupbox-radius: 3px;
+  --w7-metric-groupbox-padding: 10px;
   --w7-metric-scrollbar-width: 17px;
   --w7-metric-ribbon-height: 92px;
   --w7-metric-ribbon-tab-height: 24px;

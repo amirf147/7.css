@@ -9,6 +9,7 @@
   ],
   "scripts": {
     "tokens": "py -3.10 scripts/generate_tokens.py",
+    "test": "py -3.10 scripts/verify_stage_1.py",
     "build": "py -3.10 scripts/generate_tokens.py && node build.js",
     "deploy": "npm run build && gh-pages -d dist",
     "release": "npm run build && npm publish"

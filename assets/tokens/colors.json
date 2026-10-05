@@ -61,6 +61,112 @@
       "borderFocus": "1px solid #3d7bad",
       "bg": "#ffffff",
       "bgDisabled": "#f4f4f4"
+    },
+    "checkbox": {
+      "normal": {
+        "background": "linear-gradient(to bottom, #f5f5f5 0%, #e8e8e8 50%, #d8d8d8 51%, #e5e5e5 100%)",
+        "border": "1px solid #8e8f8f",
+        "boxShadow": "inset 0 1px 1px rgba(0, 0, 0, 0.1), inset 0 0 0 1px rgba(255, 255, 255, 0.8)"
+      },
+      "hover": {
+        "background": "linear-gradient(to bottom, #eaf6fd 0%, #d9f0fc 50%, #bee6fd 51%, #a7d9f5 100%)",
+        "border": "1px solid #3c7fb1",
+        "boxShadow": "0 0 3px rgba(60, 127, 177, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.9)"
+      },
+      "pressed": {
+        "background": "linear-gradient(to bottom, #e5f4fc 0%, #c4e5f6 50%, #98d1ef 51%, #68b3db 100%)",
+        "border": "1px solid #2c628b",
+        "boxShadow": "inset 0 1px 2px rgba(0, 0, 0, 0.25)"
+      },
+      "disabled": {
+        "background": "#f4f4f4",
+        "border": "1px solid #adb2b5",
+        "boxShadow": "none",
+        "glyphColor": "#838383"
+      },
+      "glyphColor": "#1e395b"
+    },
+    "radio": {
+      "normal": {
+        "background": "radial-gradient(circle at 40% 35%, #ffffff 0%, #f0f0f0 45%, #d8d8d8 85%, #cccccc 100%)",
+        "border": "1px solid #8e8f8f",
+        "boxShadow": "inset 0 1px 1px rgba(0, 0, 0, 0.1), inset 0 0 0 1px rgba(255, 255, 255, 0.8)"
+      },
+      "hover": {
+        "background": "radial-gradient(circle at 40% 35%, #f6fbfe 0%, #d9f0fc 45%, #bee6fd 85%, #a7d9f5 100%)",
+        "border": "1px solid #3c7fb1",
+        "boxShadow": "0 0 3px rgba(60, 127, 177, 0.6)"
+      },
+      "pressed": {
+        "background": "radial-gradient(circle at 40% 35%, #e5f4fc 0%, #c4e5f6 45%, #98d1ef 85%, #68b3db 100%)",
+        "border": "1px solid #2c628b",
+        "boxShadow": "inset 0 1px 2px rgba(0, 0, 0, 0.25)"
+      },
+      "disabled": {
+        "background": "#f4f4f4",
+        "border": "1px solid #adb2b5",
+        "boxShadow": "none",
+        "bulletColor": "#838383"
+      },
+      "bullet": {
+        "color": "#1e395b",
+        "gradient": "radial-gradient(circle at 35% 35%, #597d9e 0%, #1e395b 70%)"
+      }
+    },
+    "slider": {
+      "track": {
+        "background": "#d9d9d9",
+        "border": "1px solid #9c9c9c",
+        "boxShadow": "inset 0 1px 1px rgba(0, 0, 0, 0.15)"
+      },
+      "thumb": {
+        "normal": {
+          "background": "linear-gradient(to bottom, #f2f2f2 0%, #ebebeb 50%, #dddddd 51%, #cfcfcf 100%)",
+          "border": "1px solid #707070",
+          "boxShadow": "0 1px 2px rgba(0, 0, 0, 0.15)"
+        },
+        "hover": {
+          "background": "linear-gradient(to bottom, #eaf6fd 0%, #d9f0fc 50%, #bee6fd 51%, #a7d9f5 100%)",
+          "border": "1px solid #3c7fb1",
+          "boxShadow": "0 0 4px rgba(60, 127, 177, 0.6)"
+        },
+        "pressed": {
+          "background": "linear-gradient(to bottom, #e5f4fc 0%, #c4e5f6 50%, #98d1ef 51%, #68b3db 100%)",
+          "border": "1px solid #2c628b",
+          "boxShadow": "inset 0 1px 2px rgba(0, 0, 0, 0.2)"
+        },
+        "disabled": {
+          "background": "#f4f4f4",
+          "border": "1px solid #adb2b5"
+        }
+      },
+      "tickColor": "#9c9c9c"
+    },
+    "spinner": {
+      "normal": {
+        "background": "linear-gradient(to bottom, #f2f2f2 0%, #ebebeb 50%, #dddddd 51%, #cfcfcf 100%)",
+        "border": "1px solid #707070"
+      },
+      "hover": {
+        "background": "linear-gradient(to bottom, #eaf6fd 0%, #d9f0fc 50%, #bee6fd 51%, #a7d9f5 100%)",
+        "border": "1px solid #3c7fb1"
+      },
+      "pressed": {
+        "background": "linear-gradient(to bottom, #e5f4fc 0%, #c4e5f6 50%, #98d1ef 51%, #68b3db 100%)",
+        "border": "1px solid #2c628b"
+      },
+      "disabled": {
+        "background": "#f4f4f4",
+        "border": "1px solid #adb2b5"
+      },
+      "arrowColor": "#333333",
+      "arrowColorHover": "#1e395b",
+      "arrowColorDisabled": "#838383"
+    },
+    "groupbox": {
+      "border": "1px solid #d9d9d9",
+      "highlight": "inset 0 1px 0 #ffffff",
+      "legendColor": "#003399"
     }
   },
   "progress": {

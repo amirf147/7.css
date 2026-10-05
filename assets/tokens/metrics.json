@@ -62,6 +62,22 @@
       "heightPx": 21,
       "borderFocus": "1px solid #3d7bad",
       "border": "1px solid #8e8f8f"
+    },
+    "slider": {
+      "trackHeightPx": 4,
+      "thumbWidthPx": 11,
+      "thumbHeightPx": 21,
+      "borderRadiusPx": 2
+    },
+    "spinner": {
+      "widthPx": 16,
+      "heightPx": 21,
+      "borderRadiusPx": 2
+    },
+    "groupbox": {
+      "borderRadiusPx": 3,
+      "legendPaddingPx": "0 4px",
+      "paddingPx": "10px"
     }
   },
   "ribbon": {

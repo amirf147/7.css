@@ -20,7 +20,8 @@ graph TD
 
 ### Phase Breakdown
 
-1. **Phase 0: Resource Gathering, Ingestion & Asset Audit (Current Phase)**
+1. **Phase 0: Resource Gathering, Ingestion & Asset Audit (Status: Complete)**
+   - Audit report: [phase-0-completion-report.md](phase-0-completion-report.md)
    - Ingest pre-extracted official Windows 7 icon collections (28 categories) from `visnalize/resources`.
    - Ingest authentic system sound effects (60 WAV files) from `MCPlayer2015/all-windows-sounds`.
    - Ingest authentic Windows 7 Aero cursor sets from `bartekl1/windows-ui-assets`.
@@ -28,13 +29,16 @@ graph TD
    - Restrict manual binary extraction to unresolved `aero.msstyles` 9-slice parts and caption button radial glow shaders.
    - Audit official MSDN Windows User Experience Interaction Guidelines for exact DLU and pixel metrics.
    - Construct the component state matrix and gap analysis against the existing `7.css` repository.
-2. **Phase 1: Token Architecture & Color Engine**
+
+2. **Phase 1: Token Architecture & Color Engine (Status: Complete)**
+   - Audit report: [phase-1-completion-report.md](phase-1-completion-report.md)
    - Implement the complete CSS custom property token dictionary (`--w7-*`).
    - Define exact RGB/HSL color stop variables for standard Aero controls.
    - Implement the 16 standard Aero personalization tints via CSS data attributes (`[data-aero-tint="..."]`).
    - Establish baseline typography rules for Segoe UI with subpixel font smoothing.
+   - Expand form control token schemas (checkboxes, radio buttons, sliders, spin buttons, group boxes) ahead of component rebuilds.
 
-3. **Phase 2: Form Controls & Command Primitives**
+3. **Phase 2: Form Controls & Command Primitives (Status: Current / Next)**
    - Rewrite push buttons with authentic 6-state multi-stop linear gradients and breathing pulse animation.
    - Implement Command Links (`.command-link`) with green circular glyphs, 12pt instruction headers, and 9pt secondary descriptions.
    - Rebuild checkboxes, radio buttons, text fields, group boxes, sliders, and spin buttons to eliminate XP remnants.
