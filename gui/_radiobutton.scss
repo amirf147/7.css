@@ -83,3 +83,15 @@ input[type="radio"] {
     vertical-align: middle;
   }
 }
+
+/* --- Windows Vista Radio Button Theming --- */
+[data-theme="vista"],
+.window[data-theme="vista"] {
+  input[type="radio"]:not(:disabled) {
+    &:hover {
+      background: radial-gradient(circle at 40% 35%, #ffffff 0%, #e6f6fd 45%, #d2effc 85%, #bce6fb 100%);
+      border-color: #3c7fb1;
+      box-shadow: 0 0 4px rgba(0, 160, 240, 0.7);
+    }
+  }
+}

@@ -95,3 +95,15 @@ input[type="checkbox"] {
     vertical-align: middle;
   }
 }
+
+/* --- Windows Vista Checkbox Theming --- */
+[data-theme="vista"],
+.window[data-theme="vista"] {
+  input[type="checkbox"]:not(:disabled) {
+    &:hover {
+      background: linear-gradient(to bottom, #f3fbff 0%, #e6f6fd 49%, #d2effc 50%, #bce6fb 100%);
+      border-color: #3c7fb1;
+      box-shadow: 0 0 4px rgba(0, 160, 240, 0.7);
+    }
+  }
+}

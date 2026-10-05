@@ -75,3 +75,20 @@ textarea {
     border: 1px solid #adb2b5;
   }
 }
+
+/* --- Windows Vista Textbox Theming --- */
+[data-theme="vista"],
+.window[data-theme="vista"] {
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  input[type="url"],
+  input[type="number"],
+  input[type="tel"],
+  textarea {
+    &:not(:disabled):focus {
+      border-color: #3c7fb1;
+      box-shadow: 0 0 3px rgba(0, 160, 240, 0.7);
+    }
+  }
+}

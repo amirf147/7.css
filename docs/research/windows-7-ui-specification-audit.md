@@ -39,10 +39,12 @@ graph TD
    - Establish baseline typography rules for Segoe UI with subpixel font smoothing.
    - Expand form control token schemas (checkboxes, radio buttons, sliders, spin buttons, group boxes) ahead of component rebuilds.
 
-3. **Phase 2: Form Controls & Command Primitives (Status: Current / Next)**
-   - Rewrite push buttons with authentic 6-state multi-stop linear gradients and breathing pulse animation.
+3. **Phase 2: Form Controls & Command Primitives (Status: Complete)**
+   - Audit report: [phase-2-completion-report.md](phase-2-completion-report.md)
+   - Reconstruct push buttons with authentic 6-state multi-stop linear gradients and breathing pulse animation.
    - Implement Command Links (`.command-link`) with green circular glyphs, 12pt instruction headers, and 9pt secondary descriptions.
-   - Rebuild checkboxes, radio buttons, text fields, group boxes, sliders, and spin buttons to eliminate XP remnants.
+   - Rebuild checkboxes, radio buttons, text fields, group boxes, sliders, spinners, and progress bars.
+   - Implement Windows Vista form control adaptations (split-horizon glossy pill buttons, aqua hover glows, Vista pulse keyframes, and Vista Aurora progress bars).
 
 4. **Phase 3: Structural Shell & Window Compositing**
    - Implement authentic Aero Glass title bars utilizing `backdrop-filter: blur(20px)` and specular reflection highlight masks.

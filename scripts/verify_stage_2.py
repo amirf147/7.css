@@ -40,6 +40,8 @@ def test_button_scss():
     check("_button.scss binds default pulse animation", "w7-aero-button-pulse" in content)
     check("_button.scss implements .command-link", ".command-link" in content)
     check("_button.scss embeds command link arrow vector", "command-link-arrow.svg" in content)
+    check("_button.scss contains Vista button styling", "--w7-vista-btn-bg" in content)
+    check("_button.scss binds Vista button pulse", "w7-vista-button-pulse" in content)
 
 
 def test_checkbox_radio_scss():
@@ -54,11 +56,13 @@ def test_checkbox_radio_scss():
     check("_checkbox.scss handles :indeterminate", ":indeterminate" in cb_content)
     check("_checkbox.scss embeds checkbox checkmark vector", "checkbox-check.svg" in cb_content)
     check("_checkbox.scss embeds indeterminate glyph vector", "checkbox-indeterminate.svg" in cb_content)
+    check("_checkbox.scss contains Vista theme overrides", '[data-theme="vista"]' in cb_content)
 
     rad_content = rad_path.read_text(encoding="utf-8")
     check("_radiobutton.scss references --w7-radio-bg", "--w7-radio-bg" in rad_content)
     check("_radiobutton.scss handles :checked", ":checked" in rad_content)
     check("_radiobutton.scss embeds radio bullet vector", "radio-bullet.svg" in rad_content)
+    check("_radiobutton.scss contains Vista theme overrides", '[data-theme="vista"]' in rad_content)
 
 
 def test_input_groupbox_scss():
@@ -71,6 +75,7 @@ def test_input_groupbox_scss():
     check("_textbox.scss references --w7-input-border", "--w7-input-border" in tb_content)
     check("_textbox.scss references --w7-input-border-focus", "--w7-input-border-focus" in tb_content)
     check("_textbox.scss handles textarea", "textarea" in tb_content)
+    check("_textbox.scss contains Vista focus styling", '[data-theme="vista"]' in tb_content)
 
     gb_content = gb_path.read_text(encoding="utf-8")
     check("_groupbox.scss references --w7-groupbox-border", "--w7-groupbox-border" in gb_content)
@@ -88,11 +93,21 @@ def test_slider_spinner_scss():
     check("_slider.scss references --w7-slider-thumb-bg", "--w7-slider-thumb-bg" in sl_content)
     check("_slider.scss styles -webkit-slider-thumb", "-webkit-slider-thumb" in sl_content)
     check("_slider.scss styles -moz-range-thumb", "-moz-range-thumb" in sl_content)
+    check("_slider.scss contains Vista slider thumb overrides", '[data-theme="vista"]' in sl_content)
 
     sp_content = spinner_path.read_text(encoding="utf-8")
     check("_spinner.scss implements .spin-box", ".spin-box" in sp_content)
     check("_spinner.scss implements .spin-up and .spin-down", ".spin-up" in sp_content and ".spin-down" in sp_content)
     check("_spinner.scss embeds spin arrows", "spin-arrow-up.svg" in sp_content and "spin-arrow-down.svg" in sp_content)
+    check("_spinner.scss contains Vista button overrides", '[data-theme="vista"]' in sp_content)
+
+
+def test_progressbar_scss():
+    pb_path = ROOT_DIR / "gui" / "_progressbar.scss"
+    check("_progressbar.scss exists", pb_path.is_file())
+    pb_content = pb_path.read_text(encoding="utf-8")
+    check("_progressbar.scss implements progressbar role", '[role="progressbar"]' in pb_content)
+    check("_progressbar.scss contains Vista Aurora progress bar styling", '[data-theme="vista"]' in pb_content)
 
 
 def test_build_artifacts():
@@ -104,6 +119,7 @@ def test_build_artifacts():
         check(f"dist/{bundle_name} contains command-link", "command-link" in content)
         check(f"dist/{bundle_name} contains spin-box", "spin-box" in content)
         check(f"dist/{bundle_name} contains range slider", "slider" in content or "range" in content)
+        check(f"dist/{bundle_name} contains vista theme rules", "vista" in content)
 
 
 def test_safety_check():
@@ -119,6 +135,7 @@ def main():
     test_checkbox_radio_scss()
     test_input_groupbox_scss()
     test_slider_spinner_scss()
+    test_progressbar_scss()
     test_build_artifacts()
     test_safety_check()
     print("=== ALL PHASE 2 CHECKS PASSED ===")

@@ -109,3 +109,13 @@
     background-image: url("./icon/spinner.gif");
   }
 }
+
+/* --- Windows Vista Spinner Theming --- */
+[data-theme="vista"],
+.window[data-theme="vista"] {
+  .spin-box .spin-buttons button:not(:disabled):hover {
+    background: var(--w7-vista-btn-hover-bg);
+    border-color: #3c7fb1;
+    box-shadow: 0 0 3px rgba(0, 160, 240, 0.6);
+  }
+}

@@ -86,3 +86,26 @@
     transform: translateX(100%);
   }
 }
+
+/* --- Windows Vista Aurora Progress Bar Theming --- */
+[data-theme="vista"],
+.window[data-theme="vista"] {
+  [role="progressbar"] {
+    border-radius: 3px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.35), 0 1px 0 rgba(255, 255, 255, 0.8);
+    background: linear-gradient(to bottom, #bcbcbc 0%, #e0e0e0 40%, #e8e8e8 60%, #f4f4f4 100%);
+
+    > div {
+      background-color: #06b025;
+      background-image: linear-gradient(
+          to bottom,
+          rgba(255, 255, 255, 0.7) 0%,
+          rgba(255, 255, 255, 0.3) 45%,
+          rgba(0, 0, 0, 0.15) 50%,
+          rgba(0, 0, 0, 0.0) 100%
+        ),
+        linear-gradient(to bottom, #23d044 0%, #06b025 50%, #048c1c 100%);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 -1px 0 rgba(0, 0, 0, 0.2);
+    }
+  }
+}
