@@ -1,6 +1,105 @@
+/* ========================================================================== */
+/* Windows 7 Aero - Spin Buttons & Progress Indicators                        */
+/* ========================================================================== */
+
+/* --- Numeric Stepper / Up-Down Spin Box --- */
+.spin-box {
+  display: inline-flex;
+  align-items: stretch;
+  position: relative;
+  box-sizing: border-box;
+  height: var(--w7-metric-input-height);
+
+  input[type="text"],
+  input[type="number"] {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: none;
+    height: 100%;
+    margin: 0;
+
+    /* Hide standard browser number stepper chevrons */
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+
+  .spin-buttons {
+    display: flex;
+    flex-direction: column;
+    width: var(--w7-metric-spinner-width);
+    box-sizing: border-box;
+
+    button,
+    [role="button"] {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 0;
+      min-height: 0;
+      width: 100%;
+      height: 50%;
+      padding: 0;
+      margin: 0;
+      border: var(--w7-spinner-btn-border);
+      background: var(--w7-spinner-btn-bg);
+      border-radius: 0;
+      box-shadow: none;
+      cursor: default;
+      outline: none;
+
+      &.spin-up {
+        border-top-right-radius: var(--w7-metric-input-radius);
+        border-bottom: 1px solid #c0c0c0;
+
+        &::after {
+          content: "";
+          display: block;
+          width: 7px;
+          height: 4px;
+          background: url("./icon/spin-arrow-up.svg") no-repeat center;
+        }
+      }
+
+      &.spin-down {
+        border-bottom-right-radius: var(--w7-metric-input-radius);
+        border-top: none;
+
+        &::after {
+          content: "";
+          display: block;
+          width: 7px;
+          height: 4px;
+          background: url("./icon/spin-arrow-down.svg") no-repeat center;
+        }
+      }
+
+      &:not(:disabled):hover {
+        background: var(--w7-spinner-btn-hover-bg);
+        border-color: #3c7fb1;
+      }
+
+      &:not(:disabled):active {
+        background: var(--w7-spinner-btn-pressed-bg);
+        border-color: #2c628b;
+      }
+
+      &:disabled {
+        background: var(--w7-btn-disabled-bg);
+        border-color: var(--w7-btn-disabled-border);
+        opacity: 0.6;
+        pointer-events: none;
+      }
+    }
+  }
+}
+
+/* --- Indeterminate Activity Spinner --- */
 .spinner,
 .loader {
-  background: url("./icon/spinner.png") center;
+  background: url("./icon/spinner.png") center no-repeat;
   width: 20px;
   height: 20px;
   display: inline-block;

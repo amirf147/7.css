@@ -56,9 +56,19 @@
       Some JavaScript is required if you want the label to trigger when it is focused and activated with the keyboard.
     </p>
 
+    <p>
+      Command Links provide clear task paths with a prominent green arrow glyph, an instruction title, and secondary explanatory text.
+    </p>
+
     <%- example(`
-    <label role="button" tabindex="0"><input type="file" /> Choose file</label>
-    <label role="button" tabindex="0" class="default"><input type="file" /> Browse...</label>
+    <button class="command-link">
+      <span class="command-link-title">Install the program automatically</span>
+      <span class="command-link-desc">Windows will configure all required features and permissions</span>
+    </button>
+    <button class="command-link">
+      <span class="command-link-title">Customize installation options</span>
+      <span class="command-link-desc">Choose which components, drivers, and shortcut paths to install</span>
+    </button>
     `) %>
   </div>
 </section>

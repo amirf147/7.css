@@ -1,81 +1,97 @@
-:root {
-  --w7-cb-size: 14px;
-}
+/* ========================================================================== */
+/* Windows 7 Aero - Checkbox Controls                                        */
+/* ========================================================================== */
 
 input[type="checkbox"] {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  font: var(--w7-font);
-  background: none;
-  border: none;
-  margin: 0;
-  opacity: 0;
+  box-sizing: border-box;
+  width: var(--w7-metric-checkbox-size);
+  height: var(--w7-metric-checkbox-size);
+  min-width: var(--w7-metric-checkbox-size);
+  min-height: var(--w7-metric-checkbox-size);
+  margin: 0 6px 0 0;
+  padding: 0;
+  vertical-align: middle;
+  position: relative;
+  background: var(--w7-checkbox-bg);
+  border: var(--w7-checkbox-border);
+  border-radius: 2px;
+  box-shadow: var(--w7-checkbox-shadow);
+  cursor: default;
+  outline: none;
+  transition: background 120ms var(--w7-ease-fast-entrance),
+              border-color 120ms var(--w7-ease-fast-entrance),
+              box-shadow 120ms var(--w7-ease-fast-entrance);
+
+  &:not(:disabled) {
+    &:hover {
+      background: var(--w7-checkbox-hover-bg);
+      border: var(--w7-checkbox-hover-border);
+      box-shadow: var(--w7-checkbox-hover-shadow);
+    }
+
+    &:active {
+      background: var(--w7-checkbox-pressed-bg);
+      border: var(--w7-checkbox-pressed-border);
+      box-shadow: var(--w7-checkbox-pressed-shadow);
+    }
+  }
+
+  /* Checked State */
+  &:checked {
+    background-image: url("./icon/checkbox-check.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &:disabled {
+      background-image: url("./icon/checkbox-check-disabled.svg");
+    }
+  }
+
+  /* Tri-State / Indeterminate State */
+  &:indeterminate,
+  &[aria-checked="mixed"] {
+    background-image: url("./icon/checkbox-indeterminate.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &:disabled {
+      background-image: url("./icon/checkbox-indeterminate-disabled.svg");
+    }
+  }
+
+  /* Disabled State */
+  &:disabled {
+    background-color: var(--w7-checkbox-disabled-bg);
+    border: var(--w7-checkbox-disabled-border);
+    box-shadow: none;
+    cursor: default;
+    pointer-events: none;
+
+    + label {
+      color: var(--w7-color-disabled-text);
+      cursor: default;
+    }
+  }
+
+  /* Focus Rectangle */
+  &:focus-visible {
+    outline: 1px dotted #000000;
+    outline-offset: 1px;
+
+    + label {
+      outline: 1px dotted #000000;
+      outline-offset: 1px;
+    }
+  }
 
   + label {
     font: var(--w7-font);
-    display: inline-flex;
-    align-items: center;
-    position: relative;
-
-    &::before {
-      content: "";
-      display: inline-block;
-      width: var(--w7-cb-size);
-      height: var(--w7-cb-size);
-      margin-right: 6px;
-      box-sizing: border-box;
-      background: #f6f6f6;
-      border: 1px solid var(--w7-el-bd);
-      box-shadow: inset 0 0 0 1px var(--w7-el-bg-d), inset 1px 1px 0 1px #aeaeae, inset -1px -1px 0 1px #ddd, inset 3px 3px 6px #ccc;
-      transition: 0.4s;
-    }
-
-    &:hover::before {
-      background: #e9f7fe;
-      border-color: var(--w7-el-bd-h);
-      box-shadow: inset 0 0 0 1px #def9fa, inset 1px 1px 0 1px #79c6f9, inset -1px -1px 0 1px #c6e9fc, inset 3px 3px 6px #b1dffd;
-    }
-  }
-
-  &:focus-visible {
-    + label {
-      outline: 1px dotted #000;
-    }
-  }
-
-  &:checked {
-    + label {
-      &::after {
-        content: "\2714";
-        font-weight: bold;
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 2px;
-        color: #4a5f97;
-      }
-    }
-  }
-
-  &:disabled {
-    + label {
-      color: #6d6d6d;
-
-      &::before {
-        content: "";
-        display: inline-block;
-        width: var(--w7-cb-size);
-        height: var(--w7-cb-size);
-        margin-right: 6px;
-        background: linear-gradient(to bottom right, #f0f0f0, #fbfbfb);
-        box-shadow: none;
-        border: 1px solid #b1b1b1;
-      }
-
-      &::after {
-        color: #bfbfbf;
-      }
-    }
+    color: var(--w7-color-window-text);
+    user-select: none;
+    cursor: default;
+    vertical-align: middle;
   }
 }

@@ -1,130 +1,208 @@
+/* ========================================================================== */
+/* Windows 7 Aero - Push Button & Command Primitives                          */
+/* ========================================================================== */
+
 button,
 [role="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
 input[type="file"]::file-selector-button {
   font: var(--w7-font);
+  color: var(--w7-color-window-text);
   box-sizing: border-box;
-  border: 1px solid var(--w7-el-bd);
-  border-radius: var(--w7-el-bdr);
-  box-shadow: var(--w7-el-sd);
-  color: #222;
-  min-width: 75px;
-  min-height: 23px;
-  padding: 0 12px;
+  min-width: var(--w7-metric-btn-min-width);
+  min-height: var(--w7-metric-btn-height);
+  height: var(--w7-metric-btn-height);
+  padding: var(--w7-metric-btn-padding);
+  border: var(--w7-btn-border);
+  border-radius: var(--w7-metric-btn-radius);
+  background: var(--w7-btn-bg);
+  box-shadow: var(--w7-btn-shadow), var(--w7-btn-inner-highlight);
   text-align: center;
-  background: var(--w7-el-grad);
+  vertical-align: middle;
+  line-height: calc(var(--w7-metric-btn-height) - 2px);
+  user-select: none;
+  cursor: default;
+  outline: none;
   position: relative;
-  z-index: 0;
-}
-
-button,
-[role="button"] {
-  /* Button style on hovered */
-  &::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    top: 0;
-    left: 0;
-    border-radius: var(--w7-el-bdr);
-    box-shadow: var(--w7-el-sd);
-    background: var(--w7-el-grad-h);
-    opacity: 0;
-    transition: opacity 0.3s;
-    z-index: -1;
-  }
-
-  /* Button style on clicked */
-  &::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    top: 0;
-    left: 0;
-    box-shadow: var(--w7-el-sd-a);
-    border-radius: 2px;
-    background: var(--w7-el-grad-a);
-    opacity: 0;
-    transition: opacity 0.3s;
-    z-index: -1;
-  }
-
-  &:disabled {
-    background: var(--w7-el-bg-d);
-    border-color: var(--w7-el-bd-d);
-    color: var(--w7-el-c-d);
-  }
+  transition: background var(--w7-dur-btn-hover-out) var(--w7-ease-fast-entrance),
+              border-color var(--w7-dur-btn-hover-out) var(--w7-ease-fast-entrance),
+              box-shadow var(--w7-dur-btn-hover-out) var(--w7-ease-fast-entrance);
 
   &:not(:disabled) {
-    /* Animation when hovered */
     &:hover {
-      border-color: var(--w7-el-bd-h);
-      transition: border-color 0.3s;
-
-      &::before {
-        opacity: 1;
-        transition: opacity 0.3s;
-      }
-    }
-
-    /* Animation when unhovered */
-    &:not(:hover) {
-      border-color: var(--w7-el-bd);
-      transition: border-color 1s linear;
-
-      &::before {
-        opacity: 0;
-        transition: opacity 1s linear;
-      }
+      background: var(--w7-btn-hover-bg);
+      border: var(--w7-btn-hover-border);
+      box-shadow: var(--w7-btn-hover-shadow), var(--w7-btn-hover-highlight);
+      transition: background var(--w7-dur-btn-hover-in) var(--w7-ease-fast-entrance),
+                  border-color var(--w7-dur-btn-hover-in) var(--w7-ease-fast-entrance),
+                  box-shadow var(--w7-dur-btn-hover-in) var(--w7-ease-fast-entrance);
     }
 
     &:active,
     &.active {
-      border-color: var(--w7-el-bd-a);
-      transition: border-color 0.3s;
-
-      &::after {
-        opacity: 1;
-        transition: opacity 0.3s;
-      }
+      background: var(--w7-btn-pressed-bg);
+      border: var(--w7-btn-pressed-border);
+      box-shadow: var(--w7-btn-pressed-shadow), var(--w7-btn-pressed-highlight);
+      transition: none;
     }
   }
 
   &:focus-visible,
   &.focused {
-    box-shadow: inset 0 0 0 2px #98d1ef;
-    outline: 1px dotted #000;
+    outline: 1px dotted #000000;
     outline-offset: -4px;
   }
 
+  /* Default Button Breathing Pulse */
   &.default,
-  &:focus,
-  &.focused {
-    border-color: #5586a3;
-    background-image: var(--w7-el-grad-h);
-    animation: 1s ease infinite alternate pulse-anim;
+  &[type="submit"] {
+    border: var(--w7-btn-default-pulse-border);
+    animation: w7-aero-button-pulse var(--w7-dur-btn-pulse) infinite alternate var(--w7-ease-sinusoidal-pulse);
+
+    &:not(:disabled):hover {
+      animation: none;
+      background: var(--w7-btn-hover-bg);
+      border: var(--w7-btn-hover-border);
+      box-shadow: var(--w7-btn-hover-shadow), var(--w7-btn-hover-highlight);
+    }
+
+    &:not(:disabled):active {
+      animation: none;
+      background: var(--w7-btn-pressed-bg);
+      border: var(--w7-btn-pressed-border);
+      box-shadow: var(--w7-btn-pressed-shadow), var(--w7-btn-pressed-highlight);
+    }
+  }
+
+  &:disabled,
+  &.disabled {
+    background: var(--w7-btn-disabled-bg);
+    border: var(--w7-btn-disabled-border);
+    color: var(--w7-btn-disabled-color);
+    box-shadow: none;
+    cursor: default;
+    pointer-events: none;
   }
 }
 
+/* --- Command Links --- */
+a.command-link,
+button.command-link,
+[role="button"].command-link {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 48px;
+  min-width: 240px;
+  height: auto;
+  padding: 8px 14px 10px 44px;
+  position: relative;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  box-shadow: none;
+  text-align: left;
+  line-height: normal;
+  text-decoration: none;
+  cursor: pointer;
+  animation: none;
+  transition: background 120ms var(--w7-ease-fast-entrance),
+              border-color 120ms var(--w7-ease-fast-entrance),
+              box-shadow 120ms var(--w7-ease-fast-entrance);
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 12px;
+    width: var(--w7-metric-command-link-glyph);
+    height: var(--w7-metric-command-link-glyph);
+    background: url("./icon/command-link-arrow.svg") no-repeat center;
+    background-size: contain;
+    pointer-events: none;
+  }
+
+  .command-link-title,
+  .title,
+  strong {
+    display: block;
+    font-size: var(--w7-font-size-instruction);
+    color: var(--w7-color-title-text);
+    font-weight: 400;
+    line-height: 1.25;
+    margin-bottom: 2px;
+  }
+
+  .command-link-desc,
+  .desc,
+  small,
+  span {
+    display: block;
+    font-size: var(--w7-font-size-description);
+    color: #555555;
+    font-weight: 400;
+    line-height: 1.3;
+  }
+
+  &:not(:disabled) {
+    &:hover {
+      background: var(--w7-cmdlink-hover-bg);
+      border: var(--w7-cmdlink-hover-border);
+      box-shadow: 0 0 2px rgba(184, 214, 251, 0.6);
+
+      .command-link-title,
+      .title,
+      strong {
+        color: var(--w7-color-title-text);
+      }
+    }
+
+    &:active,
+    &.active {
+      background: var(--w7-cmdlink-pressed-bg);
+      border: var(--w7-cmdlink-pressed-border);
+      box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
+    }
+  }
+
+  &:focus-visible {
+    outline: 1px dotted #000000;
+    outline-offset: -2px;
+  }
+
+  &:disabled,
+  &.disabled {
+    background: transparent;
+    border-color: transparent;
+    opacity: 0.55;
+    cursor: default;
+    pointer-events: none;
+
+    .command-link-title,
+    .title,
+    strong,
+    .command-link-desc,
+    .desc,
+    small,
+    span {
+      color: var(--w7-color-disabled-text);
+    }
+
+    &::before {
+      filter: grayscale(100%) opacity(60%);
+    }
+  }
+}
+
+/* File input wrapper */
 label[role="button"] {
   display: inline-flex;
   align-items: center;
 
   > input[type="file"] {
     display: none;
-  }
-}
-
-@keyframes pulse-anim {
-  from {
-    box-shadow: inset 0 0 3px 1px #34deffdd;
-  }
-  to {
-    box-shadow: inset 0 0 1px 1px #34deffdd;
   }
 }

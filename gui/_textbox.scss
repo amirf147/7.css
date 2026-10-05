@@ -1,41 +1,77 @@
-input {
-  &[type="url"],
-  &[type="text"],
-  &[type="email"],
-  &[type="number"],
-  &[type="password"] {
-    height: 23px;
-  }
-}
+/* ========================================================================== */
+/* Windows 7 Aero - Text Field & Input Controls                              */
+/* ========================================================================== */
 
-input[type="url"],
 input[type="text"],
-input[type="email"],
-input[type="number"],
 input[type="password"],
-textarea {
+input[type="email"],
+input[type="url"],
+input[type="number"],
+input[type="tel"] {
   font: var(--w7-font);
-  padding: 3px 4px 5px;
-  border: 1px solid;
-  border-color: #abadb3 #dbdfe6 #e3e9ef #e2e3ea;
-  border-radius: 2px;
-  background-color: #fff;
+  color: var(--w7-color-window-text);
   box-sizing: border-box;
-  transition: border-color 0.5s;
+  height: var(--w7-metric-input-height);
+  padding: var(--w7-metric-input-padding);
+  border: var(--w7-input-border);
+  border-radius: var(--w7-metric-input-radius);
+  background-color: var(--w7-input-bg);
+  outline: none;
+  transition: border-color 150ms var(--w7-ease-fast-entrance),
+              box-shadow 150ms var(--w7-ease-fast-entrance);
 
-  &:hover {
-    border-color: #5794bf #b7d5ea #c7e2f1 #c5daed;
-    transition: border-color 0.3s;
+  &:not(:disabled):hover {
+    border: var(--w7-input-border-hover);
   }
 
-  &:focus {
-    outline: none;
-    border-color: #3d7bad #a4c9e3 #b7d9ed #b5cfe7;
+  &:not(:disabled):focus {
+    border: var(--w7-input-border-focus);
+    box-shadow: 0 0 2px rgba(61, 123, 173, 0.8);
   }
 
   &:disabled {
-    border-color: #afafaf;
-    box-shadow: inset 0 0 0 1px #ffff;
-    background: var(--w7-surface);
+    background-color: var(--w7-input-bg-disabled);
+    border: 1px solid #adb2b5;
+    color: var(--w7-color-disabled-text);
+    cursor: default;
+  }
+
+  &[readonly] {
+    background-color: var(--w7-input-bg-disabled);
+    border: 1px solid #adb2b5;
+  }
+}
+
+textarea {
+  font: var(--w7-font);
+  color: var(--w7-color-window-text);
+  box-sizing: border-box;
+  padding: 4px 6px;
+  border: var(--w7-input-border);
+  border-radius: var(--w7-metric-input-radius);
+  background-color: var(--w7-input-bg);
+  outline: none;
+  transition: border-color 150ms var(--w7-ease-fast-entrance),
+              box-shadow 150ms var(--w7-ease-fast-entrance);
+
+  &:not(:disabled):hover {
+    border: var(--w7-input-border-hover);
+  }
+
+  &:not(:disabled):focus {
+    border: var(--w7-input-border-focus);
+    box-shadow: 0 0 2px rgba(61, 123, 173, 0.8);
+  }
+
+  &:disabled {
+    background-color: var(--w7-input-bg-disabled);
+    border: 1px solid #adb2b5;
+    color: var(--w7-color-disabled-text);
+    cursor: default;
+  }
+
+  &[readonly] {
+    background-color: var(--w7-input-bg-disabled);
+    border: 1px solid #adb2b5;
   }
 }

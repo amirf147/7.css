@@ -24,5 +24,19 @@
       <span class="loader" aria-label="Loading"></span>
       <span class="loader animate" aria-label="Processing your request"></span>
     `) %>
+
+    <p>
+      A numeric spin box pairs a text input with up and down chevron buttons to increment or decrement values.
+    </p>
+
+    <%- example(`
+      <div class="spin-box">
+        <input type="number" value="10" min="0" max="100" />
+        <div class="spin-buttons">
+          <button class="spin-up" type="button" aria-label="Increase value"></button>
+          <button class="spin-down" type="button" aria-label="Decrease value"></button>
+        </div>
+      </div>
+    `) %>
   </div>
 </section>

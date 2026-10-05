@@ -1,85 +1,85 @@
-:root {
-  --w7-rd-size: 14px;
-  --w7-rdl-space: 6px; /* rdl = radio label */
-  --w7-rd-left: calc(var(--w7-rd-size) + var(--w7-rdl-space));
-  --w7-rdd-size: 8px; /* rdd = radio dot */
-  --w7-rdd-center: (var(--w7-rd-size) - var(--w7-rdd-size)) / 2;
-}
+/* ========================================================================== */
+/* Windows 7 Aero - Radio Button Controls                                    */
+/* ========================================================================== */
 
 input[type="radio"] {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  margin: 0;
-  background: 0;
-  position: fixed;
-  opacity: 0;
-  border: none;
+  box-sizing: border-box;
+  width: var(--w7-metric-radio-size);
+  height: var(--w7-metric-radio-size);
+  min-width: var(--w7-metric-radio-size);
+  min-height: var(--w7-metric-radio-size);
+  margin: 0 6px 0 0;
+  padding: 0;
+  vertical-align: middle;
+  position: relative;
+  background: var(--w7-radio-bg);
+  border: var(--w7-radio-border);
+  border-radius: 50%;
+  box-shadow: var(--w7-radio-shadow);
+  cursor: default;
+  outline: none;
+  transition: background 120ms var(--w7-ease-fast-entrance),
+              border-color 120ms var(--w7-ease-fast-entrance),
+              box-shadow 120ms var(--w7-ease-fast-entrance);
+
+  &:not(:disabled) {
+    &:hover {
+      background: var(--w7-radio-hover-bg);
+      border: var(--w7-radio-hover-border);
+      box-shadow: var(--w7-radio-hover-shadow);
+    }
+
+    &:active {
+      background: var(--w7-radio-pressed-bg);
+      border: var(--w7-radio-pressed-border);
+      box-shadow: var(--w7-radio-pressed-shadow);
+    }
+  }
+
+  /* Checked State */
+  &:checked {
+    background-image: url("./icon/radio-bullet.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &:disabled {
+      background-image: url("./icon/radio-bullet-disabled.svg");
+    }
+  }
+
+  /* Disabled State */
+  &:disabled {
+    background: var(--w7-radio-disabled-bg);
+    border: var(--w7-radio-disabled-border);
+    box-shadow: none;
+    cursor: default;
+    pointer-events: none;
+
+    + label {
+      color: var(--w7-color-disabled-text);
+      cursor: default;
+    }
+  }
+
+  /* Focus Rectangle */
+  &:focus-visible {
+    outline: 1px dotted #000000;
+    outline-offset: 1px;
+
+    + label {
+      outline: 1px dotted #000000;
+      outline-offset: 1px;
+    }
+  }
 
   + label {
     font: var(--w7-font);
-    display: inline-flex;
-    align-items: center;
-    position: relative;
-    margin-left: var(--w7-rd-left);
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: calc(var(--w7-rd-left) * -1);
-      display: inline-block;
-      width: var(--w7-rd-size);
-      height: var(--w7-rd-size);
-      margin-right: var(--w7-rdl-space);
-      background: #f6f6f6;
-      border-radius: 50%;
-      border: 1px solid;
-      border-color: var(--w7-el-bd);
-      box-shadow: inset 0 0 0 1.5px var(--w7-el-bg-d), inset 1px 1px 0 1.5px #aeaeae, inset -1px 0 0 1.5px #ddd, inset 3px 3px 6px #ccc;
-      box-sizing: border-box;
-      transition: 0.4s;
-    }
-
-    &:hover::before {
-      border-color: var(--w7-el-bd-h);
-      box-shadow: inset 0 0 0 1.5px #def9fa, inset 1px 1px 0 1.5px #79c6f9, inset -1px -1px 0 1.5px #c6e9fc, inset 3px 3px 6px #b1dffd;
-    }
-  }
-
-  &:checked {
-    + label {
-      &::after {
-        content: "";
-        display: block;
-        width: var(--w7-rdd-size);
-        height: var(--w7-rdd-size);
-        top: calc(var(--w7-rdd-center));
-        left: calc(-1 * var(--w7-rd-left) + var(--w7-rdd-center));
-        position: absolute;
-        background: #7cd3eb;
-        border-radius: 50%;
-        border: 1.5px solid #27506d;
-        box-shadow: inset -1px -1px 0 0.5px #16638f, inset -1px -1px 0 1px #1985c0;
-        box-sizing: border-box;
-      }
-    }
-  }
-
-  &:focus-visible {
-    + label {
-      outline: 1px dotted #000000;
-    }
-  }
-
-  &:disabled {
-    + label {
-      filter: grayscale(1);
-      opacity: 0.6;
-    }
-
-    &:not(:checked) + label::before {
-      opacity: 0.5;
-    }
+    color: var(--w7-color-window-text);
+    user-select: none;
+    cursor: default;
+    vertical-align: middle;
   }
 }
