@@ -35,6 +35,7 @@ graph TD
    - Implement the complete CSS custom property token dictionary (`--w7-*`).
    - Define exact RGB/HSL color stop variables for standard Aero controls.
    - Implement the 16 standard Aero personalization tints via CSS data attributes (`[data-aero-tint="..."]`).
+   - Implement Windows Vista theming (`[data-theme="vista"]`) with 8 canonical tints, dark charcoal glass, solid black maximized window frames, and non-composited Vista Basic fallback (`[data-theme="vista-basic"]`).
    - Establish baseline typography rules for Segoe UI with subpixel font smoothing.
    - Expand form control token schemas (checkboxes, radio buttons, sliders, spin buttons, group boxes) ahead of component rebuilds.
 

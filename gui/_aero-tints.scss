@@ -201,3 +201,146 @@
   --w7-color-window-bg: #000000;
   --w7-color-window-text: #ffffff;
 }
+
+/* ========================================================================== */
+/* Windows Vista Aero Theming & Canonical Personalization Tints             */
+/* ========================================================================== */
+
+/* Windows Vista Aero Base (Default Charcoal / Black Glass) */
+[data-theme="vista"],
+.window[data-theme="vista"] {
+  --w7-aero-tint-name: "graphite";
+  --w7-aero-tint-color: rgba(0, 0, 0, 0.65);
+  --w7-aero-tint-rgb: 0, 0, 0;
+  --w7-aero-tint-hex: #000000;
+  --w7-w-bg: rgba(0, 0, 0, 0.65);
+  --w7-w-grad: var(--w7-vista-glass-specular-reflection), rgba(0, 0, 0, 0.65);
+  --w7-glass-specular-reflection: var(--w7-vista-glass-specular-reflection);
+  --w7-glass-text-halo-active: var(--w7-vista-glass-text-halo-active);
+  --w7-glass-text-halo-inactive: var(--w7-vista-glass-text-halo-inactive);
+  --w7-glass-shadow-restored: var(--w7-vista-glass-shadow-restored);
+  --w7-glass-shadow-inactive: var(--w7-vista-glass-shadow-inactive);
+}
+
+/* Vista Aero Tint: Windows Aero (Graphite) */
+[data-theme="vista"][data-aero-tint="default"],
+.window[data-theme="vista"][data-aero-tint="default"] {
+  --w7-aero-tint-name: "default";
+  --w7-aero-tint-color: rgba(0, 0, 0, 0.65);
+  --w7-aero-tint-rgb: 0, 0, 0;
+  --w7-aero-tint-hex: #000000;
+  --w7-w-bg: rgba(0, 0, 0, 0.65);
+  --w7-w-grad: var(--w7-vista-glass-specular-reflection), rgba(0, 0, 0, 0.65);
+}
+
+/* Vista Aero Tint: Graphite */
+[data-theme="vista"][data-aero-tint="graphite"],
+.window[data-theme="vista"][data-aero-tint="graphite"] {
+  --w7-aero-tint-name: "graphite";
+  --w7-aero-tint-color: rgba(0, 0, 0, 0.65);
+  --w7-aero-tint-rgb: 0, 0, 0;
+  --w7-aero-tint-hex: #000000;
+  --w7-w-bg: rgba(0, 0, 0, 0.65);
+  --w7-w-grad: var(--w7-vista-glass-specular-reflection), rgba(0, 0, 0, 0.65);
+}
+
+/* Vista Aero Tint: Teal */
+[data-theme="vista"][data-aero-tint="teal"],
+.window[data-theme="vista"][data-aero-tint="teal"] {
+  --w7-aero-tint-name: "teal";
+  --w7-aero-tint-color: rgba(46, 111, 126, 0.65);
+  --w7-aero-tint-rgb: 46, 111, 126;
+  --w7-aero-tint-hex: #2e6f7e;
+  --w7-w-bg: rgba(46, 111, 126, 0.65);
+  --w7-w-grad: var(--w7-vista-glass-specular-reflection), rgba(46, 111, 126, 0.65);
+}
+
+/* Vista Aero Tint: Red */
+[data-theme="vista"][data-aero-tint="red"],
+.window[data-theme="vista"][data-aero-tint="red"] {
+  --w7-aero-tint-name: "red";
+  --w7-aero-tint-color: rgba(139, 29, 29, 0.65);
+  --w7-aero-tint-rgb: 139, 29, 29;
+  --w7-aero-tint-hex: #8b1d1d;
+  --w7-w-bg: rgba(139, 29, 29, 0.65);
+  --w7-w-grad: var(--w7-vista-glass-specular-reflection), rgba(139, 29, 29, 0.65);
+}
+
+/* Vista Aero Tint: Yellow */
+[data-theme="vista"][data-aero-tint="yellow"],
+.window[data-theme="vista"][data-aero-tint="yellow"] {
+  --w7-aero-tint-name: "yellow";
+  --w7-aero-tint-color: rgba(158, 129, 30, 0.65);
+  --w7-aero-tint-rgb: 158, 129, 30;
+  --w7-aero-tint-hex: #9e811e;
+  --w7-w-bg: rgba(158, 129, 30, 0.65);
+  --w7-w-grad: var(--w7-vista-glass-specular-reflection), rgba(158, 129, 30, 0.65);
+}
+
+/* Vista Aero Tint: Green */
+[data-theme="vista"][data-aero-tint="green"],
+.window[data-theme="vista"][data-aero-tint="green"] {
+  --w7-aero-tint-name: "green";
+  --w7-aero-tint-color: rgba(39, 106, 38, 0.65);
+  --w7-aero-tint-rgb: 39, 106, 38;
+  --w7-aero-tint-hex: #276a26;
+  --w7-w-bg: rgba(39, 106, 38, 0.65);
+  --w7-w-grad: var(--w7-vista-glass-specular-reflection), rgba(39, 106, 38, 0.65);
+}
+
+/* Vista Aero Tint: Orange */
+[data-theme="vista"][data-aero-tint="orange"],
+.window[data-theme="vista"][data-aero-tint="orange"] {
+  --w7-aero-tint-name: "orange";
+  --w7-aero-tint-color: rgba(154, 78, 30, 0.65);
+  --w7-aero-tint-rgb: 154, 78, 30;
+  --w7-aero-tint-hex: #9a4e1e;
+  --w7-w-bg: rgba(154, 78, 30, 0.65);
+  --w7-w-grad: var(--w7-vista-glass-specular-reflection), rgba(154, 78, 30, 0.65);
+}
+
+/* Vista Aero Tint: Pink */
+[data-theme="vista"][data-aero-tint="pink"],
+.window[data-theme="vista"][data-aero-tint="pink"] {
+  --w7-aero-tint-name: "pink";
+  --w7-aero-tint-color: rgba(137, 45, 99, 0.65);
+  --w7-aero-tint-rgb: 137, 45, 99;
+  --w7-aero-tint-hex: #892d63;
+  --w7-w-bg: rgba(137, 45, 99, 0.65);
+  --w7-w-grad: var(--w7-vista-glass-specular-reflection), rgba(137, 45, 99, 0.65);
+}
+
+/* Vista Aero Tint: Frost */
+[data-theme="vista"][data-aero-tint="frost"],
+.window[data-theme="vista"][data-aero-tint="frost"] {
+  --w7-aero-tint-name: "frost";
+  --w7-aero-tint-color: rgba(205, 216, 224, 0.70);
+  --w7-aero-tint-rgb: 205, 216, 224;
+  --w7-aero-tint-hex: #cdd8e0;
+  --w7-w-bg: rgba(205, 216, 224, 0.70);
+  --w7-w-grad: var(--w7-vista-glass-specular-reflection), rgba(205, 216, 224, 0.70);
+}
+
+/* Maximized Vista Window (Solid Opaque Black Frame - Authentic Vista DWM Behavior) */
+[data-theme="vista"].maximized,
+.window.maximized[data-theme="vista"],
+[data-theme="vista"] .window.maximized {
+  --w7-glass-blur: none;
+  --w7-w-bg: #000000;
+  --w7-w-grad: #000000;
+  --w7-w-bd: #000000;
+  background: #000000;
+}
+
+/* Windows Vista Basic Theme (Non-Composited DWM Fallback) */
+[data-theme="vista-basic"],
+.window[data-theme="vista-basic"] {
+  --w7-glass-blur: none;
+  --w7-glass-specular-reflection: none;
+  --w7-glass-glare-reflection: none;
+  --w7-glass-depth-gradient: none;
+  --w7-w-bg: #4c6b8c;
+  --w7-w-grad: linear-gradient(to bottom, #4c6b8c 0%, #364f6b 50%, #2b3f56 51%, #354e6a 100%);
+  --w7-w-bd: 4px solid #364f6b;
+  --w7-color-window-text: #ffffff;
+}

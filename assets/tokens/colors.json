@@ -323,5 +323,92 @@
     "tabActiveBackground": "#ffffff",
     "chunkBorder": "1px solid #c2d5e3",
     "tabActiveBorder": "1px solid #abbcd1"
+  },
+  "vistaAeroGlass": {
+    "default": {
+      "rgba": "rgba(0, 0, 0, 0.65)",
+      "name": "Windows Aero (Graphite)",
+      "hex": "#000000"
+    },
+    "graphite": {
+      "rgba": "rgba(0, 0, 0, 0.65)",
+      "name": "Graphite",
+      "hex": "#000000"
+    },
+    "teal": {
+      "rgba": "rgba(46, 111, 126, 0.65)",
+      "name": "Teal",
+      "hex": "#2e6f7e"
+    },
+    "red": {
+      "rgba": "rgba(139, 29, 29, 0.65)",
+      "name": "Red",
+      "hex": "#8b1d1d"
+    },
+    "yellow": {
+      "rgba": "rgba(158, 129, 30, 0.65)",
+      "name": "Yellow",
+      "hex": "#9e811e"
+    },
+    "green": {
+      "rgba": "rgba(39, 106, 38, 0.65)",
+      "name": "Green",
+      "hex": "#276a26"
+    },
+    "orange": {
+      "rgba": "rgba(154, 78, 30, 0.65)",
+      "name": "Orange",
+      "hex": "#9a4e1e"
+    },
+    "pink": {
+      "rgba": "rgba(137, 45, 99, 0.65)",
+      "name": "Pink",
+      "hex": "#892d63"
+    },
+    "frost": {
+      "rgba": "rgba(205, 216, 224, 0.70)",
+      "name": "Frost",
+      "hex": "#cdd8e0"
+    }
+  },
+  "vistaBasic": {
+    "frameBorder": "4px solid #364f6b",
+    "titleBarActive": {
+      "textColor": "#ffffff",
+      "border": "1px solid #23374d",
+      "gradient": "linear-gradient(to bottom, #4c6b8c 0%, #364f6b 50%, #2b3f56 51%, #354e6a 100%)"
+    },
+    "titleBarInactive": {
+      "textColor": "#d0d7de",
+      "border": "1px solid #4a5c6d",
+      "gradient": "linear-gradient(to bottom, #748a9e 0%, #5d7488 50%, #50667a 51%, #5b7185 100%)"
+    }
+  },
+  "vistaControls": {
+    "button": {
+      "normal": {
+        "background": "linear-gradient(to bottom, #ffffff 0%, #ececec 49%, #e0e0e0 50%, #d2d2d2 100%)",
+        "border": "1px solid #707070",
+        "boxShadow": "0 1px 1px rgba(0, 0, 0, 0.15)",
+        "innerHighlight": "inset 0 1px 0 #ffffff, inset 0 -1px 0 rgba(255, 255, 255, 0.4)"
+      },
+      "hover": {
+        "background": "linear-gradient(to bottom, #f3fbff 0%, #e6f6fd 49%, #d2effc 50%, #bce6fb 100%)",
+        "border": "1px solid #3c7fb1",
+        "boxShadow": "0 0 5px rgba(0, 160, 240, 0.7)",
+        "innerHighlight": "inset 0 1px 0 #ffffff, inset 0 0 5px rgba(188, 230, 251, 0.8)"
+      },
+      "pressed": {
+        "background": "linear-gradient(to bottom, #dbeffc 0%, #c4e4f8 49%, #9fd3f2 50%, #76bbe6 100%)",
+        "border": "1px solid #235882",
+        "boxShadow": "inset 0 1px 3px rgba(0, 0, 0, 0.3)",
+        "innerHighlight": "inset 0 1px 2px rgba(0, 0, 0, 0.3)"
+      },
+      "defaultPulse": {
+        "background": "linear-gradient(to bottom, #eaf6fd 0%, #d9f0fc 49%, #bee6fd 50%, #90d3f8 100%)",
+        "border": "1px solid #1c6ba0",
+        "outerGlow": "0 0 8px rgba(0, 160, 240, 0.85), inset 0 0 4px #ffffff"
+      }
+    }
   }
 }

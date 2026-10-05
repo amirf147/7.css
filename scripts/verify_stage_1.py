@@ -85,12 +85,19 @@ def test_generated_scss():
         "--w7-metric-slider-thumb-width",
         "--w7-ease-fast-entrance",
         "--w7-dur-btn-pulse",
+        "--w7-vista-glass-blur",
+        "--w7-vista-glass-specular-reflection",
+        "--w7-vista-glass-text-halo-active",
+        "--w7-vista-basic-title-active-bg",
+        "--w7-vista-btn-bg",
+        "--w7-vista-metric-caption-btn-width",
     ]
     for var_name in expected_vars:
         check(f"_tokens.scss declares {var_name}", var_name in tokens_content)
 
     # Keyframes in _tokens.scss
     check("_tokens.scss has button pulse keyframes", "@keyframes w7-aero-button-pulse" in tokens_content)
+    check("_tokens.scss has vista button pulse keyframes", "@keyframes w7-vista-button-pulse" in tokens_content)
     check("_tokens.scss has progress shimmer keyframes", "@keyframes w7-progress-shimmer" in tokens_content)
 
     # 16 tints in _aero-tints.scss
@@ -101,8 +108,18 @@ def test_generated_scss():
     for tint in tints:
         check(f"_aero-tints.scss contains tint '{tint}'", f'[data-aero-tint="{tint}"]' in tints_content)
 
+    # Vista Aero Base and 8 Canonical Personalization Tints
+    check("_aero-tints.scss has vista theme base selector", '[data-theme="vista"]' in tints_content)
+    vista_tints = ["default", "graphite", "teal", "red", "yellow", "green", "orange", "pink", "frost"]
+    for v_tint in vista_tints:
+        check(f"_aero-tints.scss contains vista tint '{v_tint}'", f'[data-theme="vista"][data-aero-tint="{v_tint}"]' in tints_content)
+
+    # Vista Maximized Solid Black Override
+    check("_aero-tints.scss has vista maximized solid black rule", '[data-theme="vista"].maximized' in tints_content)
+
     # Basic and high-contrast fallbacks
     check("_aero-tints.scss has basic theme fallback", '[data-theme="basic"]' in tints_content)
+    check("_aero-tints.scss has vista basic theme fallback", '[data-theme="vista-basic"]' in tints_content)
     check("_aero-tints.scss has high-contrast fallback", '[data-theme="high-contrast"]' in tints_content)
 
     # Legacy mappings in _variables.scss
@@ -133,6 +150,9 @@ def test_build_artifacts():
     check("dist/7.css contains --w7-font-family", "--w7-font-family" in css_content)
     check("dist/7.css contains --w7-glass-blur", "--w7-glass-blur" in css_content)
     check("dist/7.css contains aero tints", "data-aero-tint=default" in css_content or 'data-aero-tint="default"' in css_content)
+    check("dist/7.css contains vista theme", "data-theme=vista" in css_content or 'data-theme="vista"' in css_content)
+    check("dist/7.css contains vista basic theme", "data-theme=vista-basic" in css_content or 'data-theme="vista-basic"' in css_content)
+    check("dist/7.css contains vista button pulse keyframes", "w7-vista-button-pulse" in css_content)
 
 
 def test_safety_check():

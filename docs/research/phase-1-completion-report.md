@@ -73,6 +73,25 @@ Windows 7 allowed users to personalize window frames using 16 predefined Aero gl
 - **Windows Basic (`[data-theme="basic"]`):** Replaces DWM glass blur with opaque blue linear gradients (`linear-gradient(to bottom, #99b4d1 0%, #b9d1ea 100%)`) and flat 4px window borders (`#a0b4c8`).
 - **High Contrast (`[data-theme="high-contrast"]`):** Disables translucent gradients, applying high-contrast solid borders (`#000000`), white window backgrounds, and standardized contrast boundaries.
 
+### 4.2 Windows Vista Aero Theming & Canonical Color System
+
+Windows Vista introduced the signature dark charcoal Aero glass aesthetic and 8 canonical personalization tints. `gui/_aero-tints.scss` and `assets/tokens/colors.json` incorporate complete Vista theming support:
+
+| Vista Tint Identifier | Display Name | Hex Code | Translucent RGBA |
+| :--- | :--- | :--- | :--- |
+| `default` / `graphite` | Windows Aero (Graphite) | `#000000` | `rgba(0, 0, 0, 0.65)` |
+| `teal` | Teal | `#2e6f7e` | `rgba(46, 111, 126, 0.65)` |
+| `red` | Red | `#8b1d1d` | `rgba(139, 29, 29, 0.65)` |
+| `yellow` | Yellow | `#9e811e` | `rgba(158, 129, 30, 0.65)` |
+| `green` | Green | `#276a26` | `rgba(39, 106, 38, 0.65)` |
+| `orange` | Orange | `#9a4e1e` | `rgba(154, 78, 30, 0.65)` |
+| `pink` | Pink | `#892d63` | `rgba(137, 45, 99, 0.65)` |
+| `frost` | Frost | `#cdd8e0` | `rgba(205, 216, 224, 0.70)` |
+
+#### Authentic Vista DWM Maximize & Fallback Rules
+- **Solid Opaque Black Frame (`[data-theme="vista"].maximized`):** In Windows Vista, DWM disabled translucency on maximized windows, converting the glass border and titlebar into solid opaque black (`#000000`). This is enforced via dedicated CSS overrides in `_aero-tints.scss`.
+- **Windows Vista Basic (`[data-theme="vista-basic"]`):** Implements the authentic non-composited Vista Basic gradient (`linear-gradient(to bottom, #4c6b8c 0%, #364f6b 50%, #2b3f56 51%, #354e6a 100%)`) and deep slate borders (`#23374d`).
+
 ---
 
 ## 5. Typography System & Subpixel Smoothing
@@ -98,7 +117,7 @@ Windows 7 used Segoe UI at 9pt (12px at 96 DPI) as the standard shell font. `gui
 
 Ahead of component rebuilds in Phase 2, the token dictionary was expanded in `assets/tokens/colors.json` and `assets/tokens/metrics.json` to cover all form controls:
 
-- **Push Buttons:** 6 visual states (normal, hover, pressed, default pulse, disabled, focused).
+- **Push Buttons:** 6 visual states (normal, hover, pressed, default pulse, disabled, focused) plus Vista split-horizon gloss definitions.
 - **Command Links:** Hover and pressed background gradients, border states, and glyph metric parameters.
 - **Text Inputs:** Normal, hover, focus (`#3d7bad`), and disabled background and border colors.
 - **Checkboxes:** Normal, hover, pressed, disabled states, inner shadows, and `#1e395b` checkmark glyph colors.
@@ -111,7 +130,7 @@ Ahead of component rebuilds in Phase 2, the token dictionary was expanded in `as
 
 ## 7. Verification & Test Harness Audit
 
-The test script `scripts/verify_stage_1.py` validates compliance across 47 individual checkpoints:
+The test script `scripts/verify_stage_1.py` validates compliance across 66 individual checkpoints:
 
 ```
 === PHASE 1 VERIFICATION AUDIT ===
@@ -153,17 +172,31 @@ The test script `scripts/verify_stage_1.py` validates compliance across 47 indiv
 [PASS] _tokens.scss declares --w7-metric-slider-thumb-width
 [PASS] _tokens.scss declares --w7-ease-fast-entrance
 [PASS] _tokens.scss declares --w7-dur-btn-pulse
+[PASS] _tokens.scss declares --w7-vista-glass-blur
+[PASS] _tokens.scss declares --w7-vista-glass-specular-reflection
+[PASS] _tokens.scss declares --w7-vista-glass-text-halo-active
+[PASS] _tokens.scss declares --w7-vista-basic-title-active-bg
+[PASS] _tokens.scss declares --w7-vista-btn-bg
+[PASS] _tokens.scss declares --w7-vista-metric-caption-btn-width
 [PASS] _tokens.scss has button pulse keyframes
+[PASS] _tokens.scss has vista button pulse keyframes
 [PASS] _tokens.scss has progress shimmer keyframes
 [PASS] _aero-tints.scss contains all 16 Aero tints
+[PASS] _aero-tints.scss has vista theme base selector
+[PASS] _aero-tints.scss contains all 8 Vista canonical tints
+[PASS] _aero-tints.scss has vista maximized solid black rule
 [PASS] _aero-tints.scss has basic theme fallback
+[PASS] _aero-tints.scss has vista basic theme fallback
 [PASS] _aero-tints.scss has high-contrast fallback
 [PASS] _variables.scss imports _tokens.scss and _aero-tints.scss
 [PASS] _variables.scss provides legacy aliases
 [PASS] _typography.scss applies subpixel smoothing and text hierarchy
 [PASS] Distribution bundles compiled (dist/7.css, dist/7.scoped.css, dist/7.inline.css)
+[PASS] dist/7.css contains vista theme
+[PASS] dist/7.css contains vista basic theme
+[PASS] dist/7.css contains vista button pulse keyframes
 [PASS] Safety audit script passes with zero violations
 === ALL PHASE 1 CHECKS PASSED ===
 ```
 
-STATUS: PHASE 1 COMPLETE (READY FOR PHASE 2)
+STATUS: PHASE 1 EXPANDED & VERIFIED WITH WINDOWS VISTA THEMING (READY FOR PHASE 2)

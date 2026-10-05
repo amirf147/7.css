@@ -52,6 +52,19 @@
   --w7-glass-text-halo-active: 0 0 10px rgba(255, 255, 255, 0.95), 0 0 6px rgba(255, 255, 255, 0.8), 0 1px 2px rgba(255, 255, 255, 1.0);
   --w7-glass-text-halo-inactive: 0 0 6px rgba(255, 255, 255, 0.6);
 
+  /* --- Windows Vista Aero Glass Optics & Shaders --- */
+  --w7-vista-glass-blur: blur(18px) saturate(200%) brightness(85%);
+  --w7-vista-glass-blur-inactive: blur(12px) saturate(110%) brightness(95%);
+  --w7-vista-glass-specular-angle: 115deg;
+  --w7-vista-glass-specular-reflection: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.15) 45%, rgba(0, 0, 0, 0.15) 50%, rgba(0, 0, 0, 0.0) 100%);
+  --w7-vista-glass-glare-reflection: linear-gradient(115deg, rgba(255, 255, 255, 0.45) 0%, rgba(255, 255, 255, 0.0) 38%);
+  --w7-vista-glass-depth-gradient: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.25) 100%);
+  --w7-vista-glass-shadow-restored: 0 18px 44px rgba(0, 0, 0, 0.65), 0 0 0 1px rgba(0, 0, 0, 0.75), inset 0 0 0 1px rgba(255, 255, 255, 0.8), inset 0 0 20px rgba(255, 255, 255, 0.2);
+  --w7-vista-glass-shadow-inactive: 0 10px 24px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(0, 0, 0, 0.5), inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+  --w7-vista-glass-text-halo-active: 0 0 2px #ffffff, 0 0 4px #ffffff, 0 0 8px rgba(255, 255, 255, 0.8);
+  --w7-vista-glass-text-halo-inactive: 0 0 4px rgba(255, 255, 255, 0.6);
+  --w7-vista-glass-bg-default: rgba(0, 0, 0, 0.65);
+
   /* --- Default Aero Personalization Tint --- */
   --w7-aero-tint-name: "default";
   --w7-aero-tint-color: rgba(112, 164, 194, 0.65);
@@ -82,6 +95,16 @@
   --w7-btn-disabled-bg: #f4f4f4;
   --w7-btn-disabled-border: 1px solid #adb2b5;
   --w7-btn-disabled-color: #838383;
+
+  /* --- Form Controls: Windows Vista Button --- */
+  --w7-vista-btn-bg: linear-gradient(to bottom, #ffffff 0%, #ececec 49%, #e0e0e0 50%, #d2d2d2 100%);
+  --w7-vista-btn-border: 1px solid #707070;
+  --w7-vista-btn-hover-bg: linear-gradient(to bottom, #f3fbff 0%, #e6f6fd 49%, #d2effc 50%, #bce6fb 100%);
+  --w7-vista-btn-hover-border: 1px solid #3c7fb1;
+  --w7-vista-btn-hover-shadow: 0 0 5px rgba(0, 160, 240, 0.7);
+  --w7-vista-btn-pressed-bg: linear-gradient(to bottom, #dbeffc 0%, #c4e4f8 49%, #9fd3f2 50%, #76bbe6 100%);
+  --w7-vista-btn-pressed-border: 1px solid #235882;
+  --w7-vista-btn-default-pulse-bg: linear-gradient(to bottom, #eaf6fd 0%, #d9f0fc 49%, #bee6fd 50%, #90d3f8 100%);
 
   /* --- Form Controls: Command Link --- */
   --w7-cmdlink-hover-border: 1px solid #b8d6fb;
@@ -180,6 +203,13 @@
   --w7-basic-frame-border: 4px solid #a0b4c8;
   --w7-basic-high-contrast-border: 2px solid #000000;
 
+  /* --- Windows Vista Basic Theme --- */
+  --w7-vista-basic-title-active-bg: linear-gradient(to bottom, #4c6b8c 0%, #364f6b 50%, #2b3f56 51%, #354e6a 100%);
+  --w7-vista-basic-title-active-border: 1px solid #23374d;
+  --w7-vista-basic-title-inactive-bg: linear-gradient(to bottom, #748a9e 0%, #5d7488 50%, #50667a 51%, #5b7185 100%);
+  --w7-vista-basic-title-inactive-border: 1px solid #4a5c6d;
+  --w7-vista-basic-frame-border: 4px solid #364f6b;
+
   /* --- Task Dialog --- */
   --w7-dialog-instruction-color: #003399;
   --w7-dialog-footer-bg: #f0f0f0;
@@ -230,6 +260,13 @@
   --w7-metric-ribbon-tab-height: 24px;
   --w7-metric-taskbar-height: 40px;
 
+  /* --- Windows Vista Metrics --- */
+  --w7-vista-metric-titlebar-height: 30px;
+  --w7-vista-metric-titlebar-height-maximized: 26px;
+  --w7-vista-metric-caption-btn-width: 43px;
+  --w7-vista-metric-caption-btn-height: 19px;
+  --w7-vista-metric-caption-close-width: 45px;
+
   /* --- DWM Animation Timing & Easing Curves --- */
   --w7-ease-fast-entrance: cubic-bezier(0.0, 0.0, 0.2, 1.0);
   --w7-ease-sinusoidal-pulse: cubic-bezier(0.45, 0.05, 0.55, 0.95);
@@ -254,6 +291,17 @@
   50% {
     border-color: #1c6ba0;
     box-shadow: 0 0 10px rgba(53, 148, 219, 0.9), inset 0 0 6px rgba(255, 255, 255, 0.95);
+  }
+}
+
+@keyframes w7-vista-button-pulse {
+  0%, 100% {
+    border-color: #3c7fb1;
+    box-shadow: 0 0 3px rgba(0, 160, 240, 0.4), inset 0 0 2px rgba(255, 255, 255, 0.6);
+  }
+  50% {
+    border-color: #1c6ba0;
+    box-shadow: 0 0 8px rgba(0, 160, 240, 0.85), inset 0 0 4px rgba(255, 255, 255, 0.9);
   }
 }
 

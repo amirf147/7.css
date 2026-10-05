@@ -26,6 +26,19 @@
     },
     "windowBorderRadiusRestoredPx": 6
   },
+  "vistaWindows": {
+    "titleBarHeightRestoredPx": 30,
+    "titleBarHeightMaximizedPx": 26,
+    "windowBorderThicknessPx": 7,
+    "windowBorderRadiusRestoredPx": 8,
+    "windowBorderRadiusMaximizedPx": 0,
+    "captionButton": {
+      "widthPx": 43,
+      "heightPx": 19,
+      "closeWidthPx": 45,
+      "marginRightPx": 2
+    }
+  },
   "dialogs": {
     "instructionToBodySpacingPx": 11,
     "interControlSpacingPx": 7,

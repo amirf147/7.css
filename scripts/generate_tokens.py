@@ -96,6 +96,26 @@ def generate_tokens_scss(tokens_dir: Path, output_file: Path):
     lines.append(f"  --w7-glass-text-halo-inactive: {glass.get('textHaloGlowInactive', 'none')};")
     lines.append("")
 
+    # Windows Vista Aero Glass & Shaders
+    vista_glass = aero_math.get("vistaGlass", {})
+    lines.append("  /* --- Windows Vista Aero Glass Optics & Shaders --- */")
+    lines.append(f"  --w7-vista-glass-blur: {vista_glass.get('backdropFilter', 'blur(18px) saturate(200%) brightness(85%)')};")
+    lines.append(f"  --w7-vista-glass-blur-inactive: {vista_glass.get('inactiveBackdropFilter', 'blur(12px) saturate(110%) brightness(95%)')};")
+    lines.append(f"  --w7-vista-glass-specular-angle: {vista_glass.get('specularGlareAngleDeg', 115)}deg;")
+    vista_specular = vista_glass.get("specularReflections", [])
+    if len(vista_specular) >= 1:
+        lines.append(f"  --w7-vista-glass-specular-reflection: {vista_specular[0]};")
+    if len(vista_specular) >= 2:
+        lines.append(f"  --w7-vista-glass-glare-reflection: {vista_specular[1]};")
+    if len(vista_specular) >= 3:
+        lines.append(f"  --w7-vista-glass-depth-gradient: {vista_specular[2]};")
+    lines.append(f"  --w7-vista-glass-shadow-restored: {vista_glass.get('boxShadowRestored', 'none')};")
+    lines.append(f"  --w7-vista-glass-shadow-inactive: {vista_glass.get('boxShadowInactive', 'none')};")
+    lines.append(f"  --w7-vista-glass-text-halo-active: {vista_glass.get('textHaloGlowActive', 'none')};")
+    lines.append(f"  --w7-vista-glass-text-halo-inactive: {vista_glass.get('textHaloGlowInactive', 'none')};")
+    lines.append("  --w7-vista-glass-bg-default: rgba(0, 0, 0, 0.65);")
+    lines.append("")
+
     # Default Aero Tint (Sky Blue)
     default_tint = colors.get("aeroGlass", {}).get("default", {})
     lines.append("  /* --- Default Aero Personalization Tint --- */")
@@ -131,6 +151,19 @@ def generate_tokens_scss(tokens_dir: Path, output_file: Path):
     lines.append(f"  --w7-btn-disabled-bg: {btn.get('disabled', {}).get('background', '#f4f4f4')};")
     lines.append(f"  --w7-btn-disabled-border: {btn.get('disabled', {}).get('border', '1px solid #adb2b5')};")
     lines.append(f"  --w7-btn-disabled-color: {btn.get('disabled', {}).get('color', '#838383')};")
+    lines.append("")
+
+    # Form Controls: Windows Vista Button
+    v_btn = colors.get("vistaControls", {}).get("button", {})
+    lines.append("  /* --- Form Controls: Windows Vista Button --- */")
+    lines.append(f"  --w7-vista-btn-bg: {v_btn.get('normal', {}).get('background', '')};")
+    lines.append(f"  --w7-vista-btn-border: {v_btn.get('normal', {}).get('border', '')};")
+    lines.append(f"  --w7-vista-btn-hover-bg: {v_btn.get('hover', {}).get('background', '')};")
+    lines.append(f"  --w7-vista-btn-hover-border: {v_btn.get('hover', {}).get('border', '')};")
+    lines.append(f"  --w7-vista-btn-hover-shadow: {v_btn.get('hover', {}).get('boxShadow', '')};")
+    lines.append(f"  --w7-vista-btn-pressed-bg: {v_btn.get('pressed', {}).get('background', '')};")
+    lines.append(f"  --w7-vista-btn-pressed-border: {v_btn.get('pressed', {}).get('border', '')};")
+    lines.append(f"  --w7-vista-btn-default-pulse-bg: {v_btn.get('defaultPulse', {}).get('background', '')};")
     lines.append("")
 
     # Command Link
@@ -260,6 +293,16 @@ def generate_tokens_scss(tokens_dir: Path, output_file: Path):
     lines.append(f"  --w7-basic-high-contrast-border: {basic.get('highContrastBorder', '2px solid #000000')};")
     lines.append("")
 
+    # Windows Vista Basic
+    v_basic = colors.get("vistaBasic", {})
+    lines.append("  /* --- Windows Vista Basic Theme --- */")
+    lines.append(f"  --w7-vista-basic-title-active-bg: {v_basic.get('titleBarActive', {}).get('gradient', '')};")
+    lines.append(f"  --w7-vista-basic-title-active-border: {v_basic.get('titleBarActive', {}).get('border', '')};")
+    lines.append(f"  --w7-vista-basic-title-inactive-bg: {v_basic.get('titleBarInactive', {}).get('gradient', '')};")
+    lines.append(f"  --w7-vista-basic-title-inactive-border: {v_basic.get('titleBarInactive', {}).get('border', '')};")
+    lines.append(f"  --w7-vista-basic-frame-border: {v_basic.get('frameBorder', '')};")
+    lines.append("")
+
     # Task Dialog
     td = colors.get("taskDialog", {})
     lines.append("  /* --- Task Dialog --- */")
@@ -321,6 +364,17 @@ def generate_tokens_scss(tokens_dir: Path, output_file: Path):
     lines.append(f"  --w7-metric-taskbar-height: {metrics.get('taskbar', {}).get('heightPx', 40)}px;")
     lines.append("")
 
+    # Windows Vista Metrics
+    v_win_m = metrics.get("vistaWindows", {})
+    v_cap_m = v_win_m.get("captionButton", {})
+    lines.append("  /* --- Windows Vista Metrics --- */")
+    lines.append(f"  --w7-vista-metric-titlebar-height: {v_win_m.get('titleBarHeightRestoredPx', 30)}px;")
+    lines.append(f"  --w7-vista-metric-titlebar-height-maximized: {v_win_m.get('titleBarHeightMaximizedPx', 26)}px;")
+    lines.append(f"  --w7-vista-metric-caption-btn-width: {v_cap_m.get('widthPx', 43)}px;")
+    lines.append(f"  --w7-vista-metric-caption-btn-height: {v_cap_m.get('heightPx', 19)}px;")
+    lines.append(f"  --w7-vista-metric-caption-close-width: {v_cap_m.get('closeWidthPx', 45)}px;")
+    lines.append("")
+
     # Animations & Timing
     curves = animations.get("curves", {})
     durations = animations.get("durations", {})
@@ -350,6 +404,17 @@ def generate_tokens_scss(tokens_dir: Path, output_file: Path):
     lines.append("  50% {")
     lines.append("    border-color: #1c6ba0;")
     lines.append("    box-shadow: 0 0 10px rgba(53, 148, 219, 0.9), inset 0 0 6px rgba(255, 255, 255, 0.95);")
+    lines.append("  }")
+    lines.append("}")
+    lines.append("")
+    lines.append("@keyframes w7-vista-button-pulse {")
+    lines.append("  0%, 100% {")
+    lines.append("    border-color: #3c7fb1;")
+    lines.append("    box-shadow: 0 0 3px rgba(0, 160, 240, 0.4), inset 0 0 2px rgba(255, 255, 255, 0.6);")
+    lines.append("  }")
+    lines.append("  50% {")
+    lines.append("    border-color: #1c6ba0;")
+    lines.append("    box-shadow: 0 0 8px rgba(0, 160, 240, 0.85), inset 0 0 4px rgba(255, 255, 255, 0.9);")
     lines.append("  }")
     lines.append("}")
     lines.append("")
@@ -441,6 +506,88 @@ def generate_aero_tints_scss(tokens_dir: Path, output_file: Path):
     lines.append("  --w7-w-grad: #000000;")
     lines.append("  --w7-w-bd: #ffffff;")
     lines.append("  --w7-color-window-bg: #000000;")
+    lines.append("  --w7-color-window-text: #ffffff;")
+    lines.append("}")
+    lines.append("")
+
+    # Windows Vista Theming & 8 Canonical Personalization Tints
+    lines.append("/* ========================================================================== */")
+    lines.append("/* Windows Vista Aero Theming & Canonical Personalization Tints             */")
+    lines.append("/* ========================================================================== */")
+    lines.append("")
+    lines.append("/* Windows Vista Aero Base (Default Charcoal / Black Glass) */")
+    lines.append("[data-theme=\"vista\"],")
+    lines.append(".window[data-theme=\"vista\"] {")
+    lines.append("  --w7-aero-tint-name: \"graphite\";")
+    lines.append("  --w7-aero-tint-color: rgba(0, 0, 0, 0.65);")
+    lines.append("  --w7-aero-tint-rgb: 0, 0, 0;")
+    lines.append("  --w7-aero-tint-hex: #000000;")
+    lines.append("  --w7-w-bg: rgba(0, 0, 0, 0.65);")
+    lines.append("  --w7-w-grad: var(--w7-vista-glass-specular-reflection), rgba(0, 0, 0, 0.65);")
+    lines.append("  --w7-glass-specular-reflection: var(--w7-vista-glass-specular-reflection);")
+    lines.append("  --w7-glass-text-halo-active: var(--w7-vista-glass-text-halo-active);")
+    lines.append("  --w7-glass-text-halo-inactive: var(--w7-vista-glass-text-halo-inactive);")
+    lines.append("  --w7-glass-shadow-restored: var(--w7-vista-glass-shadow-restored);")
+    lines.append("  --w7-glass-shadow-inactive: var(--w7-vista-glass-shadow-inactive);")
+    lines.append("}")
+    lines.append("")
+
+    vista_tints = colors.get("vistaAeroGlass", {})
+    vista_rgb_map = {
+        "default": "0, 0, 0",
+        "graphite": "0, 0, 0",
+        "teal": "46, 111, 126",
+        "red": "139, 29, 29",
+        "yellow": "158, 129, 30",
+        "green": "39, 106, 38",
+        "orange": "154, 78, 30",
+        "pink": "137, 45, 99",
+        "frost": "205, 216, 224",
+    }
+
+    for tint_key, tint_data in vista_tints.items():
+        name = tint_data.get("name", tint_key.capitalize())
+        rgba = tint_data.get("rgba", "")
+        hex_val = tint_data.get("hex", "")
+        rgb_tuple = vista_rgb_map.get(tint_key, "0, 0, 0")
+
+        lines.append(f"/* Vista Aero Tint: {name} */")
+        lines.append(f"[data-theme=\"vista\"][data-aero-tint=\"{tint_key}\"],")
+        lines.append(f".window[data-theme=\"vista\"][data-aero-tint=\"{tint_key}\"] {{")
+        lines.append(f"  --w7-aero-tint-name: \"{tint_key}\";")
+        lines.append(f"  --w7-aero-tint-color: {rgba};")
+        lines.append(f"  --w7-aero-tint-rgb: {rgb_tuple};")
+        lines.append(f"  --w7-aero-tint-hex: {hex_val};")
+        lines.append(f"  --w7-w-bg: {rgba};")
+        lines.append(f"  --w7-w-grad: var(--w7-vista-glass-specular-reflection), {rgba};")
+        lines.append("}")
+        lines.append("")
+
+    # Maximized Vista Window (Solid Opaque Black Frame)
+    lines.append("/* Maximized Vista Window (Solid Opaque Black Frame - Authentic Vista DWM Behavior) */")
+    lines.append("[data-theme=\"vista\"].maximized,")
+    lines.append(".window.maximized[data-theme=\"vista\"],")
+    lines.append("[data-theme=\"vista\"] .window.maximized {")
+    lines.append("  --w7-glass-blur: none;")
+    lines.append("  --w7-w-bg: #000000;")
+    lines.append("  --w7-w-grad: #000000;")
+    lines.append("  --w7-w-bd: #000000;")
+    lines.append("  background: #000000;")
+    lines.append("}")
+    lines.append("")
+
+    # Windows Vista Basic Theme Fallback
+    vista_basic = colors.get("vistaBasic", {})
+    lines.append("/* Windows Vista Basic Theme (Non-Composited DWM Fallback) */")
+    lines.append("[data-theme=\"vista-basic\"],")
+    lines.append(".window[data-theme=\"vista-basic\"] {")
+    lines.append("  --w7-glass-blur: none;")
+    lines.append("  --w7-glass-specular-reflection: none;")
+    lines.append("  --w7-glass-glare-reflection: none;")
+    lines.append("  --w7-glass-depth-gradient: none;")
+    lines.append("  --w7-w-bg: #4c6b8c;")
+    lines.append(f"  --w7-w-grad: {vista_basic.get('titleBarActive', {}).get('gradient', 'linear-gradient(to bottom, #4c6b8c 0%, #364f6b 50%, #2b3f56 51%, #354e6a 100%)')};")
+    lines.append(f"  --w7-w-bd: {vista_basic.get('frameBorder', '4px solid #364f6b')};")
     lines.append("  --w7-color-window-text: #ffffff;")
     lines.append("}")
     lines.append("")
