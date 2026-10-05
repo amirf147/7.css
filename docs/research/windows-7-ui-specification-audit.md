@@ -20,12 +20,14 @@ graph TD
 
 ### Phase Breakdown
 
-1. **Phase 0: Resource Gathering & Asset Audit (Current Phase)**
-   - Extract raw bitmaps, sprite sheets, stream resources, dialog icons, and audio waveforms from native Windows 7 installation binaries.
+1. **Phase 0: Resource Gathering, Ingestion & Asset Audit (Current Phase)**
+   - Ingest pre-extracted official Windows 7 icon collections (28 categories) from `visnalize/resources`.
+   - Ingest authentic system sound effects (60 WAV files) from `MCPlayer2015/all-windows-sounds`.
+   - Ingest authentic Windows 7 Aero cursor sets from `bartekl1/windows-ui-assets`.
+   - Review `visnalize/makeaero` CSS and glare generators for mathematical reference on multi-stop gloss horizons.
+   - Restrict manual binary extraction to unresolved `aero.msstyles` 9-slice parts and caption button radial glow shaders.
    - Audit official MSDN Windows User Experience Interaction Guidelines for exact DLU and pixel metrics.
    - Construct the component state matrix and gap analysis against the existing `7.css` repository.
-   - Establish the structured raw asset directory.
-
 2. **Phase 1: Token Architecture & Color Engine**
    - Implement the complete CSS custom property token dictionary (`--w7-*`).
    - Define exact RGB/HSL color stop variables for standard Aero controls.
@@ -63,9 +65,35 @@ graph TD
 
 ---
 
-## 2. Task 1: Binary System File Extraction Map
+## 2. Wheel Reinvention Avoidance & Upstream Asset Ingestion Matrix
 
-Extraction must occur from an authentic Windows 7 SP1 (Build 7601) x64 installation image or system partition.
+Investigation of the open-source ecosystem reveals several repositories that have already performed binary extractions and mathematical modeling of Windows 7 Aero elements. Incorporating these verified upstream sources eliminates redundant extraction overhead while retaining exact historical fidelity.
+
+### 2.1 Upstream Source Inventory
+
+| Asset Category | Pre-Extracted Upstream Source | Repository Path / URL | Verified Assets Available | Plan Impact |
+| :--- | :--- | :--- | :--- | :--- |
+| System Icons | `Visnalize/resources` | `icons/win7/` via GitHub API | 28 complete directories (Shell32.dll, Imageres.dll, Standard Folders, Special Folders, Action Center, Control Panel). | Eliminates manual Resource Hacker dumping of DLL icon groups. |
+| UI Sound Effects | `MCPlayer2015/all-windows-sounds` | `(2009) Windows 7/` | 60 authentic 16-bit 44.1kHz PCM WAV files across default and thematic sound schemes (Balloon, Navigation Start, Critical Stop, Exclamation, Ding). | Eliminates manual audio ripping from `C:\Windows\Media`. |
+| Aero Cursors | `bartekl1/windows-ui-assets` | `Cursors/Windows 7/` | Complete official cursor suite (`.cur` and `.ani` formats). | Provides drop-in cursor assets for interactive states. |
+| Lighting & Glare Formulas | `Visnalize/makeaero` | `app/button/`, `app/window-glass/` | CSS multi-stop gradient calculations, specular glare streak coordinates, and translucent glass border offsets. | Provides reference formulas for Phase 1 token definitions. |
+| Desktop Shell Reference | `KasimAhmic/web-aero` | `src/components/`, `src/system/` | Functional window management layouts and taskbar structures in TypeScript. | Serves as behavioral benchmark for DOM structure and event handling. |
+| Canonical Metrics | Microsoft MSDN Archive | `UXGuide.pdf` (882 pages) | Deterministic DLU conversion formulas, control dimensions, inter-control spacings, and Task Dialog divisions. | Authoritative ground truth for all layout metrics. |
+
+### 2.2 Unsolved Core Requirements (The Mandate of 7.css)
+
+None of the existing projects deliver a modular, zero-dependency CSS/SCSS design system matching the standards of `98.css` and `XP.css`:
+- `web-aero` is a monolithic web OS emulator tightly bound to TypeScript and custom application components.
+- `makeaero` is an interactive Next.js generator producing ad-hoc CSS strings rather than a coherent design system.
+- The existing `7.css` codebase is an incomplete fork of `XP.css` with superficial gradient overrides.
+
+The mandate of `7.css` is to synthesize these assets into semantic HTML class bindings, a CSS custom property token dictionary, and pure CSS state machines.
+
+---
+
+## 3. Task 1: Binary System File Extraction Map
+
+Targeted extraction focuses strictly on gaps not covered by upstream repositories, specifically 9-slice sprite sheets from `aero.msstyles`.
 
 ### 2.1 `aero.msstyles` Asset Manifest
 
