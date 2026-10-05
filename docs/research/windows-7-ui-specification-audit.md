@@ -492,7 +492,7 @@ Normal Button Profile (Top to Bottom):
 | `gui/_dropdown.scss` | Complete (Phase 2) | Rebuilt with 17px dropdown button, OEM combo arrow, tokenized states, and Vista split-horizon styling. |
 | `gui/_combobox.scss` | Complete (Phase 2) | Rebuilt with composite text input, attached 17px button, vector arrow, and Vista overrides. |
 | `gui/_listbox.scss` | Complete (Phase 2) | Rebuilt with tokenized border, Explorer row selection states, and Vista hover highlights. |
-| `gui/_window.scss` | Pending (Phase 3) | Target for `backdrop-filter: blur(20px)`, SVG specular masks, caption button back-glows, and Vista window frames. |
+| `gui/_window.scss` | Complete (Phase 3) | Rebuilt with Aero Glass `backdrop-filter`, SVG specular masks, 4-state caption button shaders, Windows Vista adaptations, and Task Dialog layouts. |
 | `gui/_scrollbar.scss` | Pending (Phase 4) | Rebuild thumb graphics with 3-dot grip and vector arrow buttons. |
 | `gui/_treeview.scss` | Pending (Phase 4) | Replace classic `+`/`-` boxes with authentic Vista/7 triangular chevrons (`GLPS_CLOSED`, `GLPS_OPENED`). |
 | `gui/_listview.scss` | Pending (Phase 4) | Add column sort chevrons, multi-state headers, and marquee selection rectangle. |

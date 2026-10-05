@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <radialGradient id="discGrad" cx="35%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="30%" stop-color="#cde2f3"/>
+      <stop offset="70%" stop-color="#73a9d4"/>
+      <stop offset="100%" stop-color="#3c7fb1"/>
+    </radialGradient>
+    <filter id="discDrop" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="1" stdDeviation="0.8" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <circle cx="12" cy="12" r="11" fill="url(#discGrad)" stroke="#2c628b" stroke-width="1" filter="url(#discDrop)"/>
+  <circle cx="12" cy="12" r="10" fill="none" stroke="rgba(255, 255, 255, 0.8)" stroke-width="1"/>
+  <path d="M14 7 L9 12 L14 17" fill="none" stroke="#1c486d" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

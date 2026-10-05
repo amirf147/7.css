@@ -90,4 +90,43 @@
         </div>
       </div>
     `) %>
+
+    <h4 id="vista-window-theme" style="margin-top: 2em">Windows Vista Window Frames</h4>
+    <p>
+      Add <code>data-theme="vista"</code> to apply Windows Vista styling, featuring Vista's iconic
+      charcoal-black Aero glass, 8px restored corner radius, 7px frame thickness, and glossy caption buttons.
+      Use <code>data-theme="vista-basic"</code> for the non-composited Vista Basic theme fallback.
+    </p>
+
+    <%- example(`
+      <div class="background">
+        <div class="window active" data-theme="vista" style="max-width: 100%">
+          <div class="title-bar">
+            <div class="title-bar-text">Windows Vista Aero Glass</div>
+            <div class="title-bar-controls">
+              <button aria-label="Minimize"></button>
+              <button aria-label="Maximize"></button>
+              <button aria-label="Close"></button>
+            </div>
+          </div>
+          <div class="window-body has-space">
+            <p>Windows Vista charcoal-black Aero glass with 8px corner radius and authentic caption controls.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="window active" data-theme="vista-basic" style="max-width: 100%; margin-top: 1em">
+        <div class="title-bar">
+          <div class="title-bar-text">Windows Vista Basic</div>
+          <div class="title-bar-controls">
+            <button aria-label="Minimize"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="window-body has-space">
+          <p>Windows Vista Basic fallback theme with deep cyan-slate title bar gradient and 4px frame border.</p>
+        </div>
+      </div>
+    `) %>
 </section>

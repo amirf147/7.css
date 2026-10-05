@@ -283,11 +283,15 @@
   --w7-metric-taskbar-height: 40px;
 
   /* --- Windows Vista Metrics --- */
+  --w7-vista-metric-window-border-width: 7px;
+  --w7-vista-metric-window-radius: 8px;
+  --w7-vista-metric-window-radius-maximized: 0px;
   --w7-vista-metric-titlebar-height: 30px;
   --w7-vista-metric-titlebar-height-maximized: 26px;
   --w7-vista-metric-caption-btn-width: 43px;
   --w7-vista-metric-caption-btn-height: 19px;
   --w7-vista-metric-caption-close-width: 45px;
+  --w7-vista-metric-caption-margin-right: 2px;
 
   /* --- DWM Animation Timing & Easing Curves --- */
   --w7-ease-fast-entrance: cubic-bezier(0.0, 0.0, 0.2, 1.0);

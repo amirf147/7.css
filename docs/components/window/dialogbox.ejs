@@ -41,4 +41,55 @@
         </footer>
       </div>
     `) %>
+
+    <h4 id="task-dialog" style="margin-top: 2em">Task Dialog</h4>
+    <p>
+      Task Dialogs replace legacy Message Boxes. They are partitioned into distinct functional bands:
+      a 12pt primary instruction header with a 32px status icon, an interactive content area, an optional
+      collapsible expando section, and a dedicated commit footer bar.
+    </p>
+
+    <%- example(`
+      <div class="window active task-dialog" style="max-width: 480px">
+        <div class="title-bar">
+          <div class="title-bar-text">Windows Security</div>
+          <div class="title-bar-controls">
+            <button aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="window-body">
+          <div class="task-dialog-header">
+            <div class="task-dialog-icon is-shield"></div>
+            <h3 class="task-dialog-instruction">Do you want to allow the following program to make changes to this computer?</h3>
+          </div>
+          <div class="task-dialog-content">
+            <p><strong>Program name:</strong> Registry Editor</p>
+            <p><strong>Verified publisher:</strong> Microsoft Windows</p>
+          </div>
+          <div class="task-dialog-commands">
+            <button class="command-link">
+              <span class="command-link-title">Install software from verified publisher</span>
+              <span class="command-link-desc">All digitally signed components will be updated immediately.</span>
+            </button>
+          </div>
+          <details class="task-dialog-expando">
+            <summary>Hide details</summary>
+            <div class="task-dialog-details-text">
+              CLSID: {75048700-EF1F-11D0-9888-006097DEACF9}<br>
+              Binary path: C:\\Windows\\System32\\regedit.exe
+            </div>
+          </details>
+        </div>
+        <footer class="task-dialog-footer">
+          <div class="task-dialog-verification">
+            <input type="checkbox" id="task-dialog-verify">
+            <label for="task-dialog-verify">Don't show this again</label>
+          </div>
+          <div class="task-dialog-buttons">
+            <button class="default">Yes</button>
+            <button>No</button>
+          </div>
+        </footer>
+      </div>
+    `) %>
 </section>

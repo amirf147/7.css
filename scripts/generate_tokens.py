@@ -398,11 +398,15 @@ def generate_tokens_scss(tokens_dir: Path, output_file: Path):
     v_win_m = metrics.get("vistaWindows", {})
     v_cap_m = v_win_m.get("captionButton", {})
     lines.append("  /* --- Windows Vista Metrics --- */")
+    lines.append(f"  --w7-vista-metric-window-border-width: {v_win_m.get('windowBorderThicknessPx', 7)}px;")
+    lines.append(f"  --w7-vista-metric-window-radius: {v_win_m.get('windowBorderRadiusRestoredPx', 8)}px;")
+    lines.append(f"  --w7-vista-metric-window-radius-maximized: {v_win_m.get('windowBorderRadiusMaximizedPx', 0)}px;")
     lines.append(f"  --w7-vista-metric-titlebar-height: {v_win_m.get('titleBarHeightRestoredPx', 30)}px;")
     lines.append(f"  --w7-vista-metric-titlebar-height-maximized: {v_win_m.get('titleBarHeightMaximizedPx', 26)}px;")
     lines.append(f"  --w7-vista-metric-caption-btn-width: {v_cap_m.get('widthPx', 43)}px;")
     lines.append(f"  --w7-vista-metric-caption-btn-height: {v_cap_m.get('heightPx', 19)}px;")
     lines.append(f"  --w7-vista-metric-caption-close-width: {v_cap_m.get('closeWidthPx', 45)}px;")
+    lines.append(f"  --w7-vista-metric-caption-margin-right: {v_cap_m.get('marginRightPx', 2)}px;")
     lines.append("")
 
     # Animations & Timing

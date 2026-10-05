@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <filter id="shieldDrop" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="1" stdDeviation="1" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <g filter="url(#shieldDrop)">
+    <!-- Base shield rim -->
+    <path d="M16 2 L29 6 C29 18 22 26 16 30 C10 26 3 18 3 6 Z" fill="#d8d8d8" stroke="#707070" stroke-width="1.2"/>
+    <path d="M16 3.5 L27.5 7 C27.5 17.5 21 24.8 16 28.5 C11 24.8 4.5 17.5 4.5 7 Z" fill="#ffffff"/>
+    <!-- 4 quadrants -->
+    <!-- Top Left: Blue -->
+    <path d="M16 5 L6 8.2 C6 14 8 18 16 18 Z" fill="#1e70ba"/>
+    <!-- Top Right: Yellow -->
+    <path d="M16 5 L26 8.2 C26 14 24 18 16 18 Z" fill="#f5bb00"/>
+    <!-- Bottom Left: Green -->
+    <path d="M16 18 C8 18 8 20 16 27 Z" fill="#329e1f"/>
+    <!-- Bottom Right: Red -->
+    <path d="M16 18 C24 18 24 20 16 27 Z" fill="#d92525"/>
+  </g>
+</svg>
