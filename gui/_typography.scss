@@ -1,48 +1,75 @@
 :root {
-  --w7-link-c: #0066cc;
-  --w7-link-c-h: #3399ff;
-  --w7-title-c: #003399;
+  --w7-link-c: var(--w7-color-link);
+  --w7-link-c-h: var(--w7-color-link-hover);
+  --w7-title-c: var(--w7-color-title-text);
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font: var(--w7-font);
+  color: var(--w7-color-window-text);
+  text-rendering: var(--w7-font-rendering);
+  -webkit-font-smoothing: var(--w7-font-smoothing-webkit);
+  -moz-osx-font-smoothing: var(--w7-font-smoothing-moz);
 }
 
 a {
-  color: var(--w7-link-c);
+  color: var(--w7-color-link);
   text-decoration: none;
 
   &:focus-visible {
-    outline: 1px dotted var(--w7-link-c);
+    outline: 1px dotted var(--w7-color-link);
   }
 
   &:hover,
   &:focus {
-    color: var(--w7-link-c-h);
+    color: var(--w7-color-link-hover);
     text-decoration: underline;
   }
 }
 
 .instruction {
   font: var(--w7-font);
-  color: var(--w7-el-c);
-  font-weight: normal;
+  color: var(--w7-color-window-text);
+  font-weight: var(--w7-font-weight-normal);
   margin: 0 0 20px;
 
   &-primary {
-    font-size: 12pt;
-    color: var(--w7-title-c);
+    font-size: var(--w7-font-size-instruction);
+    color: var(--w7-color-title-text);
+    line-height: 1.3;
   }
+
+  &-secondary,
+  &-description {
+    font-size: var(--w7-font-size-description);
+    color: #555555;
+    line-height: 1.3;
+  }
+}
+
+.caption,
+small {
+  font-size: var(--w7-font-size-caption);
+  color: #666666;
+  line-height: 1.2;
 }
 
 .header {
   font: var(--w7-font);
-  font-weight: normal;
+  font-weight: var(--w7-font-weight-normal);
 
   &-document {
     font-family: "Calibri", "Noto Sans", sans-serif;
     font-size: 17pt;
-    color: var(--w7-el-c);
+    color: var(--w7-color-window-text);
   }
 
   &-group {
     font-size: 11pt;
-    color: var(--w7-title-c);
+    color: var(--w7-color-title-text);
   }
 }

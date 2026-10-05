@@ -8,7 +8,8 @@
     "dist/7*"
   ],
   "scripts": {
-    "build": "node build.js",
+    "tokens": "py -3.10 scripts/generate_tokens.py",
+    "build": "py -3.10 scripts/generate_tokens.py && node build.js",
     "deploy": "npm run build && gh-pages -d dist",
     "release": "npm run build && npm publish"
   },

@@ -1,0 +1,203 @@
+/* ========================================================================== */
+/* Windows 7 Aero - 16-Color Personalization Engine                          */
+/* Auto-generated from assets/tokens/colors.json by scripts/generate_tokens.py */
+/* ========================================================================== */
+
+/* Aero Tint: Pumpkin */
+[data-aero-tint="pumpkin"],
+.window[data-aero-tint="pumpkin"] {
+  --w7-aero-tint-name: "pumpkin";
+  --w7-aero-tint-color: rgba(196, 105, 49, 0.65);
+  --w7-aero-tint-rgb: 196, 105, 49;
+  --w7-aero-tint-hex: #c46931;
+  --w7-w-bg: rgba(196, 105, 49, 0.65);
+  --w7-w-grad: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.2)), rgba(196, 105, 49, 0.65);
+}
+
+/* Aero Tint: Violet */
+[data-aero-tint="violet"],
+.window[data-aero-tint="violet"] {
+  --w7-aero-tint-name: "violet";
+  --w7-aero-tint-color: rgba(111, 78, 184, 0.65);
+  --w7-aero-tint-rgb: 111, 78, 184;
+  --w7-aero-tint-hex: #6f4eb8;
+  --w7-w-bg: rgba(111, 78, 184, 0.65);
+  --w7-w-grad: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.2)), rgba(111, 78, 184, 0.65);
+}
+
+/* Aero Tint: Frost */
+[data-aero-tint="frost"],
+.window[data-aero-tint="frost"] {
+  --w7-aero-tint-name: "frost";
+  --w7-aero-tint-color: rgba(229, 236, 240, 0.70);
+  --w7-aero-tint-rgb: 229, 236, 240;
+  --w7-aero-tint-hex: #e5ecf0;
+  --w7-w-bg: rgba(229, 236, 240, 0.70);
+  --w7-w-grad: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.2)), rgba(229, 236, 240, 0.70);
+}
+
+/* Aero Tint: Lime */
+[data-aero-tint="lime"],
+.window[data-aero-tint="lime"] {
+  --w7-aero-tint-name: "lime";
+  --w7-aero-tint-color: rgba(143, 168, 59, 0.65);
+  --w7-aero-tint-rgb: 143, 168, 59;
+  --w7-aero-tint-hex: #8fa83b;
+  --w7-w-bg: rgba(143, 168, 59, 0.65);
+  --w7-w-grad: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.2)), rgba(143, 168, 59, 0.65);
+}
+
+/* Aero Tint: Sea */
+[data-aero-tint="sea"],
+.window[data-aero-tint="sea"] {
+  --w7-aero-tint-name: "sea";
+  --w7-aero-tint-color: rgba(65, 125, 138, 0.65);
+  --w7-aero-tint-rgb: 65, 125, 138;
+  --w7-aero-tint-hex: #417d8a;
+  --w7-w-bg: rgba(65, 125, 138, 0.65);
+  --w7-w-grad: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.2)), rgba(65, 125, 138, 0.65);
+}
+
+/* Aero Tint: Blush */
+[data-aero-tint="blush"],
+.window[data-aero-tint="blush"] {
+  --w7-aero-tint-name: "blush";
+  --w7-aero-tint-color: rgba(184, 89, 124, 0.65);
+  --w7-aero-tint-rgb: 184, 89, 124;
+  --w7-aero-tint-hex: #b8597c;
+  --w7-w-bg: rgba(184, 89, 124, 0.65);
+  --w7-w-grad: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.2)), rgba(184, 89, 124, 0.65);
+}
+
+/* Aero Tint: Ruby */
+[data-aero-tint="ruby"],
+.window[data-aero-tint="ruby"] {
+  --w7-aero-tint-name: "ruby";
+  --w7-aero-tint-color: rgba(184, 62, 62, 0.65);
+  --w7-aero-tint-rgb: 184, 62, 62;
+  --w7-aero-tint-hex: #b83e3e;
+  --w7-w-bg: rgba(184, 62, 62, 0.65);
+  --w7-w-grad: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.2)), rgba(184, 62, 62, 0.65);
+}
+
+/* Aero Tint: Sun */
+[data-aero-tint="sun"],
+.window[data-aero-tint="sun"] {
+  --w7-aero-tint-name: "sun";
+  --w7-aero-tint-color: rgba(201, 155, 59, 0.65);
+  --w7-aero-tint-rgb: 201, 155, 59;
+  --w7-aero-tint-hex: #c99b3b;
+  --w7-w-bg: rgba(201, 155, 59, 0.65);
+  --w7-w-grad: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.2)), rgba(201, 155, 59, 0.65);
+}
+
+/* Aero Tint: Leaf */
+[data-aero-tint="leaf"],
+.window[data-aero-tint="leaf"] {
+  --w7-aero-tint-name: "leaf";
+  --w7-aero-tint-color: rgba(94, 139, 78, 0.65);
+  --w7-aero-tint-rgb: 94, 139, 78;
+  --w7-aero-tint-hex: #5e8b4e;
+  --w7-w-bg: rgba(94, 139, 78, 0.65);
+  --w7-w-grad: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.2)), rgba(94, 139, 78, 0.65);
+}
+
+/* Aero Tint: Slate */
+[data-aero-tint="slate"],
+.window[data-aero-tint="slate"] {
+  --w7-aero-tint-name: "slate";
+  --w7-aero-tint-color: rgba(91, 108, 122, 0.65);
+  --w7-aero-tint-rgb: 91, 108, 122;
+  --w7-aero-tint-hex: #5b6c7a;
+  --w7-w-bg: rgba(91, 108, 122, 0.65);
+  --w7-w-grad: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.2)), rgba(91, 108, 122, 0.65);
+}
+
+/* Aero Tint: Fuchsia */
+[data-aero-tint="fuchsia"],
+.window[data-aero-tint="fuchsia"] {
+  --w7-aero-tint-name: "fuchsia";
+  --w7-aero-tint-color: rgba(168, 59, 139, 0.65);
+  --w7-aero-tint-rgb: 168, 59, 139;
+  --w7-aero-tint-hex: #a83b8b;
+  --w7-w-bg: rgba(168, 59, 139, 0.65);
+  --w7-w-grad: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.2)), rgba(168, 59, 139, 0.65);
+}
+
+/* Aero Tint: Default (Sky Blue) */
+[data-aero-tint="default"],
+.window[data-aero-tint="default"] {
+  --w7-aero-tint-name: "default";
+  --w7-aero-tint-color: rgba(112, 164, 194, 0.65);
+  --w7-aero-tint-rgb: 112, 164, 194;
+  --w7-aero-tint-hex: #70a4c2;
+  --w7-w-bg: rgba(112, 164, 194, 0.65);
+  --w7-w-grad: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.2)), rgba(112, 164, 194, 0.65);
+}
+
+/* Aero Tint: Smoke */
+[data-aero-tint="smoke"],
+.window[data-aero-tint="smoke"] {
+  --w7-aero-tint-name: "smoke";
+  --w7-aero-tint-color: rgba(71, 71, 71, 0.75);
+  --w7-aero-tint-rgb: 71, 71, 71;
+  --w7-aero-tint-hex: #474747;
+  --w7-w-bg: rgba(71, 71, 71, 0.75);
+  --w7-w-grad: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.2)), rgba(71, 71, 71, 0.75);
+}
+
+/* Aero Tint: Sky */
+[data-aero-tint="sky"],
+.window[data-aero-tint="sky"] {
+  --w7-aero-tint-name: "sky";
+  --w7-aero-tint-color: rgba(87, 139, 184, 0.65);
+  --w7-aero-tint-rgb: 87, 139, 184;
+  --w7-aero-tint-hex: #578bb8;
+  --w7-w-bg: rgba(87, 139, 184, 0.65);
+  --w7-w-grad: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.2)), rgba(87, 139, 184, 0.65);
+}
+
+/* Aero Tint: Pink */
+[data-aero-tint="pink"],
+.window[data-aero-tint="pink"] {
+  --w7-aero-tint-name: "pink";
+  --w7-aero-tint-color: rgba(196, 101, 155, 0.65);
+  --w7-aero-tint-rgb: 196, 101, 155;
+  --w7-aero-tint-hex: #c4659b;
+  --w7-w-bg: rgba(196, 101, 155, 0.65);
+  --w7-w-grad: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.2)), rgba(196, 101, 155, 0.65);
+}
+
+/* Aero Tint: Twilight */
+[data-aero-tint="twilight"],
+.window[data-aero-tint="twilight"] {
+  --w7-aero-tint-name: "twilight";
+  --w7-aero-tint-color: rgba(69, 82, 99, 0.75);
+  --w7-aero-tint-rgb: 69, 82, 99;
+  --w7-aero-tint-hex: #455263;
+  --w7-w-bg: rgba(69, 82, 99, 0.75);
+  --w7-w-grad: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.2)), rgba(69, 82, 99, 0.75);
+}
+
+/* Windows Basic Theme (Non-Composited DWM Fallback) */
+[data-theme="basic"],
+.window[data-theme="basic"] {
+  --w7-glass-blur: none;
+  --w7-glass-specular-reflection: none;
+  --w7-glass-glare-reflection: none;
+  --w7-glass-depth-gradient: none;
+  --w7-w-bg: #99b4d1;
+  --w7-w-grad: linear-gradient(to bottom, #99b4d1 0%, #b9d1ea 100%);
+  --w7-w-bd: #7592b2;
+}
+
+/* Windows High Contrast Theme */
+[data-theme="high-contrast"],
+.window[data-theme="high-contrast"] {
+  --w7-glass-blur: none;
+  --w7-w-bg: #000000;
+  --w7-w-grad: #000000;
+  --w7-w-bd: #ffffff;
+  --w7-color-window-bg: #000000;
+  --w7-color-window-text: #ffffff;
+}

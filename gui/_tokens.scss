@@ -1,0 +1,200 @@
+/* ========================================================================== */
+/* Windows 7 Aero - Core Design Tokens                                      */
+/* Auto-generated from assets/tokens/*.json by scripts/generate_tokens.py    */
+/* DO NOT EDIT DIRECTLY.                                                    */
+/* ========================================================================== */
+
+:root {
+  /* --- Typography & Rendering --- */
+  --w7-font-family: 'Segoe UI', 'Selawik', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+  --w7-font-family-mono: 'Consolas', 'Lucida Console', 'Courier New', monospace;
+  --w7-font-family-script: 'Segoe Print', 'Segoe Script', 'Comic Sans MS', cursive;
+  --w7-font-smoothing-webkit: antialiased;
+  --w7-font-smoothing-moz: grayscale;
+  --w7-font-rendering: optimizeLegibility;
+  --w7-font: 9pt / 1.35 var(--w7-font-family);
+  --w7-font-size-title: 9pt;
+  --w7-font-size-body: 9pt;
+  --w7-font-size-instruction: 12pt;
+  --w7-font-size-description: 9pt;
+  --w7-font-size-caption: 8pt;
+  --w7-font-weight-normal: 400;
+  --w7-font-weight-semibold: 600;
+  --w7-font-weight-bold: 700;
+
+  /* --- System Colors & Surfaces --- */
+  --w7-color-window-bg: #ffffff;
+  --w7-color-window-text: #000000;
+  --w7-color-surface: #f0f0f0;
+  --w7-color-disabled-text: #838383;
+  --w7-color-disabled-border: #adb2b5;
+  --w7-color-disabled-bg: #f4f4f4;
+  --w7-color-highlight-bg: #3399ff;
+  --w7-color-highlight-text: #ffffff;
+  --w7-color-link: #0066cc;
+  --w7-color-link-hover: #3399ff;
+  --w7-color-title-text: #003399;
+  --w7-color-focus-border: #3d7bad;
+  --w7-color-tooltip-bg: #ffffd5;
+  --w7-color-tooltip-border: #767676;
+  --w7-color-tooltip-text: #000000;
+
+  /* --- Aero Glass Optics & Shaders --- */
+  --w7-glass-blur: blur(18px) saturate(190%);
+  --w7-glass-blur-inactive: blur(12px) saturate(100%);
+  --w7-glass-specular-angle: 104deg;
+  --w7-glass-specular-reflection: linear-gradient(104deg, transparent 26%, rgba(255, 255, 255, 0.32) 42%, rgba(255, 255, 255, 0.05) 50%, transparent 64%);
+  --w7-glass-glare-reflection: linear-gradient(to bottom, rgba(255, 255, 255, 0.68) 0%, rgba(255, 255, 255, 0.2) 42%, rgba(255, 255, 255, 0) 54%);
+  --w7-glass-depth-gradient: linear-gradient(to bottom, rgba(255, 255, 255, 0.12) 0%, rgba(0, 0, 0, 0.12) 100%);
+  --w7-glass-shadow-restored: 0 18px 44px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 0, 0, 0.55), inset 0 0 0 1px rgba(255, 255, 255, 0.95), inset 0 0 30px rgba(255, 255, 255, 0.28);
+  --w7-glass-shadow-inactive: 0 10px 24px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(0, 0, 0, 0.45), inset 0 0 0 1px rgba(255, 255, 255, 0.6);
+  --w7-glass-shadow-maximized: none;
+  --w7-glass-text-halo-active: 0 0 10px rgba(255, 255, 255, 0.95), 0 0 6px rgba(255, 255, 255, 0.8), 0 1px 2px rgba(255, 255, 255, 1.0);
+  --w7-glass-text-halo-inactive: 0 0 6px rgba(255, 255, 255, 0.6);
+
+  /* --- Default Aero Personalization Tint --- */
+  --w7-aero-tint-name: "default";
+  --w7-aero-tint-color: rgba(112, 164, 194, 0.65);
+  --w7-aero-tint-rgb: 112, 164, 194;
+  --w7-aero-tint-hex: #70a4c2;
+  --w7-aero-border-color: rgba(0, 0, 0, 0.55);
+  --w7-aero-border-inactive: rgba(0, 0, 0, 0.45);
+
+  /* --- Form Controls: Push Button --- */
+  --w7-btn-bg: linear-gradient(to bottom, #f2f2f2 0%, #ebebeb 50%, #dddddd 51%, #cfcfcf 100%);
+  --w7-btn-border: 1px solid #707070;
+  --w7-btn-border-color: #707070;
+  --w7-btn-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  --w7-btn-inner-highlight: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 -1px 0 rgba(255, 255, 255, 0.3);
+  --w7-btn-hover-bg: linear-gradient(to bottom, #eaf6fd 0%, #d9f0fc 50%, #bee6fd 51%, #a7d9f5 100%);
+  --w7-btn-hover-border: 1px solid #3c7fb1;
+  --w7-btn-hover-border-color: #3c7fb1;
+  --w7-btn-hover-shadow: 0 0 5px rgba(60, 127, 177, 0.6);
+  --w7-btn-hover-highlight: inset 0 1px 0 rgba(255, 255, 255, 0.9), inset 0 0 5px rgba(167, 217, 245, 0.8);
+  --w7-btn-pressed-bg: linear-gradient(to bottom, #e5f4fc 0%, #c4e5f6 50%, #98d1ef 51%, #68b3db 100%);
+  --w7-btn-pressed-border: 1px solid #2c628b;
+  --w7-btn-pressed-border-color: #2c628b;
+  --w7-btn-pressed-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+  --w7-btn-pressed-highlight: inset 0 1px 2px rgba(0, 0, 0, 0.3), inset 0 -1px 0 rgba(255, 255, 255, 0.4);
+  --w7-btn-default-pulse-bg: linear-gradient(to bottom, #dcedf8 0%, #c1e0f4 50%, #9dd0f0 51%, #79bbe6 100%);
+  --w7-btn-default-pulse-border: 1px solid #1c6ba0;
+  --w7-btn-default-pulse-glow: 0 0 8px rgba(53, 148, 219, 0.85), inset 0 0 4px rgba(255, 255, 255, 0.9);
+  --w7-btn-disabled-bg: #f4f4f4;
+  --w7-btn-disabled-border: 1px solid #adb2b5;
+  --w7-btn-disabled-color: #838383;
+
+  /* --- Form Controls: Command Link --- */
+  --w7-cmdlink-hover-border: 1px solid #b8d6fb;
+  --w7-cmdlink-hover-bg: linear-gradient(to bottom, #f7fbfd 0%, #eaf4fb 100%);
+  --w7-cmdlink-pressed-border: 1px solid #7da2ce;
+  --w7-cmdlink-pressed-bg: linear-gradient(to bottom, #e1eff8 0%, #cbe4f4 100%);
+
+  /* --- Form Controls: Input --- */
+  --w7-input-border: 1px solid #8e8f8f;
+  --w7-input-border-hover: 1px solid #5c5d5d;
+  --w7-input-border-focus: 1px solid #3d7bad;
+  --w7-input-bg: #ffffff;
+  --w7-input-bg-disabled: #f4f4f4;
+
+  /* --- Progress Bar --- */
+  --w7-progress-normal-chunk: linear-gradient(to bottom, #a7e089 0%, #76c84c 50%, #52ab2a 51%, #6bc040 100%);
+  --w7-progress-normal-border: 1px solid #4a9126;
+  --w7-progress-normal-track: linear-gradient(to bottom, #e2e2e2 0%, #ebebeb 100%);
+  --w7-progress-paused-chunk: linear-gradient(to bottom, #fae28c 0%, #f3c942 50%, #ebae19 51%, #f0c134 100%);
+  --w7-progress-paused-border: 1px solid #bf8a08;
+  --w7-progress-error-chunk: linear-gradient(to bottom, #f29797 0%, #ea5c5c 50%, #de3131 51%, #ea5454 100%);
+  --w7-progress-error-border: 1px solid #b81b1b;
+
+  /* --- UAC Banners --- */
+  --w7-uac-admin-bg: linear-gradient(to bottom, #7bbbeb 0%, #428bca 100%);
+  --w7-uac-warning-bg: linear-gradient(to bottom, #fff4b8 0%, #ffd659 100%);
+  --w7-uac-blocked-bg: linear-gradient(to bottom, #ef8376 0%, #d9534f 100%);
+
+  /* --- Windows Basic Theme --- */
+  --w7-basic-title-active-bg: linear-gradient(to bottom, #99b4d1 0%, #b9d1ea 100%);
+  --w7-basic-title-active-border: 1px solid #7592b2;
+  --w7-basic-title-inactive-bg: linear-gradient(to bottom, #bfcddb 0%, #dbe4ed 100%);
+  --w7-basic-title-inactive-border: 1px solid #9aaec4;
+  --w7-basic-frame-border: 4px solid #a0b4c8;
+  --w7-basic-high-contrast-border: 2px solid #000000;
+
+  /* --- Task Dialog --- */
+  --w7-dialog-instruction-color: #003399;
+  --w7-dialog-footer-bg: #f0f0f0;
+  --w7-dialog-footer-border: 1px solid #dfdfdf;
+
+  /* --- Ribbon System --- */
+  --w7-ribbon-bg: linear-gradient(to bottom, #ebf2f8 0%, #dbe7f2 100%);
+  --w7-ribbon-border: 1px solid #9bb5cc;
+  --w7-ribbon-tab-active-bg: #ffffff;
+  --w7-ribbon-tab-active-border: 1px solid #abbcd1;
+  --w7-ribbon-tab-hover-bg: linear-gradient(to bottom, #f0f7fe 0%, #d8ecfe 100%);
+  --w7-ribbon-app-btn-wordpad: linear-gradient(to bottom, #2b78c4 0%, #15559c 100%);
+  --w7-ribbon-app-btn-paint: linear-gradient(to bottom, #2b78c4 0%, #15559c 100%);
+  --w7-ribbon-chunk-border: 1px solid #c2d5e3;
+  --w7-ribbon-chunk-hover-border: 1px solid #b8d6fb;
+  --w7-ribbon-ruler-bg: #fbfbfc;
+  --w7-ribbon-ruler-border: 1px solid #d5dfe5;
+  --w7-ribbon-ruler-tick: #828790;
+
+  /* --- Metrics & Dimensions --- */
+  --w7-metric-window-border-width: 6px;
+  --w7-metric-window-radius: 6px;
+  --w7-metric-window-radius-maximized: 0px;
+  --w7-metric-titlebar-height: 30px;
+  --w7-metric-titlebar-height-maximized: 22px;
+  --w7-metric-caption-btn-width: 45px;
+  --w7-metric-caption-btn-height: 20px;
+  --w7-metric-caption-close-width: 47px;
+  --w7-metric-caption-margin-right: 2px;
+  --w7-metric-btn-min-width: 75px;
+  --w7-metric-btn-height: 23px;
+  --w7-metric-btn-radius: 3px;
+  --w7-metric-btn-padding: 0 12px;
+  --w7-metric-input-height: 21px;
+  --w7-metric-input-radius: 2px;
+  --w7-metric-input-padding: 2px 5px;
+  --w7-metric-checkbox-size: 13px;
+  --w7-metric-radio-size: 13px;
+  --w7-metric-command-link-glyph: 24px;
+  --w7-metric-scrollbar-width: 17px;
+  --w7-metric-ribbon-height: 92px;
+  --w7-metric-ribbon-tab-height: 24px;
+  --w7-metric-taskbar-height: 40px;
+
+  /* --- DWM Animation Timing & Easing Curves --- */
+  --w7-ease-fast-entrance: cubic-bezier(0.0, 0.0, 0.2, 1.0);
+  --w7-ease-sinusoidal-pulse: cubic-bezier(0.45, 0.05, 0.55, 0.95);
+  --w7-ease-phosphorescent-decay: cubic-bezier(0.2, 0.8, 0.2, 1.0);
+  --w7-ease-disclosure: cubic-bezier(0.1, 0.9, 0.2, 1.0);
+  --w7-dur-btn-pulse: 1100ms;
+  --w7-dur-btn-hover-in: 120ms;
+  --w7-dur-btn-hover-out: 750ms;
+  --w7-dur-progress-shimmer: 3000ms;
+  --w7-dur-progress-indeterminate: 2000ms;
+  --w7-dur-window-morph: 250ms;
+  --w7-dur-tooltip-delay: 400ms;
+  --w7-dur-disclosure: 200ms;
+}
+
+/* --- DWM Hardware-Accelerated Keyframe Sequences --- */
+@keyframes w7-aero-button-pulse {
+  0%, 100% {
+    border-color: #3c7fb1;
+    box-shadow: 0 0 3px rgba(53, 148, 219, 0.4), inset 0 0 2px rgba(255, 255, 255, 0.6);
+  }
+  50% {
+    border-color: #1c6ba0;
+    box-shadow: 0 0 10px rgba(53, 148, 219, 0.9), inset 0 0 6px rgba(255, 255, 255, 0.95);
+  }
+}
+
+@keyframes w7-progress-shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(200%); }
+}
+
+@keyframes w7-caption-glow {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}

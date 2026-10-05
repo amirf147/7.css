@@ -126,9 +126,13 @@ function buildDocs() {
     </div>`;
   }
 
-  glob("docs/*", { ignore: ["docs/components", "docs/sections", "docs/*.ejs"] }, (err, files) => {
+  glob("docs/*", { ignore: ["docs/components", "docs/sections", "docs/research", "docs/*.ejs"], nodir: true }, (err, files) => {
     if (!err) {
-      files.forEach((srcFile) => fs.copyFileSync(srcFile, path.join("dist", path.basename(srcFile))));
+      files.forEach((srcFile) => {
+        if (fs.statSync(srcFile).isFile()) {
+          fs.copyFileSync(srcFile, path.join("dist", path.basename(srcFile)));
+        }
+      });
     } else {
       throw "error globbing dist directory.";
     }
