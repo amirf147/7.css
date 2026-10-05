@@ -1,0 +1,82 @@
+{
+  "version": "1.0.0",
+  "taskbar": {
+    "startOrbDiameterPx": 36,
+    "startOrbOverflowPx": 4,
+    "tileWidthPx": 40,
+    "heightPx": 40,
+    "showDesktopSliverWidthPx": 12,
+    "tileHeightPx": 40
+  },
+  "dluFormula": {
+    "standardBaseDpi": 96,
+    "horizontalDluToPixel": "round(dlu * 1.5)",
+    "verticalDluToPixel": "round(dlu * 1.625)"
+  },
+  "windows": {
+    "windowBorderRadiusMaximizedPx": 0,
+    "titleBarHeightMaximizedPx": 22,
+    "titleBarHeightRestoredPx": 30,
+    "windowBorderThicknessPx": 6,
+    "captionButton": {
+      "closeWidthPx": 47,
+      "marginRightPx": 2,
+      "heightPx": 20,
+      "widthPx": 45
+    },
+    "windowBorderRadiusRestoredPx": 6
+  },
+  "dialogs": {
+    "instructionToBodySpacingPx": 11,
+    "interControlSpacingPx": 7,
+    "footerPaddingPx": "12px 15px",
+    "buttonSpacingPx": 7,
+    "outerMarginPx": 11
+  },
+  "controls": {
+    "radio": {
+      "borderRadiusPx": "50%",
+      "sizePx": 13
+    },
+    "checkbox": {
+      "borderRadiusPx": 2,
+      "sizePx": 13
+    },
+    "commandLink": {
+      "glyphSizePx": 24,
+      "borderRadiusPx": 3,
+      "paddingPx": "8px 12px 10px 42px",
+      "hoverBorder": "1px solid #b8d6fb",
+      "border": "1px solid transparent"
+    },
+    "button": {
+      "borderRadiusPx": 3,
+      "minWidthPx": 75,
+      "heightPx": 23,
+      "paddingPx": "0 12px",
+      "widthPx": 75
+    },
+    "input": {
+      "borderRadiusPx": 2,
+      "paddingPx": "2px 5px",
+      "heightPx": 21,
+      "borderFocus": "1px solid #3d7bad",
+      "border": "1px solid #8e8f8f"
+    }
+  },
+  "ribbon": {
+    "smallButtonSizePx": 16,
+    "largeButtonSizePx": 32,
+    "tabHeightPx": 24,
+    "heightPx": 92,
+    "chunkCaptionHeightPx": 16,
+    "largeButtonTargetWidthPx": 42,
+    "appButtonHeightPx": 24,
+    "appButtonWidthPx": 56,
+    "dialogLauncherSizePx": 14,
+    "zoomSliderWidthPx": 120,
+    "rulerHeightPx": 18,
+    "largeButtonTargetHeightPx": 66,
+    "chunkPaddingPx": "3px 4px"
+  }
+}

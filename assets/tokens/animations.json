@@ -1,0 +1,52 @@
+{
+  "version": "1.0.0",
+  "keyframes": {
+    "captionCloseGlow": {
+      "100%": {
+        "opacity": "1.0"
+      },
+      "0%": {
+        "opacity": "0.0"
+      }
+    },
+    "progressShimmer": {
+      "100%": {
+        "transform": "translateX(200%)"
+      },
+      "0%": {
+        "transform": "translateX(-100%)"
+      }
+    },
+    "aeroButtonPulse": {
+      "100%": {
+        "borderColor": "#3c7fb1",
+        "boxShadow": "0 0 3px rgba(53, 148, 219, 0.4), inset 0 0 2px rgba(255, 255, 255, 0.6)"
+      },
+      "50%": {
+        "borderColor": "#1c6ba0",
+        "boxShadow": "0 0 10px rgba(53, 148, 219, 0.9), inset 0 0 6px rgba(255, 255, 255, 0.95)"
+      },
+      "0%": {
+        "borderColor": "#3c7fb1",
+        "boxShadow": "0 0 3px rgba(53, 148, 219, 0.4), inset 0 0 2px rgba(255, 255, 255, 0.6)"
+      }
+    }
+  },
+  "durations": {
+    "defaultButtonPulse": "1100ms",
+    "progressIndeterminateCycle": "2000ms",
+    "buttonHoverEntrance": "120ms",
+    "tooltipDelay": "400ms",
+    "windowDwmMorph": "250ms",
+    "taskDialogDisclosure": "200ms",
+    "buttonHoverDecay": "750ms",
+    "progressShimmerCycle": "3000ms"
+  },
+  "curves": {
+    "disclosureExpand": "cubic-bezier(0.1, 0.9, 0.2, 1.0)",
+    "fastEntrance": "cubic-bezier(0.0, 0.0, 0.2, 1.0)",
+    "shimmerLinear": "linear",
+    "sinusoidalPulse": "cubic-bezier(0.45, 0.05, 0.55, 0.95)",
+    "phosphorescentDecay": "cubic-bezier(0.2, 0.8, 0.2, 1.0)"
+  }
+}

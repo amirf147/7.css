@@ -1,6 +1,6 @@
 # Windows 7 UI (7.css) Restoration: Master Roadmap & Technical Specification Audit
 
-This document defines the high-level master restoration roadmap and the exhaustive technical specification audit for rebuilding `7.css` to historical fidelity matching Windows 7 SP1 Aero.
+This document defines the high-level master restoration roadmap and the exhaustive technical specification audit for rebuilding `7.css` to historical fidelity matching Windows 7 SP1 Aero. For the complete component taxonomy covering shells, Superbar, Start Menu, Desktop Gadgets, and systems consoles, consult [`windows-7-ui-feature-catalog.md`](./windows-7-ui-feature-catalog.md).
 
 ---
 
@@ -50,6 +50,8 @@ graph TD
    - Implement the Explorer Breadcrumb Bar with split-segment hover states and drop-down menu chevrons.
    - Build ListView column headers with sort direction indicators, row selection states, and marquee selection rectangles.
    - Build the Explorer Command Bar and Split Buttons.
+   - Build systems layout primitives including Action Panes (`.action-pane`), splitters (`.splitter`), and Control Panel category grids (`.category-grid`, `.task-links`).
+   - Reconstruct the Windows Ribbon Framework (Scenic Ribbon / Navigation Ribbons): Application Button (`.ribbon-app-btn`), Quick Access Toolbar (`.qat`), Ribbon Tab Strip (`.ribbon-tabs`), Ribbon Groups/Chunks (`.ribbon-chunk`), Dialog Box Launchers (`.ribbon-dialog-launcher`), Large 32px Buttons (`.ribbon-btn-large`), Small 16px Clustered Buttons (`.ribbon-btn-small`), Split Buttons, and In-Ribbon Galleries.
 
 6. **Phase 5: Status, Feedback & Multimedia**
    - Rebuild gel progress bars with the 50% sharp horizon specular gradient and translating pulse shimmer.
@@ -61,6 +63,7 @@ graph TD
    - Execute pixel-difference comparison against Windows 7 SP1 native screenshots at 96 DPI.
    - Validate accessibility compliance (WCAG 2.1 AA contrast ratios and ARIA attributes).
    - Rebuild documentation site (`docs/`) with live interactive control playgrounds and code generators.
+   - Ship reference layout templates for Event Viewer (MMC 3-pane), Control Panel (Category Grid), and Scenic Ribbon Applets (WordPad 7 and MS Paint 7) in `examples/` and documentation.
    - Produce final distribution artifacts (`dist/7.css`, `dist/7.scoped.css`, `dist/7.inline.css`).
 
 ---
@@ -97,7 +100,7 @@ Targeted extraction focuses strictly on gaps not covered by upstream repositorie
 
 ### 2.1 `aero.msstyles` Asset Manifest
 
-Location: `C:\Windows\Resources\Themes\Aero\aero.msstyles`  
+Location: `C:\Windows\Resources\Themes\Aero\aero.msstyles`
 Recommended Extraction Tools: `msstyleEditor` or NirSoft `ThemeResourceExtract`.
 
 | Component / Part | Theme Part Name & ID | State IDs | Asset Type | Target Output Filename |
@@ -166,7 +169,7 @@ Extraction Tool: Resource Hacker (Version 5.1.8+).
 
 ### 2.3 Audio Feedback Manifest
 
-Location: `C:\Windows\Media\`  
+Location: `C:\Windows\Media\`
 Format: PCM WAV, 16-bit 44.1 kHz Mono/Stereo.
 
 | Filename | Event Trigger | Usage in 7.css |
@@ -194,14 +197,14 @@ Dialog Units (DLUs) ensure that dialog layouts scale proportionally with system 
 1. **Horizontal Conversion Ratio:**
    - 4 horizontal DLUs equal the average character width of the dialog font.
    - For 9pt Segoe UI at 96 DPI, the average character width is 7 pixels.
-   - Conversion equation:  
+   - Conversion equation:
      $$\text{Pixels}_X = \frac{\text{DLU}_X \times 7}{4} = \text{DLU}_X \times 1.75$$
 
 2. **Vertical Conversion Ratio:**
    - 8 vertical DLUs equal the character height of the dialog font.
    - For 9pt Segoe UI at 96 DPI, the font cell height is 13 pixels (external leading provides 15 pixels line height).
-   - Conversion equation:  
-     $$\text{Pixels}_Y = \frac{\text{DLU}_Y \times 13}{8} \approx \text{DLU}_Y \times 1.625$$  
+   - Conversion equation:
+     $$\text{Pixels}_Y = \frac{\text{DLU}_Y \times 13}{8} \approx \text{DLU}_Y \times 1.625$$
      (MSDN standardizes default control height to $14\text{ DLUs} = 23\text{ pixels}$).
 
 ---
@@ -492,6 +495,9 @@ Normal Button Profile (Top to Bottom):
 7. **Status Bar (`.status-bar`)**: Bottom utility bar featuring sizing grip and multi-pane dividers.
 8. **Infobar (`.infobar`)**: Top warning/notification banner with yellow/blue status indicator and close button.
 9. **ScreenTip / Tooltip (`.tooltip`)**: Multi-line tooltip with title, icon, and description text.
+10. **Action Pane (`.action-pane`)**: MMC and Event Viewer collapsible utility panel with header bars and icon action links.
+11. **Splitter (`.splitter`, `.splitter-vertical`, `.splitter-horizontal`)**: Pane separator divider bar with resize cursor cues.
+12. **Category Grid & Task Links (`.category-grid`, `.task-links`)**: Control Panel two-column layout with 48px category icons, primary category headers, and secondary task hyperlinks.
 
 ---
 
@@ -513,6 +519,17 @@ Normal Button Profile (Top to Bottom):
 | ListView Row | `.listview-row`, `[role="row"]` | `:hover` | `[aria-selected="true"]`, `[aria-current="true"]` |
 | Window Frame | `.window` | None | `.active`, `.inactive`, `.maximized`, `[data-aero-tint]` |
 | Caption Button | `.caption-btn` | `:hover`, `:active`, `:disabled` | `[aria-label="Close"]`, `[aria-label="Maximize"]` |
+| Action Pane Item | `.action-item`, `.action-link` | `:hover`, `:active` | `[aria-expanded="true"]` |
+| Splitter Divider | `.splitter` | `:hover`, `:active` | `[aria-orientation="vertical"]`, `[aria-orientation="horizontal"]` |
+| Task Link | `.task-link` | `:hover`, `:active` | None |
+| Ribbon Tab | `.ribbon-tab`, `[role="tab"]` | `:hover`, `:focus-visible` | `[aria-selected="true"]` |
+| Ribbon App Button | `.ribbon-app-btn` | `:hover`, `:active` | `[aria-expanded="true"]` |
+| Ribbon Button (Large) | `.ribbon-btn-large` | `:hover`, `:active`, `:disabled` | `[aria-disabled="true"]` |
+| Ribbon Button (Small) | `.ribbon-btn-small` | `:hover`, `:active`, `:disabled` | `[aria-disabled="true"]`, `[aria-pressed="true"]` |
+| Ribbon Split Button | `.ribbon-split-btn` | `:hover`, `:active` | `[aria-expanded="true"]` |
+| Ribbon Dialog Launcher | `.ribbon-dialog-launcher` | `:hover`, `:active` | `[aria-label]` |
+| Zoom Slider | `.zoom-slider` | `:hover`, `:active` | `[aria-valuenow]` |
+| Ruler Bar | `.ruler` | None | `[data-unit="inches"]`, `[data-unit="cm"]` |
 
 ---
 

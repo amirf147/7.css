@@ -1,0 +1,158 @@
+{
+  "version": "1.0.0",
+  "progress": {
+    "error": {
+      "chunk": "linear-gradient(to bottom, #f29797 0%, #ea5c5c 50%, #de3131 51%, #ea5454 100%)",
+      "chunkBorder": "1px solid #b81b1b"
+    },
+    "normal": {
+      "chunkBorder": "1px solid #4a9126",
+      "chunk": "linear-gradient(to bottom, #a7e089 0%, #76c84c 50%, #52ab2a 51%, #6bc040 100%)",
+      "track": "linear-gradient(to bottom, #e2e2e2 0%, #ebebeb 100%)",
+      "border": "1px solid #959595"
+    },
+    "paused": {
+      "chunk": "linear-gradient(to bottom, #fae28c 0%, #f3c942 50%, #ebae19 51%, #f0c134 100%)",
+      "chunkBorder": "1px solid #bf8a08"
+    }
+  },
+  "taskDialog": {
+    "instructionColor": "#003399",
+    "footerBorder": "1px solid #dfdfdf",
+    "footerBackground": "#f0f0f0"
+  },
+  "uacBanners": {
+    "administrativeSigned": {
+      "textColor": "#ffffff",
+      "border": "1px solid #2b669a",
+      "level": "administrative",
+      "gradient": "linear-gradient(to bottom, #7bbbeb 0%, #428bca 100%)",
+      "hex": "#428bca"
+    },
+    "unknownPublisher": {
+      "textColor": "#4a3c00",
+      "border": "1px solid #e5c365",
+      "level": "warning",
+      "gradient": "linear-gradient(to bottom, #fff4b8 0%, #ffd659 100%)",
+      "hex": "#ffd659"
+    },
+    "blockedRestricted": {
+      "textColor": "#ffffff",
+      "border": "1px solid #b52b27",
+      "level": "blocked",
+      "gradient": "linear-gradient(to bottom, #ef8376 0%, #d9534f 100%)",
+      "hex": "#d9534f"
+    }
+  },
+  "aeroGlass": {
+    "pumpkin": {
+      "rgba": "rgba(196, 105, 49, 0.65)",
+      "name": "Pumpkin",
+      "hex": "#c46931"
+    },
+    "violet": {
+      "rgba": "rgba(111, 78, 184, 0.65)",
+      "name": "Violet",
+      "hex": "#6f4eb8"
+    },
+    "frost": {
+      "rgba": "rgba(229, 236, 240, 0.70)",
+      "name": "Frost",
+      "hex": "#e5ecf0"
+    },
+    "lime": {
+      "rgba": "rgba(143, 168, 59, 0.65)",
+      "name": "Lime",
+      "hex": "#8fa83b"
+    },
+    "sea": {
+      "rgba": "rgba(65, 125, 138, 0.65)",
+      "name": "Sea",
+      "hex": "#417d8a"
+    },
+    "blush": {
+      "rgba": "rgba(184, 89, 124, 0.65)",
+      "name": "Blush",
+      "hex": "#b8597c"
+    },
+    "ruby": {
+      "rgba": "rgba(184, 62, 62, 0.65)",
+      "name": "Ruby",
+      "hex": "#b83e3e"
+    },
+    "sun": {
+      "rgba": "rgba(201, 155, 59, 0.65)",
+      "name": "Sun",
+      "hex": "#c99b3b"
+    },
+    "leaf": {
+      "rgba": "rgba(94, 139, 78, 0.65)",
+      "name": "Leaf",
+      "hex": "#5e8b4e"
+    },
+    "slate": {
+      "rgba": "rgba(91, 108, 122, 0.65)",
+      "name": "Slate",
+      "hex": "#5b6c7a"
+    },
+    "fuchsia": {
+      "rgba": "rgba(168, 59, 139, 0.65)",
+      "name": "Fuchsia",
+      "hex": "#a83b8b"
+    },
+    "default": {
+      "rgba": "rgba(112, 164, 194, 0.65)",
+      "name": "Default (Sky Blue)",
+      "hex": "#70a4c2"
+    },
+    "smoke": {
+      "rgba": "rgba(71, 71, 71, 0.75)",
+      "name": "Smoke",
+      "hex": "#474747"
+    },
+    "sky": {
+      "rgba": "rgba(87, 139, 184, 0.65)",
+      "name": "Sky",
+      "hex": "#578bb8"
+    },
+    "pink": {
+      "rgba": "rgba(196, 101, 155, 0.65)",
+      "name": "Pink",
+      "hex": "#c4659b"
+    },
+    "twilight": {
+      "rgba": "rgba(69, 82, 99, 0.75)",
+      "name": "Twilight",
+      "hex": "#455263"
+    }
+  },
+  "windowsBasic": {
+    "highContrastBorder": "2px solid #000000",
+    "frameBorder": "4px solid #a0b4c8",
+    "titleBarInactive": {
+      "textColor": "#666666",
+      "border": "1px solid #9aaec4",
+      "gradient": "linear-gradient(to bottom, #bfcddb 0%, #dbe4ed 100%)"
+    },
+    "titleBarActive": {
+      "textColor": "#000000",
+      "border": "1px solid #7592b2",
+      "gradient": "linear-gradient(to bottom, #99b4d1 0%, #b9d1ea 100%)"
+    }
+  },
+  "ribbon": {
+    "rulerBackground": "#fbfbfc",
+    "appButtonWordpad": "linear-gradient(to bottom, #2b78c4 0%, #15559c 100%)",
+    "rulerBorder": "1px solid #d5dfe5",
+    "tabHoverGradient": "linear-gradient(to bottom, #f0f7fe 0%, #d8ecfe 100%)",
+    "background": "linear-gradient(to bottom, #ebf2f8 0%, #dbe7f2 100%)",
+    "chunkCaptionColor": "#4c4c4c",
+    "chunkHoverBorder": "1px solid #b8d6fb",
+    "rulerTickColor": "#828790",
+    "border": "1px solid #9bb5cc",
+    "appButtonPaint": "linear-gradient(to bottom, #2b78c4 0%, #15559c 100%)",
+    "tabActiveBackground": "#ffffff",
+    "chunkBorder": "1px solid #c2d5e3",
+    "tabActiveBorder": "1px solid #abbcd1"
+  }
+}

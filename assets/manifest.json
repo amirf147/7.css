@@ -1,0 +1,3522 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-10-06T00:59:10.5245645+03:00",
+  "files": [
+    {
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "path": "assets/audio/.gitkeep",
+      "bytes": 0
+    },
+    {
+      "sha256": "CB10BE5D1927839EFD381AE9E7B7DE52E4E1C361216C5823933A239BD7175EA2",
+      "path": "assets/audio/Windows Balloon.mp3",
+      "bytes": 8612
+    },
+    {
+      "sha256": "C47E8684122ABF323E2A6EDBE59EAE554971776B24D10D27492FFE3A481B0860",
+      "path": "assets/audio/Windows Balloon.webm",
+      "bytes": 4665
+    },
+    {
+      "sha256": "89D9DA5D885C6123DA3AD6845AD953C2D95AE1C5022E2AF66B88EE13EB56352C",
+      "path": "assets/audio/Windows Critical Stop.mp3",
+      "bytes": 7776
+    },
+    {
+      "sha256": "695C0F91900A47666A556661A63D3DE00FD6A46066CAEA108D0DC9508CA858E4",
+      "path": "assets/audio/Windows Critical Stop.webm",
+      "bytes": 4150
+    },
+    {
+      "sha256": "3679AE89D09F371E4511BAA4D846B203CB154AADF6C01E87C4D6D159E03DD935",
+      "path": "assets/audio/Windows Ding.mp3",
+      "bytes": 9239
+    },
+    {
+      "sha256": "8D32154B68718CC833510E15A18CB128191549AE8ACC91A10BF3B0AB5BF0540D",
+      "path": "assets/audio/Windows Ding.webm",
+      "bytes": 4930
+    },
+    {
+      "sha256": "78074DA7D6E54836761C4EFB2051817B06D89EA85C372F35A4853983E04A1257",
+      "path": "assets/audio/Windows Error.mp3",
+      "bytes": 8403
+    },
+    {
+      "sha256": "2CDA80BC493784E228D210DE078D3AE514DC4B0261A39C3B690C55902FA12EFF",
+      "path": "assets/audio/Windows Error.webm",
+      "bytes": 3921
+    },
+    {
+      "sha256": "2771660A40258E82C7AD2BFF22C4B8FF101491A0B6E35812592DB84382658F9B",
+      "path": "assets/audio/Windows Exclamation.mp3",
+      "bytes": 11537
+    },
+    {
+      "sha256": "C6EC7ECFB6F8CB73415CABBE0FB99F0B6FC249E7CF868F7F0C60D1D9409A6AA3",
+      "path": "assets/audio/Windows Exclamation.webm",
+      "bytes": 6099
+    },
+    {
+      "sha256": "C350DDE2158B403753A07D23E46088CEC47EE68307678321707FDCAD6E30C487",
+      "path": "assets/audio/Windows Logoff Sound.mp3",
+      "bytes": 9239
+    },
+    {
+      "sha256": "51C3A33094E8DF81C91249DA898F7EFCFC3AF200981D9621548676B034FF8E2E",
+      "path": "assets/audio/Windows Logoff Sound.webm",
+      "bytes": 5810
+    },
+    {
+      "sha256": "1D51D63CBC39F6482F837232C7BB2CF4BEE7F7F1997F7C9FC7868F91BD3C3D37",
+      "path": "assets/audio/Windows Logon Sound.mp3",
+      "bytes": 7776
+    },
+    {
+      "sha256": "D2D76DB2A18E98608D823CE84093F34B1D55C8BF600B138C86463A371DF530E6",
+      "path": "assets/audio/Windows Logon Sound.webm",
+      "bytes": 4862
+    },
+    {
+      "sha256": "FF75322239C0EE777456A66BB5ED08EC1249F0E48A7C1E582CEF5A0D4477C3D7",
+      "path": "assets/audio/Windows Menu Command.mp3",
+      "bytes": 1715
+    },
+    {
+      "sha256": "677B0A149C8000BEB2FEF1052C7BCB5B6FD4AA12CDCA363B40E100D6230E62CF",
+      "path": "assets/audio/Windows Menu Command.webm",
+      "bytes": 1095
+    },
+    {
+      "sha256": "13EF54AD22DFC708555D3667B3CD91CF1057FAEC87D1FC60F9D46E592E6D27CA",
+      "path": "assets/audio/Windows Minimize.mp3",
+      "bytes": 6522
+    },
+    {
+      "sha256": "599A0AA050EF2410C22578F120064CFD53448A21C3A532E7F7C79FC5B28CE9D0",
+      "path": "assets/audio/Windows Minimize.webm",
+      "bytes": 3219
+    },
+    {
+      "sha256": "80E078A5D18E335EF0E1592289BF65945D5052BFDAFAB08528C0709417E56E9D",
+      "path": "assets/audio/Windows Navigation Start.mp3",
+      "bytes": 1088
+    },
+    {
+      "sha256": "1544B8ACDEA31BE9628B5538EAD098A296FAEE4D6914E17BC4B1179DC457B153",
+      "path": "assets/audio/Windows Navigation Start.webm",
+      "bytes": 823
+    },
+    {
+      "sha256": "5FFF155B3258377CA2F4A48BDA7DAAC5E25DFA914F5503DA912B2D1CC646ACC2",
+      "path": "assets/audio/Windows Print complete.mp3",
+      "bytes": 16553
+    },
+    {
+      "sha256": "BEB26A42C1DE0BFF37ABF68D48679CAC92C48CCE1851D2AD170C7DAD75A73843",
+      "path": "assets/audio/Windows Print complete.webm",
+      "bytes": 8664
+    },
+    {
+      "sha256": "F7DEF561B896CFB81EACD6DA12CEECC096F26D6BD587506D82198390D4BAF38A",
+      "path": "assets/audio/Windows Recycle.mp3",
+      "bytes": 4850
+    },
+    {
+      "sha256": "13C7D6CAC079A2B0CFFF602FC953D1ABA2663835EA3CC50C04850C861751C179",
+      "path": "assets/audio/Windows Recycle.webm",
+      "bytes": 2659
+    },
+    {
+      "sha256": "57482CA988D82456A28D80EDE5F163BD7AF37401BE3F97EF1E12B4506BBA4A28",
+      "path": "assets/audio/Windows Restore.mp3",
+      "bytes": 7567
+    },
+    {
+      "sha256": "5ECCAFEE618AD79695A912D447B47E58DD04502068B1DCF66D4E3A7D1F374DC4",
+      "path": "assets/audio/Windows Restore.webm",
+      "bytes": 3653
+    },
+    {
+      "sha256": "378A7FE014DC5B007791038DEFBC8B63430D8C9539E4AA9D1D294D7158E87B53",
+      "path": "assets/audio/Windows Ringin.mp3",
+      "bytes": 9657
+    },
+    {
+      "sha256": "A040E23DFE85FE88B7E40C890414A61FF0B343D4571BA8A1FB8F8E94FCFB04DE",
+      "path": "assets/audio/Windows Ringin.webm",
+      "bytes": 5611
+    },
+    {
+      "sha256": "A8E952E08555A68127DC4A9592929CAB08772865A2793773DB4D3E5E924CD535",
+      "path": "assets/audio/Windows Ringout.mp3",
+      "bytes": 4850
+    },
+    {
+      "sha256": "20764C8585B3DAF217241B62423C3F4D966F6B87D74B907A5C12581AEA3A125D",
+      "path": "assets/audio/Windows Ringout.webm",
+      "bytes": 2983
+    },
+    {
+      "sha256": "69EE5D3394FFB01FABD976E5557C2E574A3DA9970217FC3DAAC1F22D7EDF46A4",
+      "path": "assets/audio/Windows Shutdown.mp3",
+      "bytes": 8194
+    },
+    {
+      "sha256": "C3E007C4539D7449495D1F719B1C1C5F9B36FF5ABE49CBC25E5EB31132021C8D",
+      "path": "assets/audio/Windows Shutdown.webm",
+      "bytes": 5141
+    },
+    {
+      "sha256": "76E0CA453454654E2D540CB735ECF1C702C710685CF31FD0A58CF31B03D86581",
+      "path": "assets/audio/Windows Startup.mp3",
+      "bytes": 2342
+    },
+    {
+      "sha256": "0EEE9938B0481461C192E1D842F44D50DCE7F693F762E1286ACED70D116187B9",
+      "path": "assets/audio/Windows Startup.webm",
+      "bytes": 1281
+    },
+    {
+      "sha256": "309A27BBDA5ABFC4A3A7CB175D54470BCF61ED6898A845BEC5E29BD144377BFA",
+      "path": "assets/audio/Windows User Account Control.mp3",
+      "bytes": 4223
+    },
+    {
+      "sha256": "C1971771A6A09E83CDB728F87CC3728CB4BCF425ACA92F009165D2C3325E8D69",
+      "path": "assets/audio/Windows User Account Control.webm",
+      "bytes": 2365
+    },
+    {
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "path": "assets/extracted/aero_msstyles/buttons/.gitkeep",
+      "bytes": 0
+    },
+    {
+      "sha256": "B9693DE39584E636614370E18F3D7F709ADA380940B48BA79742ACA44627320E",
+      "path": "assets/extracted/aero_msstyles/buttons/button_push_6state.png",
+      "bytes": 768
+    },
+    {
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "path": "assets/extracted/aero_msstyles/caption_buttons/.gitkeep",
+      "bytes": 0
+    },
+    {
+      "sha256": "6DF5CBFDC0282206B01D83E14090176006B8B101985EB93CD8AAAA4DAA85A06F",
+      "path": "assets/extracted/aero_msstyles/caption_buttons/caption_close.png",
+      "bytes": 140
+    },
+    {
+      "sha256": "08B59A568280A73C354F961592DFC46743D5935B3A07072F1F50DC0F47FCE1CA",
+      "path": "assets/extracted/aero_msstyles/caption_buttons/caption_glow_cyan.png",
+      "bytes": 181
+    },
+    {
+      "sha256": "B26FA54F9D68173BB839CB376F7713F8513E4A4F8FF26EA77346ED7F88865DB7",
+      "path": "assets/extracted/aero_msstyles/caption_buttons/caption_glow_red.png",
+      "bytes": 179
+    },
+    {
+      "sha256": "02484D2CD168996354D0D6DA967A8673EC47E623E4F8C6C7DECA85752007A99E",
+      "path": "assets/extracted/aero_msstyles/caption_buttons/caption_max.png",
+      "bytes": 132
+    },
+    {
+      "sha256": "02484D2CD168996354D0D6DA967A8673EC47E623E4F8C6C7DECA85752007A99E",
+      "path": "assets/extracted/aero_msstyles/caption_buttons/caption_min.png",
+      "bytes": 132
+    },
+    {
+      "sha256": "02484D2CD168996354D0D6DA967A8673EC47E623E4F8C6C7DECA85752007A99E",
+      "path": "assets/extracted/aero_msstyles/caption_buttons/caption_restore.png",
+      "bytes": 132
+    },
+    {
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "path": "assets/extracted/aero_msstyles/listview/.gitkeep",
+      "bytes": 0
+    },
+    {
+      "sha256": "EFF70273DAA90B6EAD0640E2736D73FDA1E6691A27EEC2BF219FD06F6D7273AF",
+      "path": "assets/extracted/aero_msstyles/listview/listview_header.png",
+      "bytes": 117
+    },
+    {
+      "sha256": "ACE2EFCA0157882790D3084172487AC681F3535904B9711D9FD8EFD708E9F3E1",
+      "path": "assets/extracted/aero_msstyles/listview/listview_sort_arrow.png",
+      "bytes": 95
+    },
+    {
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "path": "assets/extracted/aero_msstyles/progress/.gitkeep",
+      "bytes": 0
+    },
+    {
+      "sha256": "B86192DE3A0F1A1BC0CCFB73A8A5DFBE05ED4B359A179548E65142702923E830",
+      "path": "assets/extracted/aero_msstyles/progress/progress_chunk_green.png",
+      "bytes": 108
+    },
+    {
+      "sha256": "056D5611355D8164C1C9E867297B72CD5F34424DA5180E96FADA85D11579C7C5",
+      "path": "assets/extracted/aero_msstyles/progress/progress_shimmer.png",
+      "bytes": 147
+    },
+    {
+      "sha256": "B2DD40F7B2F40E20E9D3FDACFE6FCF6C47F0A7C0BEB43C1EFD6944D145CE9DD3",
+      "path": "assets/extracted/aero_msstyles/progress/progress_track.png",
+      "bytes": 112
+    },
+    {
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "path": "assets/extracted/aero_msstyles/scrollbars/.gitkeep",
+      "bytes": 0
+    },
+    {
+      "sha256": "ADA3645AE671C0DF9387934DF10E35E6C200B106C850F4041BDC48E2151477AF",
+      "path": "assets/extracted/aero_msstyles/scrollbars/scrollbar_arrows.png",
+      "bytes": 111
+    },
+    {
+      "sha256": "FBA61B704723F9808180945E0B6A9F7CFA202354D347D7EA7BBEC6AAAC20D3B3",
+      "path": "assets/extracted/aero_msstyles/scrollbars/scrollbar_gripper_horz.png",
+      "bytes": 87
+    },
+    {
+      "sha256": "BB51D35E50FCF6D4351DE0061EAB1CF2A524A0B70991943DFD05511A824FA19E",
+      "path": "assets/extracted/aero_msstyles/scrollbars/scrollbar_gripper_vert.png",
+      "bytes": 104
+    },
+    {
+      "sha256": "EF7DDA744E0FCCE7D6C1E29044A5257E8C1EDC062D5B391F815B2690B08D690C",
+      "path": "assets/extracted/aero_msstyles/scrollbars/scrollbar_thumb_horz.png",
+      "bytes": 129
+    },
+    {
+      "sha256": "88FD8F1DE7FE3860F116FEE66302A2AE11FB4E62FC06BAFB659CF34575494B32",
+      "path": "assets/extracted/aero_msstyles/scrollbars/scrollbar_thumb_vert.png",
+      "bytes": 130
+    },
+    {
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "path": "assets/extracted/aero_msstyles/tabs/.gitkeep",
+      "bytes": 0
+    },
+    {
+      "sha256": "7F78C2D3885C4B8365A021C5F2D024636E371580637F0B41727467D1EA140BD6",
+      "path": "assets/extracted/aero_msstyles/tabs/tab_item_bottom.png",
+      "bytes": 140
+    },
+    {
+      "sha256": "63DE349CFCE65EC89D8EB96D33583FF37C45B4C5A4313A53C4C47F0C33031916",
+      "path": "assets/extracted/aero_msstyles/tabs/tab_item_top.png",
+      "bytes": 126
+    },
+    {
+      "sha256": "5BB6E83311543CAFC4EE0E990DFDC8859F2CFE429252E93DF9B6F84D3F6E28C5",
+      "path": "assets/extracted/aero_msstyles/tabs/tab_pane.png",
+      "bytes": 136
+    },
+    {
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "path": "assets/extracted/aero_msstyles/textures/.gitkeep",
+      "bytes": 0
+    },
+    {
+      "sha256": "3D89BE02DBF230CC709B5219997B3F11EF05A3C2475630CE452C89E66F0B7E1F",
+      "path": "assets/extracted/aero_msstyles/textures/aero_glass_reflection.png",
+      "bytes": 489
+    },
+    {
+      "sha256": "7BC4A51BF22E4ACCDEBCB3DB44A515A7797D4AAA64D84C8EF72DF80992EBFA06",
+      "path": "assets/extracted/aero_msstyles/textures/glass_border_active.png",
+      "bytes": 86
+    },
+    {
+      "sha256": "7FBC306E2AE38C0B7391F1B8304FB1DEEBAD14507C6420058C79A8262B0A1860",
+      "path": "assets/extracted/aero_msstyles/textures/glass_border_inactive.png",
+      "bytes": 86
+    },
+    {
+      "sha256": "C5107C89755D72AED6876F613D50DABA9B23EAAF648043398D2DEB98B8C88ECB",
+      "path": "assets/extracted/aero_msstyles/textures/glass_noise.png",
+      "bytes": 5687
+    },
+    {
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "path": "assets/extracted/aero_msstyles/treeview/.gitkeep",
+      "bytes": 0
+    },
+    {
+      "sha256": "BAC8DB76367E3E552A21A60881731F12F044DDE28D4298DE712341D952EF7700",
+      "path": "assets/extracted/aero_msstyles/treeview/treeview_chevrons.png",
+      "bytes": 131
+    },
+    {
+      "sha256": "74D068CF031F51AE095224BD41EC4D2CC321D78D2941FBE454E1E1727BCFB0EF",
+      "path": "assets/extracted/cursors/aero_arrow_l.cur",
+      "bytes": 13942
+    },
+    {
+      "sha256": "9F07EF9E99A329475C60F3AA4DF11F40F4D453BA98FDB0210120F8B7EAF81C38",
+      "path": "assets/extracted/cursors/aero_arrow_xl.cur",
+      "bytes": 13942
+    },
+    {
+      "sha256": "8EEF83F28AA3D333BBA6FB595AF829A734A8333122A9E67CBE029D204127499B",
+      "path": "assets/extracted/cursors/aero_arrow.cur",
+      "bytes": 13942
+    },
+    {
+      "sha256": "EBC5FA9316F0E75176DD6622B9155D343E8E1B7679587FD52874B1E4E490A618",
+      "path": "assets/extracted/cursors/aero_busy_l.ani",
+      "bytes": 251168
+    },
+    {
+      "sha256": "9CAF69339C196D6C3BF2B6A45DF9743E6FB50121513AAF63E4F39E504A91253F",
+      "path": "assets/extracted/cursors/aero_busy_xl.ani",
+      "bytes": 251168
+    },
+    {
+      "sha256": "B666C0C0CC5CB8CA839E429FC29421BB6B7BE4C1591DB2A8F721CFA8C7A456FF",
+      "path": "assets/extracted/cursors/aero_busy.ani",
+      "bytes": 251168
+    },
+    {
+      "sha256": "B809815D2FE30974B281879D93360F1E0C3D6E26A4E777012D958AFDAFEE0F3A",
+      "path": "assets/extracted/cursors/aero_ew_l.cur",
+      "bytes": 13942
+    },
+    {
+      "sha256": "246A13726FD7A30327456D5E7A9C0B878E4876185ED1397D07672893C50FB2BC",
+      "path": "assets/extracted/cursors/aero_ew_xl.cur",
+      "bytes": 13942
+    },
+    {
+      "sha256": "8DFDCC0D690829F6D15C62EF47153737DDA0584423FD9C5EDE2FE5F111055579",
+      "path": "assets/extracted/cursors/aero_ew.cur",
+      "bytes": 13942
+    },
+    {
+      "sha256": "C97FFF5064E47C916C4A15B1FC9DA5F8BCAAE0E7F7FB69D4FB06D9643B7DA8E3",
+      "path": "assets/extracted/cursors/aero_helpsel_l.cur",
+      "bytes": 13942
+    },
+    {
+      "sha256": "980FFC7EE2C2D65989758BEAF99ECA9D31F0A3C1E5322F358F281A971CD57653",
+      "path": "assets/extracted/cursors/aero_helpsel_xl.cur",
+      "bytes": 13942
+    },
+    {
+      "sha256": "BC107EF23BEBF87EB7DD2E81A799440AE70F573E4897AB340AB439BC4A4665D7",
+      "path": "assets/extracted/cursors/aero_helpsel.cur",
+      "bytes": 13942
+    },
+    {
+      "sha256": "9468DFA984CD899B7B52F465C94D7C8EEA04F7533BAC5C05DE3B8436B0B8F662",
+      "path": "assets/extracted/cursors/aero_link_l.cur",
+      "bytes": 13942
+    },
+    {
+      "sha256": "B10AFBC9668DCF0D37D48E3863F73AAD3E84983473B8DC153D31C019AAE73671",
+      "path": "assets/extracted/cursors/aero_link_xl.cur",
+      "bytes": 13942
+    },
+    {
+      "sha256": "F6595E48C3840B0D3D124DD5AD3D03F8FC4E2E114F8EBEB54330A34C5C6B5064",
+      "path": "assets/extracted/cursors/aero_link.cur",
+      "bytes": 13942
+    },
+    {
+      "sha256": "732E4643463763BAB1FF335B3C111E47741A9E6938E32E2DAF61620A77255533",
+      "path": "assets/extracted/cursors/aero_move_l.cur",
+      "bytes": 13942
+    },
+    {
+      "sha256": "DDC8FA6998A89E94C05144829E07FC3EFA73DF09EFCDB27FA13E692B5F2EFD48",
+      "path": "assets/extracted/cursors/aero_move_xl.cur",
+      "bytes": 13942
+    },
+    {
+      "sha256": "D4274EEAD11230EC10833DB103239D826202BD92C0C6A3D7E2A0D01FFBAF99E1",
+      "path": "assets/extracted/cursors/aero_move.cur",
+      "bytes": 13942
+    },
+    {
+      "sha256": "ADA5573A70CEEB850120ABB7FEC2BB8A82B0C690EFC28B217A5BFD7423D2C635",
+      "path": "assets/extracted/cursors/aero_nesw_l.cur",
+      "bytes": 13942
+    },
+    {
+      "sha256": "73EA79A169DE917358AEA8567D6664E10C5DE2E34D7E2F25446F1F8297916AEA",
+      "path": "assets/extracted/cursors/aero_nesw_xl.cur",
+      "bytes": 13942
+    },
+    {
+      "sha256": "CD5CF1C7601FF0B315DA11107BEB92DED58B4412841D1AED1FCBD8336371B7B7",
+      "path": "assets/extracted/cursors/aero_nesw.cur",
+      "bytes": 13942
+    },
+    {
+      "sha256": "0E98F74DEC12C7C8254B7865C5DD6BE6B8BA17849E4F39A3E98F103320FD6352",
+      "path": "assets/extracted/cursors/aero_ns_l.cur",
+      "bytes": 13942
+    },
+    {
+      "sha256": "3D032A8DDF1C9FD643B64345FAAD8B27EA1D4B53222E9071BC5B58784C7BE922",
+      "path": "assets/extracted/cursors/aero_ns_xl.cur",
+      "bytes": 13942
+    },
+    {
+      "sha256": "567EAC60ACECDAC52D5BC57267DE48DC4699EA6C2117A1619830259805BC2837",
+      "path": "assets/extracted/cursors/aero_ns.cur",
+      "bytes": 13942
+    },
+    {
+      "sha256": "5756813EF46014CD8EF26C064D0EF1C0D36BC4DB8880B402B2E0BCD3C1EA40BF",
+      "path": "assets/extracted/cursors/aero_nwse_l.cur",
+      "bytes": 13942
+    },
+    {
+      "sha256": "6AC8CA4EF9CEB212D09F08F16F2CB1B471875E0D83290193303CAAF9F19C95A5",
+      "path": "assets/extracted/cursors/aero_nwse_xl.cur",
+      "bytes": 13942
+    },
+    {
+      "sha256": "459AC289CBFB669945B4065751411BE16D5B5EF8AC41877606DFE4ECAC0A305C",
+      "path": "assets/extracted/cursors/aero_nwse.cur",
+      "bytes": 13942
+    },
+    {
+      "sha256": "DDFF45DDC07BAFBF2105C9AE9AAB2E210A9D8699056542C3B5ABB32DCB60615E",
+      "path": "assets/extracted/cursors/aero_pen_l.cur",
+      "bytes": 13942
+    },
+    {
+      "sha256": "3390EB5BEC55B08D58D153D399A747C318CF0AF6FECAC65ABBD3160C0A307BFE",
+      "path": "assets/extracted/cursors/aero_pen_xl.cur",
+      "bytes": 13942
+    },
+    {
+      "sha256": "8D0269D2B2CDF6BEBEDAA18070EC59E4CD2D035BC07587E23BBE6BD0CD9DCB59",
+      "path": "assets/extracted/cursors/aero_pen.cur",
+      "bytes": 13942
+    },
+    {
+      "sha256": "FD30429C9431A407DDFEB0FFEFEA3E065F117F95057E9EDE9D2EC351FB375FAF",
+      "path": "assets/extracted/cursors/aero_unavail_l.cur",
+      "bytes": 13942
+    },
+    {
+      "sha256": "AA3ABAB069A5557C99161C80B90535F1C6C1DDBBDF1E9A0DBE61D615590DED97",
+      "path": "assets/extracted/cursors/aero_unavail_xl.cur",
+      "bytes": 13942
+    },
+    {
+      "sha256": "E9C97BEC5B47A4BF498FA142EBCCCEAAEFFE805121326BCE03227B4245C2628D",
+      "path": "assets/extracted/cursors/aero_unavail.cur",
+      "bytes": 13942
+    },
+    {
+      "sha256": "91715FCEEA73E8560B3F3BCBCCD09C307F7AB00A4E9025DE2EAE8D7CDF1B3190",
+      "path": "assets/extracted/cursors/aero_up_l.cur",
+      "bytes": 13942
+    },
+    {
+      "sha256": "E9D525243CFA361148A99D2C4D49E7E4C34D3BD83E3A24BC851AF97D85F0F1CE",
+      "path": "assets/extracted/cursors/aero_up_xl.cur",
+      "bytes": 13942
+    },
+    {
+      "sha256": "2AC5A3023BDED1FF947B428EB72DE956D16EE6924B996A2AD99B7F03D29E3307",
+      "path": "assets/extracted/cursors/aero_up.cur",
+      "bytes": 13942
+    },
+    {
+      "sha256": "7833CEE75ADE825E3A9068DC9DF02FB358876CEB037F322CC70BE76766C34F63",
+      "path": "assets/extracted/cursors/aero_working_l.ani",
+      "bytes": 251168
+    },
+    {
+      "sha256": "7B0FC9CE638B7C93C5A7CB482AF2371849A9D23FCDD869EF3F9F24D57461D5BA",
+      "path": "assets/extracted/cursors/aero_working_xl.ani",
+      "bytes": 251168
+    },
+    {
+      "sha256": "6A68858CC3A47F57FADF5BD8A8E30A8160F0A7190AE97F747DBF78726C17E1A2",
+      "path": "assets/extracted/cursors/aero_working.ani",
+      "bytes": 251168
+    },
+    {
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "path": "assets/extracted/imageres_dll/.gitkeep",
+      "bytes": 0
+    },
+    {
+      "sha256": "27E2E8F71591DE373B988CBF63790A4ADB032E00F5B84093BDFF664229174447",
+      "path": "assets/extracted/imageres_dll/Accessibility/accessibilitycpl_1.ico",
+      "bytes": 190470
+    },
+    {
+      "sha256": "EE6E205FFB2A5A11B4405BDDEDA11CC231DBFDC270E629B6281AD1A3E76EFFD7",
+      "path": "assets/extracted/imageres_dll/Accessibility/accessibilitycpl_320.ico",
+      "bytes": 224965
+    },
+    {
+      "sha256": "69988B8693491BAFCD18BD4FDAA4AD4349BD36DE2716FF1D20143C25DEC4DD92",
+      "path": "assets/extracted/imageres_dll/Accessibility/accessibilitycpl_321.ico",
+      "bytes": 231103
+    },
+    {
+      "sha256": "D176E35AD41150CA8CBF57723843E855AF930CBA5E0AF1941A4B87976E2D2924",
+      "path": "assets/extracted/imageres_dll/Accessibility/accessibilitycpl_322.ico",
+      "bytes": 208952
+    },
+    {
+      "sha256": "8A7A739550E684F747B8DD3552E4C3E7B7297E827A572155013D8F9A3E6F06C4",
+      "path": "assets/extracted/imageres_dll/Accessibility/accessibilitycpl_323.ico",
+      "bytes": 215708
+    },
+    {
+      "sha256": "EF1EBD9B2F2C2365D7231BE2A415F24B2AD77E39D6F2F682B7B24639B4C74926",
+      "path": "assets/extracted/imageres_dll/Accessibility/accessibilitycpl_324.ico",
+      "bytes": 215016
+    },
+    {
+      "sha256": "DFA118F2A08EDB083706FCF3FD412C5CBC62557373ED7BE6929D9D491552FEDD",
+      "path": "assets/extracted/imageres_dll/Accessibility/accessibilitycpl_325.ico",
+      "bytes": 211655
+    },
+    {
+      "sha256": "CF1502934C27BA2095F3DCA2C720E0F4FDB8421E0A5134C8A31A1C053B458CCD",
+      "path": "assets/extracted/imageres_dll/Accessibility/accessibilitycpl_326.ico",
+      "bytes": 221130
+    },
+    {
+      "sha256": "421BDC3D33C587CA2C9B8B90A68DDDC6306134964D19E84CA220300B85B89BD0",
+      "path": "assets/extracted/imageres_dll/Accessibility/accessibilitycpl_327.ico",
+      "bytes": 213632
+    },
+    {
+      "sha256": "EE6E205FFB2A5A11B4405BDDEDA11CC231DBFDC270E629B6281AD1A3E76EFFD7",
+      "path": "assets/extracted/imageres_dll/Accessibility/accessibilitycpl_328.ico",
+      "bytes": 224965
+    },
+    {
+      "sha256": "1AC374E14EF77C64A39A72EA633E82AA6E241F517F61D1C8E0F6BDEA3D50914E",
+      "path": "assets/extracted/imageres_dll/Accessibility/accessibilitycpl_329.ico",
+      "bytes": 207794
+    },
+    {
+      "sha256": "EE87FE969125670600C5B05F82B8A24F0986D06A912E941CB1D43DEA52DE455E",
+      "path": "assets/extracted/imageres_dll/Accessibility/accessibilitycpl_336.ico",
+      "bytes": 215244
+    },
+    {
+      "sha256": "26E99E4E3743DA34750203FC0EEB4DCE4BD351358DE514ADD41E36442F13393C",
+      "path": "assets/extracted/imageres_dll/Accessibility/accessibilitycpl_338.ico",
+      "bytes": 179065
+    },
+    {
+      "sha256": "D2FB744D0728BB93D0A288B6ACBA0F1C21452A47DFFFE2E7A111019418E63218",
+      "path": "assets/extracted/imageres_dll/Accessibility/accessibilitycpl_339.ico",
+      "bytes": 257609
+    },
+    {
+      "sha256": "5AE01C3D39FF2D8A271E3AC05DBB8DE4E755032FCD9128DF1BE4816B86F2C769",
+      "path": "assets/extracted/imageres_dll/Accessibility/accessibilitycpl_340.ico",
+      "bytes": 212442
+    },
+    {
+      "sha256": "E1975D26B807DE38E209F8AC40A30F7A00A01BE2F1867CD6AD43A0CE5E1304C3",
+      "path": "assets/extracted/imageres_dll/Action Center/ActionCenter_1.ico",
+      "bytes": 152922
+    },
+    {
+      "sha256": "26CF5736B490B63A6E137F6B2BD625060D1B2F96EC9EB6386357AFDD33FFCB4D",
+      "path": "assets/extracted/imageres_dll/Action Center/ActionCenter_2.ico",
+      "bytes": 82329
+    },
+    {
+      "sha256": "BAA652559406BAC5CF1F76F285D0735A4E3A7F9844BF0D508DC32EA0B9936D32",
+      "path": "assets/extracted/imageres_dll/Action Center/ActionCenter_3.ico",
+      "bytes": 89251
+    },
+    {
+      "sha256": "F9C724434616D55CB78199A494D5719314D187BA1FFDAD631F65697915DD0719",
+      "path": "assets/extracted/imageres_dll/Action Center/ActionCenter_4.ico",
+      "bytes": 87613
+    },
+    {
+      "sha256": "57825B811535E009301BA02A2E8CB4D4B953C69D4F07F30793EBA1C68514D7B4",
+      "path": "assets/extracted/imageres_dll/Action Center/ActionCenter_5.ico",
+      "bytes": 18582
+    },
+    {
+      "sha256": "BD5A706546643A26E91EFA1C7D70FB7F53D8BFA30959F3852C461EE053631529",
+      "path": "assets/extracted/imageres_dll/Action Center/ActionCenter_6.ico",
+      "bytes": 18582
+    },
+    {
+      "sha256": "82A4B28403825F8530C8D7A1E36B7E7F3FF1CA8168751765EA246116E548F6BB",
+      "path": "assets/extracted/imageres_dll/Action Center/ActionCenter_7.ico",
+      "bytes": 18582
+    },
+    {
+      "sha256": "EE9B553E1AC3CA157DFD3681430D988471DF57DD1588FFA36743540BF5C00786",
+      "path": "assets/extracted/imageres_dll/Action Center/ActionCenter_8.ico",
+      "bytes": 18582
+    },
+    {
+      "sha256": "D9005301F0F19717232EF06590ADFEE6D746A2F034B28AFDE57C33B037430A10",
+      "path": "assets/extracted/imageres_dll/Action Center/ActionCenter_9.ico",
+      "bytes": 110646
+    },
+    {
+      "sha256": "55CE015F160E4A4DA6BD50B865485553D68D9B0083AEE3F5D1AA30E5E1790D15",
+      "path": "assets/extracted/imageres_dll/Action Center/ActionCenterCPL_2.ico",
+      "bytes": 19278
+    },
+    {
+      "sha256": "CA374DE2D1A301F52FDD4D2DE57FC8C4CA07EA63A1B43CB00D8FF19DE8CCF317",
+      "path": "assets/extracted/imageres_dll/Action Center/ActionCenterCPL_3.ico",
+      "bytes": 33662
+    },
+    {
+      "sha256": "9F22554A543E857A48C368AC9352195CB9E7FC47E8F02ED6817C3700510C1FB1",
+      "path": "assets/extracted/imageres_dll/Action Center/ActionCenterCPL_4.ico",
+      "bytes": 19278
+    },
+    {
+      "sha256": "AB47F4A2D8E9E79626330D9EE7AA6F6EBDF0EE50D60269E74044D8B77E9CF550",
+      "path": "assets/extracted/imageres_dll/Action Center/ActionCenterCPL_5.ico",
+      "bytes": 128629
+    },
+    {
+      "sha256": "56C173F375C5255E2107A7DEEDFFF8D1918C11E4E4B03B4B43977AF24C42CE2E",
+      "path": "assets/extracted/imageres_dll/Action Center/ActionCenterCPL_6.ico",
+      "bytes": 25214
+    },
+    {
+      "sha256": "1BB8DEF683595964BA9CC93622D4AA7D425FD8A0CFADD07C4A811415CBD123F1",
+      "path": "assets/extracted/imageres_dll/Action Center/ActionCenterCPL_7.ico",
+      "bytes": 2862
+    },
+    {
+      "sha256": "AB47F4A2D8E9E79626330D9EE7AA6F6EBDF0EE50D60269E74044D8B77E9CF550",
+      "path": "assets/extracted/imageres_dll/Control Panel/AuthFWGP_100.ico",
+      "bytes": 128629
+    },
+    {
+      "sha256": "55761F5125B648A6FF09BB39FE1D5072F5D6AC179D4F0602B6BE2FBF4FF1CF81",
+      "path": "assets/extracted/imageres_dll/Control Panel/baaupdate_1.ico",
+      "bytes": 87498
+    },
+    {
+      "sha256": "0285059A43280188518F290CFE540B9C88BE3BA0EA57B43ECF77A3E29C37603E",
+      "path": "assets/extracted/imageres_dll/Control Panel/explorer_262.ico",
+      "bytes": 18582
+    },
+    {
+      "sha256": "9C5389E5CD744AF7326527F87FF99B6C4D7C8BBFAF9D1EB434C19264FA7FB70D",
+      "path": "assets/extracted/imageres_dll/Control Panel/Faultrep_5201.ico",
+      "bytes": 130580
+    },
+    {
+      "sha256": "911B1DEE433AA7171C9FB8834ED652FCDE4FDBE517AB9272C78F0EA1AF2EC200",
+      "path": "assets/extracted/imageres_dll/Control Panel/imageres_27.ico",
+      "bytes": 97374
+    },
+    {
+      "sha256": "EC157FC54638DE8168DB4F3932B21BEB63787261E09853BADFD34F9ADE87317D",
+      "path": "assets/extracted/imageres_dll/Control Panel/imageres_78.ico",
+      "bytes": 179023
+    },
+    {
+      "sha256": "789D160C6789A396E62C2D025187A0DE793CC7BCDBE1F22485D079C184DAE023",
+      "path": "assets/extracted/imageres_dll/Control Panel/imageres_80.ico",
+      "bytes": 285766
+    },
+    {
+      "sha256": "3B9A561F274787CED14B8D3E415CF34FC9C5AFAA69A4DCB06CE8B46ECC900DC7",
+      "path": "assets/extracted/imageres_dll/Control Panel/imageres_87.ico",
+      "bytes": 80992
+    },
+    {
+      "sha256": "D07EA880EE3486137AEBBA667AFD05BE143E0A4048732D3AF8EFCA76C4DD4125",
+      "path": "assets/extracted/imageres_dll/Control Panel/powercfg_202.ico",
+      "bytes": 88774
+    },
+    {
+      "sha256": "107C64DDE486C078C1210E30B41ADF5FA1F905BB54DF8D90FFC2E13C53D1579B",
+      "path": "assets/extracted/imageres_dll/Control Panel/powercpl_506.ico",
+      "bytes": 22358
+    },
+    {
+      "sha256": "814AA4E4A848D197F9337249B5C8E5DB22387DDAAA1368BDB0FE304CD69EAED8",
+      "path": "assets/extracted/imageres_dll/Control Panel/powercpl_507.ico",
+      "bytes": 25942
+    },
+    {
+      "sha256": "75BD050A664F4985CBD088C018552909A732DDF0619BD9397F4F6FCA20AE8551",
+      "path": "assets/extracted/imageres_dll/Control Panel/powercpl_512.ico",
+      "bytes": 29926
+    },
+    {
+      "sha256": "9A60C53B73510B31C9099BF547BF7D5FF1DCD46418B9146150440CAE32EA9F32",
+      "path": "assets/extracted/imageres_dll/Control Panel/powercpl_513.ico",
+      "bytes": 29926
+    },
+    {
+      "sha256": "5B27F7A3A5275456AEC230186FF54FB97EC2506E3CE4AC9AB3E6FEC77BAD847F",
+      "path": "assets/extracted/imageres_dll/Control Panel/powercpl_514.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "649BD6C22EF15D455BB80CE1FFBCE176E489B6693AF3D5D7A3CFABEDF6E68325",
+      "path": "assets/extracted/imageres_dll/Control Panel/powercpl_515.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "58FA21CC46D26B099EAF506A71CC82E4E27DEE92E54699566852B3A808DF80E7",
+      "path": "assets/extracted/imageres_dll/Control Panel/powercpl_516.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "0B942F8CF05F58B742CA1E11950B11F3569DA0A950F0A8CC6DBC87AE42308552",
+      "path": "assets/extracted/imageres_dll/Control Panel/powrprof_512.ico",
+      "bytes": 22358
+    },
+    {
+      "sha256": "CA83C360B57ECFFD524FA7267F7803D33CF2BDD4573362BA8AC0D77CB1AC8267",
+      "path": "assets/extracted/imageres_dll/Control Panel/powrprof_513.ico",
+      "bytes": 22358
+    },
+    {
+      "sha256": "6855AFF2EFFA4ED75970C681A3087F9806033F2C30547B50E8982E7FFA13920C",
+      "path": "assets/extracted/imageres_dll/Control Panel/powrprof_514.ico",
+      "bytes": 22358
+    },
+    {
+      "sha256": "DB50C14F88EEE72E6D15C2FD3D1A90DEF6A04FF9496860214F0F4014BC645754",
+      "path": "assets/extracted/imageres_dll/Default Programs/cmd_IDI_APPICON.ico",
+      "bytes": 31020
+    },
+    {
+      "sha256": "5ABF7AF6F3BCD96A5DF5C22AAA9CF8F48F79FFC5D2F8D862F3568770611F9F5F",
+      "path": "assets/extracted/imageres_dll/Default Programs/mspaint_2.ico",
+      "bytes": 105886
+    },
+    {
+      "sha256": "3A0BE0C58B30C6B9C47CDC4B66F7CB220B32CF0B40D6C45A749BBAE7FD67CE72",
+      "path": "assets/extracted/imageres_dll/Default Programs/notepad_2.ico",
+      "bytes": 101966
+    },
+    {
+      "sha256": "26B84C29E49AED312CB173C70E8EE02E41364CCEFF47C27ABEC4374B006A0651",
+      "path": "assets/extracted/imageres_dll/DVD Types/imagesp1_200.ico",
+      "bytes": 71821
+    },
+    {
+      "sha256": "555F601B93DDE440B888FF43CD1CDD3DF0A445C2A40FCA9230BEB20EBB2BE4CD",
+      "path": "assets/extracted/imageres_dll/DVD Types/imagesp1_201.ico",
+      "bytes": 74522
+    },
+    {
+      "sha256": "D834CCA9141EFA00042675007F782DED54AE3264F2AAE85B5ADD58D29DE3ECBD",
+      "path": "assets/extracted/imageres_dll/DVD Types/imagesp1_202.ico",
+      "bytes": 79471
+    },
+    {
+      "sha256": "6A0F5662E7E2511644896C488B91ADE5684CC5826D81431AE3DFDAFBE0F45560",
+      "path": "assets/extracted/imageres_dll/DVD Types/imagesp1_203.ico",
+      "bytes": 78732
+    },
+    {
+      "sha256": "2330F2495E24F6BA2D39AD61FD4E759B7CBFFB086ECDF6B44DF8BFBB6A604E69",
+      "path": "assets/extracted/imageres_dll/DVD Types/imagesp1_204.ico",
+      "bytes": 79430
+    },
+    {
+      "sha256": "855241F9D47513076E040DEA0E5A1EEAC84DAF182609E70A08FE2DB4C44418AD",
+      "path": "assets/extracted/imageres_dll/DVD Types/imagesp1_205.ico",
+      "bytes": 79644
+    },
+    {
+      "sha256": "3F399F3F2B23F5D06D36D264BF75DC4EFCB722AEBD7F18B107D88316AF696F77",
+      "path": "assets/extracted/imageres_dll/DVD Types/imagesp1_206.ico",
+      "bytes": 77111
+    },
+    {
+      "sha256": "73632E7A44EE0AE57ED61BE2E317F6E1536850AE225E098BEEE2A54872789062",
+      "path": "assets/extracted/imageres_dll/DVD Types/imagesp1_207.ico",
+      "bytes": 77320
+    },
+    {
+      "sha256": "01194F46F5A2F2ED9516BF8DE7732C34C667498F1668A9A19DE0C555B3EC6C00",
+      "path": "assets/extracted/imageres_dll/DVD Types/imagesp1_208.ico",
+      "bytes": 80640
+    },
+    {
+      "sha256": "CBCAFF39913D5A015CB8143293F7241E202BC1E43429CC3F594239E67217AAC2",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/AdmTmpl_1.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "453A52AF0BAA0AA1926771E22993C2A3D1D7D06C338D0E8EE03AE81C7103CDBB",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/AdmTmpl_2.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "9010763657B9F045128FDAF5A7881AA5A3DD1C02B27AEB19F548FE52F1C5102D",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/AdmTmpl_3.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "B2F615927EAF5EA27F5E028A3425ECA6D40FE0FF6F9CEC8C7CFA30BB2208EB1E",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/AdmTmpl_4.ico",
+      "bytes": 10134
+    },
+    {
+      "sha256": "63232C92EA047441E878E9813F8C25BA81A3032066DCB72F7D4B23BA31BDDE77",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/AdmTmpl_6.ico",
+      "bytes": 10134
+    },
+    {
+      "sha256": "84D2A94CA9A384C10D1BDC79E3C31115FE72F3CFBED67256C646DD3EA605AA9A",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/appwiz_1507.ico",
+      "bytes": 81825
+    },
+    {
+      "sha256": "809612DE576C75ECF17D06B4AEDD37A62F3E96E15E75953FE37519ADA620EB80",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/appwiz_251.ico",
+      "bytes": 56934
+    },
+    {
+      "sha256": "16CC078FD8A7F63B4F1DF65376D40E67D074B268CCA6C39301896AF06C9EC46F",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/audiosrv_203.ico",
+      "bytes": 77631
+    },
+    {
+      "sha256": "BF4DD7D711D4EB41817616F688CFF4B6A94366983759A93A54B88FDE1947FCB1",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/dsquery_151.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "957F68BE45134B8DDD029B304975FBD36F59133F4B441A75DE7E9A1CB54E8EAB",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/dsquery_152.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "2C896AD1C1AE85BF22DD80E8C0F52EEFBED65ACE8FC3824F9CD7E6A835110203",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/dsuiext_4096.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "1A53872585BEAD51108D70ABC218DE6CC2CE772B97F17AF2B0C1374779E24CAF",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/dsuiext_4097.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "DB3F5A6398EDA37842729C49E0E0CA485F54CF78E27D251D7401C39792759471",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/dsuiext_4098.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "50B724D9908D475B3BB8A2E60A01C9A0AF2DD354A4D6FFAC776DECB18F859F08",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/dsuiext_4099.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "2C896AD1C1AE85BF22DD80E8C0F52EEFBED65ACE8FC3824F9CD7E6A835110203",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/dsuiext_4100.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "EF45CE749649500DFCAA893901BBA041BE7A988B0122DCC9E36E3D41AC8FEE4E",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/dsuiext_4102.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "E1EC9141B0CC26D3EAB2DC6F8AD89E779C5A05C3F850322D4E257BE779DC601B",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/dsuiext_4106.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "B9F76796E03B41A8F698906A1B62B9AD99E5EAD186C71F02EC096CA097BF1755",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/dsuiext_4108.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "7B04B9789BC717543ECA5064515AC19C2295EC1E30B7813FE791F1069335A41A",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/dsuiext_4110.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "3F4FD626874799A1F50D929357DF35FD20BBF95DC5BE5FDD35D0A82970B78D8C",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/dsuiext_4111.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "E37CD3153942C2B0FCABEBC92297758C4415DA21664099F52E228147E26F6F04",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/dsuiext_4112.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "B98052C51C77A604D805E1ED0F63414BB65F4C54ECB97BB9C8C3367B3645048B",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/dsuiext_4113.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "50B724D9908D475B3BB8A2E60A01C9A0AF2DD354A4D6FFAC776DECB18F859F08",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/dsuiext_4114.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "6743A3E968BBD6553958ADECC5001A19F77396D0897126196569219007910DBA",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/dsuiext_4115.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "50B724D9908D475B3BB8A2E60A01C9A0AF2DD354A4D6FFAC776DECB18F859F08",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/dsuiext_4116.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "264A148ADBDD2A90E59353C3ED6300D8E777D77C952631AB1CFC2925E35534BE",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/dsuiext_4117.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "6C393805011452B47F40B5AE6E5789D7F1DB90025C24120807D8BE32C89857DB",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/dsuiext_4118.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "6F2565D0495947F1694E31C28170D4BDDB9651EF45574F39A5FF0E55B28D6294",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/dsuiext_4119.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "42FDF5D537B2585FD3CAE4B45F7294B2167EFBDFB6B0438E8F5926237D6526D2",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/dsuiext_4120.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "DCEF67B7A78151B138F13C22466506D75D9EED0F091DE3568887EFE29606B362",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/dsuiext_4121.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "2C896AD1C1AE85BF22DD80E8C0F52EEFBED65ACE8FC3824F9CD7E6A835110203",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/dsuiext_4122.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "F7AB1B9EF19F5CAC4C913826E798F115964088FD25CF0D27600A310B420CFDB2",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/dsuiext_4123.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "9D081EE92FCD02C3D0BF041946357AEDEC4D37FB9DDFD5CDB8A2951A973DA44B",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/dsuiext_4124.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "2C896AD1C1AE85BF22DD80E8C0F52EEFBED65ACE8FC3824F9CD7E6A835110203",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/dsuiext_4125.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "BADEFEA967A139E9798DB90A5DECB8EFB088A778C2AC86DA5F6943C0CC123BC1",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/dsuiext_4126.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "105933AE87EE591CB8D973874B975BEE53D6806E77625F527BE6F749D58C83A7",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/dsuiext_4127.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "B09F829DFAB2443E479158F057D59F410C8B5C0FD345BA6EFCDA8C1481B3A10B",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/dsuiext_4128.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "1406DC8C76A84A3D01CBF015B8EAE350B1F3FCD6BBC7ACB8008AF087CE87A248",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/dsuiext_4129.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "2C896AD1C1AE85BF22DD80E8C0F52EEFBED65ACE8FC3824F9CD7E6A835110203",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/dsuiext_4130.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "E61B9AD361E95EB4164BF4D1D4D9655EBAFF834E33979F755A07AE9715343057",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/dsuiext_4131.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "3F4FD626874799A1F50D929357DF35FD20BBF95DC5BE5FDD35D0A82970B78D8C",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/dsuiext_4132.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "1969AC95EA6A76B678A56CDDC6B4C19B11C5558364C987FFFD5D8578A4C14409",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/dsuiext_4133.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "4E28E220EFF0F6F514A35BBD7B2FCF3D75B4C0F265B6A65CA508BC022DDA41EB",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/dsuiext_4134.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "5488D6B965588920484A4F1C8C65130767CDACA97742DBCCD1D3B36F5EDE8E24",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/dsuiext_4135.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "6D7070C2D40884D7E816070A1E85212296068B13A9A8DF0BDC4EFCB8BC932973",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/dsuiext_4136.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "8B86F8F55364A8297B28223BEB0186E015A017CA90BBF43AD387FE212E568524",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/dsuiext_4137.ico",
+      "bytes": 61566
+    },
+    {
+      "sha256": "3CBD6FEB627EBBABFF4E333ED5EE577AA31C84F08E65CB00C3D00D82408DFA19",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_100.ico",
+      "bytes": 78981
+    },
+    {
+      "sha256": "CACDFD2713BBF264E4E9B90544366A4333EE4B5805F22ED21A63058B9A127849",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_101.ico",
+      "bytes": 121385
+    },
+    {
+      "sha256": "55548C9C8F314B46D45CE27A8B997E202972BD38656666FF41D96ED24DF5066A",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_1010.ico",
+      "bytes": 29926
+    },
+    {
+      "sha256": "EA0660787BEED0E24E019162DAA56DBB8FE665EFBD20F67043073965C34D1D66",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_1013.ico",
+      "bytes": 168751
+    },
+    {
+      "sha256": "59136B634CDC58CAA610E459BB8EE9ECB2061B8F39806E42B3EF2D7AF1F0A9FB",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_1015.ico",
+      "bytes": 2687
+    },
+    {
+      "sha256": "418AEA4E20106968FF9A32A7FDA913339C1DAFEE4D43A6588AFE0416C239F9FB",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_1017.ico",
+      "bytes": 4998
+    },
+    {
+      "sha256": "30924AED15088302427C567DD349701CA12EFE5466B3E4ECC669CB7483BE2691",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_1018.ico",
+      "bytes": 7036
+    },
+    {
+      "sha256": "27C20421C505F5EF4A9C3E3E2C601B6D556C4DE0CA3846FF8132327D3816EF9C",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_102.ico",
+      "bytes": 42391
+    },
+    {
+      "sha256": "34E73ACF59D00E1D3AA57FD7D4ACBB069F1414DA8103688F02AEC2D1337D0110",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_1021.ico",
+      "bytes": 66442
+    },
+    {
+      "sha256": "B6D21415F0FA51B007E76ABDA6AEE3353B072787BD2B952F45E7505F38A773E8",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_1022.ico",
+      "bytes": 85575
+    },
+    {
+      "sha256": "D08C3CD05E0C12A19556F6004A24393547597B9795B1CB264D20DA73ABBC45FF",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_1024.ico",
+      "bytes": 68526
+    },
+    {
+      "sha256": "7CD2BF4074A47DDF2794C46F995FABCD49E1F82FBDE119B40F5414BFE7251956",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_1026.ico",
+      "bytes": 46185
+    },
+    {
+      "sha256": "CC537B32147ABBA109719247D65076917F75AD6C5C7EB932A6D2FB5AAED6610C",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_1027.ico",
+      "bytes": 318913
+    },
+    {
+      "sha256": "73F4A24CE6FB4023E33E569009CA3F034D6410439A022610ED1FD67700E5C6F6",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_1029.ico",
+      "bytes": 120063
+    },
+    {
+      "sha256": "A4ABC7AA981766BDB1F9B63317E433F7CBEE0C7F3D38056C7925C8D01ABAAAF5",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_103.ico",
+      "bytes": 65154
+    },
+    {
+      "sha256": "A46FB361501E2DA57595D0B8156CD7884D858BA7D0347E2F047601A0534BB570",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_1030.ico",
+      "bytes": 78463
+    },
+    {
+      "sha256": "3213952669DA00B4C7B7F4D3732EAE7E2BDE0F6C3C49C9EC7324F88C9BE09706",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_1031.ico",
+      "bytes": 86324
+    },
+    {
+      "sha256": "C3C197C63B2ADB5B834649961E69D0C0405826396ACA2DD3F6227EF76F866F32",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_1032.ico",
+      "bytes": 93276
+    },
+    {
+      "sha256": "0D47597E55792EAEF05699A43071042EECE3489EB436CE3272D73B606A895600",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_1033.ico",
+      "bytes": 81556
+    },
+    {
+      "sha256": "B63652DB0E8BAECC1B0CC8F04FA99F39C54AC201B007E37D153872B6BB73DCB0",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_1034.ico",
+      "bytes": 96329
+    },
+    {
+      "sha256": "29634907B8055755B3EF21430B9A9D85A0D98B46D4341296ACD5072B90EC8B69",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_1035.ico",
+      "bytes": 80396
+    },
+    {
+      "sha256": "1F1C9B6CE76AD60B70256D77ACD0391541D4F26ACA210975C14524B9B51EF6CB",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_1036.ico",
+      "bytes": 88113
+    },
+    {
+      "sha256": "1FFEA774393831A546AC556D91A6BB8DF516C4CBA2E344438FC3816FFC409D80",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_1037.ico",
+      "bytes": 95172
+    },
+    {
+      "sha256": "63778F9E0379996AD30E1D8B42F2192D07A5EBA0927DC706727F141A51AB99AF",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_104.ico",
+      "bytes": 81614
+    },
+    {
+      "sha256": "FC3E9EDA423AAAD192E8B7A70FDEA4B888BC4C212806E8A2C879AD088B1BDFEA",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_105.ico",
+      "bytes": 81976
+    },
+    {
+      "sha256": "B9676C8B0EC42D1F38CD468AE3A67E0B9630F219BC2927AE7EE6EEAD854EF059",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_106.ico",
+      "bytes": 82364
+    },
+    {
+      "sha256": "8BA67DDC39FD6D7F642068DCA55A53643D1F42C618CFAEF68DC092D082F8DA17",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_107.ico",
+      "bytes": 78352
+    },
+    {
+      "sha256": "8308844047BE3096F48F373200C02D46DE0F3AB86A347BB855851A155E58FE12",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_110.ico",
+      "bytes": 53146
+    },
+    {
+      "sha256": "C89371BDE94CFCCCCE39802E84E68B1B2F356448011C01F2C24452B560D4FF18",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_111.ico",
+      "bytes": 86660
+    },
+    {
+      "sha256": "A80488F17F2352DE8F4108F7404BAC7DBF8F4ED3CB4D42C6D4BA2FAC1AD8A65B",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_114.ico",
+      "bytes": 109849
+    },
+    {
+      "sha256": "C889E644B5679AEB51424079A061A6C585F80CF2C2A71390CA91ED3ED3FD0D25",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_116.ico",
+      "bytes": 74470
+    },
+    {
+      "sha256": "3D640CC1EAA9BE96595928A759EE37DBA8D675890ADF9702766B037CBD5F38C0",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_117.ico",
+      "bytes": 111258
+    },
+    {
+      "sha256": "7D62AA3A0ED4C326490AD32AB8EFADF929AA278BD3639E2B16EEAE35E3AAA1B7",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_119.ico",
+      "bytes": 318
+    },
+    {
+      "sha256": "9D05CD2F61B47B17D82A235D78E377FE69EFED2CC61F04B159431F652D081685",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_120.ico",
+      "bytes": 106121
+    },
+    {
+      "sha256": "7D62AA3A0ED4C326490AD32AB8EFADF929AA278BD3639E2B16EEAE35E3AAA1B7",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_121.ico",
+      "bytes": 318
+    },
+    {
+      "sha256": "D81A849E8A1FC7263AB01AD0D80C699A51A2A44E27AC86B1C507143051A879E8",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_122.ico",
+      "bytes": 94375
+    },
+    {
+      "sha256": "0B97A5A1076999868E76E44780B8ABD18FB64B04EE2CD1825F255D5D9C721ECA",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_124.ico",
+      "bytes": 47647
+    },
+    {
+      "sha256": "EE41BCA79CFF444666B2DFE30AD2D0EAC3F42409F718844C55FCD8B8D27AFC49",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_125.ico",
+      "bytes": 52705
+    },
+    {
+      "sha256": "4378032C5196F656ACAE0406705BBC6CDBF651A7A50D8E3CD18D0D6471CDA850",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_126.ico",
+      "bytes": 55415
+    },
+    {
+      "sha256": "2694E636108FFDE2849FEBFA0E43DF29286D86F82548F067EBBFAFCA2ECD24E5",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_127.ico",
+      "bytes": 58573
+    },
+    {
+      "sha256": "C7DED6EE718BB958D514D291024428E682F646CC2B269057E05C92AD37FFD8E7",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_128.ico",
+      "bytes": 54665
+    },
+    {
+      "sha256": "B2D50E90D6808E2DDBBB626FF9B7D76364CA5D792E33E0CE41EF959267394298",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_130.ico",
+      "bytes": 69129
+    },
+    {
+      "sha256": "D4E1AEDF8460462EC5A2005F0AACDA289F773AEB5D1AFE1A8E36E86C91831381",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_131.ico",
+      "bytes": 45475
+    },
+    {
+      "sha256": "1D3E9AA43EA4D652D9ED14D095CCF5CE942B3B1E21C719122E7DEE213F545878",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_132.ico",
+      "bytes": 51169
+    },
+    {
+      "sha256": "C327C68B9CF20D682456147F1653B0C03F494CFFF2C52FA09DCCD43529A4E69D",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_133.ico",
+      "bytes": 58517
+    },
+    {
+      "sha256": "744970F77F7DA2E9361665551FEFD5C6C82C2D84748C6E4A3979115140DCF640",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_134.ico",
+      "bytes": 58928
+    },
+    {
+      "sha256": "189B44E3E69CC920954CFCC37E41D56E26E8D237A50FE9BFFFFF142D7B88659B",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_135.ico",
+      "bytes": 84363
+    },
+    {
+      "sha256": "2B09CAA55113CBF55B95A69082947E5512996719638013993113DA8EC4C36793",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_136.ico",
+      "bytes": 93514
+    },
+    {
+      "sha256": "CF63D9637E4FE2EC4FD28658D3912D3532B4B8C2EA3D1D6467896EEA438C5800",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_137.ico",
+      "bytes": 82619
+    },
+    {
+      "sha256": "2B09CAA55113CBF55B95A69082947E5512996719638013993113DA8EC4C36793",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_138.ico",
+      "bytes": 93514
+    },
+    {
+      "sha256": "F287F67B1F6C6099EF048C331E44334BAD9F253426AD116E956A4934A81F6519",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_139.ico",
+      "bytes": 92906
+    },
+    {
+      "sha256": "A0EA8F166C660CF3B55B86C1DDBDB96737538133917AD505C3C4C346A61C69D4",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_14.ico",
+      "bytes": 129219
+    },
+    {
+      "sha256": "00CEA9B68BBEBA310C4943F4C1C3109BBD9038BA67F6D9C9EBC111327DD8D910",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_140.ico",
+      "bytes": 93801
+    },
+    {
+      "sha256": "4854C2575A676223A8EC7D16416B93D8B000351EB5CF3138C759500398EEFBC3",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_141.ico",
+      "bytes": 93865
+    },
+    {
+      "sha256": "75F4D351B2CD15989FB73CD628BD5172ADB7F46ECC61AB00A7B3AA9A55133BB3",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_142.ico",
+      "bytes": 93940
+    },
+    {
+      "sha256": "874C003C49D51511776C5EF48D1EF805B841A610421BDFB5EFB601928BCEB89F",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_144.ico",
+      "bytes": 111197
+    },
+    {
+      "sha256": "55E4CF7B82F2E262DB43BDD30268725B5ADDB6A65E003916ADE8F0F32729963C",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_145.ico",
+      "bytes": 77947
+    },
+    {
+      "sha256": "9C65D24B2972DF98582612AE8D679EBF86E20E63A5B0C33187B84A2B8CF1CE36",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_146.ico",
+      "bytes": 86212
+    },
+    {
+      "sha256": "7892DA98DC6DE7EBC7051CE06960C163F34B4FF9C968486469DBC7267534EF69",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_147.ico",
+      "bytes": 92020
+    },
+    {
+      "sha256": "FC14D4F501ED54F370212AF858CA49DB9068661D9B078D09AD0FB8CB5846C2B5",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_149.ico",
+      "bytes": 72310
+    },
+    {
+      "sha256": "F728DE10E12AE83A813914279CE4BD7A21C922F618DD307F755643726CB01D81",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_15.ico",
+      "bytes": 46372
+    },
+    {
+      "sha256": "14030D23ED597222D20C5E9FCBFA76DAC92362AEBEFE1F8D4AD2072B906D514C",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_150.ico",
+      "bytes": 88303
+    },
+    {
+      "sha256": "551F048F5B2FCFE1E0F8E8014DF2FBF49CFBEA97085C74E0B90675A3875C4716",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_151.ico",
+      "bytes": 103213
+    },
+    {
+      "sha256": "A88C8CB47B4AA4224014B2C6605B6110A2A10555FF2FD163E0E03D201D263EA4",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_152.ico",
+      "bytes": 108903
+    },
+    {
+      "sha256": "8965EBD42B2E097CFDA0A5404CA52688D44DEAFBA24A94881FDCEAFEB17A553E",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_155.ico",
+      "bytes": 91468
+    },
+    {
+      "sha256": "A9C815ACF3D6FFC3A92018762E3584E8481E8D3E74CABEB30771F0E8149AA88C",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_157.ico",
+      "bytes": 49938
+    },
+    {
+      "sha256": "C3EFFAE8C2EA875C0774F6C5E19191585F8D5D0786AB8E99950092E3F991675A",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_158.ico",
+      "bytes": 46408
+    },
+    {
+      "sha256": "8878D5787E7904F1F56CBDFFA6EA2A958508F74F1728A5FB1D5013B13CD75FBA",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_159.ico",
+      "bytes": 50057
+    },
+    {
+      "sha256": "3DB76DE29381038CB2DE9D967614222C13CE61904A951FEA894C633312758A2A",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_160.ico",
+      "bytes": 53644
+    },
+    {
+      "sha256": "3B9A561F274787CED14B8D3E415CF34FC9C5AFAA69A4DCB06CE8B46ECC900DC7",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_161.ico",
+      "bytes": 80992
+    },
+    {
+      "sha256": "CF68FAB210F2E9C8816E3CB514D894A59ED3BBC79C17CF180EA1DB0F59BCBED5",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_163.ico",
+      "bytes": 32336
+    },
+    {
+      "sha256": "0ACE12C2F6B8160B2CECA2B3CA41DA8B1003441481535F1C27BF695B3664B88E",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_164.ico",
+      "bytes": 42876
+    },
+    {
+      "sha256": "704EE48C3B6D0B56B2F7C0F49D602E5B8EE66966ED250ABD881E3427DD66AF15",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_165.ico",
+      "bytes": 67807
+    },
+    {
+      "sha256": "2B54A4C57D2F05A24C577B3EA273F0B587A94E3E0AB25554D299DCEDB1A8FFBD",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_167.ico",
+      "bytes": 77641
+    },
+    {
+      "sha256": "6F89A450AE1EC395569FD307D0247BC402D1F954BD758F4A8135285861B1E107",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_168.ico",
+      "bytes": 68823
+    },
+    {
+      "sha256": "29C4F51EEE45FA73B450DE59E0D222FE7DF51640B2213C2F77F0FF365B43ACBB",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_169.ico",
+      "bytes": 32742
+    },
+    {
+      "sha256": "315CD25370E25CE4BC560202059CE8E78D092FDFCF20475AEC8B32007503CFA3",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_17.ico",
+      "bytes": 76049
+    },
+    {
+      "sha256": "DACC64B9A28444581B8A5DE15C61CB76A2A0A685B24ED45312423C7318F8D200",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_170.ico",
+      "bytes": 11310
+    },
+    {
+      "sha256": "01D26BF7FB43D392B5DE365BD9B2D8F3A4FBA961B7D2E74F2731ED6AD066A34F",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_171.ico",
+      "bytes": 113103
+    },
+    {
+      "sha256": "96D9ABCE9CE0CFFFE0B3EB7A22680DF2FE70BF1715823AE818CAA386B3277518",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_172.ico",
+      "bytes": 77965
+    },
+    {
+      "sha256": "C389C02BAF9E9499990487919D303E33F83BF51357CAB87F766C38C4219BFAED",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_173.ico",
+      "bytes": 79577
+    },
+    {
+      "sha256": "30B37D3D610FF0FFBF8C9E51E44047BDAE52142666E1DEA6C816567113AD59A3",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_175.ico",
+      "bytes": 50254
+    },
+    {
+      "sha256": "3BBD7C3BE1CC83A4AB6B075C1145EB5EC2A698D472CAFF6562DC5CEAA803640E",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_176.ico",
+      "bytes": 33178
+    },
+    {
+      "sha256": "4E5BB352AD8CC89E58BB3425F612D4A02A51B159496245940C350FEDAD792CEB",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_177.ico",
+      "bytes": 91871
+    },
+    {
+      "sha256": "8AF2FCDE7E663AB52E5ED0620611D2FC3512D6C24334D00739AB805BAAF51B76",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_179.ico",
+      "bytes": 104822
+    },
+    {
+      "sha256": "64A07E31ADE5B72F1E0D66EA3531725BE6FDC3F7F0CED493C88DF98DD7F5C66B",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_180.ico",
+      "bytes": 83952
+    },
+    {
+      "sha256": "6BD383F61A63C50EABB5319D2BFE6F55CE84B98CE5932EC95B62039F2F25A7BD",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_181.ico",
+      "bytes": 71415
+    },
+    {
+      "sha256": "4483263C2B6B2F2CB91200ADC880021362007B5577097269792BF12DAA90150F",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_182.ico",
+      "bytes": 67281
+    },
+    {
+      "sha256": "F9E3F03B3B9D61D75B04463B62AF363809CD47CC3D1DB5C5E43CCD1B47598144",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_19.ico",
+      "bytes": 32746
+    },
+    {
+      "sha256": "EB37EF58B6E0C0C7DADF3B9F5B2AD3004644612F93E1714A7BF90484118A0D32",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_190.ico",
+      "bytes": 50283
+    },
+    {
+      "sha256": "61FA100EB5F7E72D4152F259A91839582491B599D764A744AB3FCACE464DC794",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_191.ico",
+      "bytes": 54069
+    },
+    {
+      "sha256": "D75754E607E2DFA82B76B19EB7728C32CC1C298592750CD20D4B7EFB5865C756",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_192.ico",
+      "bytes": 54157
+    },
+    {
+      "sha256": "A421A3C2A0222B7F0374B26C973387DAE060D08B14F17DB3CF52706F6E758FF9",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_193.ico",
+      "bytes": 64116
+    },
+    {
+      "sha256": "079B88078413D0E72D794247A4ADB981E3312E93B0B9012CE2C547BE45D5E3AE",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_194.ico",
+      "bytes": 62098
+    },
+    {
+      "sha256": "31D9BE8149CE0F9889AB8CF55EFB11D79715DC9D2588DF17A35395CAF58939B2",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_195.ico",
+      "bytes": 85740
+    },
+    {
+      "sha256": "AA639100A12F4422C2D3D92761060218BB810C848866F4726E55096745011CBC",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_196.ico",
+      "bytes": 65731
+    },
+    {
+      "sha256": "916EB9565EC0353887977307A196A99F0E55A0B4FC9BAACEB04E75C7F47689E6",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_197.ico",
+      "bytes": 77411
+    },
+    {
+      "sha256": "E9176539E9A1436CAA8299DDCE499CDE138A791A3FBEB448ABB4446DB6E3E9C8",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_2.ico",
+      "bytes": 33457
+    },
+    {
+      "sha256": "DE3703D33C3010341AE0E93C96A178B9C742014CE81D927D04D9347386776F89",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_21.ico",
+      "bytes": 78877
+    },
+    {
+      "sha256": "7DB64208BB0A337C764FD163B630EA68687EB8DD09D1484EA2DC5F4EF39B7084",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_22.ico",
+      "bytes": 45189
+    },
+    {
+      "sha256": "74E7BF3570967FE9898243B49DAC159CB90CE51C857588B44D334E2BEB2B58E6",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_23.ico",
+      "bytes": 87300
+    },
+    {
+      "sha256": "AB744693C29F453674B81DDFE067C1DC4EB1BAE81B03995164F814001A0B7773",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_24.ico",
+      "bytes": 127493
+    },
+    {
+      "sha256": "838A6354C06148D1E320695801DA88E4D0B2D799E8F54CB5C2ACF01C13F6B026",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_25.ico",
+      "bytes": 131013
+    },
+    {
+      "sha256": "0CE52E6B2885CC6481A0504D591A7C72581433F0EFFEEE6594D2174ED5996A7B",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_26.ico",
+      "bytes": 82904
+    },
+    {
+      "sha256": "2A3BF79C6EFE4264D25C217C0B3ED5C1C990D9BDCCF328D390CAF69D56076247",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_28.ico",
+      "bytes": 60663
+    },
+    {
+      "sha256": "0B2E361541CBBA16C6630EF17BBABF98B4999EF4551EB4767354CA2D7FB1C24F",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_29.ico",
+      "bytes": 64320
+    },
+    {
+      "sha256": "E4A7085A0EA40227CBFED87EBAF0752998214A0B8C8A49D36D2F502C35A5F193",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_30.ico",
+      "bytes": 73021
+    },
+    {
+      "sha256": "14DC3423936921B7EC081D5B516216B3B54735854F22859CACADACEFCD4D2B7E",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_31.ico",
+      "bytes": 64874
+    },
+    {
+      "sha256": "9FC9CC4B4568B8ADD06CDB4E7441FA1244D2E390F15E231CD17222B832D792B8",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_32.ico",
+      "bytes": 78885
+    },
+    {
+      "sha256": "97F3DF98084BFCB341AD11FAE73BCFB9202A2AD20C16AF4964C7420971F7DBC4",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_33.ico",
+      "bytes": 73530
+    },
+    {
+      "sha256": "875D581E34AC394BA7DDAB3BA60C5317F5F6F87FF7B01F30DCB5A6D195FAA3FF",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_34.ico",
+      "bytes": 51025
+    },
+    {
+      "sha256": "48430FC2E5B0656E8EA7B5A60F1BD83E76692190AF14B28F867FBEAEFC544FED",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_35.ico",
+      "bytes": 55478
+    },
+    {
+      "sha256": "621A2BFDEE6A449E0D8328EE35D4A0AAD7B875B96B4ED434FA09625335E05E19",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_36.ico",
+      "bytes": 56046
+    },
+    {
+      "sha256": "434CE50CC4FD67B0407C91BC66BFED54939E33A2E6C1525D5381824892124706",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_37.ico",
+      "bytes": 86669
+    },
+    {
+      "sha256": "45D6FD07D830C2BB0E23F74E43B4F9593AF3AB7F7B95C88247EEC6BF3EAA5AA8",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_38.ico",
+      "bytes": 77796
+    },
+    {
+      "sha256": "ACD115E3499FE3126D78E63ADEA66C80068D46E41925597E60A626F12D4CF5D8",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_39.ico",
+      "bytes": 79807
+    },
+    {
+      "sha256": "7710B923AAF28DD9673368BA393BA65FA095B52DDD8EB77741AB5CC1D9CEF5ED",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_40.ico",
+      "bytes": 79496
+    },
+    {
+      "sha256": "22CB74E2D38EE3C06898B1FAFAE1C99A7762185A59F0C276B7EFCA3A9A7DC0CF",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_41.ico",
+      "bytes": 79629
+    },
+    {
+      "sha256": "9C91BC2216B95D86449E53C0322BCF9C60DC5227FCB04B27423507446B0DEB5C",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_42.ico",
+      "bytes": 65763
+    },
+    {
+      "sha256": "5DE961C3C820B10CACCA8ECBA4B5336FC1B1B291A76145C3ACAA1D3AE9270AE4",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_43.ico",
+      "bytes": 69081
+    },
+    {
+      "sha256": "0ED35FFDEF225922AA3D1040F1146148D2F5106C313350E403F635F1623352A0",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_44.ico",
+      "bytes": 63870
+    },
+    {
+      "sha256": "268877E2243F943087FBB326744B1FD471B3F604CE4781B72448CC3D9A107704",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_45.ico",
+      "bytes": 79938
+    },
+    {
+      "sha256": "8B28D4FB8452B8F7BA6416864BD856345FA465FB7095B2BE0ED3D56B186D7D1A",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_46.ico",
+      "bytes": 99395
+    },
+    {
+      "sha256": "F9CF090C023413C7B3FF4B1F517A82E2E611EF9D543854A3CCEA39647B47E15D",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_47.ico",
+      "bytes": 60782
+    },
+    {
+      "sha256": "AD7D9627B50F8592FCA4D86FD67C3C9CC9758AEB34DF109886F752F255658691",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_48.ico",
+      "bytes": 71134
+    },
+    {
+      "sha256": "69AAC21FD21867A91AA54EA0F80845F8FA48DCEBECAE51987F1A2AB94692CF58",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_49.ico",
+      "bytes": 62932
+    },
+    {
+      "sha256": "7527B19EA03274B54FD90DFB4F10DDF36A8E9A77A1684938AC995F7F39EDACE6",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_50.ico",
+      "bytes": 88228
+    },
+    {
+      "sha256": "AC0FE4138E2FDC26E5EF5049624D9D5538350D6682209BEF11F30991D56DA1CC",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_51.ico",
+      "bytes": 50614
+    },
+    {
+      "sha256": "59487CBEEDB88085F95FF17F024D0714BB6362E9E87CAE3A184F7EF7F7687D7C",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_5100.ico",
+      "bytes": 18582
+    },
+    {
+      "sha256": "6764CEB93AB105ECF4372B03F546EF6FA7F35828145A1FA8507AA5C1F361D200",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_5101.ico",
+      "bytes": 18582
+    },
+    {
+      "sha256": "30B7148DF410327BD3D64095F29A1394F967677AD7D4131FEE8CD556FBD8E3AE",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_52.ico",
+      "bytes": 58950
+    },
+    {
+      "sha256": "5F0E1CBE48590CD1F03FD71F13353A104456F589A43FF33591F84002038BB7FF",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_53.ico",
+      "bytes": 73943
+    },
+    {
+      "sha256": "8A601E2027425D3A9E14DBA74B7D83FCF8030560B8DDA48AC7AA6C8898F88499",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_56.ico",
+      "bytes": 78271
+    },
+    {
+      "sha256": "8CFBD616CDB7DC4C24111239EFD153486376FCEF896A649E7F219E53D7A28552",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_57.ico",
+      "bytes": 84704
+    },
+    {
+      "sha256": "F872D1DECF25EF7AA163B8C5ED4237970A414909A19EBC8F2418780DC68523DD",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_58.ico",
+      "bytes": 65872
+    },
+    {
+      "sha256": "75AE4F73F099D238662DCBAA8CC9DAFA8395F71751EE61F9A76AF31F7EFC6CBB",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_59.ico",
+      "bytes": 76163
+    },
+    {
+      "sha256": "C712FE2EDF23933E20DD797D6D900E43FDB1C697D5EEEE442BDA54EEBDDF99F3",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_60.ico",
+      "bytes": 90376
+    },
+    {
+      "sha256": "883373C4CCA5E7F0F29C91BE02EDB8FD035819BAD7CAB255D6094843729A5C17",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_61.ico",
+      "bytes": 76555
+    },
+    {
+      "sha256": "AC292755F3CA381DBB5081283C3373C1B06F9F79BC49FB63B03E7251DCC2F9E9",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_62.ico",
+      "bytes": 77532
+    },
+    {
+      "sha256": "EFCF3EB0C083DC27F2E3D6CC8E21495EB1EF98FEE9FB36E92D78F08B03AEBD6A",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_63.ico",
+      "bytes": 79862
+    },
+    {
+      "sha256": "9B971395430DDBAFE2B6BC6DC74AA55B7E7AFC88C2538B0909C018F6B9EB7C46",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_64.ico",
+      "bytes": 78143
+    },
+    {
+      "sha256": "8BDA6BD4C0E7B192D032A2300064EC9783124905B20B5690883B28003B1A78B1",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_65.ico",
+      "bytes": 87286
+    },
+    {
+      "sha256": "D1A32A57B792D5CA7F2ECBE71968F90F16F13BCAB108EF048CF599FEA4744627",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_66.ico",
+      "bytes": 66946
+    },
+    {
+      "sha256": "B48DD2EA8857E065F79806D55AFBBD619098FA786C8D3F4194A4CFBCC9477708",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_67.ico",
+      "bytes": 58711
+    },
+    {
+      "sha256": "169064D3204D6C84D944510C730B0CA4C3B2C2E3447B2234983FAB63BE351AB6",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_68.ico",
+      "bytes": 90321
+    },
+    {
+      "sha256": "C8024955DCC075A81A6F999B0783B4FCC4DAEC1A1935BF6FE817194242774E2C",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_69.ico",
+      "bytes": 75587
+    },
+    {
+      "sha256": "D81A849E8A1FC7263AB01AD0D80C699A51A2A44E27AC86B1C507143051A879E8",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_70.ico",
+      "bytes": 94375
+    },
+    {
+      "sha256": "59DDB376CAC978C974E9F3258311CD749932655DFBE697ABD25A21F726085F8E",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_71.ico",
+      "bytes": 46943
+    },
+    {
+      "sha256": "B0203F1DC9E443DC5081B0F882934241645A5DE4CC4B1E47B3460D17446A87D4",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_72.ico",
+      "bytes": 83560
+    },
+    {
+      "sha256": "52B712A1709AA72E437FE38EB540F4AA74BF04A6DAF04DF0D5F880B2258FCB91",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_73.ico",
+      "bytes": 81822
+    },
+    {
+      "sha256": "0C1FCE19686A2E312C5C0450707671026D7DD2AE9284997D019D5876C78D8C7D",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_74.ico",
+      "bytes": 87362
+    },
+    {
+      "sha256": "B68AC11403C2C339329640BC9729C2DF204E52A6DDEBBB412A8847507D23D1F2",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_75.ico",
+      "bytes": 60106
+    },
+    {
+      "sha256": "71793C28C132D733DE10CD29FCFFF7F1FF0A322A2E9876F9346C485AD652371E",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_76.ico",
+      "bytes": 70689
+    },
+    {
+      "sha256": "4CA6CC696EBDED2E7492D13D9D0A9F7D59F158641CD057F043A529C0361216E2",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_79.ico",
+      "bytes": 25214
+    },
+    {
+      "sha256": "370B18AE452A4E2FD78A9E2867E2FF581AA73B61EBDE316BA61A3191A1B28046",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_81.ico",
+      "bytes": 82979
+    },
+    {
+      "sha256": "AA8BCEB75F89F75D7F2117F4A950FB2A800CA9B5AE35777D0A21F3F261E0C412",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_82.ico",
+      "bytes": 49202
+    },
+    {
+      "sha256": "3074DF74F232F8072546D83209F9D6AD365F72860EC5214134B434EE494625C5",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_83.ico",
+      "bytes": 95346
+    },
+    {
+      "sha256": "3F3BC89BD22F62281445E15F45D630619473C369A645C83319F66FE47A7FC309",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_84.ico",
+      "bytes": 63943
+    },
+    {
+      "sha256": "4987B1611F01991BA6C1498732FB69B87234BD0A8137ADEA7D761626DCECB319",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_86.ico",
+      "bytes": 91603
+    },
+    {
+      "sha256": "9C4EE6B80B3E8A25A20E6BDE9C48FBFF31952A34A2A77044492141F88CAAC02F",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_88.ico",
+      "bytes": 74935
+    },
+    {
+      "sha256": "0EF74E1281AFE715BC120D9CFA4B0890D35CE2A0355BC9F2EFF53CA92FA1AC68",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_89.ico",
+      "bytes": 29926
+    },
+    {
+      "sha256": "6A55A5F6C4102C3D32EAFACFE22743288DCA13C7728F67D790F4AE14D9AF7FBA",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_90.ico",
+      "bytes": 48015
+    },
+    {
+      "sha256": "9011B90697FF9EB4655AD235F5C693109B26A40341A4A9EFBCDDC42B52427144",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_91.ico",
+      "bytes": 70471
+    },
+    {
+      "sha256": "80AE0190AE1D92D7A81FC7461E9CF798ABC6FCE975ECD391D7C49DF1AB8FDAFF",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_92.ico",
+      "bytes": 73223
+    },
+    {
+      "sha256": "0F0DD20775DF42D6DB2ADC51ACBBAF4783A3945A521867CE64F02E3CF2795CD0",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_93.ico",
+      "bytes": 81029
+    },
+    {
+      "sha256": "4A90841C7B34797CB98D5D2EA7823B40922F06215D61C11597646C0D1EC9E791",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_94.ico",
+      "bytes": 35112
+    },
+    {
+      "sha256": "D8AF427F4C1F3B96AAD128B17276026132E9EB39330AFB8720707AEA54E237C7",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_95.ico",
+      "bytes": 55686
+    },
+    {
+      "sha256": "7C59FB408172AA1149D19EB2BDF0E17A9F070B1B595239A44F66CEF5D1ADE7CA",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_96.ico",
+      "bytes": 77131
+    },
+    {
+      "sha256": "2BBE066CD712F0596A1DC44254D58F5A1F756C360EC4EA526A512BC409494D88",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_97.ico",
+      "bytes": 34561
+    },
+    {
+      "sha256": "85F76224A840333C82484314BD4B7E5973538A97D61E7805897423A41C570694",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_99.ico",
+      "bytes": 114406
+    },
+    {
+      "sha256": "4C06A096FD241539AC8BDBA21DB96F4259F15670F63E3D82392975DB3130CF14",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_SHIDI_FLIP3D.ico",
+      "bytes": 24886
+    },
+    {
+      "sha256": "5AE8154B5A70D6BF9E58EF2461A0750DF7FB84824E719D6BA16FED3F2D5A734F",
+      "path": "assets/extracted/imageres_dll/Filetypes, Devices, Miscellaneous/imageres_SHIDI_SHIELD_INTERNAL.ico",
+      "bytes": 178760
+    },
+    {
+      "sha256": "B76607DF029B3D16ED4790B2535334F80DF56705F6FA925FA2B190E59073A493",
+      "path": "assets/extracted/imageres_dll/Games/bckgRes_1009.ico",
+      "bytes": 72869
+    },
+    {
+      "sha256": "E7D0B5E6B2F756917A31EEAC2CFDDEF8176E7F0056ACB669176EC492E71D2744",
+      "path": "assets/extracted/imageres_dll/Games/Chess_128.ico",
+      "bytes": 76095
+    },
+    {
+      "sha256": "F526039FB29849F7A6715E98F4AA053D7DFC5D940134CE47524B86B3E91F502F",
+      "path": "assets/extracted/imageres_dll/Games/ChkrRes_1009.ico",
+      "bytes": 81910
+    },
+    {
+      "sha256": "3A4C660A9BF08B2F4B27E4037C1FDC568CD39678329BDDB4CAC7784128792513",
+      "path": "assets/extracted/imageres_dll/Games/FreeCell_121.ico",
+      "bytes": 97972
+    },
+    {
+      "sha256": "FA1E825013ED5EACE6E48F07CB3810084EE0637A7D5F8E5B81C708ED19270D98",
+      "path": "assets/extracted/imageres_dll/Games/Hearts_108.ico",
+      "bytes": 68965
+    },
+    {
+      "sha256": "85D8C6FBB755F51B1E983E64B14E205908604BAE2004C1732C43373F3701DCF3",
+      "path": "assets/extracted/imageres_dll/Games/Mahjong_102.ico",
+      "bytes": 81067
+    },
+    {
+      "sha256": "186CC5BDCE1E48051D74875225A35F4B374E6A71E84BB972C9DE991158797453",
+      "path": "assets/extracted/imageres_dll/Games/MineSweeper_111.ico",
+      "bytes": 63366
+    },
+    {
+      "sha256": "D38B436658C21E999DD19325B8BEED5797E4019D9612C60464181F9242F48810",
+      "path": "assets/extracted/imageres_dll/Games/MoreGames_IDI_MOREGAMES.ico",
+      "bytes": 292878
+    },
+    {
+      "sha256": "C12D8B39CC0875C8BA195F27A30405E00C3C22634B79D3DE5C996488F40810E9",
+      "path": "assets/extracted/imageres_dll/Games/PurblePlace_102.ico",
+      "bytes": 65072
+    },
+    {
+      "sha256": "A8DE9B4FC8E27ED4FB4911DF61B692DFED550DBF7674A7305FB990F99CB71993",
+      "path": "assets/extracted/imageres_dll/Games/ShvlRes_1009.ico",
+      "bytes": 74199
+    },
+    {
+      "sha256": "35041D20955F28F0316794128BE2773DA8F97A26D5A7308C8E86D00CF4535F4B",
+      "path": "assets/extracted/imageres_dll/Games/Solitaire_108.ico",
+      "bytes": 71796
+    },
+    {
+      "sha256": "EBE4A797A49AF45D93FF88CC70EB58BE6CA34FCA9E280C6147B49BCBAE6D7AC6",
+      "path": "assets/extracted/imageres_dll/Games/SpiderSolitaire_108.ico",
+      "bytes": 90635
+    },
+    {
+      "sha256": "E9C79EF45F1C28A89384F8E9AA03C423E61117AAB07D764033C1124189DBD5A0",
+      "path": "assets/extracted/imageres_dll/Imaging Devices/WLXPhotoAcq_1075.ico",
+      "bytes": 207763
+    },
+    {
+      "sha256": "C0A75CAC7CCF2C7BE4821CB1726EC2E653B026E80F4C9119C1EE09D96AACC0B7",
+      "path": "assets/extracted/imageres_dll/Imaging Devices/WLXPhotoAcq_1076.ico",
+      "bytes": 189601
+    },
+    {
+      "sha256": "D8AF427F4C1F3B96AAD128B17276026132E9EB39330AFB8720707AEA54E237C7",
+      "path": "assets/extracted/imageres_dll/Imaging Devices/WLXPhotoAcq_1077.ico",
+      "bytes": 55686
+    },
+    {
+      "sha256": "8B28D4FB8452B8F7BA6416864BD856345FA465FB7095B2BE0ED3D56B186D7D1A",
+      "path": "assets/extracted/imageres_dll/Imaging Devices/WLXPhotoAcq_1081.ico",
+      "bytes": 99395
+    },
+    {
+      "sha256": "E210709CBEDE7CC2BF72CBC4B7F28142AF0FF566B8E74C3002C12761996CC47A",
+      "path": "assets/extracted/imageres_dll/Internet Explorer/hmmapi_1.ico",
+      "bytes": 29926
+    },
+    {
+      "sha256": "33B6B6E5503AC0A13AEC796CD203AD50DD2D01CBE33C21F9AD433C10B30AE9FC",
+      "path": "assets/extracted/imageres_dll/Internet Explorer/iedvtool_3000.ico",
+      "bytes": 29926
+    },
+    {
+      "sha256": "2AFF48721E6EE82FA140D70B4C7862AD779513EAB1BFFA63DCAE34488312AAE8",
+      "path": "assets/extracted/imageres_dll/Internet Explorer/iexplore_32528.ico",
+      "bytes": 97527
+    },
+    {
+      "sha256": "65249D5B9881693C940212451DCD3ED663FA04D5FAF7023C3865947E952AD10D",
+      "path": "assets/extracted/imageres_dll/Internet Explorer/iexplore_32529.ico",
+      "bytes": 89752
+    },
+    {
+      "sha256": "4923DE93F76DFECBE9A2D343DB733793E5F19C17FDC04DA600057D77E0F80274",
+      "path": "assets/extracted/imageres_dll/Internet Explorer/iexplore_32534.ico",
+      "bytes": 7278
+    },
+    {
+      "sha256": "C29840897C6A411581A9AC66D29B3F3CD39CB5770C73453890C6598EE9AC9E9F",
+      "path": "assets/extracted/imageres_dll/Internet Explorer/iexplore_32536.ico",
+      "bytes": 10134
+    },
+    {
+      "sha256": "1A1CAB6DF21EA16A90B51B79469B44C640710BAD9C75A5406E2C9E7C44523711",
+      "path": "assets/extracted/imageres_dll/Internet Explorer/iexplore_32537.ico",
+      "bytes": 10134
+    },
+    {
+      "sha256": "B5FD86B2E7DE514F585ED97297E4348B4AA5D1F19417600061083B8FF7EECAFC",
+      "path": "assets/extracted/imageres_dll/Internet Explorer/iexplore_32538.ico",
+      "bytes": 7278
+    },
+    {
+      "sha256": "C59A727B51B134AFDAEC4B9AC9821638307B8F4DBFB2DA2AD98434882FC95C61",
+      "path": "assets/extracted/imageres_dll/Internet Explorer/iexplore_32539.ico",
+      "bytes": 7278
+    },
+    {
+      "sha256": "26864C839E0ED17598D4A04FFA96FDE564DF653591BE5D6446B8E19E1D9C4835",
+      "path": "assets/extracted/imageres_dll/Internet Explorer/iexplore_32542.ico",
+      "bytes": 10134
+    },
+    {
+      "sha256": "8AADB336BEE2B29A1ABDB7FCAB1A24A51C940955870CCDBCA75BDC37B74C87F9",
+      "path": "assets/extracted/imageres_dll/Internet Explorer/iexplore_32546.ico",
+      "bytes": 10134
+    },
+    {
+      "sha256": "1095065AC708DEC465EDC656C238243761363548312D5A7536494E8B9F925501",
+      "path": "assets/extracted/imageres_dll/Internet Explorer/iexplore_32552.ico",
+      "bytes": 7278
+    },
+    {
+      "sha256": "1D0B13AA3F74E069D0A52DAD65F1D7D4B9037357013E03E5101224DF582DC566",
+      "path": "assets/extracted/imageres_dll/Internet Explorer/iexplore_32553.ico",
+      "bytes": 7278
+    },
+    {
+      "sha256": "626CB3FA54B651A4FE46BF45ADA010CF75A847720F12D589E46EE1BC8883D086",
+      "path": "assets/extracted/imageres_dll/Internet Explorer/iexplore_32554.ico",
+      "bytes": 41946
+    },
+    {
+      "sha256": "2AFF48721E6EE82FA140D70B4C7862AD779513EAB1BFFA63DCAE34488312AAE8",
+      "path": "assets/extracted/imageres_dll/Internet Explorer/iexplore_7.ico",
+      "bytes": 97527
+    },
+    {
+      "sha256": "AB8E53E038C94A7B8A0E29807C6206C3335C2D7E768587FA20783D6A3B49F8EC",
+      "path": "assets/extracted/imageres_dll/Libraries/imageres_1001.ico",
+      "bytes": 97094
+    },
+    {
+      "sha256": "3E623A9E268FBCC1069402EF66C54DA6C2DA06200A2F814E7D8F61536F30F199",
+      "path": "assets/extracted/imageres_dll/Libraries/imageres_1002.ico",
+      "bytes": 101511
+    },
+    {
+      "sha256": "DB9EB6F149CB28ADCBA2D32BEEEC289B3F559E2F20D7A0E743715A7A95208FAC",
+      "path": "assets/extracted/imageres_dll/Libraries/imageres_1003.ico",
+      "bytes": 98712
+    },
+    {
+      "sha256": "D100C4D9E011202A57352ACFE9E0F7195F04CD416FF83DD56FE919EDC49F5394",
+      "path": "assets/extracted/imageres_dll/Libraries/imageres_1004.ico",
+      "bytes": 86693
+    },
+    {
+      "sha256": "CFD1B076B6A55EDFC8024672F2FAAEF099BB1BCE64F63136A8E8DD5F2F1F06CE",
+      "path": "assets/extracted/imageres_dll/Libraries/imageres_1005.ico",
+      "bytes": 114106
+    },
+    {
+      "sha256": "5AC6D2A9929C5D6CB61E169E607A9A1A224C635C78403E3A48A3AB6C38C281A7",
+      "path": "assets/extracted/imageres_dll/Libraries/imageres_1008.ico",
+      "bytes": 94641
+    },
+    {
+      "sha256": "AB8E53E038C94A7B8A0E29807C6206C3335C2D7E768587FA20783D6A3B49F8EC",
+      "path": "assets/extracted/imageres_dll/Libraries/imageres_1014.ico",
+      "bytes": 97094
+    },
+    {
+      "sha256": "AF39D5840A62EFEFF3EB1E0F5BD69FDD4C0024EC4C4831F9C9C31E100A1DC208",
+      "path": "assets/extracted/imageres_dll/Libraries/imageres_148.ico",
+      "bytes": 80115
+    },
+    {
+      "sha256": "15C9A4E0899D7B4BEAE2F2C250D79F24DA115D05BCF94177D9DB92AD2A264F8F",
+      "path": "assets/extracted/imageres_dll/Media Center/ehres_1.ico",
+      "bytes": 84927
+    },
+    {
+      "sha256": "DF5823C94FC84B7B99E52236B32759BD7E7A34314B9FCF9BEE1009AD043A3475",
+      "path": "assets/extracted/imageres_dll/Media Center/ehres_10.ico",
+      "bytes": 10646
+    },
+    {
+      "sha256": "537333C9B103A0EBB744EF7746D66C573A7BF6B969E45673EF2E7D270E8E2374",
+      "path": "assets/extracted/imageres_dll/Media Center/ehres_2.ico",
+      "bytes": 62978
+    },
+    {
+      "sha256": "1813ADB6A91CAC3C16DFA3BC000CB4261DE8F33709AE18BECEEA87E86B7262B0",
+      "path": "assets/extracted/imageres_dll/Media Center/ehres_3.ico",
+      "bytes": 18582
+    },
+    {
+      "sha256": "51D67A5F0C41C80B766DA91AF42311FEE43EBAD911A8734DC60E293ABA3DAA16",
+      "path": "assets/extracted/imageres_dll/Media Center/ehres_4.ico",
+      "bytes": 18582
+    },
+    {
+      "sha256": "6C7450822051B1319D65203A2BF61DFF939521504C699607FEF6F0079ACAC749",
+      "path": "assets/extracted/imageres_dll/Media Center/ehres_5.ico",
+      "bytes": 18582
+    },
+    {
+      "sha256": "0310DFC59BA00540F39C7B2BA8E2A1387A3D8CF831850DE9508E935FFF4D6F08",
+      "path": "assets/extracted/imageres_dll/Media Center/ehres_6.ico",
+      "bytes": 18582
+    },
+    {
+      "sha256": "80AA7DEAF9D0D289A059B53673CF2BA996432CB5CC2A897EB8D79D6369FC5853",
+      "path": "assets/extracted/imageres_dll/Media Center/ehres_7.ico",
+      "bytes": 18582
+    },
+    {
+      "sha256": "57A93DD65A64F68E3E572ACA6F623A0E0084C973ED74EB266E47960E0AA8B863",
+      "path": "assets/extracted/imageres_dll/Media Center/ehres_8.ico",
+      "bytes": 18582
+    },
+    {
+      "sha256": "583630FD497BAED6B453EBE7C352FF2B71F4C39AA41D7333D3CFC8EB8FFCE665",
+      "path": "assets/extracted/imageres_dll/Media Center/ehres_9.ico",
+      "bytes": 18582
+    },
+    {
+      "sha256": "CC226D33D1CED18DACF8867A180EF24E7647F61115ED0C668396BFB09D5C684D",
+      "path": "assets/extracted/imageres_dll/Media Center/ehres_EHTRAY.ICON.DOWNLOADING.ico",
+      "bytes": 9062
+    },
+    {
+      "sha256": "9120070AA20F409B726A44AC398C8540D7014FEBF260763C4E1D4128BF45C895",
+      "path": "assets/extracted/imageres_dll/Media Center/ehres_EHTRAY.ICON.RECORDING.ico",
+      "bytes": 2550
+    },
+    {
+      "sha256": "15C9A4E0899D7B4BEAE2F2C250D79F24DA115D05BCF94177D9DB92AD2A264F8F",
+      "path": "assets/extracted/imageres_dll/Media Center/ehres_EHTRAY.ICON.SHUTDOWN.ico",
+      "bytes": 84927
+    },
+    {
+      "sha256": "D9D8AD67CA63F8C27E1D8F4043F4BC727257C7C19267874BA88B7F835FF27455",
+      "path": "assets/extracted/imageres_dll/Media Center/ehres_EHTRAY.ICON.WARNING.ico",
+      "bytes": 2550
+    },
+    {
+      "sha256": "B191F65CA339E262F3894755AA91C08D0BCE6E7C73542DDF15D827ADBBCAA62A",
+      "path": "assets/extracted/imageres_dll/Media Center/ehres_EHTRAY.LOG.ICON.ico",
+      "bytes": 9662
+    },
+    {
+      "sha256": "F1D76FBF5B9D1F77B065BB55CC26E79E567F9AD972F8267E2D2DBB2407B6B0B2",
+      "path": "assets/extracted/imageres_dll/Network and Sharing Center/netcenter_1.ico",
+      "bytes": 96404
+    },
+    {
+      "sha256": "E91FF6A505797FDC6D79C1DA137C381DDAAF047B67EDBA679CAD51ECD4E2F581",
+      "path": "assets/extracted/imageres_dll/Network and Sharing Center/netcenter_11.ico",
+      "bytes": 63565
+    },
+    {
+      "sha256": "C00E5BBC46617EC308045B14C27EC9B1E5FDA692CB421C6FB1E61C2551EBFE00",
+      "path": "assets/extracted/imageres_dll/Network and Sharing Center/netcenter_12.ico",
+      "bytes": 80081
+    },
+    {
+      "sha256": "1708A0C8514D010D014A205E3264BD07A9A6A963D986A3E48DE865B4ABD38D30",
+      "path": "assets/extracted/imageres_dll/Network and Sharing Center/netcenter_14.ico",
+      "bytes": 35085
+    },
+    {
+      "sha256": "7EB39A8E25B35B2189D5429787A0B9D18FAC46E1677E9EEFE949B1CB78ECF4E4",
+      "path": "assets/extracted/imageres_dll/Network and Sharing Center/netcenter_15.ico",
+      "bytes": 36117
+    },
+    {
+      "sha256": "50AAC1228E6970A1993F160B2AE8842308BE7984F3252CE46D2DB4473E57B7B5",
+      "path": "assets/extracted/imageres_dll/Network and Sharing Center/netcenter_16.ico",
+      "bytes": 36444
+    },
+    {
+      "sha256": "9AB7B0CF6B1EA92F0DD2F38B1ACB8FFA072CE08C5FB8BF67E649FA555A8A1A5B",
+      "path": "assets/extracted/imageres_dll/Network and Sharing Center/netcenter_17.ico",
+      "bytes": 37479
+    },
+    {
+      "sha256": "E41AB8064D29880DE223040A07F890C703989CDCA183320A18682AFAF5B6D5B5",
+      "path": "assets/extracted/imageres_dll/Network and Sharing Center/netcenter_18.ico",
+      "bytes": 37085
+    },
+    {
+      "sha256": "E62178BF16D19BCD415261743005473D982F3D58C214C4DED239505CCAC8A528",
+      "path": "assets/extracted/imageres_dll/Network and Sharing Center/netcenter_19.ico",
+      "bytes": 38428
+    },
+    {
+      "sha256": "EB3F3E4FDD7BE1276557F32B3B176422B73D382DB9E423201925ED90DFEB61BC",
+      "path": "assets/extracted/imageres_dll/Network and Sharing Center/netcenter_22.ico",
+      "bytes": 89506
+    },
+    {
+      "sha256": "2210300F912041E5D6686B149BF0CAB492DC794D4B9C1CE5DD4DC9A2E4BB5D27",
+      "path": "assets/extracted/imageres_dll/Network and Sharing Center/netcenter_23.ico",
+      "bytes": 92708
+    },
+    {
+      "sha256": "8E14AFCD2F9D707B063D5C2718B117D7DF43909E82BF3257D6C1FC497B566B26",
+      "path": "assets/extracted/imageres_dll/Network and Sharing Center/netcenter_27.ico",
+      "bytes": 29926
+    },
+    {
+      "sha256": "C5FBFBEBE0093854FEC6883FD0931A35D8CC0F51299FF71A9C3D29C25C0FA3CD",
+      "path": "assets/extracted/imageres_dll/Network and Sharing Center/netcenter_28.ico",
+      "bytes": 88256
+    },
+    {
+      "sha256": "1EC4FE3289D9668B50018144868280D0B396220515FB08D3C2509BFBBECAC790",
+      "path": "assets/extracted/imageres_dll/Network and Sharing Center/netcenter_504.ico",
+      "bytes": 75411
+    },
+    {
+      "sha256": "18557309DFE9D9CAE04C2803A6FF3A97D5C743A69B0AE7F88AC82F02E0434440",
+      "path": "assets/extracted/imageres_dll/Network and Sharing Center/netcenter_505.ico",
+      "bytes": 25214
+    },
+    {
+      "sha256": "E85D14FE009469009B92EA9D49E12E3283BAF7A7BD776ED59654BA81F131203D",
+      "path": "assets/extracted/imageres_dll/Network and Sharing Center/netcenter_506.ico",
+      "bytes": 157592
+    },
+    {
+      "sha256": "439791D3FCB99EABBEB8F08BA7BC87AA1AC44A919E433EADF180F12B7F078C41",
+      "path": "assets/extracted/imageres_dll/Network and Sharing Center/netcenter_6.ico",
+      "bytes": 99446
+    },
+    {
+      "sha256": "9D3BEAB7A9165190A0066982DAECCF43D8BD1F567CA4C7D82F0BDD750C7774E6",
+      "path": "assets/extracted/imageres_dll/Network and Sharing Center/netcenter_7.ico",
+      "bytes": 150186
+    },
+    {
+      "sha256": "3CAE30274ABD826F268B65D685DD661E57E9C5753C6AAB460361CF2C5B145984",
+      "path": "assets/extracted/imageres_dll/Network and Sharing Center/netcenter_8.ico",
+      "bytes": 108732
+    },
+    {
+      "sha256": "4A436613DFA424E675D41CE43DA362DE1E6AE2F8951537AA5B3360147778B5BB",
+      "path": "assets/extracted/imageres_dll/Printers/prnfldr_139.ico",
+      "bytes": 29926
+    },
+    {
+      "sha256": "9CBBF58FEC04780A93F851B1E0E1B83AC0C497FBCE9041957E1C567CF81993E2",
+      "path": "assets/extracted/imageres_dll/Printers/prnfldr_168.ico",
+      "bytes": 25214
+    },
+    {
+      "sha256": "AC2560969E3D9DFD8D52F800BDF78F5327C00E3272FF725C8356ACAC8EE508AC",
+      "path": "assets/extracted/imageres_dll/Printers/prnfldr_17.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "A37D2CC2E17D456B5E9DAFB7CB96506189AF560A3105BA3634E8C349F70EDF33",
+      "path": "assets/extracted/imageres_dll/Printers/prnfldr_240.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "3542D193DBE21879CF15F3CA950CC04D31F12CA32587CEBEBFA0571C8AA1A439",
+      "path": "assets/extracted/imageres_dll/Printers/prnfldr_242.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "B57964CCA60C8F6118B31F589F0F97C621FD131478ECC96A36E6CACCF1A4922D",
+      "path": "assets/extracted/imageres_dll/Printers/prnfldr_244.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "5A928B50ED57211F3EDB8C5010C2D4BD8E0DC4BA729536FC543BD9D42F6CCC7A",
+      "path": "assets/extracted/imageres_dll/Printers/prnfldr_5000.ico",
+      "bytes": 23878
+    },
+    {
+      "sha256": "69E19296D9620B5AC1E181318B6947453F3618F05742371B507C7388F0F2DEBE",
+      "path": "assets/extracted/imageres_dll/Printers/prnfldr_5001.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "99E9CF4C9E60F651D036AFAA3B1D2C34E2CD46C06A10851A7D4E9F38882B413E",
+      "path": "assets/extracted/imageres_dll/Printers/prnfldr_5002.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "5EB057AB6A9AD653BA360522556585E97DC249F811837A32703156B68C53BE41",
+      "path": "assets/extracted/imageres_dll/Printers/prnfldr_5003.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "35930CD9D30D451D36D05FB3AAA0E19E69A39637BD41A20F5A8FF6CD538A57D5",
+      "path": "assets/extracted/imageres_dll/Printers/prnfldr_5004.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "869BB1FC1943F2D0B4BA1FA8F6EBC675C89D2B0B5B54365D4643A14DB312E6C0",
+      "path": "assets/extracted/imageres_dll/Printers/prnfldr_5005.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "869BB1FC1943F2D0B4BA1FA8F6EBC675C89D2B0B5B54365D4643A14DB312E6C0",
+      "path": "assets/extracted/imageres_dll/Printers/prnfldr_5006.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "FCA856AE28BCB86017E589F5222A5ED09A223B1A904D7D047F92772D28CA6536",
+      "path": "assets/extracted/imageres_dll/Printers/prnfldr_5007.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "4C06A096FD241539AC8BDBA21DB96F4259F15670F63E3D82392975DB3130CF14",
+      "path": "assets/extracted/imageres_dll/Shell32.dll/explorer_258.ico",
+      "bytes": 24886
+    },
+    {
+      "sha256": "16C14DA5D81D13A04A7F347364255D326A2B1699F2A8D5B7B7F4F79F0A2DB1D8",
+      "path": "assets/extracted/imageres_dll/Shell32.dll/explorer_259.ico",
+      "bytes": 127544
+    },
+    {
+      "sha256": "ED4437F92D322DCF461195F4538D4AAB4C207AAE005C1C62EDC48886657A8F73",
+      "path": "assets/extracted/imageres_dll/Shell32.dll/explorer_ICO_MYCOMPUTER.ico",
+      "bytes": 187373
+    },
+    {
+      "sha256": "1C874C904585F1FEBE54278EC4120797DC74926086DE75211B9C0502E8878D11",
+      "path": "assets/extracted/imageres_dll/Shell32.dll/imageres_109.ico",
+      "bytes": 99567
+    },
+    {
+      "sha256": "087770917112997B23B4D0B2AA306626D28049E3C0D96697E8E77AFC844BF0E9",
+      "path": "assets/extracted/imageres_dll/Shell32.dll/imageres_20.ico",
+      "bytes": 60042
+    },
+    {
+      "sha256": "FE1D6A898398A36AEDD666EC8660CD1DEE861F4BF680805B0B1666BD3B96F871",
+      "path": "assets/extracted/imageres_dll/Shell32.dll/imageres_54.ico",
+      "bytes": 96898
+    },
+    {
+      "sha256": "029222AD048686B6DF3C7E999D3F2F62B8897641E36BCFA7F1C3A210455F3D7E",
+      "path": "assets/extracted/imageres_dll/Shell32.dll/imageres_55.ico",
+      "bytes": 79858
+    },
+    {
+      "sha256": "CF63D9637E4FE2EC4FD28658D3912D3532B4B8C2EA3D1D6467896EEA438C5800",
+      "path": "assets/extracted/imageres_dll/Shell32.dll/imageres_85.ico",
+      "bytes": 82619
+    },
+    {
+      "sha256": "99E9CF4C9E60F651D036AFAA3B1D2C34E2CD46C06A10851A7D4E9F38882B413E",
+      "path": "assets/extracted/imageres_dll/Shell32.dll/shell32_1003.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "42F152A458B33EE9212B180E4E6FAA747F75B2118C39EDCB3BCF21C731804B75",
+      "path": "assets/extracted/imageres_dll/Shell32.dll/shell32_151.ico",
+      "bytes": 25214
+    },
+    {
+      "sha256": "6D4DA8D09B359CF27768C2ED060980117024AD2CE015B642F8F9930BAB5418DC",
+      "path": "assets/extracted/imageres_dll/Shell32.dll/shell32_152.ico",
+      "bytes": 25214
+    },
+    {
+      "sha256": "68BF3DC75ABD39154F53F6DF4B5B22EFFFE2AD853A265C6ECD600604BA5A4589",
+      "path": "assets/extracted/imageres_dll/Shell32.dll/shell32_153.ico",
+      "bytes": 25214
+    },
+    {
+      "sha256": "55D821FB845ADB8B476C370C4B8F442B060924ADA5C92026FAC97FE93E83FCF2",
+      "path": "assets/extracted/imageres_dll/Shell32.dll/shell32_154.ico",
+      "bytes": 25214
+    },
+    {
+      "sha256": "497234FC1DDF38682BFCEC71DE4C26BE746105721E1F0128968FF1D53109CA04",
+      "path": "assets/extracted/imageres_dll/Shell32.dll/shell32_155.ico",
+      "bytes": 25214
+    },
+    {
+      "sha256": "BB8DC4D849D7E8E9B21B7E74C66ED7555F967C88F2AE873DEFF240CE1984C76E",
+      "path": "assets/extracted/imageres_dll/Shell32.dll/shell32_156.ico",
+      "bytes": 25214
+    },
+    {
+      "sha256": "A62718AD9B31D359EBB08B599289FCAD849707EE2447FCC85102DD986D637E82",
+      "path": "assets/extracted/imageres_dll/Shell32.dll/shell32_157.ico",
+      "bytes": 58344
+    },
+    {
+      "sha256": "16DF7D852ED2996429F5B0972C0E5358E1F29084A7C78C46DC8D7396CD72A722",
+      "path": "assets/extracted/imageres_dll/Shell32.dll/shell32_16.ico",
+      "bytes": 85138
+    },
+    {
+      "sha256": "E37A48CD0979F989349B219723A74ED84168F12EC85C0066E19DFC84E499378B",
+      "path": "assets/extracted/imageres_dll/Shell32.dll/shell32_16715.ico",
+      "bytes": 56988
+    },
+    {
+      "sha256": "155DFDC9CE7CC65E62352BFB152D20FD4B6A0590A8CCE53C1BE6C8520EB906AC",
+      "path": "assets/extracted/imageres_dll/Shell32.dll/shell32_16739.ico",
+      "bytes": 25214
+    },
+    {
+      "sha256": "20ED7D59A8451A4A02C912CA2D6C2A7D965027C971EED25E8113E39DDC64B474",
+      "path": "assets/extracted/imageres_dll/Shell32.dll/shell32_16741.ico",
+      "bytes": 29926
+    },
+    {
+      "sha256": "5CFAC6F6900FCB43C72B0BF106B6E7FDFF9BE0EB92D2903E8C4ECB36E8CE6F8D",
+      "path": "assets/extracted/imageres_dll/Shell32.dll/shell32_16767.ico",
+      "bytes": 25214
+    },
+    {
+      "sha256": "5C6347C3CC704F37565C841920F262E2EA95BF77009126E041B2FDA4B590BBD4",
+      "path": "assets/extracted/imageres_dll/Shell32.dll/shell32_16769.ico",
+      "bytes": 31630
+    },
+    {
+      "sha256": "7507793C4940E18F192DA73BDB60A7E34B95C8F71BFF4DD2FB44EE3A8870D310",
+      "path": "assets/extracted/imageres_dll/Shell32.dll/shell32_16771.ico",
+      "bytes": 31630
+    },
+    {
+      "sha256": "568991B4513919BC8B74DF0164A6A9805A4764797873BA4C041F0E4CCAB702D2",
+      "path": "assets/extracted/imageres_dll/Shell32.dll/shell32_16772.ico",
+      "bytes": 25214
+    },
+    {
+      "sha256": "3CA648B3070CC54B2ACB6F4A8B70C7BB8E14D251B050110A5FFE21EB7E1C8A38",
+      "path": "assets/extracted/imageres_dll/Shell32.dll/shell32_16782.ico",
+      "bytes": 25214
+    },
+    {
+      "sha256": "15A225EFA0EC02480C30D95143FB80CE4A277D07F084AAFE6FB94D720A92F692",
+      "path": "assets/extracted/imageres_dll/Shell32.dll/shell32_16783.ico",
+      "bytes": 33662
+    },
+    {
+      "sha256": "749B232BD73B208E1450EFA7B5DC7D4D775999F02BC43B75805AB87769ED2D58",
+      "path": "assets/extracted/imageres_dll/Shell32.dll/shell32_16784.ico",
+      "bytes": 110993
+    },
+    {
+      "sha256": "34FB2653B32A5E56346B278476CFEB04E270B4F075C9A6BC98DA36BA9192AAFE",
+      "path": "assets/extracted/imageres_dll/Shell32.dll/shell32_16785.ico",
+      "bytes": 91906
+    },
+    {
+      "sha256": "54216BCF4F6E5A90D4AAC843B2FC5186A9F017308F931F66DB3C5C5D7972774F",
+      "path": "assets/extracted/imageres_dll/Shell32.dll/shell32_16786.ico",
+      "bytes": 104552
+    },
+    {
+      "sha256": "AC2560969E3D9DFD8D52F800BDF78F5327C00E3272FF725C8356ACAC8EE508AC",
+      "path": "assets/extracted/imageres_dll/Shell32.dll/shell32_17.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "5EFDAFC4863357D71422EBEB238A767D1AF472D06FAFAF5A4F3D5A8EE84D539E",
+      "path": "assets/extracted/imageres_dll/Shell32.dll/shell32_18.ico",
+      "bytes": 25214
+    },
+    {
+      "sha256": "DECF30881F37DC7EA13AB6336634E7C943849418F363C2D3693F6DDCB8D10657",
+      "path": "assets/extracted/imageres_dll/Shell32.dll/shell32_2.ico",
+      "bytes": 25214
+    },
+    {
+      "sha256": "8E40A2760D7B894CF5DA233D6AA7F126BBE3D90CF0B556610107ED7CCC9EFB02",
+      "path": "assets/extracted/imageres_dll/Shell32.dll/shell32_22.ico",
+      "bytes": 29926
+    },
+    {
+      "sha256": "DEAAA28F11B9AB79223A0A87DE91CFB726976A37C6DFEDAB29C19347B8D21156",
+      "path": "assets/extracted/imageres_dll/Shell32.dll/shell32_23.ico",
+      "bytes": 25214
+    },
+    {
+      "sha256": "8905C2551395A80EA0E00ADC221238A67458894CF753133F5C7197CA53995D59",
+      "path": "assets/extracted/imageres_dll/Shell32.dll/shell32_231.ico",
+      "bytes": 31630
+    },
+    {
+      "sha256": "5875ABAFEE2D46D553388D1BD7F418AC074BC99F0403B025F687B8960BD1273C",
+      "path": "assets/extracted/imageres_dll/Shell32.dll/shell32_24.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "A37D2CC2E17D456B5E9DAFB7CB96506189AF560A3105BA3634E8C349F70EDF33",
+      "path": "assets/extracted/imageres_dll/Shell32.dll/shell32_240.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "178BEDE661935603DF4DF7BD1EB588F00D3079E97776ABDCD5E0938CFFED0AB7",
+      "path": "assets/extracted/imageres_dll/Shell32.dll/shell32_25.ico",
+      "bytes": 25214
+    },
+    {
+      "sha256": "BA9963AC1A6E27A797DA0C1398055D0883A9014BFC863D0D38A438B1F05B689B",
+      "path": "assets/extracted/imageres_dll/Shell32.dll/shell32_252.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "83F8049FF4E9CADA4E7EE04C2F67E31927ABE226E4C0122FA2FF4A2F19881FE1",
+      "path": "assets/extracted/imageres_dll/Shell32.dll/shell32_253.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "1F854D82A0F42A40ABF3E6A4B800C0C127DB5DD4C9F87E40F1DD3F6CCAEA65DC",
+      "path": "assets/extracted/imageres_dll/Shell32.dll/shell32_260.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "0EAEEFF6758B546F859346BCB31AB4EC11CA020A79F8B8FCD298EBE66141B2C6",
+      "path": "assets/extracted/imageres_dll/Shell32.dll/shell32_261.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "389074B2A4E2326DE11E02507D5175D9AF01DB818D3357C8E60BBE68A950CC26",
+      "path": "assets/extracted/imageres_dll/Shell32.dll/shell32_262.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "3FFEA0D9C37576B35A1F598ED78DDBC8C50A7B4CAE8E59DF3730037B8F887D4E",
+      "path": "assets/extracted/imageres_dll/Shell32.dll/shell32_264.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "C61B5250E799ECB1617E101B51B35681D9D906623CE30DF331830288583ED64D",
+      "path": "assets/extracted/imageres_dll/Shell32.dll/shell32_265.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "5391817CD95FF161CC81DB080A34198A1CC628A2F9F77E2456381B7D5D8E393F",
+      "path": "assets/extracted/imageres_dll/Shell32.dll/shell32_267.ico",
+      "bytes": 29926
+    },
+    {
+      "sha256": "BFD1B4857C57AC61EAC35DBB33F1B7F6DFEBDA0D6E7D3976E126FB6A6055C4EE",
+      "path": "assets/extracted/imageres_dll/Shell32.dll/shell32_268.ico",
+      "bytes": 25214
+    },
+    {
+      "sha256": "4CA6CC696EBDED2E7492D13D9D0A9F7D59F158641CD057F043A529C0361216E2",
+      "path": "assets/extracted/imageres_dll/Shell32.dll/shell32_269.ico",
+      "bytes": 25214
+    },
+    {
+      "sha256": "0387FD7C8F4C73A68CA37EE5D59A5CE0A98CF6FDC868498DCBBF0523B00954F3",
+      "path": "assets/extracted/imageres_dll/Shell32.dll/shell32_27.ico",
+      "bytes": 25214
+    },
+    {
+      "sha256": "C8CF7178DBEEAECF95A8C936221A59FCE5746309F103470BA109CD8015ECABB9",
+      "path": "assets/extracted/imageres_dll/Shell32.dll/shell32_270.ico",
+      "bytes": 25214
+    },
+    {
+      "sha256": "3B9A561F274787CED14B8D3E415CF34FC9C5AFAA69A4DCB06CE8B46ECC900DC7",
+      "path": "assets/extracted/imageres_dll/Shell32.dll/shell32_271.ico",
+      "bytes": 80992
+    },
+    {
+      "sha256": "FD2BAF4859D4394B680B58BDFD9EA971A54C375061AA9F11EDBBF1E3088CBC74",
+      "path": "assets/extracted/imageres_dll/Shell32.dll/shell32_272.ico",
+      "bytes": 25214
+    },
+    {
+      "sha256": "C6DE56D9903707A480000F94F95CE09392F9610A1BC45460CE124E839E0396D1",
+      "path": "assets/extracted/imageres_dll/Shell32.dll/shell32_274.ico",
+      "bytes": 25214
+    },
+    {
+      "sha256": "9D9F4D57BB92B329F0BA5FD1BB1611936F87CE58E2EE3C39CDA30CFB1A14E616",
+      "path": "assets/extracted/imageres_dll/Shell32.dll/shell32_275.ico",
+      "bytes": 25214
+    },
+    {
+      "sha256": "6EABFE9F348D760FAAEB530945B1D9541FAE9075D72B8FFFC6A2F458CFA1F1A4",
+      "path": "assets/extracted/imageres_dll/Shell32.dll/shell32_276.ico",
+      "bytes": 25214
+    },
+    {
+      "sha256": "BDBAE708CE0AB306C16272E1DA2D71F218A1E2143CE4E1B5C3A6DEC70967DC81",
+      "path": "assets/extracted/imageres_dll/Shell32.dll/shell32_278.ico",
+      "bytes": 25214
+    },
+    {
+      "sha256": "4CA6CC696EBDED2E7492D13D9D0A9F7D59F158641CD057F043A529C0361216E2",
+      "path": "assets/extracted/imageres_dll/Shell32.dll/shell32_279.ico",
+      "bytes": 25214
+    },
+    {
+      "sha256": "4A06BA72AC495001FC12974061DC03FE7A67A6914B407F435B8120A727573CDF",
+      "path": "assets/extracted/imageres_dll/Shell32.dll/shell32_283.ico",
+      "bytes": 25214
+    },
+    {
+      "sha256": "64A07E31ADE5B72F1E0D66EA3531725BE6FDC3F7F0CED493C88DF98DD7F5C66B",
+      "path": "assets/extracted/imageres_dll/Shell32.dll/shell32_292.ico",
+      "bytes": 83952
+    },
+    {
+      "sha256": "4B96EC4D5CD9EC002C03915E3EEF0BF5EC2577B74DBB1FC35EC3C8CC8C00B32B",
+      "path": "assets/extracted/imageres_dll/Shell32.dll/shell32_294.ico",
+      "bytes": 25214
+    },
+    {
+      "sha256": "B67B3703AEFF498E4430F54A14F81810A8DF5F9EE91B49039730BFF56A76DE45",
+      "path": "assets/extracted/imageres_dll/Shell32.dll/shell32_302.ico",
+      "bytes": 15086
+    },
+    {
+      "sha256": "2FD15A7A21668041772CBB3C1959ED80D7110F4C7CD2547467DCDAC536AAD0D7",
+      "path": "assets/extracted/imageres_dll/Shell32.dll/shell32_319.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "1F854D82A0F42A40ABF3E6A4B800C0C127DB5DD4C9F87E40F1DD3F6CCAEA65DC",
+      "path": "assets/extracted/imageres_dll/Shell32.dll/shell32_320.ico",
+      "bytes": 14846
+    },
+    {
+      "sha256": "C96A485A856B1A9F550B7D77A8CFE822CD763015F9505F17D1FD0C1654741683",
+      "path": "assets/extracted/imageres_dll/Shell32.dll/shell32_40.ico",
+      "bytes": 25214
+    },
+    {
+      "sha256": "84400B85C153973280A49B48D3EEEC23C140C33716BA36B5A289ACB6F7329337",
+      "path": "assets/extracted/imageres_dll/Shell32.dll/shell32_41.ico",
+      "bytes": 17542
+    },
+    {
+      "sha256": "F7FC3FB85D2AA3950C3ED2DC15E13947478A87E32632ACB6A1EB8845E775A463",
+      "path": "assets/extracted/imageres_dll/Shell32.dll/shell32_47.ico",
+      "bytes": 25214
+    },
+    {
+      "sha256": "8AE7C941A14EFD805FE98DFA786F3E57CDA3A0A5A7C4406BEC6CD86C34F9E950",
+      "path": "assets/extracted/imageres_dll/Special Folders/imageres_108.ico",
+      "bytes": 66346
+    },
+    {
+      "sha256": "BD6632D3FE8D72DCE265F93A54A9A75A4BAF7D27AB81202A977B811856D0BC6E",
+      "path": "assets/extracted/imageres_dll/Special Folders/imageres_112.ico",
+      "bytes": 79781
+    },
+    {
+      "sha256": "7943B0817730C7547C70E1C9B1FB1616FF597B6D1DD473CE9D5938371A7E9ED9",
+      "path": "assets/extracted/imageres_dll/Special Folders/imageres_113.ico",
+      "bytes": 76802
+    },
+    {
+      "sha256": "5F16D0A0F1F40C80C691CB9D1ECCA9A1F43AD21DA1F3B59322A7C073AD4B54F6",
+      "path": "assets/extracted/imageres_dll/Special Folders/imageres_115.ico",
+      "bytes": 69653
+    },
+    {
+      "sha256": "CE4D3D48CDC3E7171E0D19366D0CA72F5565B83634BAD49BA4FDEA79BC96A25A",
+      "path": "assets/extracted/imageres_dll/Special Folders/imageres_123.ico",
+      "bytes": 98874
+    },
+    {
+      "sha256": "762476A9C29EE5EE4189E16F9018EB56C76FA6248C5B1C40534DD56FB4C2EBF4",
+      "path": "assets/extracted/imageres_dll/Special Folders/imageres_129.ico",
+      "bytes": 66431
+    },
+    {
+      "sha256": "9658FE1598581F8B9410F74F2EC6DC861A6827D4ADF41F8494D8629AB9818367",
+      "path": "assets/extracted/imageres_dll/Special Folders/imageres_162.ico",
+      "bytes": 62287
+    },
+    {
+      "sha256": "655CA950C250343A55C3D503C6CE26AF49BC9EF1445FA2045EBF707C0A79A7E1",
+      "path": "assets/extracted/imageres_dll/Special Folders/imageres_184.ico",
+      "bytes": 67173
+    },
+    {
+      "sha256": "F06C563D1466701810CFEEEC4DC20FBD2C111A5E1F2EF3B45D7806D4910C08BA",
+      "path": "assets/extracted/imageres_dll/Special Folders/imageres_185.ico",
+      "bytes": 66650
+    },
+    {
+      "sha256": "99786CAB6316530B03F240A155EEB8C1417B45BCADC523C34F28AEC3DD4B7B76",
+      "path": "assets/extracted/imageres_dll/Special Folders/imageres_186.ico",
+      "bytes": 140960
+    },
+    {
+      "sha256": "0EC3B1AE52AA78B5D7128D58C80D9C093E8AF39F2BBD3988D5D0732A0D78C83B",
+      "path": "assets/extracted/imageres_dll/Special Folders/imageres_189.ico",
+      "bytes": 85214
+    },
+    {
+      "sha256": "1BABE772D521CBD29AD118812A49F0008A9EF469B75999FB949FCDB47D1E2D5F",
+      "path": "assets/extracted/imageres_dll/Special Folders/imageres_8.ico",
+      "bytes": 89672
+    },
+    {
+      "sha256": "F7C25D56AD39C83471FDE07FF0A2DE047D210F2955DCEE2BFE98949AC09A712D",
+      "path": "assets/extracted/imageres_dll/Standard Folders/imageres_10.ico",
+      "bytes": 45398
+    },
+    {
+      "sha256": "5F16D0A0F1F40C80C691CB9D1ECCA9A1F43AD21DA1F3B59322A7C073AD4B54F6",
+      "path": "assets/extracted/imageres_dll/Standard Folders/imageres_1020.ico",
+      "bytes": 69653
+    },
+    {
+      "sha256": "C7E8F3B8C51F847389976D2917F9BE42EFE7774EDD56391B024984FBB8328014",
+      "path": "assets/extracted/imageres_dll/Standard Folders/imageres_1025.ico",
+      "bytes": 81330
+    },
+    {
+      "sha256": "C4D690669EBCB484CD0F992005CD3F89F44CE3F498062D010BFC8D6F3EE22CB6",
+      "path": "assets/extracted/imageres_dll/Standard Folders/imageres_143.ico",
+      "bytes": 66933
+    },
+    {
+      "sha256": "AC7482CA2300D420FFDFA1007E67FA8448E6447E8EFE28462A991E240AE07CB1",
+      "path": "assets/extracted/imageres_dll/Standard Folders/imageres_166.ico",
+      "bytes": 66913
+    },
+    {
+      "sha256": "14BA2A29B56C0C31A2BA27B20512F7F526BB1CFA5E496BA9F542ED4EDAF1810F",
+      "path": "assets/extracted/imageres_dll/Standard Folders/imageres_174.ico",
+      "bytes": 59607
+    },
+    {
+      "sha256": "B970FAACD8F8FEC0FCC97DC98332E920688623FEC96B04CE7B9565B1C9A89701",
+      "path": "assets/extracted/imageres_dll/Standard Folders/imageres_178.ico",
+      "bytes": 79106
+    },
+    {
+      "sha256": "A30033E73275D979919A3BFAFE296E64866C31CE29005787373FCF618AD65478",
+      "path": "assets/extracted/imageres_dll/Standard Folders/imageres_18.ico",
+      "bytes": 78099
+    },
+    {
+      "sha256": "7E2AD74ACB84E01E43F1E7DC99D271DBD045CFFB5410D9A355168FCC4F9CE316",
+      "path": "assets/extracted/imageres_dll/Standard Folders/imageres_183.ico",
+      "bytes": 69638
+    },
+    {
+      "sha256": "BEF53904908769CEEB60F8E0976C3194E73534F00F4AFB65497C2091121B98B2",
+      "path": "assets/extracted/imageres_dll/Standard Folders/imageres_3.ico",
+      "bytes": 53411
+    },
+    {
+      "sha256": "1A6F99E5A7D003D6898CA8657A48D2BFA67174661A61553F279234D84037C8FB",
+      "path": "assets/extracted/imageres_dll/Standard Folders/imageres_5.ico",
+      "bytes": 44942
+    },
+    {
+      "sha256": "021288496BF0ACC7125E4AB97F8115EBEC0DC6EED630B9C6DE55A0C7BC344DBB",
+      "path": "assets/extracted/imageres_dll/Standard Folders/imageres_6.ico",
+      "bytes": 42557
+    },
+    {
+      "sha256": "762476A9C29EE5EE4189E16F9018EB56C76FA6248C5B1C40534DD56FB4C2EBF4",
+      "path": "assets/extracted/imageres_dll/Standard Folders/imageres_77.ico",
+      "bytes": 66431
+    },
+    {
+      "sha256": "C5005A016B0810F0D870F958C48318BFE9EDBAC89C35975DF0BCAA7A8ED60638",
+      "path": "assets/extracted/imageres_dll/Standard Folders/imageres_9.ico",
+      "bytes": 59964
+    },
+    {
+      "sha256": "FB6A4524A313F44B0159BA118F0AA6A35CD584564E85DCDECF9D1B899478C5C2",
+      "path": "assets/extracted/imageres_dll/Tasks/DxpTaskSync_50.ico",
+      "bytes": 36808
+    },
+    {
+      "sha256": "E706893A1C91258EADB0A4F8F53001B603C8FE90EF2AF0179375B457655DB350",
+      "path": "assets/extracted/imageres_dll/Tasks/DxpTaskSync_52.ico",
+      "bytes": 63924
+    },
+    {
+      "sha256": "A1AEAE362D04B8A060EA1CE9639415BBD49C0AD84D3FE6E4A7DE0E8194F7B19A",
+      "path": "assets/extracted/imageres_dll/Tasks/DxpTaskSync_53.ico",
+      "bytes": 74494
+    },
+    {
+      "sha256": "06659B4F8478C7EAD2C42C39D1D97859D68CE9BC1918385CEBB9FE215C354CEB",
+      "path": "assets/extracted/imageres_dll/Tasks/DxpTaskSync_60.ico",
+      "bytes": 179273
+    },
+    {
+      "sha256": "E85D14FE009469009B92EA9D49E12E3283BAF7A7BD776ED59654BA81F131203D",
+      "path": "assets/extracted/imageres_dll/Tasks/DxpTaskSync_61.ico",
+      "bytes": 157592
+    },
+    {
+      "sha256": "E648F9A6E2B4D51ED813A1FDAB1E747B45677C18418E92D522DE2DD4E237C643",
+      "path": "assets/extracted/imageres_dll/Tasks/DxpTaskSync_62.ico",
+      "bytes": 184664
+    },
+    {
+      "sha256": "6843F28B5181231E31498DA63EC6381AB3F4F19D4038CAD79FA4CCA7DC6DB949",
+      "path": "assets/extracted/imageres_dll/Tasks/DxpTaskSync_65.ico",
+      "bytes": 18582
+    },
+    {
+      "sha256": "7A647C854F9E05FBBB2BB0BA2F34359FBFDE53FEFA686B21E28189A568F3A3AB",
+      "path": "assets/extracted/imageres_dll/Windows Defender/MsMpRes_103.ico",
+      "bytes": 102175
+    },
+    {
+      "sha256": "99E7BC99834BCA0499B8F332413BF2CC23911FA0D2D9A5D7B656B54F0B8E26A9",
+      "path": "assets/extracted/imageres_dll/Windows Defender/MsMpRes_132.ico",
+      "bytes": 25214
+    },
+    {
+      "sha256": "4C0971C409A0FD790F625B0067E57DFCC638C32EDABDC832C8B248FBBEDCA308",
+      "path": "assets/extracted/imageres_dll/Windows Defender/MsMpRes_134.ico",
+      "bytes": 25214
+    },
+    {
+      "sha256": "FB7226AF2DCED3C19063DB5812ABF59A01D02EF15639D8DDC8AF9B25D37B6266",
+      "path": "assets/extracted/imageres_dll/Windows Defender/MsMpRes_151.ico",
+      "bytes": 25214
+    },
+    {
+      "sha256": "7ABD141D46654BA89C736B2B3411990C6491032BC32F16ADEF29374AC7A2ADBC",
+      "path": "assets/extracted/imageres_dll/Windows Defender/MsMpRes_334.ico",
+      "bytes": 25214
+    },
+    {
+      "sha256": "4CFFC589A842B5422E65EC25BE242E0E4AB7489D0E248DFDD58930A0CB69AA3E",
+      "path": "assets/extracted/imageres_dll/Windows DVD Maker/DVDMaker_128.ico",
+      "bytes": 133134
+    },
+    {
+      "sha256": "06A2A8CB6FED3FFA1A38891841F0FEA6F8796D658A6EC4957AE4A4FB68D27A6A",
+      "path": "assets/extracted/imageres_dll/Windows DVD Maker/DVDMaker_440.ico",
+      "bytes": 81849
+    },
+    {
+      "sha256": "B6C59E0D4262EDEBC95261F15BA82F907745F4F87221689C89E8063CCD1E314A",
+      "path": "assets/extracted/imageres_dll/Windows Journal/Journal_104.ico",
+      "bytes": 104498
+    },
+    {
+      "sha256": "97884F3ED4FA718BC32605ABEED31782DD1F796970390878BBA06981E7E2F940",
+      "path": "assets/extracted/imageres_dll/Windows Journal/Journal_105.ico",
+      "bytes": 99981
+    },
+    {
+      "sha256": "0FE19795A8633CEE3F60EFE11DEE6A5272D6D8D47486B84C98119DA1147608BF",
+      "path": "assets/extracted/imageres_dll/Windows Journal/Journal_127.ico",
+      "bytes": 98591
+    },
+    {
+      "sha256": "2C8249328A138697EB58BFE93DBE7CB21EA2D134CC406B6CC9857665295D712A",
+      "path": "assets/extracted/imageres_dll/Windows Live Messenger/msgsres_1.ico",
+      "bytes": 80395
+    },
+    {
+      "sha256": "14B33D3E42AFB2D7D8DFB62764106B7FF0EE5559A5D1FD280E9DAD60B3692DC4",
+      "path": "assets/extracted/imageres_dll/Windows Live Messenger/msgsres_712.ico",
+      "bytes": 5430
+    },
+    {
+      "sha256": "DE6B6DAF959807C05E75AEBB1B79350ADBCFD4CE757D3C984599DF7787C0F948",
+      "path": "assets/extracted/imageres_dll/Windows Live Messenger/msgsres_713.ico",
+      "bytes": 29926
+    },
+    {
+      "sha256": "A24CA71ADA652AACF8A2AC64D0C3CDAC268084DF70917C3A015C634E2EED8C55",
+      "path": "assets/extracted/imageres_dll/Windows Live Messenger/msgsres_714.ico",
+      "bytes": 29926
+    },
+    {
+      "sha256": "BF93B7DEEA82A063F5409D7BFFE6272237F4105C4BD46A256118CDB05EBFB741",
+      "path": "assets/extracted/imageres_dll/Windows Live Messenger/msgsres_722.ico",
+      "bytes": 29926
+    },
+    {
+      "sha256": "AD57B3D2F204F54B5C5591B700B654E355CC3697191F7A94191696B74D7E9CE1",
+      "path": "assets/extracted/imageres_dll/Windows Live Photo Gallery/WLXPhotoLibraryResources_2054.ico",
+      "bytes": 7278
+    },
+    {
+      "sha256": "8ACDD72BF04D60682C007518D4AA02AAC06257C73C70F76B80647D73DCD5C0BE",
+      "path": "assets/extracted/imageres_dll/Windows Live Photo Gallery/WLXPhotoLibraryResources_2057.ico",
+      "bytes": 7278
+    },
+    {
+      "sha256": "4EE29441F12A7091A5B7CF7F47725C55F065D24DA0A5C4098586A5A5A1FABF11",
+      "path": "assets/extracted/imageres_dll/Windows Live Photo Gallery/WLXPhotoLibraryResources_2059.ico",
+      "bytes": 10134
+    },
+    {
+      "sha256": "941DC7FDB023FD4BFB33589ECDB0C1C7A3E4B68E583F744E7D4E80AD88173D00",
+      "path": "assets/extracted/imageres_dll/Windows Live Photo Gallery/WLXPhotoLibraryResources_238.ico",
+      "bytes": 91707
+    },
+    {
+      "sha256": "D07A1A3C253621DD462DE9891775CFA21ABBBC88ACC2CA6DD9C7D6E4AFD5D487",
+      "path": "assets/extracted/imageres_dll/Windows Mail/MSOERES_15.ico",
+      "bytes": 43499
+    },
+    {
+      "sha256": "4A8DFC58FBF049848D69876A557471252405A68C6D683D64F04FA91CF83A2123",
+      "path": "assets/extracted/imageres_dll/Windows Mail/MSOERES_19.ico",
+      "bytes": 41875
+    },
+    {
+      "sha256": "42DAE8ADDF8AB2D2A2A6D67FA2CF4935398982EF37E4B511803A525A1282A7AB",
+      "path": "assets/extracted/imageres_dll/Windows Mail/MSOERES_2.ico",
+      "bytes": 124772
+    },
+    {
+      "sha256": "A2B4AC20239181DB856B32F7A661583542BCDE7B7837724DBF93D857308CBF1C",
+      "path": "assets/extracted/imageres_dll/Windows Mail/MSOERES_20.ico",
+      "bytes": 41327
+    },
+    {
+      "sha256": "F62C4021EE65BB36ED49EB3E87C6DA791D66072D13A34440E010EBB8CABC14C8",
+      "path": "assets/extracted/imageres_dll/Windows Mail/MSOERES_23.ico",
+      "bytes": 2862
+    },
+    {
+      "sha256": "1FE8ACBE3FF21CB06E348677FB9D489FB023F0A581B4989A43829AB378EAB0F8",
+      "path": "assets/extracted/imageres_dll/Windows Mail/MSOERES_41.ico",
+      "bytes": 7278
+    },
+    {
+      "sha256": "94C59B9356E1E22D752201CE8ABD6096434C30E34D1DD5D3D78637C3024551E7",
+      "path": "assets/extracted/imageres_dll/Windows Mail/MSOERES_42.ico",
+      "bytes": 7278
+    },
+    {
+      "sha256": "669CCAA148D3AFD8140667C3CCB681228C96464FDD6AFBA0A78804093F56F701",
+      "path": "assets/extracted/imageres_dll/Windows Mail/MSOERES_7.ico",
+      "bytes": 7278
+    },
+    {
+      "sha256": "ABD3215463777BC72C6588F9ADCA863FA650B35DF35DA0DF64B0516D56690BE6",
+      "path": "assets/extracted/imageres_dll/Windows Media Player/DXPTaskRingtone_141.ico",
+      "bytes": 20242
+    },
+    {
+      "sha256": "DF6322283FF233594F9EB79DA8A840C2F770AFE9C6A7D70E956B2555DB537995",
+      "path": "assets/extracted/imageres_dll/Windows Media Player/DXPTaskRingtone_142.ico",
+      "bytes": 20242
+    },
+    {
+      "sha256": "D7FE0917B38251005EC75EE650CF672B420E60117C0272A74D198FE178EC15DE",
+      "path": "assets/extracted/imageres_dll/Windows Media Player/DXPTaskRingtone_143.ico",
+      "bytes": 20242
+    },
+    {
+      "sha256": "7FD1C5B0713513BF572347DA8DB0AF82C997E60CC425D1C58D6156548DD8B36A",
+      "path": "assets/extracted/imageres_dll/Windows Media Player/DXPTaskRingtone_144.ico",
+      "bytes": 20242
+    },
+    {
+      "sha256": "A716EC483204F0D73714B5D0ECB2549A80F96A6C38115B071E71976FE8DCE9FB",
+      "path": "assets/extracted/imageres_dll/Windows Media Player/DXPTaskRingtone_151.ico",
+      "bytes": 29818
+    },
+    {
+      "sha256": "536CAD8D230A341F6C625D5E6DFD1FCA2B266325161228C03696E0992ADA5A21",
+      "path": "assets/extracted/imageres_dll/Windows Media Player/DXPTaskRingtone_152.ico",
+      "bytes": 29818
+    },
+    {
+      "sha256": "0208A8D9A6B72F41A888F3285F07EC737F813CEC91E11E2186650EB955BAA802",
+      "path": "assets/extracted/imageres_dll/Windows Media Player/DXPTaskRingtone_153.ico",
+      "bytes": 29818
+    },
+    {
+      "sha256": "FB42C3ACF78F4DD9A343ECD9D650C908204A31E88492E72AE2F40F9E77066D3E",
+      "path": "assets/extracted/imageres_dll/Windows Media Player/DXPTaskRingtone_154.ico",
+      "bytes": 29818
+    },
+    {
+      "sha256": "AA29F0FE8B94D86962C4DB2788AD690DBD88ADBC05E21F6A3BF4701CD753F8B3",
+      "path": "assets/extracted/imageres_dll/Windows Media Player/DXPTaskRingtone_155.ico",
+      "bytes": 29818
+    },
+    {
+      "sha256": "BCFF7E00C1D7E831AB6DDF55FFD2C7274C526CAA126EA742FC290B75811B086B",
+      "path": "assets/extracted/imageres_dll/Windows Media Player/DXPTaskRingtone_156.ico",
+      "bytes": 29818
+    },
+    {
+      "sha256": "BF12013573EC9F66C0C4A8E409FEE476E2754CD13ECD666E11DB807CEC4044B4",
+      "path": "assets/extracted/imageres_dll/Windows Media Player/DXPTaskRingtone_157.ico",
+      "bytes": 29818
+    },
+    {
+      "sha256": "92F87C122D0DAC26B54833905D3B974E19E3A63DCFC32CF3468E8799E4362C56",
+      "path": "assets/extracted/imageres_dll/Windows Media Player/DXPTaskRingtone_161.ico",
+      "bytes": 20242
+    },
+    {
+      "sha256": "872C2579C844A2858F9D8344A4D6FA0A1120E375E2F1D00BDA655439AFE4EDC8",
+      "path": "assets/extracted/imageres_dll/Windows Media Player/DXPTaskRingtone_162.ico",
+      "bytes": 20242
+    },
+    {
+      "sha256": "17CE4B7B357D6B3B083E644F4AC677264ECD881D1D165EFEA218C42C2473320D",
+      "path": "assets/extracted/imageres_dll/Windows Media Player/DXPTaskRingtone_163.ico",
+      "bytes": 20242
+    },
+    {
+      "sha256": "4D38C4141E17FDBDA1F9098AD4F533A1E62C3E98FA217A7EE05CE170301A8E22",
+      "path": "assets/extracted/imageres_dll/Windows Media Player/DXPTaskRingtone_164.ico",
+      "bytes": 20242
+    },
+    {
+      "sha256": "0AFA2EB896FFE20C5244DD191BE791231C8B5B71EFF200E75A3150A8E3296F30",
+      "path": "assets/extracted/imageres_dll/Windows Media Player/DXPTaskRingtone_50.ico",
+      "bytes": 51881
+    },
+    {
+      "sha256": "832DAF3C2F11A87CDB5FD606F3A15BD460F9849D3D46CE7EEB72C0C84F8151B2",
+      "path": "assets/extracted/imageres_dll/Windows Media Player/player.ico",
+      "bytes": 92061
+    },
+    {
+      "sha256": "E2D90F221FE42FC2BC6579047EFDBA6D1381AE1929A3D143E6256E8E570CB9BE",
+      "path": "assets/extracted/imageres_dll/Windows Media Player/WMPDMC_107.ico",
+      "bytes": 67940
+    },
+    {
+      "sha256": "9F58B074A84B42FAC95FD1569342363A05EA1DB4378182FEF7DEE21376F89F7F",
+      "path": "assets/extracted/imageres_dll/Windows Media Player/WMPDMC_116.ico",
+      "bytes": 18582
+    },
+    {
+      "sha256": "6FA9DC0911E80E2A77DDA0549D032B3A056B6EC8AAF0289C45E34EEDCEBECEDE",
+      "path": "assets/extracted/imageres_dll/Windows Media Player/wmplayer_120.ico",
+      "bytes": 57584
+    },
+    {
+      "sha256": "A07567894EE4AE0B9BDDB0B9C6B714AC15A54744BC489C316B2267E385FD794B",
+      "path": "assets/extracted/imageres_dll/Windows Media Player/wmpnscfg_100.ico",
+      "bytes": 25214
+    },
+    {
+      "sha256": "1CEE08E659B62A59A4A6628E6494E027BB81BB34F4CF4AD5233F9B0A19ED906A",
+      "path": "assets/extracted/imageres_dll/Windows PowerShell/powershell_ise_0.ico",
+      "bytes": 74701
+    },
+    {
+      "sha256": "1E92A5ADE914D3B2A76D8DF73699101F732FDA630D184969C3E221B6AD1C32E8",
+      "path": "assets/extracted/imageres_dll/Windows PowerShell/powershell_ise_1.ico",
+      "bytes": 83235
+    },
+    {
+      "sha256": "F019937887B3BD4DFFBCAABF6D6EE8ABED553EF7141E0FE4DF43ED9155B1C9F3",
+      "path": "assets/extracted/imageres_dll/Windows PowerShell/powershell_MSH_MAIN.ico",
+      "bytes": 106420
+    },
+    {
+      "sha256": "4A511630FE9B1EC4C52D8CA85F4BEAAE67052F147C72E4CB344E333FB6ABEA57",
+      "path": "assets/extracted/imageres_dll/Windows PowerShell/powershell_MSH_SECURITY.ico",
+      "bytes": 300318
+    },
+    {
+      "sha256": "E032F8118304589E99A3EE6CCE6A6C5D40AE236367A2F0257BBB485BAFA37BDA",
+      "path": "assets/extracted/imageres_dll/Windows Sidebar/sidebar_100.ico",
+      "bytes": 113731
+    },
+    {
+      "sha256": "8993C14D6254BF36937AD093F909B4F7CE95412FDC5EA355A310EE4572115E1C",
+      "path": "assets/extracted/imageres_dll/Windows Sidebar/sidebar_103.ico",
+      "bytes": 52349
+    },
+    {
+      "sha256": "5E23BE781FED005F7159FAF9E2A9E0CD12547D5BADDA16ABC2D0A41DD7E97391",
+      "path": "assets/extracted/imageres_dll/WMP12 Icons/WMP 12 1.ico",
+      "bytes": 309075
+    },
+    {
+      "sha256": "F498175A328F6C69B3CCFBBD98E4CA99B3BEB535777845BA465C7DBCE5467847",
+      "path": "assets/extracted/imageres_dll/WMP12 Icons/WMP 12 10.ico",
+      "bytes": 310108
+    },
+    {
+      "sha256": "5156125269FD2C4A652DA6DD945338BBDD028EF107BFA155E7E46B1E51C307D4",
+      "path": "assets/extracted/imageres_dll/WMP12 Icons/WMP 12 11.ico",
+      "bytes": 274452
+    },
+    {
+      "sha256": "A4B2B3151997B00B5396424F020D3D729C9D99E7653E6624FE17A4580FCA3309",
+      "path": "assets/extracted/imageres_dll/WMP12 Icons/WMP 12 13.ico",
+      "bytes": 282322
+    },
+    {
+      "sha256": "315727D345620BBB153A0EC67B5A25FC8A60F338B228113DE61616026ECAAD3F",
+      "path": "assets/extracted/imageres_dll/WMP12 Icons/WMP 12 14.ico",
+      "bytes": 331362
+    },
+    {
+      "sha256": "F682CD33E67833F787BB13FDDBBDF398A3729CBEC5020881FF18546006CA44CE",
+      "path": "assets/extracted/imageres_dll/WMP12 Icons/WMP 12 15.ico",
+      "bytes": 362085
+    },
+    {
+      "sha256": "81D6445F597FF11D788C3E843366902166581FFF80D76F42F550B8FE1223E9DC",
+      "path": "assets/extracted/imageres_dll/WMP12 Icons/WMP 12 16.ico",
+      "bytes": 279963
+    },
+    {
+      "sha256": "304863C6E43832AC5C65A66980253911EE1453E804187FB476A4CCF493CC1EF8",
+      "path": "assets/extracted/imageres_dll/WMP12 Icons/WMP 12 17.ico",
+      "bytes": 344799
+    },
+    {
+      "sha256": "14F0302E928F6CD5DCA810F427927819E0AE9D31ADED736D605EB8DA33733F96",
+      "path": "assets/extracted/imageres_dll/WMP12 Icons/WMP 12 18.ico",
+      "bytes": 276517
+    },
+    {
+      "sha256": "A9B95543C350E8132F590DD796AFBCBBA02FCBD7A5A8A0DF72E16C2CD966C07B",
+      "path": "assets/extracted/imageres_dll/WMP12 Icons/WMP 12 19.ico",
+      "bytes": 287740
+    },
+    {
+      "sha256": "D3A3B620779B30EEE8B8F1B578D609C7B1E3EF4549E4E6E3718AF64BD04D9DA7",
+      "path": "assets/extracted/imageres_dll/WMP12 Icons/WMP 12 2.ico",
+      "bytes": 276798
+    },
+    {
+      "sha256": "587F176A397E6A5941D629382DF193BFF15D69A6669B872D26F29A0CCEB32D96",
+      "path": "assets/extracted/imageres_dll/WMP12 Icons/WMP 12 20.ico",
+      "bytes": 322288
+    },
+    {
+      "sha256": "A293559B9ADC124B83F95E23D3643A7387FFAE2B52B5B979635894106CD8CFEE",
+      "path": "assets/extracted/imageres_dll/WMP12 Icons/WMP 12 21.ico",
+      "bytes": 297922
+    },
+    {
+      "sha256": "12FEC06E4F45F235FA83FBDFAD8DB0C3FD0302EE1CEB8983214F3B9E47BABEB6",
+      "path": "assets/extracted/imageres_dll/WMP12 Icons/WMP 12 22.ico",
+      "bytes": 277443
+    },
+    {
+      "sha256": "B07A06402AB516A289AF8797264BB6C11091275EED13283ABDBD0A288A35C4A1",
+      "path": "assets/extracted/imageres_dll/WMP12 Icons/WMP 12 23.ico",
+      "bytes": 281584
+    },
+    {
+      "sha256": "653DD2DD825FC04671625AB612CC9C4AD717AE2348B6FCCCD6C184E04A5D2D5D",
+      "path": "assets/extracted/imageres_dll/WMP12 Icons/WMP 12 24.ico",
+      "bytes": 314632
+    },
+    {
+      "sha256": "3483BB95257C3CFC9A4647ECB30CA22A45F39D22EC2C7FD88427679E2235FB87",
+      "path": "assets/extracted/imageres_dll/WMP12 Icons/WMP 12 25.ico",
+      "bytes": 267699
+    },
+    {
+      "sha256": "291ADCB02CA3A1D0928E9947638D9CF4F95590BFE1DB68FAE231E41E1CD23189",
+      "path": "assets/extracted/imageres_dll/WMP12 Icons/WMP 12 26.ico",
+      "bytes": 310699
+    },
+    {
+      "sha256": "32D2E96BB423F617BD84775B61914D25A905F30814A21550FDE637FF75702F83",
+      "path": "assets/extracted/imageres_dll/WMP12 Icons/WMP 12 27.ico",
+      "bytes": 387586
+    },
+    {
+      "sha256": "E0D7F10A3542CC0EC9F675CFE6710DF441F701CE762EB11AA2F5EE6BEEF5B410",
+      "path": "assets/extracted/imageres_dll/WMP12 Icons/WMP 12 28.ico",
+      "bytes": 377046
+    },
+    {
+      "sha256": "9EE8DCDC9541E818C7DDD5FB973E0870FBBCF9B6CF0006E05E52B43F6ECAD018",
+      "path": "assets/extracted/imageres_dll/WMP12 Icons/WMP 12 29.ico",
+      "bytes": 337083
+    },
+    {
+      "sha256": "7EC980461E2B6D5F31863B22276A3E068C6927E1B75BF1CE4C334DA95E277FF5",
+      "path": "assets/extracted/imageres_dll/WMP12 Icons/WMP 12 3.ico",
+      "bytes": 309251
+    },
+    {
+      "sha256": "2F2EF7C93033F2229EB823B791031A9406BB781938BB8841078B9FBF78BBCA37",
+      "path": "assets/extracted/imageres_dll/WMP12 Icons/WMP 12 30.ico",
+      "bytes": 381698
+    },
+    {
+      "sha256": "479647EBD3E91EBBC08B11F637AA0481BCBD1CCA4E5274605280D50214A766F7",
+      "path": "assets/extracted/imageres_dll/WMP12 Icons/WMP 12 31.ico",
+      "bytes": 296001
+    },
+    {
+      "sha256": "138CDB18B1C119165C6B9DBAB50E73DBEA1AD40F5D2272807297EAF7B81FD65A",
+      "path": "assets/extracted/imageres_dll/WMP12 Icons/WMP 12 32.ico",
+      "bytes": 299169
+    },
+    {
+      "sha256": "31424AB527D9FC4843CA3897EC301A9FAE165485DF3A4B44ACADBFE9F0DBE3A7",
+      "path": "assets/extracted/imageres_dll/WMP12 Icons/WMP 12 33.ico",
+      "bytes": 281381
+    },
+    {
+      "sha256": "EC4D2F541DD54839E11F412BF723657D8914E290F580C31B7EC19F29A44AB229",
+      "path": "assets/extracted/imageres_dll/WMP12 Icons/WMP 12 34.ico",
+      "bytes": 316931
+    },
+    {
+      "sha256": "28F37FDA64E86359D317BDF0F4B111DFB1B53CA3539BD254BBB622646E3C8E8F",
+      "path": "assets/extracted/imageres_dll/WMP12 Icons/WMP 12 35.ico",
+      "bytes": 261033
+    },
+    {
+      "sha256": "16EA2EF4453D0CA253757D33F676456A97D6CEAF6BC8AF25138C7BF34BD18E4C",
+      "path": "assets/extracted/imageres_dll/WMP12 Icons/WMP 12 36.ico",
+      "bytes": 279955
+    },
+    {
+      "sha256": "79A88D9451A35DB82E212E817418B088D53ADDC584DFA6EE42CFE5875A0E423E",
+      "path": "assets/extracted/imageres_dll/WMP12 Icons/WMP 12 37.ico",
+      "bytes": 346470
+    },
+    {
+      "sha256": "6AADBEBEF778214540333EFF20C7254C69EA8F560D58A5A6AB5DCB1AECBAA38B",
+      "path": "assets/extracted/imageres_dll/WMP12 Icons/WMP 12 38.ico",
+      "bytes": 320089
+    },
+    {
+      "sha256": "FC6DC10B821D49238BF25ADFBFF04D88B9C0CDBF568BA307ADE1CB5B26AF1850",
+      "path": "assets/extracted/imageres_dll/WMP12 Icons/WMP 12 39.ico",
+      "bytes": 380691
+    },
+    {
+      "sha256": "79FACBD5689179FED715477F1EFE4099DE04ACB38CE1B611AC17BF0EE2494195",
+      "path": "assets/extracted/imageres_dll/WMP12 Icons/WMP 12 4.ico",
+      "bytes": 312856
+    },
+    {
+      "sha256": "C011613DA5EFA74E8B81A4E0176B61277C1653600EAB657D4223267907D8991F",
+      "path": "assets/extracted/imageres_dll/WMP12 Icons/WMP 12 5.ico",
+      "bytes": 333382
+    },
+    {
+      "sha256": "7311B3A7EC42DFD0966517D3C15C1A9D46E39AD1D2DE9AEA9A556E1A5B576923",
+      "path": "assets/extracted/imageres_dll/WMP12 Icons/WMP 12 6.ico",
+      "bytes": 302442
+    },
+    {
+      "sha256": "856EFADE92759D85CDD65EA9265E12244D236735F6ED2C567F9B0EEB40E14EA5",
+      "path": "assets/extracted/imageres_dll/WMP12 Icons/WMP 12 7.ico",
+      "bytes": 301075
+    },
+    {
+      "sha256": "B05E3D3658A9016572119979BD29DC8DFD6C05AF15153F3FD863C4A170E83BB4",
+      "path": "assets/extracted/imageres_dll/WMP12 Icons/WMP 12 8.ico",
+      "bytes": 283295
+    },
+    {
+      "sha256": "EE615D788C4416DEA3A99C98655D7AF44C9D14848500B5923DBC0536C87A54A5",
+      "path": "assets/extracted/imageres_dll/WMP12 Icons/WMP 12 9.ico",
+      "bytes": 283938
+    },
+    {
+      "sha256": "FBE8A89B43D2E972EEF8430C9475955B717B2CBB0DB7ADD9CF62B5D11134FFAE",
+      "path": "assets/extracted/imageres_dll/Wordpad/wordpad_128.ico",
+      "bytes": 82778
+    },
+    {
+      "sha256": "6A55A5F6C4102C3D32EAFACFE22743288DCA13C7728F67D790F4AE14D9AF7FBA",
+      "path": "assets/extracted/imageres_dll/Wordpad/wordpad_154.ico",
+      "bytes": 48015
+    },
+    {
+      "sha256": "894394D770D0E3B8F0278124962C44749B50B23C29A553E2CE90920519EF8395",
+      "path": "assets/extracted/imageres_dll/Wordpad/wordpad_156.ico",
+      "bytes": 65621
+    },
+    {
+      "sha256": "A293C96EC4698D5A8422ACAB413F7CC6BDD0BF00EF4A291654D843FEB0302455",
+      "path": "assets/extracted/imageres_dll/Wordpad/wordpad_157.ico",
+      "bytes": 64713
+    },
+    {
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "path": "assets/extracted/shell32_dll/.gitkeep",
+      "bytes": 0
+    },
+    {
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "path": "assets/extracted/user32_dll/.gitkeep",
+      "bytes": 0
+    },
+    {
+      "sha256": "E5DD66490C0E804EF7226B3EE837C040D2759D6FBA2CC859985F0826522678A4",
+      "path": "assets/fonts/selawik.css",
+      "bytes": 909
+    },
+    {
+      "sha256": "E9D98518D8AC2817782A9A382430463A2E0793EA68350B695BB727D9A830EE1C",
+      "path": "assets/fonts/selawk.ttf",
+      "bytes": 44224
+    },
+    {
+      "sha256": "F0DB5E174A90E0956AD7D2844BDCA1D5E6DA92EC65B2C04E57BA9B180668C904",
+      "path": "assets/fonts/selawkb.ttf",
+      "bytes": 44068
+    },
+    {
+      "sha256": "8E19D073091A1E869B5B0D48B925E605C0A4C6ECE7DF7B22A364FB065314C4C5",
+      "path": "assets/fonts/selawkl.ttf",
+      "bytes": 44232
+    },
+    {
+      "sha256": "0A9E9D0549A10F24BEF9B3A29E06FE6E0B5C21E7A784C503B048A307841A7783",
+      "path": "assets/fonts/selawksb.ttf",
+      "bytes": 44192
+    },
+    {
+      "sha256": "8620960344F12093482CDED984A1AAFA5A57D24CBF7E9299DA125CCF0E9D4102",
+      "path": "assets/fonts/selawksl.ttf",
+      "bytes": 44260
+    },
+    {
+      "sha256": "0D66FD3BF917D3F5518DDC57419440F095CF2A8800214BA172FBABBD466E8E2A",
+      "path": "assets/processed/orb/orb_hot.png",
+      "bytes": 726
+    },
+    {
+      "sha256": "D8A60ABD673DD64209A8F0AAD1F5BDBE698ACA2765D04AF9CC46F4F503E08F49",
+      "path": "assets/processed/orb/orb_normal.png",
+      "bytes": 603
+    },
+    {
+      "sha256": "129B5D405EBD9F19EAF396775107D25FD133094AA34F8456599A5B04DD62DDAB",
+      "path": "assets/processed/orb/orb_pressed.png",
+      "bytes": 579
+    },
+    {
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "path": "assets/processed/png/.gitkeep",
+      "bytes": 0
+    },
+    {
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "path": "assets/processed/svg/.gitkeep",
+      "bytes": 0
+    },
+    {
+      "sha256": "BFC73CF18A73A815FC0BF73E1F0E85D24D73119DF914E5EE6AD99B8D7A41947A",
+      "path": "assets/processed/svg/breadcrumb-dropdown.svg",
+      "bytes": 224
+    },
+    {
+      "sha256": "BDA8FC1904036F98498D9213C367F63FAEFAE061791EDE650E5958AE02080BE4",
+      "path": "assets/processed/svg/command-link-arrow.svg",
+      "bytes": 817
+    },
+    {
+      "sha256": "3BD6AF117270178BD547D44B874F12ED776FBE19F4B152B0A1E92D74AAB34162",
+      "path": "assets/processed/svg/rating-star-empty.svg",
+      "bytes": 283
+    },
+    {
+      "sha256": "10BF81302B91B5AEF3F5849FD75A720B2B31A8CB6445A6C0E7DB816E37155AB0",
+      "path": "assets/processed/svg/rating-star-filled.svg",
+      "bytes": 597
+    },
+    {
+      "sha256": "F80A62FDC323635160291DE9C47436C6FB9DC7EA58DB9BE9ED1C1ABBD7986243",
+      "path": "assets/processed/svg/rating-star-hover.svg",
+      "bytes": 519
+    },
+    {
+      "sha256": "59655ED7336D70ABC2658544CFDC04F58D5CFAA3469E63AB61DA5861D517C20C",
+      "path": "assets/processed/svg/ribbon-dialog-launcher.svg",
+      "bytes": 382
+    },
+    {
+      "sha256": "011DED6B0858C5D53FE88EF014B0591136AC2BA040422A2FD325DE9D938B9BEC",
+      "path": "assets/processed/svg/ribbon-gallery-scroll.svg",
+      "bytes": 875
+    },
+    {
+      "sha256": "A2BC36B7243C4477E01E68C09C60AA4FEC17CBE81CDC036EB3AECEAB564CBB30",
+      "path": "assets/processed/svg/ribbon-qat-dropdown.svg",
+      "bytes": 301
+    },
+    {
+      "sha256": "E6025254DB3A6FBD1DDD071D277E5667F6A278F94C20B07434B8F1FC0A8E2FE3",
+      "path": "assets/processed/svg/spinner-arrows.svg",
+      "bytes": 750
+    },
+    {
+      "sha256": "58A0F6D9A10734A5E784A46805D81AAFB11641DE2C38F10A52527B770DB2BE9F",
+      "path": "assets/processed/svg/treeview-chevron-closed.svg",
+      "bytes": 147
+    },
+    {
+      "sha256": "2975EE1068C8EBD13662109B01DA5951AC83BAF357C3386235BFF00EABC290FF",
+      "path": "assets/processed/svg/treeview-chevron-opened.svg",
+      "bytes": 147
+    },
+    {
+      "sha256": "7430128A91621D88E7435C6C9DBE8F5B3DE6CCA1AF7E48BFDFDDDC179EF52620",
+      "path": "assets/processed/svg/wordpad-ruler-stops.svg",
+      "bytes": 440
+    },
+    {
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "path": "assets/tokens/.gitkeep",
+      "bytes": 0
+    },
+    {
+      "sha256": "D676DDD1DBFC08F82145DF9873069492B4B2560D8F9A185D3EDF6D51EC35AF71",
+      "path": "assets/tokens/aero_math.json",
+      "bytes": 3285
+    },
+    {
+      "sha256": "6830F71D9FEE18C2535184A794754319C19E0EC405437F4C96598113A5DB827A",
+      "path": "assets/tokens/animations.json",
+      "bytes": 1476
+    },
+    {
+      "sha256": "BF44935EABB69C896FF701842811F614362B79AD0FBE789563EE099EB45558CE",
+      "path": "assets/tokens/colors.json",
+      "bytes": 4548
+    },
+    {
+      "sha256": "DA18670668A5A138FEEB81F2069AF187B13FA903EE2D93310F441958950D77BC",
+      "path": "assets/tokens/metrics.json",
+      "bytes": 2029
+    },
+    {
+      "sha256": "4014A636593F45A73CC04153B69026831FD2A98B602371AE625A0AE750A1C356",
+      "path": "assets/tokens/slices.json",
+      "bytes": 1344
+    },
+    {
+      "sha256": "9761C6CC6114A2DC0DC79DA928B2E5E2D9D503A1780D6E7E8A304D82E5B3F365",
+      "path": "assets/tokens/typography.json",
+      "bytes": 1188
+    }
+  ],
+  "totalFiles": 703
+}

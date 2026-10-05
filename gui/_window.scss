@@ -166,7 +166,7 @@
         opacity: 1;
       }
     }
-    
+
     @keyframes dialog-close {
       0% {
         transform: translate(-50%, -50%);
@@ -188,7 +188,7 @@
     transform-style: preserve-3d;
     visibility: hidden;
     opacity: 0;
-    
+
     animation: dialog-close 0.25s ease-in forwards;
     transition: visibility 0s linear 0.25s;
 

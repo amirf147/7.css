@@ -1,2 +1,31 @@
 node_modules/
 dist/
+
+# Local Scratch & Reference Archives (Tier 1)
+scratch/
+reference/
+temp/
+*.tmp
+
+# Raw Binaries & Disk Images
+*.dll
+*.exe
+*.msstyles
+*.wim
+*.iso
+*.zip
+*.7z
+*.tar
+*.gz
+
+# Raw Master Audio Rips
+*.wav
+
+# Extracted Microsoft System Binaries & Icon Groups (Tier 1 Reference)
+assets/extracted/*
+!assets/extracted/.gitkeep
+!assets/extracted/aero_msstyles/.gitkeep
+!assets/extracted/imageres_dll/.gitkeep
+!assets/extracted/shell32_dll/.gitkeep
+!assets/extracted/user32_dll/.gitkeep
+!assets/extracted/cursors/.gitkeep

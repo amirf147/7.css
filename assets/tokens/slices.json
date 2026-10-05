@@ -1,0 +1,68 @@
+{
+  "windowFrame": {
+    "slice": "6 6 6 6 fill",
+    "borderRadius": 6,
+    "borderThickness": 6
+  },
+  "version": "1.0.0",
+  "taskbarPreview": {
+    "slice": "5 5 5 5 fill",
+    "innerBorder": "1px solid rgba(255, 255, 255, 0.9)",
+    "bevelWidth": 5,
+    "backdropBlur": "16px",
+    "outerBorder": "1px solid rgba(0, 0, 0, 0.6)"
+  },
+  "tabs": {
+    "topItem": {
+      "height": 22,
+      "slice": "3 3 2 3 fill"
+    },
+    "pane": {
+      "slice": "3 3 3 3 fill"
+    },
+    "bottomItem": {
+      "height": 22,
+      "slice": "2 3 3 3 fill"
+    }
+  },
+  "progress": {
+    "chunk": {
+      "height": 12,
+      "slice": "2 2 2 2 fill"
+    },
+    "track": {
+      "height": 14,
+      "slice": "2 2 2 2 fill"
+    }
+  },
+  "button": {
+    "slice": "3 3 3 3 fill",
+    "stateHeight": 23,
+    "totalStates": 6,
+    "sourceHeight": 23,
+    "sourceWidth": 75
+  },
+  "scrollbar": {
+    "thumbVert": {
+      "width": 17,
+      "slice": "3 2 3 2 fill"
+    },
+    "gripperHorz": {
+      "width": 9,
+      "height": 7
+    },
+    "gripperVert": {
+      "width": 7,
+      "height": 9
+    },
+    "thumbHorz": {
+      "height": 17,
+      "slice": "2 3 2 3 fill"
+    }
+  },
+  "ribbonChunk": {
+    "slice": "2 2 2 2 fill",
+    "hoverBorder": "1px solid #b8d6fb",
+    "captionHeight": 16
+  }
+}

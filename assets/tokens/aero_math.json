@@ -1,0 +1,62 @@
+{
+  "version": "1.0.0",
+  "glass": {
+    "boxShadowRestored": "0 18px 44px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 0, 0, 0.55), inset 0 0 0 1px rgba(255, 255, 255, 0.95), inset 0 0 30px rgba(255, 255, 255, 0.28)",
+    "textHaloGlowInactive": "0 0 6px rgba(255, 255, 255, 0.6)",
+    "specularReflections": [
+      "linear-gradient(104deg, transparent 26%, rgba(255, 255, 255, 0.32) 42%, rgba(255, 255, 255, 0.05) 50%, transparent 64%)",
+      "linear-gradient(to bottom, rgba(255, 255, 255, 0.68) 0%, rgba(255, 255, 255, 0.2) 42%, rgba(255, 255, 255, 0) 54%)",
+      "linear-gradient(to bottom, rgba(255, 255, 255, 0.12) 0%, rgba(0, 0, 0, 0.12) 100%)"
+    ],
+    "textHaloGlowActive": "0 0 10px rgba(255, 255, 255, 0.95), 0 0 6px rgba(255, 255, 255, 0.8), 0 1px 2px rgba(255, 255, 255, 1.0)",
+    "inactiveBackdropFilter": "blur(12px) saturate(100%)",
+    "boxShadowMaximized": "none",
+    "backdropFilter": "blur(18px) saturate(190%)",
+    "webkitBackdropFilter": "blur(18px) saturate(190%)",
+    "specularGlareAngleDeg": 104,
+    "boxShadowInactive": "0 10px 24px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(0, 0, 0, 0.45), inset 0 0 0 1px rgba(255, 255, 255, 0.6)"
+  },
+  "explorer": {
+    "addressBarGlowFocus": "0 0 5px #3c7fb1, inset 0 1px 2px rgba(0, 0, 0, 0.1)",
+    "addressBarLoadingProgress": "linear-gradient(to bottom, rgba(144, 238, 144, 0.5) 0%, rgba(34, 139, 34, 0.7) 50%, rgba(0, 100, 0, 0.8) 51%, rgba(50, 205, 50, 0.6) 100%)"
+  },
+  "buttons": {
+    "defaultPulse": {
+      "background": "linear-gradient(to bottom, #dcedf8 0%, #c1e0f4 50%, #9dd0f0 51%, #79bbe6 100%)",
+      "border": "1px solid #1c6ba0",
+      "outerGlow": "0 0 8px rgba(53, 148, 219, 0.85), inset 0 0 4px rgba(255, 255, 255, 0.9)"
+    },
+    "disabled": {
+      "background": "#f4f4f4",
+      "border": "1px solid #adb2b5",
+      "boxShadow": "none",
+      "color": "#838383"
+    },
+    "hover": {
+      "background": "linear-gradient(to bottom, #eaf6fd 0%, #d9f0fc 50%, #bee6fd 51%, #a7d9f5 100%)",
+      "border": "1px solid #3c7fb1",
+      "boxShadow": "0 0 5px rgba(60, 127, 177, 0.6)",
+      "innerHighlight": "inset 0 1px 0 rgba(255, 255, 255, 0.9), inset 0 0 5px rgba(167, 217, 245, 0.8)"
+    },
+    "pressed": {
+      "background": "linear-gradient(to bottom, #e5f4fc 0%, #c4e5f6 50%, #98d1ef 51%, #68b3db 100%)",
+      "border": "1px solid #2c628b",
+      "boxShadow": "inset 0 1px 3px rgba(0, 0, 0, 0.2)",
+      "innerHighlight": "inset 0 1px 2px rgba(0, 0, 0, 0.3), inset 0 -1px 0 rgba(255, 255, 255, 0.4)"
+    },
+    "normal": {
+      "background": "linear-gradient(to bottom, #f2f2f2 0%, #ebebeb 50%, #dddddd 51%, #cfcfcf 100%)",
+      "border": "1px solid #707070",
+      "boxShadow": "0 1px 1px rgba(0, 0, 0, 0.1)",
+      "innerHighlight": "inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 -1px 0 rgba(255, 255, 255, 0.3)"
+    }
+  },
+  "ribbon": {
+    "activeTabShadow": "0 -1px 2px rgba(0, 0, 0, 0.05)",
+    "innerGlow": "inset 0 1px 0 rgba(255, 255, 255, 0.9)",
+    "buttonPressedBorder": "1px solid #84b7e8",
+    "buttonPressedGradient": "linear-gradient(to bottom, #cde4f7 0%, #b6daf3 100%)",
+    "buttonHoverGradient": "linear-gradient(to bottom, #fcfdfe 0%, #e3f0fb 100%)",
+    "buttonHoverBorder": "1px solid #b8d6fb"
+  }
+}

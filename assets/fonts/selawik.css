@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'Selawik';
+  font-weight: 300;
+  font-style: normal;
+  src: local('Segoe UI Light'), local('Segoe UI'),
+       url('selawik-light.woff2') format('woff2'),
+       url('selawiklight.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Selawik';
+  font-weight: 400;
+  font-style: normal;
+  src: local('Segoe UI'),
+       url('selawik-regular.woff2') format('woff2'),
+       url('selawik.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Selawik';
+  font-weight: 600;
+  font-style: normal;
+  src: local('Segoe UI Semibold'), local('Segoe UI Bold'),
+       url('selawik-semibold.woff2') format('woff2'),
+       url('selawiksemibold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Selawik';
+  font-weight: 700;
+  font-style: normal;
+  src: local('Segoe UI Bold'),
+       url('selawik-bold.woff2') format('woff2'),
+       url('selawikb.ttf') format('truetype');
+}
