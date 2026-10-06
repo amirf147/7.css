@@ -1,0 +1,58 @@
+<section class="component">
+  <h3 id="scenic-ribbon">Scenic Ribbon Framework</h3>
+  <div>
+    <blockquote>
+      The ribbon replaces the traditional menu bar and toolbars with a modern, graphical command
+      surface featuring an application button, quick access toolbar, and clustered chunks.
+      <footer>
+        &mdash; <a href="https://learn.microsoft.com/en-us/windows/win32/uxguide/cmd-ribbons">Microsoft Windows User Experience - Ribbons</a>
+      </footer>
+    </blockquote>
+
+    <%- example(`
+      <div class="scenic-ribbon">
+        <div class="ribbon-top-bar">
+          <button class="ribbon-app-btn">Paint</button>
+          <div class="qat">
+            <button class="qat-item" aria-label="Save"></button>
+            <button class="qat-item" aria-label="Undo"></button>
+            <button class="qat-item" aria-label="Redo"></button>
+            <button class="qat-dropdown" aria-label="Customize QAT"></button>
+          </div>
+          <ul class="ribbon-tabs">
+            <li class="ribbon-tab active">Home</li>
+            <li class="ribbon-tab">View</li>
+          </ul>
+        </div>
+        <div class="ribbon-body">
+          <div class="ribbon-chunk">
+            <div class="ribbon-chunk-content">
+              <button class="ribbon-btn-large">
+                <span>Paste</span>
+              </button>
+              <div class="ribbon-button-column">
+                <button class="ribbon-btn-small">Cut</button>
+                <button class="ribbon-btn-small">Copy</button>
+              </div>
+            </div>
+            <span class="ribbon-chunk-title">Clipboard</span>
+            <button class="ribbon-dialog-launcher" aria-label="Clipboard Options"></button>
+          </div>
+          <div class="ribbon-chunk">
+            <div class="ribbon-chunk-content">
+              <button class="ribbon-btn-large">
+                <span>Select</span>
+              </button>
+              <div class="ribbon-button-column">
+                <button class="ribbon-btn-small">Crop</button>
+                <button class="ribbon-btn-small">Resize</button>
+                <button class="ribbon-btn-small">Rotate</button>
+              </div>
+            </div>
+            <span class="ribbon-chunk-title">Image</span>
+          </div>
+        </div>
+      </div>
+    `) %>
+  </div>
+</section>

@@ -1,0 +1,163 @@
+/* ========================================================================== */
+/* Windows 7 Explorer Breadcrumb Bar (gui/_breadcrumb.scss)                   */
+/* ========================================================================== */
+
+:root {
+  --w7-breadcrumb-height: 24px;
+  --w7-breadcrumb-bg: #ffffff;
+  --w7-breadcrumb-border: var(--w7-input-border, #abadb3);
+  --w7-breadcrumb-hover-bg: linear-gradient(to bottom, #f3f9fc 0%, #e4f0f8 45%, #d9eaf5 100%);
+  --w7-breadcrumb-hover-border: #a7d8f5;
+  --w7-breadcrumb-active-bg: linear-gradient(to bottom, #dbeaf9 0%, #cce8ff 100%);
+  --w7-breadcrumb-active-border: #99d1ff;
+}
+
+.breadcrumb-bar,
+nav.breadcrumb-bar {
+  font: var(--w7-font);
+  display: flex;
+  align-items: center;
+  min-height: var(--w7-breadcrumb-height);
+  height: var(--w7-breadcrumb-height);
+  background: var(--w7-breadcrumb-bg);
+  border: 1px solid var(--w7-breadcrumb-border);
+  border-radius: 2px;
+  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  padding: 1px 2px;
+  position: relative;
+  overflow: hidden;
+  user-select: none;
+  width: 100%;
+
+  /* Leading Root/Drive Icon */
+  .breadcrumb-root-icon,
+  .breadcrumb-icon {
+    width: 16px;
+    height: 16px;
+    margin: 0 3px;
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  /* Breadcrumb Path Segment (.breadcrumb-segment) */
+  .breadcrumb-segment {
+    display: inline-flex;
+    align-items: center;
+    height: calc(var(--w7-breadcrumb-height) - 4px);
+    border: 1px solid transparent;
+    border-radius: 2px;
+    box-sizing: border-box;
+    cursor: default;
+    position: relative;
+    white-space: nowrap;
+
+    /* Label segment */
+    .breadcrumb-label,
+    a {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      height: 100%;
+      padding: 0 4px;
+      color: var(--w7-color-window-text, #000000);
+      text-decoration: none;
+      cursor: default;
+    }
+
+    /* Sub-folder Dropdown Chevron Trigger */
+    .breadcrumb-dropdown-btn,
+    button.breadcrumb-dropdown {
+      all: unset;
+      box-sizing: border-box;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 14px;
+      height: 100%;
+      cursor: default;
+      background: url("./icon/breadcrumb-dropdown.svg") no-repeat center;
+      background-size: 8px 8px;
+      border-left: 1px solid transparent;
+      padding: 0;
+      margin: 0;
+    }
+
+    /* Hover State (Glossy Split-Pill) */
+    &:hover {
+      background: var(--w7-breadcrumb-hover-bg);
+      border-color: var(--w7-breadcrumb-hover-border);
+
+      .breadcrumb-dropdown-btn,
+      button.breadcrumb-dropdown {
+        border-left-color: rgba(167, 216, 245, 0.7);
+
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.4);
+        }
+      }
+    }
+
+    /* Pressed / Active State */
+    &:active,
+    &.is-active {
+      background: var(--w7-breadcrumb-active-bg);
+      border-color: var(--w7-breadcrumb-active-border);
+
+      .breadcrumb-dropdown-btn,
+      button.breadcrumb-dropdown {
+        border-left-color: rgba(153, 209, 255, 0.8);
+      }
+    }
+  }
+
+  /* Separator Arrow (for simple non-split breadcrumbs) */
+  .breadcrumb-separator {
+    width: 12px;
+    height: 100%;
+    background: url("./icon/breadcrumb-dropdown.svg") no-repeat center;
+    background-size: 8px 8px;
+    transform: rotate(-90deg);
+    opacity: 0.7;
+    flex-shrink: 0;
+  }
+
+  /* Direct Editable Address Bar Input */
+  input[type="text"],
+  input.breadcrumb-input {
+    all: unset;
+    box-sizing: border-box;
+    flex: 1;
+    height: 100%;
+    padding: 0 4px;
+    font: inherit;
+    color: var(--w7-color-window-text, #000000);
+    cursor: text;
+  }
+
+  /* Trailing Click Space */
+  .breadcrumb-tail {
+    flex: 1;
+    height: 100%;
+    min-width: 16px;
+    cursor: text;
+  }
+}
+
+/* Windows Vista Theme Adaptation */
+[data-theme="vista"] .breadcrumb-bar,
+[data-theme="vista"] nav.breadcrumb-bar,
+.window[data-theme="vista"] .breadcrumb-bar,
+.window[data-theme="vista"] nav.breadcrumb-bar {
+  --w7-breadcrumb-hover-bg: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(220, 235, 248, 0.9) 100%);
+  --w7-breadcrumb-hover-border: rgba(0, 160, 240, 0.6);
+  --w7-breadcrumb-active-bg: linear-gradient(to bottom, #cfe7fb 0%, #badafb 100%);
+  --w7-breadcrumb-active-border: #7dbef9;
+}

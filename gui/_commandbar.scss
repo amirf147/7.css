@@ -1,0 +1,224 @@
+/* ========================================================================== */
+/* Windows 7 Explorer Command Bar & Split Buttons (gui/_commandbar.scss)      */
+/* ========================================================================== */
+
+:root {
+  --w7-commandbar-height: 30px;
+  --w7-commandbar-btn-height: 22px;
+  --w7-commandbar-bg: linear-gradient(to bottom, #fcfcfc 0%, #f4f4f4 50%, #eaeaea 100%);
+  --w7-commandbar-border-bottom: #d9d9d9;
+  --w7-commandbar-btn-hover-bg: linear-gradient(to bottom, #f3f9fc 0%, #e4f0f8 45%, #d9eaf5 100%);
+  --w7-commandbar-btn-hover-border: #a7d8f5;
+  --w7-commandbar-btn-active-bg: linear-gradient(to bottom, #dbeaf9 0%, #cce8ff 100%);
+  --w7-commandbar-btn-active-border: #99d1ff;
+}
+
+.command-bar,
+div.command-bar {
+  font: var(--w7-font);
+  display: flex;
+  align-items: center;
+  height: var(--w7-commandbar-height);
+  min-height: var(--w7-commandbar-height);
+  background: var(--w7-commandbar-bg);
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid var(--w7-commandbar-border-bottom);
+  box-sizing: border-box;
+  padding: 0 4px;
+  gap: 3px;
+  user-select: none;
+  width: 100%;
+
+  /* Action Buttons (.command-bar-btn, button) */
+  .command-bar-btn,
+  > button {
+    all: unset;
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    height: var(--w7-commandbar-btn-height);
+    padding: 0 8px;
+    font: inherit;
+    font-size: 9pt;
+    color: #1e395b;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    cursor: default;
+    white-space: nowrap;
+
+    img,
+    .command-bar-icon {
+      width: 16px;
+      height: 16px;
+    }
+
+    &:hover {
+      background: var(--w7-commandbar-btn-hover-bg);
+      border-color: var(--w7-commandbar-btn-hover-border);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
+    }
+
+    &:active,
+    &.is-active {
+      background: var(--w7-commandbar-btn-active-bg);
+      border-color: var(--w7-commandbar-btn-active-border);
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
+    }
+
+    &:disabled {
+      opacity: 0.5;
+      pointer-events: none;
+    }
+  }
+
+  /* Split Buttons (.split-button, .command-bar-split) */
+  .split-button,
+  .command-bar-split {
+    display: inline-flex;
+    align-items: center;
+    height: var(--w7-commandbar-btn-height);
+    border: 1px solid transparent;
+    border-radius: 2px;
+    box-sizing: border-box;
+    cursor: default;
+    color: #1e395b;
+    white-space: nowrap;
+
+    .split-button-action,
+    button.split-action {
+      all: unset;
+      box-sizing: border-box;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      height: 100%;
+      padding: 0 6px;
+      font: inherit;
+      color: inherit;
+      cursor: default;
+    }
+
+    .split-button-dropdown,
+    button.split-dropdown {
+      all: unset;
+      box-sizing: border-box;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 14px;
+      height: 100%;
+      background: url("./icon/breadcrumb-dropdown.svg") no-repeat center;
+      background-size: 8px 8px;
+      border-left: 1px solid transparent;
+      padding: 0;
+      cursor: default;
+    }
+
+    &:hover {
+      background: var(--w7-commandbar-btn-hover-bg);
+      border-color: var(--w7-commandbar-btn-hover-border);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
+
+      .split-button-dropdown,
+      button.split-dropdown {
+        border-left-color: rgba(167, 216, 245, 0.7);
+
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.4);
+        }
+      }
+    }
+
+    &:active,
+    &.is-active {
+      background: var(--w7-commandbar-btn-active-bg);
+      border-color: var(--w7-commandbar-btn-active-border);
+
+      .split-button-dropdown,
+      button.split-dropdown {
+        border-left-color: rgba(153, 209, 255, 0.8);
+      }
+    }
+  }
+
+  /* Vertical Divider Between Button Groups */
+  .command-bar-separator {
+    width: 1px;
+    height: 18px;
+    background: #d9d9d9;
+    border-right: 1px solid #ffffff;
+    margin: 0 2px;
+  }
+
+  /* Right-Aligned Search Box Container */
+  .command-bar-search {
+    margin-left: auto;
+    display: inline-flex;
+    align-items: center;
+  }
+}
+
+/* Standalone Split Button (can be used anywhere outside command bar) */
+.split-button:not(.command-bar *) {
+  display: inline-flex;
+  align-items: center;
+  height: 23px;
+  border: 1px solid var(--w7-btn-border, #707070);
+  border-radius: var(--w7-el-bdr, 3px);
+  background: var(--w7-btn-bg);
+  box-shadow: var(--w7-btn-shadow);
+  user-select: none;
+  font: var(--w7-font);
+  color: #000000;
+
+  .split-button-action {
+    all: unset;
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    height: 100%;
+    padding: 0 8px;
+    cursor: default;
+  }
+
+  .split-button-dropdown {
+    all: unset;
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 100%;
+    background: url("./icon/breadcrumb-dropdown.svg") no-repeat center;
+    background-size: 8px 8px;
+    border-left: 1px solid rgba(0, 0, 0, 0.15);
+    cursor: default;
+  }
+
+  &:hover {
+    background: var(--w7-btn-hover-bg);
+    border-color: var(--w7-btn-hover-border, #3c7fb1);
+    box-shadow: var(--w7-btn-hover-shadow);
+  }
+
+  &:active {
+    background: var(--w7-btn-pressed-bg);
+    border-color: var(--w7-btn-pressed-border, #2c628b);
+  }
+}
+
+/* Windows Vista Theme Adaptation */
+[data-theme="vista"] .command-bar,
+.window[data-theme="vista"] .command-bar {
+  --w7-commandbar-bg: linear-gradient(to bottom, #f0f0f0 0%, #e2e2e2 50%, #d4d4d4 100%);
+
+  .command-bar-btn:hover,
+  > button:hover,
+  .split-button:hover {
+    background: linear-gradient(to bottom, #ffffff 0%, #e5e5e5 50%, #dcdcdc 51%, #c8c8c8 100%);
+    border-color: rgba(0, 160, 240, 0.7);
+    box-shadow: 0 0 5px rgba(0, 160, 240, 0.5);
+  }
+}

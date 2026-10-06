@@ -54,7 +54,8 @@ graph TD
    - Implement Windows Vista window frame adaptations: 8px restored corner radius, 7px frame thickness, solid black maximized window frames (`#000000`), 43x19px caption buttons with amber/orange close button glow, and non-composited Vista Basic fallback (`[data-theme="vista-basic"]`).
    - Build standard Task Dialog layouts with distinct 12pt primary instruction headers and `#f0f0f0` commit button footer bars.
 
-5. **Phase 4: Complex Navigation & Explorer Controls**
+5. **Phase 4: Complex Navigation & Explorer Controls (Status: Complete)**
+   - Audit report: [phase-4-completion-report.md](phase-4-completion-report.md)
    - Reconstruct TreeView controls using authentic triangular chevrons (`GLPS_CLOSED`, `GLPS_OPENED`) instead of classic `+` and `-` square glyphs.
    - Implement the Explorer Breadcrumb Bar with split-segment hover states and drop-down menu chevrons.
    - Build ListView column headers with sort direction indicators, row selection states, and marquee selection rectangles.
@@ -493,10 +494,14 @@ Normal Button Profile (Top to Bottom):
 | `gui/_combobox.scss` | Complete (Phase 2) | Rebuilt with composite text input, attached 17px button, vector arrow, and Vista overrides. |
 | `gui/_listbox.scss` | Complete (Phase 2) | Rebuilt with tokenized border, Explorer row selection states, and Vista hover highlights. |
 | `gui/_window.scss` | Complete (Phase 3) | Rebuilt with Aero Glass `backdrop-filter`, SVG specular masks, 4-state caption button shaders, Windows Vista adaptations, and Task Dialog layouts. |
-| `gui/_scrollbar.scss` | Pending (Phase 4) | Rebuild thumb graphics with 3-dot grip and vector arrow buttons. |
-| `gui/_treeview.scss` | Pending (Phase 4) | Replace classic `+`/`-` boxes with authentic Vista/7 triangular chevrons (`GLPS_CLOSED`, `GLPS_OPENED`). |
-| `gui/_listview.scss` | Pending (Phase 4) | Add column sort chevrons, multi-state headers, and marquee selection rectangle. |
-| `gui/_tabs.scss` | Pending (Phase 4) | Implement 4-directional tab styling and active pane integration. |
+| `gui/_scrollbar.scss` | Complete (Phase 4) | Rebuilt thumb graphics with translucent gel states, vector arrow buttons, and zero raster PNGs. |
+| `gui/_treeview.scss` | Complete (Phase 4) | Rebuilt with authentic Vista/7 triangular vector chevrons (`GLPS_CLOSED`, `GLPS_OPENED`), Explorer row selection, and Vista theming. |
+| `gui/_listview.scss` | Complete (Phase 4) | Rebuilt with 3-state column headers, sort chevrons, row selection states, icons grid, tiles grid, and marquee selection box. |
+| `gui/_tabs.scss` | Complete (Phase 4) | Rebuilt with authentic Windows 7 Aero styling and 4-directional tab support. |
+| `gui/_breadcrumb.scss` | Complete (Phase 4) | Authored split-segment breadcrumbs with dropdown chevrons and address bar toggle. |
+| `gui/_commandbar.scss` | Complete (Phase 4) | Authored Explorer Command Bar, split buttons, and Vista pill adaptations. |
+| `gui/_layout.scss` | Complete (Phase 4) | Authored Splitters, Action Panes, and Control Panel Category Grids. |
+| `gui/_ribbon.scss` | Complete (Phase 4) | Authored Scenic Ribbon application button, QAT, tab strip, chunks, and gallery primitives. |
 
 ---
 

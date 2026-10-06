@@ -1,0 +1,347 @@
+/* ========================================================================== */
+/* Windows 7 Scenic Ribbon Framework (gui/_ribbon.scss)                       */
+/* ========================================================================== */
+
+:root {
+  --w7-ribbon-body-height: 94px;
+  --w7-ribbon-bg: linear-gradient(to bottom, #fdfdfd 0%, #f6f6f6 40%, #e9e9e9 100%);
+  --w7-ribbon-border: #d9d9d9;
+  --w7-ribbon-btn-hover-bg: linear-gradient(to bottom, #f3f9fc 0%, #e4f0f8 45%, #d9eaf5 100%);
+  --w7-ribbon-btn-hover-border: #a7d8f5;
+  --w7-ribbon-btn-active-bg: linear-gradient(to bottom, #dbeaf9 0%, #cce8ff 100%);
+  --w7-ribbon-btn-active-border: #99d1ff;
+}
+
+.scenic-ribbon,
+.ribbon {
+  font: var(--w7-font);
+  display: flex;
+  flex-direction: column;
+  background: #f0f0f0;
+  border-bottom: 1px solid var(--w7-ribbon-border);
+  box-sizing: border-box;
+  user-select: none;
+  width: 100%;
+
+  /* ------------------------------------------------------------------------ */
+  /* Top Bar: Application Button, QAT & Ribbon Tabs                           */
+  /* ------------------------------------------------------------------------ */
+  .ribbon-top-bar {
+    display: flex;
+    align-items: center;
+    height: 28px;
+    padding: 0 4px;
+    gap: 6px;
+    background: transparent;
+  }
+
+  /* Application Button (.ribbon-app-btn) */
+  .ribbon-app-btn {
+    all: unset;
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    height: 24px;
+    min-width: 54px;
+    padding: 0 8px;
+    font: inherit;
+    font-size: 9pt;
+    font-weight: 600;
+    color: #ffffff;
+    background: linear-gradient(to bottom, #2d70b6 0%, #1a5697 50%, #15457a 51%, #1d5ea2 100%);
+    border: 1px solid #143e6d;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+    cursor: default;
+
+    &:hover {
+      background: linear-gradient(to bottom, #3c82ce 0%, #2267b0 50%, #1c5590 51%, #246fb8 100%);
+      border-color: #194a80;
+    }
+
+    &:active,
+    &.is-open {
+      background: linear-gradient(to bottom, #16467c 0%, #123b6b 100%);
+      box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.4);
+    }
+  }
+
+  /* Quick Access Toolbar (.qat) */
+  .qat {
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+
+    .qat-item {
+      all: unset;
+      box-sizing: border-box;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 22px;
+      height: 22px;
+      border: 1px solid transparent;
+      border-radius: 2px;
+      cursor: default;
+
+      img {
+        width: 16px;
+        height: 16px;
+      }
+
+      &:hover {
+        background: var(--w7-ribbon-btn-hover-bg);
+        border-color: var(--w7-ribbon-btn-hover-border);
+      }
+
+      &:active {
+        background: var(--w7-ribbon-btn-active-bg);
+        border-color: var(--w7-ribbon-btn-active-border);
+      }
+    }
+
+    .qat-dropdown {
+      all: unset;
+      box-sizing: border-box;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 12px;
+      height: 22px;
+      background: url("./icon/ribbon-qat-dropdown.svg") no-repeat center;
+      background-size: 8px 8px;
+      border: 1px solid transparent;
+      border-radius: 2px;
+      cursor: default;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.4);
+        border-color: var(--w7-ribbon-btn-hover-border);
+      }
+    }
+  }
+
+  /* Ribbon Tabs (.ribbon-tabs) */
+  .ribbon-tabs {
+    display: flex;
+    align-items: flex-end;
+    margin: 0 0 -1px 4px;
+    padding: 0;
+    list-style: none;
+    gap: 2px;
+
+    .ribbon-tab {
+      all: unset;
+      box-sizing: border-box;
+      display: inline-flex;
+      align-items: center;
+      padding: 3px 10px;
+      font: inherit;
+      font-size: 9pt;
+      color: #000000;
+      border: 1px solid transparent;
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+      border-bottom: none;
+      cursor: default;
+
+      &:hover:not(.active) {
+        background: rgba(255, 255, 255, 0.5);
+        border-color: #d9d9d9;
+      }
+
+      &.active,
+      &[aria-selected="true"] {
+        background: #fdfdfd;
+        border-color: var(--w7-ribbon-border);
+        border-bottom: 1px solid #fdfdfd;
+        z-index: 2;
+      }
+    }
+  }
+
+  /* ------------------------------------------------------------------------ */
+  /* Main Ribbon Canvas Body (.ribbon-body)                                   */
+  /* ------------------------------------------------------------------------ */
+  .ribbon-body {
+    display: flex;
+    height: var(--w7-ribbon-body-height);
+    min-height: var(--w7-ribbon-body-height);
+    background: var(--w7-ribbon-bg);
+    border-top: 1px solid var(--w7-ribbon-border);
+    box-sizing: border-box;
+    padding: 3px 4px;
+    gap: 3px;
+    overflow-x: auto;
+  }
+
+  /* Ribbon Groups / Chunks (.ribbon-chunk) */
+  .ribbon-chunk {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 2px 4px 18px 4px;
+    border-right: 1px solid var(--w7-ribbon-border);
+    box-shadow: 1px 0 0 #ffffff;
+    box-sizing: border-box;
+    flex-shrink: 0;
+
+    .ribbon-chunk-content {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      gap: 3px;
+    }
+
+    .ribbon-chunk-title {
+      position: absolute;
+      bottom: 2px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-size: 8pt;
+      color: #666666;
+      pointer-events: none;
+    }
+
+    .ribbon-dialog-launcher {
+      all: unset;
+      box-sizing: border-box;
+      position: absolute;
+      bottom: 1px;
+      right: 1px;
+      width: 14px;
+      height: 14px;
+      background: url("./icon/ribbon-dialog-launcher.svg") no-repeat center;
+      background-size: 10px 10px;
+      border: 1px solid transparent;
+      border-radius: 2px;
+      cursor: default;
+
+      &:hover {
+        background-color: rgba(243, 249, 252, 0.9);
+        border-color: var(--w7-ribbon-btn-hover-border);
+      }
+    }
+  }
+
+  /* Large 32px Ribbon Button (.ribbon-btn-large) */
+  .ribbon-btn-large {
+    all: unset;
+    box-sizing: border-box;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 46px;
+    height: 68px;
+    padding: 2px 4px;
+    font: inherit;
+    font-size: 8.5pt;
+    text-align: center;
+    line-height: 1.15;
+    color: #1e395b;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    cursor: default;
+
+    img,
+    .ribbon-icon-large {
+      width: 32px;
+      height: 32px;
+      margin-bottom: 3px;
+    }
+
+    &:hover {
+      background: var(--w7-ribbon-btn-hover-bg);
+      border-color: var(--w7-ribbon-btn-hover-border);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
+    }
+
+    &:active,
+    &.is-active {
+      background: var(--w7-ribbon-btn-active-bg);
+      border-color: var(--w7-ribbon-btn-active-border);
+    }
+  }
+
+  /* Clustered Column for Small Buttons */
+  .ribbon-button-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+  }
+
+  /* Small 16px Ribbon Button (.ribbon-btn-small) */
+  .ribbon-btn-small {
+    all: unset;
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    height: 22px;
+    padding: 0 6px;
+    font: inherit;
+    font-size: 8.5pt;
+    color: #1e395b;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    cursor: default;
+    white-space: nowrap;
+
+    img,
+    .ribbon-icon-small {
+      width: 16px;
+      height: 16px;
+    }
+
+    &:hover {
+      background: var(--w7-ribbon-btn-hover-bg);
+      border-color: var(--w7-ribbon-btn-hover-border);
+    }
+
+    &:active,
+    &.is-active {
+      background: var(--w7-ribbon-btn-active-bg);
+      border-color: var(--w7-ribbon-btn-active-border);
+    }
+  }
+
+  /* In-Ribbon Gallery (.ribbon-gallery) */
+  .ribbon-gallery {
+    display: inline-flex;
+    border: 1px solid var(--w7-input-border, #abadb3);
+    background: #ffffff;
+    height: 68px;
+    box-sizing: border-box;
+
+    .ribbon-gallery-items {
+      display: flex;
+      gap: 2px;
+      padding: 2px;
+      overflow-x: auto;
+    }
+
+    .ribbon-gallery-controls {
+      display: flex;
+      flex-direction: column;
+      border-left: 1px solid #d9d9d9;
+      width: 14px;
+
+      button {
+        all: unset;
+        box-sizing: border-box;
+        flex: 1;
+        cursor: default;
+        background: url("./icon/ribbon-gallery-scroll.svg") no-repeat center;
+        background-size: 8px 8px;
+
+        &:hover {
+          background-color: #f3f9fc;
+        }
+      }
+    }
+  }
+}

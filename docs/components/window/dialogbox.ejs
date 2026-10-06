@@ -92,4 +92,44 @@
         </footer>
       </div>
     `) %>
+
+    <h4 id="aero-wizard" style="margin-top: 2em">Aero Wizard</h4>
+    <p>
+      Aero Wizards guide users through multi-step procedures with a 24px circular back navigation disc,
+      a dedicated instruction header, a content body, and an action strip footer.
+    </p>
+
+    <%- example(`
+      <div class="window active wizard" style="max-width: 520px">
+        <div class="title-bar">
+          <div class="title-bar-text">Setup Wizard</div>
+          <div class="title-bar-controls">
+            <button aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="wizard-header">
+          <button class="wizard-back-btn" aria-label="Back"></button>
+          <div>
+            <h3 class="wizard-title">Configure Connection Settings</h3>
+            <p class="wizard-subtitle">Select an interface profile to initialize network telemetry.</p>
+          </div>
+        </div>
+        <div class="wizard-body">
+          <p>Choose an adapter configuration from the list below:</p>
+          <div class="field-row">
+            <input type="radio" id="wiz-opt1" name="wiz-opt" checked>
+            <label for="wiz-opt1">High-throughput local loopback adapter</label>
+          </div>
+          <div class="field-row">
+            <input type="radio" id="wiz-opt2" name="wiz-opt">
+            <label for="wiz-opt2">Hardware telemetry bridge (sub-millisecond latency)</label>
+          </div>
+        </div>
+        <footer class="wizard-footer">
+          <button>Back</button>
+          <button class="default">Next</button>
+          <button>Cancel</button>
+        </footer>
+      </div>
+    `) %>
 </section>

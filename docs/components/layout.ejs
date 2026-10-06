@@ -1,0 +1,60 @@
+<section class="component">
+  <h3 id="layout-primitives">Layout Primitives (Panes, Splitters & Grids)</h3>
+  <div>
+    <blockquote>
+      Windows layout primitives provide structural scaffolding for complex multi-pane consoles,
+      MMC applets, and Control Panel category views.
+      <footer>
+        &mdash; <a href="https://learn.microsoft.com/en-us/windows/win32/uxguide/vis-layout">Microsoft Windows User Experience - Layout</a>
+      </footer>
+    </blockquote>
+
+    <h4 id="action-pane">Action Pane (MMC Utility Panel)</h4>
+    <%- example(`
+      <aside class="action-pane" style="max-width: 240px">
+        <div class="action-pane-section">
+          <div class="action-pane-header">Actions</div>
+          <ul class="action-pane-group">
+            <li><a class="action-link" href="#">Open Saved Log...</a></li>
+            <li><a class="action-link" href="#">Create Custom View...</a></li>
+            <li><a class="action-link" href="#">Import Custom View...</a></li>
+          </ul>
+        </div>
+        <div class="action-pane-section">
+          <div class="action-pane-header">System</div>
+          <ul class="action-pane-group">
+            <li><a class="action-link" href="#">Properties</a></li>
+            <li><a class="action-link" href="#">Help</a></li>
+          </ul>
+        </div>
+      </aside>
+    `) %>
+
+    <h4 id="category-grid" style="margin-top: 2em">Control Panel Category Grid</h4>
+    <%- example(`
+      <div class="category-grid">
+        <div class="category-card">
+          <div class="category-icon" style="background: #eef3fa; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 20px;">🛡️</div>
+          <div class="category-content">
+            <a href="#" class="category-title">System and Security</a>
+            <ul class="task-links">
+              <li><a href="#" class="task-link">Review your computer's status</a></li>
+              <li><a href="#" class="task-link">Back up your computer</a></li>
+              <li><a href="#" class="task-link">Find and fix problems</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="category-card">
+          <div class="category-icon" style="background: #eef3fa; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 20px;">🌐</div>
+          <div class="category-content">
+            <a href="#" class="category-title">Network and Internet</a>
+            <ul class="task-links">
+              <li><a href="#" class="task-link">View network status and tasks</a></li>
+              <li><a href="#" class="task-link">Choose homegroup and sharing options</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    `) %>
+  </div>
+</section>

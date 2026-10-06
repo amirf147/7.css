@@ -1,0 +1,39 @@
+<section class="component">
+  <h3 id="breadcrumb">Breadcrumb Bar</h3>
+  <div>
+    <blockquote>
+      The breadcrumb bar allows users to navigate the folder hierarchy with interactive,
+      split address segments and drop-down sub-folder menus.
+      <footer>
+        &mdash; <a href="https://learn.microsoft.com/en-us/windows/win32/uxguide/ctrl-command-bars">Microsoft Windows User Experience - Navigation Controls</a>
+      </footer>
+    </blockquote>
+
+    <p>
+      Build a breadcrumb bar using the <code>breadcrumb-bar</code> container and
+      <code>breadcrumb-segment</code> items with nested dropdown buttons.
+    </p>
+
+    <%- example(`
+      <nav class="breadcrumb-bar" aria-label="Address">
+        <div class="breadcrumb-segment">
+          <a class="breadcrumb-label" href="#">Computer</a>
+          <button class="breadcrumb-dropdown-btn" aria-label="Subfolders"></button>
+        </div>
+        <div class="breadcrumb-segment">
+          <a class="breadcrumb-label" href="#">Local Disk (C:)</a>
+          <button class="breadcrumb-dropdown-btn" aria-label="Subfolders"></button>
+        </div>
+        <div class="breadcrumb-segment">
+          <a class="breadcrumb-label" href="#">Windows</a>
+          <button class="breadcrumb-dropdown-btn" aria-label="Subfolders"></button>
+        </div>
+        <div class="breadcrumb-segment is-active">
+          <a class="breadcrumb-label" href="#">System32</a>
+          <button class="breadcrumb-dropdown-btn" aria-label="Subfolders"></button>
+        </div>
+        <div class="breadcrumb-tail"></div>
+      </nav>
+    `) %>
+  </div>
+</section>

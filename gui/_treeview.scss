@@ -1,67 +1,197 @@
+/* ========================================================================== */
+/* Windows 7 TreeView Control (gui/_treeview.scss)                            */
+/* ========================================================================== */
+
 :root {
-  --w7-tvb-size: 8px; /* tvb = treeview button */
-  --w7-tv-left: 20px;
+  --w7-treeview-chevron-size: 16px;
+  --w7-treeview-indent: 16px;
+  --w7-treeview-row-hover-bg: linear-gradient(to bottom, #eef7fc 0%, #e5f3fb 100%);
+  --w7-treeview-row-hover-border: #b8e2f8;
+  --w7-treeview-row-selected-bg: linear-gradient(to bottom, #dbeaf9 0%, #cce8ff 100%);
+  --w7-treeview-row-selected-border: #99d1ff;
+  --w7-treeview-row-inactive-bg: #f0f0f0;
+  --w7-treeview-row-inactive-border: #d9d9d9;
 }
 
-ul.tree-view {
+ul.tree-view,
+[role="tree"] {
   font: var(--w7-font);
   display: block;
   margin: 0;
-  padding: 6px 6px 6px var(--w7-tv-left);
-
-  li {
-    list-style-type: none;
-    margin-top: 4px;
-    position: relative;
-  }
-
-  a {
-    text-decoration: none;
-    color: #000;
-  }
-
-  ul {
-    margin-top: 4px;
-    padding-left: var(--w7-tv-left);
-  }
+  padding: 4px;
+  box-sizing: border-box;
+  user-select: none;
 
   &.has-container {
-    background: #fff;
-    border: 1px solid var(--w7-el-bd);
+    background: #ffffff;
+    border: 1px solid var(--w7-input-border, #abadb3);
+    overflow: auto;
   }
 
-  &.has-collapse-button details {
+  li,
+  [role="treeitem"] {
+    list-style-type: none;
+    margin: 1px 0;
+    position: relative;
+    white-space: nowrap;
+  }
+
+  /* Hierarchical nesting */
+  ul,
+  [role="group"] {
+    margin: 0;
+    padding-left: var(--w7-treeview-indent);
+  }
+
+  /* Node Content & Anchor Labels */
+  a,
+  span,
+  .tree-node-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    text-decoration: none;
+    color: var(--w7-color-window-text, #000000);
+    padding: 2px 5px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    box-sizing: border-box;
+    cursor: default;
+
+    &:hover {
+      background: var(--w7-treeview-row-hover-bg);
+      border-color: var(--w7-treeview-row-hover-border);
+    }
+
+    &:focus-visible {
+      outline: 1px dotted #333333;
+      outline-offset: -1px;
+    }
+  }
+
+  /* Selected States */
+  li.selected > a,
+  li.selected > span,
+  li.selected > .tree-node-label,
+  [role="treeitem"][aria-selected="true"] > a,
+  [role="treeitem"][aria-selected="true"] > span,
+  [role="treeitem"][aria-selected="true"] > .tree-node-label,
+  a.selected,
+  span.selected {
+    background: var(--w7-treeview-row-selected-bg);
+    border-color: var(--w7-treeview-row-selected-border);
+  }
+
+  /* Inactive Selected State (Focus Lost or Inactive Window) */
+  &:not(:focus-within) li.selected > a,
+  &:not(:focus-within) li.selected > span,
+  &:not(:focus-within) li.selected > .tree-node-label,
+  &:not(:focus-within) [role="treeitem"][aria-selected="true"] > a,
+  &:not(:focus-within) [role="treeitem"][aria-selected="true"] > span,
+  &:not(:focus-within) [role="treeitem"][aria-selected="true"] > .tree-node-label,
+  .window:not(.active) & li.selected > a,
+  .window:not(.active) & li.selected > span,
+  .window:not(.active) & li.selected > .tree-node-label {
+    background: var(--w7-treeview-row-inactive-bg);
+    border-color: var(--w7-treeview-row-inactive-border);
+  }
+
+  /* Vector Triangular Chevrons (GLPS_CLOSED / GLPS_OPENED) */
+  details {
     > summary {
+      list-style: none;
+      cursor: default;
+      display: inline-flex;
+      align-items: center;
+      position: relative;
+      padding-left: calc(var(--w7-treeview-chevron-size) + 2px);
+
       &::-webkit-details-marker,
       &::marker {
         display: none;
       }
 
+      /* Closed Chevron (Default) */
       &::before {
-        content: "\002b";
-        top: calc(50% - var(--w7-tvb-size) / 2);
-        left: calc(var(--w7-tvb-size) * 2 * -1);
-        right: unset;
-        width: var(--w7-tvb-size);
-        height: var(--w7-tvb-size);
-        background: linear-gradient(to bottom, var(--w7-el-bg) 45%, var(--w7-el-bg-s-1));
-        border: 1px solid #919191;
-        border-radius: 1px;
-        color: #4b63a7;
-        font-size: 8pt;
-        font-weight: bold;
-        line-height: calc(var(--w7-tvb-size) - calc(50% - var(--w7-tvb-size) / 2));
-        text-align: center;
-        margin: 0;
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: var(--w7-treeview-chevron-size);
+        height: var(--w7-treeview-chevron-size);
+        background: url("./icon/treeview-chevron-closed.svg") no-repeat center;
+        background-size: 16px 16px;
+        transition: none;
+      }
+
+      &:hover::before {
+        background-image: url("./icon/treeview-chevron-closed-hover.svg");
       }
     }
 
-    &[open] > summary::before {
-      content: "\2013";
-      transform: none;
+    /* Opened Chevron */
+    &[open] > summary {
+      &::before {
+        background-image: url("./icon/treeview-chevron-opened.svg");
+      }
+
+      &:hover::before {
+        background-image: url("./icon/treeview-chevron-opened-hover.svg");
+      }
     }
   }
 
+  /* Programmatic Expand Toggle (.tree-toggle / [aria-expanded]) */
+  .tree-toggle {
+    display: inline-block;
+    width: var(--w7-treeview-chevron-size);
+    height: var(--w7-treeview-chevron-size);
+    background: url("./icon/treeview-chevron-closed.svg") no-repeat center;
+    background-size: 16px 16px;
+    vertical-align: middle;
+    cursor: default;
+
+    &:hover {
+      background-image: url("./icon/treeview-chevron-closed-hover.svg");
+    }
+
+    &.is-expanded,
+    &[aria-expanded="true"] {
+      background-image: url("./icon/treeview-chevron-opened.svg");
+
+      &:hover {
+        background-image: url("./icon/treeview-chevron-opened-hover.svg");
+      }
+    }
+  }
+
+  /* Full-Row Selection Mode */
+  &.full-row-select {
+    li,
+    [role="treeitem"] {
+      &.selected,
+      &[aria-selected="true"] {
+        background: var(--w7-treeview-row-selected-bg);
+        border: 1px solid var(--w7-treeview-row-selected-border);
+        border-radius: 2px;
+
+        > a,
+        > span {
+          background: transparent;
+          border-color: transparent;
+        }
+      }
+
+      &:hover:not(.selected) {
+        background: var(--w7-treeview-row-hover-bg);
+        border: 1px solid var(--w7-treeview-row-hover-border);
+        border-radius: 2px;
+      }
+    }
+  }
+
+  /* Legacy Connector Lines Fallback */
   &.has-connector {
     ul {
       position: relative;
@@ -70,19 +200,30 @@ ul.tree-view {
         content: "";
         position: absolute;
         top: 0;
-        left: var(--w7-tvb-size);
-        height: calc(100% - var(--w7-tvb-size));
-        border-left: 1px dotted #000;
+        left: 8px;
+        height: calc(100% - 8px);
+        border-left: 1px dotted #888888;
       }
 
       li::before {
         content: "";
         position: absolute;
-        top: var(--w7-tvb-size);
-        right: calc(100% + var(--w7-tvb-size) / 4);
-        width: calc(var(--w7-tv-left) / 2);
-        border-bottom: 1px dotted #000;
+        top: 8px;
+        left: calc(var(--w7-treeview-indent) * -1 + 8px);
+        width: calc(var(--w7-treeview-indent) - 8px);
+        border-bottom: 1px dotted #888888;
       }
     }
   }
+}
+
+/* Windows Vista Adaptation */
+[data-theme="vista"] ul.tree-view,
+[data-theme="vista"] [role="tree"],
+.window[data-theme="vista"] ul.tree-view,
+.window[data-theme="vista"] [role="tree"] {
+  --w7-treeview-row-hover-bg: linear-gradient(to bottom, rgba(230, 245, 255, 0.8), rgba(210, 235, 255, 0.8));
+  --w7-treeview-row-hover-border: rgba(0, 160, 240, 0.6);
+  --w7-treeview-row-selected-bg: linear-gradient(to bottom, #cfe7fb 0%, #badafb 100%);
+  --w7-treeview-row-selected-border: #7dbef9;
 }

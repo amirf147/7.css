@@ -1,0 +1,42 @@
+<section class="component">
+  <h3 id="command-bar">Command Bar & Split Buttons</h3>
+  <div>
+    <blockquote>
+      Command bars are toolbars dedicated to common, task-specific actions. Split buttons allow
+      initiating a default action or expanding a drop-down menu of related options.
+      <footer>
+        &mdash; <a href="https://learn.microsoft.com/en-us/windows/win32/uxguide/ctrl-command-bars">Microsoft Windows User Experience - Command Bars</a>
+      </footer>
+    </blockquote>
+
+    <p>
+      Build an Explorer Command Bar using <code>command-bar</code>, action buttons, and
+      <code>split-button</code> elements.
+    </p>
+
+    <%- example(`
+      <div class="command-bar">
+        <button class="command-bar-btn">Organize</button>
+        <div class="split-button command-bar-split">
+          <button class="split-button-action">Open</button>
+          <button class="split-button-dropdown" aria-label="Open with options"></button>
+        </div>
+        <button class="command-bar-btn">Share with</button>
+        <button class="command-bar-btn">Burn</button>
+        <div class="command-bar-separator"></div>
+        <button class="command-bar-btn">New folder</button>
+      </div>
+    `) %>
+
+    <p style="margin-top: 1.5em">
+      Split buttons can also be used outside the command bar as standard dialog or form controls:
+    </p>
+
+    <%- example(`
+      <div class="split-button">
+        <button class="split-button-action">Save Changes</button>
+        <button class="split-button-dropdown" aria-label="More save options"></button>
+      </div>
+    `) %>
+  </div>
+</section>

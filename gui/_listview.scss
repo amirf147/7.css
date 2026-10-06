@@ -1,87 +1,383 @@
+/* ========================================================================== */
+/* Windows 7 ListView & Details Grid (gui/_listview.scss)                     */
+/* ========================================================================== */
+
 :root {
-  --w7-lvc-size: 5px;
+  --w7-listview-header-height: 24px;
+  --w7-listview-header-bg: linear-gradient(to bottom, #ffffff 0%, #f7f7f7 50%, #f0f0f0 100%);
+  --w7-listview-header-border: #d9d9d9;
+  --w7-listview-header-hover-bg: linear-gradient(to bottom, #f3f9fc 0%, #e4f0f8 45%, #d9eaf5 100%);
+  --w7-listview-header-hover-border: #a7d8f5;
+  --w7-listview-header-active-bg: linear-gradient(to bottom, #dbeaf9 0%, #cce8ff 100%);
+  --w7-listview-header-active-border: #99d1ff;
+  --w7-listview-header-sorted-bg: linear-gradient(to bottom, #edf5fa 0%, #dceef8 45%, #cfe6f5 100%);
+  --w7-listview-header-sorted-border: #9dcbe8;
+
+  --w7-listview-row-hover-bg: linear-gradient(to bottom, #eef7fc 0%, #e5f3fb 100%);
+  --w7-listview-row-hover-border: #b8e2f8;
+  --w7-listview-row-selected-bg: linear-gradient(to bottom, #dbeaf9 0%, #cce8ff 100%);
+  --w7-listview-row-selected-border: #99d1ff;
+  --w7-listview-row-inactive-bg: #f0f0f0;
+  --w7-listview-row-inactive-border: #d9d9d9;
 }
 
-table {
-  font: var(--w7-font);
-  background-color: #fff;
-  border: 1px solid #c0c1cd;
+/* -------------------------------------------------------------------------- */
+/* Details Table (table, table.listview-details)                              */
+/* -------------------------------------------------------------------------- */
 
-  border-collapse: collapse;
+table,
+table.listview-details {
+  font: var(--w7-font);
+  background-color: #ffffff;
+  border: 1px solid var(--w7-input-border, #c0c1cd);
+  border-collapse: separate;
+  border-spacing: 0;
   position: relative;
   text-align: left;
   white-space: nowrap;
   table-layout: fixed;
+  width: 100%;
+  user-select: none;
 
   td,
   th {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    box-sizing: border-box;
   }
 
   &.has-shadow {
-    box-shadow: 4px 4px 3px -2px #999;
+    box-shadow: 4px 4px 3px -2px rgba(0, 0, 0, 0.4);
   }
 
-  > thead > tr > * {
-    background: linear-gradient(to bottom, #fff 45%, #fafafa 45%, #f0f0f0);
-    border: 1px solid #d7d7d7;
-    box-sizing: border-box;
-    font-weight: 400;
-    height: 22px;
+  /* Column Headers (th, thead tr th) */
+  > thead > tr > th,
+  > thead > tr > td {
+    background: var(--w7-listview-header-bg);
+    border-top: none;
+    border-bottom: 1px solid var(--w7-listview-header-border);
+    border-left: none;
+    border-right: 1px solid var(--w7-listview-header-border);
+    font-weight: normal;
+    height: var(--w7-listview-header-height);
+    line-height: var(--w7-listview-header-height);
     padding: 0 8px;
     position: sticky;
     top: 0;
     cursor: default;
+    z-index: 2;
 
+    &:last-child {
+      border-right: none;
+    }
+
+    /* Hover State */
+    &:hover,
     &.highlighted {
-      border: 1px solid #a7d8f5;
-      background: linear-gradient(to bottom, #f3f9fc 45%, #e4f0f8 45%, #d9eaf5);
-      border-radius: var(--w7-el-bdr);
+      background: var(--w7-listview-header-hover-bg);
+      border-bottom-color: var(--w7-listview-header-hover-border);
+      border-right-color: var(--w7-listview-header-hover-border);
+    }
 
-      &:not(:last-child) {
-        border-right-color: #a7d8f5;
-      }
+    /* Active / Pressed State */
+    &:active {
+      background: var(--w7-listview-header-active-bg);
+      border-bottom-color: var(--w7-listview-header-active-border);
+    }
 
-      &.indicator {
-        &::before {
-          content: "";
-          position: absolute;
-          right: 50%;
-          top: 0;
-          width: calc(var(--w7-lvc-size) * 1.2);
-          height: var(--w7-lvc-size);
-          background: linear-gradient(to bottom right, #667f91 45%, #90c1e2 65%, #cce3f2);
-          clip-path: polygon(0% 0%, 50% 100%, 100% 0%);
-        }
-        &.up::before {
-          clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
-        }
+    /* Sort Indicators */
+    &[aria-sort="ascending"],
+    &.sort-asc,
+    &.indicator.up {
+      background: var(--w7-listview-header-sorted-bg);
+      border-bottom-color: var(--w7-listview-header-sorted-border);
+      position: relative;
+      padding-right: 20px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 6px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 9px;
+        height: 6px;
+        background: url("./icon/listview-sort-asc.svg") no-repeat center;
       }
+    }
+
+    &[aria-sort="descending"],
+    &.sort-desc,
+    &.indicator:not(.up) {
+      background: var(--w7-listview-header-sorted-bg);
+      border-bottom-color: var(--w7-listview-header-sorted-border);
+      position: relative;
+      padding-right: 20px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 6px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 9px;
+        height: 6px;
+        background: url("./icon/listview-sort-desc.svg") no-repeat center;
+      }
+    }
+
+    /* Column Resizer Handle */
+    .column-splitter {
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      cursor: col-resize;
     }
   }
 
+  /* Table Rows (tbody tr) */
   > tbody > tr {
     cursor: default;
+    height: 20px;
 
-    &.highlighted {
-      border: 1px solid var(--w7-li-bd-hl);
-      background: var(--w7-li-bg-hl);
-      border-radius: var(--w7-el-bdr);
+    > td,
+    > th {
+      padding: 2px 8px;
+      border: 1px solid transparent;
+      border-top: none;
+      border-bottom: none;
+    }
 
-      > *:not(:last-child) {
-        border-right: none;
+    /* Hover State */
+    &:hover {
+      background: var(--w7-listview-row-hover-bg);
+
+      > td:first-child {
+        border-left: 1px solid var(--w7-listview-row-hover-border);
+      }
+      > td:last-child {
+        border-right: 1px solid var(--w7-listview-row-hover-border);
+      }
+      > td {
+        border-top: 1px solid var(--w7-listview-row-hover-border);
+        border-bottom: 1px solid var(--w7-listview-row-hover-border);
       }
     }
 
-    > * {
-      height: 14px;
-      padding: 2px 8px;
+    /* Selected Active State */
+    &.selected,
+    &[aria-selected="true"],
+    &.highlighted {
+      background: var(--w7-listview-row-selected-bg);
+
+      > td:first-child {
+        border-left: 1px solid var(--w7-listview-row-selected-border);
+      }
+      > td:last-child {
+        border-right: 1px solid var(--w7-listview-row-selected-border);
+      }
+      > td {
+        border-top: 1px solid var(--w7-listview-row-selected-border);
+        border-bottom: 1px solid var(--w7-listview-row-selected-border);
+      }
     }
 
-    > *:not(:last-child) {
-      border-right: 1px solid #eee;
+    /* Inactive Selected State (Focus Lost or Inactive Window) */
+    &:not(:focus-within) &.selected,
+    .window:not(.active) & &.selected,
+    &:not(:focus-within) &[aria-selected="true"],
+    .window:not(.active) & &[aria-selected="true"] {
+      background: var(--w7-listview-row-inactive-bg);
+
+      > td:first-child {
+        border-left: 1px solid var(--w7-listview-row-inactive-border);
+      }
+      > td:last-child {
+        border-right: 1px solid var(--w7-listview-row-inactive-border);
+      }
+      > td {
+        border-top: 1px solid var(--w7-listview-row-inactive-border);
+        border-bottom: 1px solid var(--w7-listview-row-inactive-border);
+      }
     }
   }
+
+  /* Optional Grid Lines */
+  &.has-grid-lines {
+    > tbody > tr > td {
+      border-right: 1px solid #f0f0f0;
+      border-bottom: 1px solid #f0f0f0;
+    }
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/* Large Icons View (.listview-icons)                                         */
+/* -------------------------------------------------------------------------- */
+
+.listview-icons,
+[role="grid"].listview-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 8px;
+  background: #ffffff;
+  border: 1px solid var(--w7-input-border, #abadb3);
+  box-sizing: border-box;
+  user-select: none;
+
+  .listview-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80px;
+    padding: 6px 4px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    cursor: default;
+    box-sizing: border-box;
+
+    .listview-icon {
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 4px;
+
+      img {
+        max-width: 48px;
+        max-height: 48px;
+      }
+    }
+
+    .listview-label {
+      font: var(--w7-font);
+      font-size: 9pt;
+      text-align: center;
+      color: var(--w7-color-window-text, #000000);
+      word-break: break-word;
+      line-height: 1.2;
+    }
+
+    &:hover {
+      background: var(--w7-listview-row-hover-bg);
+      border-color: var(--w7-listview-row-hover-border);
+    }
+
+    &.selected,
+    &[aria-selected="true"] {
+      background: var(--w7-listview-row-selected-bg);
+      border-color: var(--w7-listview-row-selected-border);
+    }
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/* Tiles View (.listview-tiles)                                               */
+/* -------------------------------------------------------------------------- */
+
+.listview-tiles,
+[role="grid"].listview-tiles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 8px;
+  background: #ffffff;
+  border: 1px solid var(--w7-input-border, #abadb3);
+  box-sizing: border-box;
+  user-select: none;
+
+  .listview-tile {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    width: 220px;
+    padding: 4px 6px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    cursor: default;
+    box-sizing: border-box;
+
+    .listview-icon {
+      width: 32px;
+      height: 32px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        max-width: 32px;
+        max-height: 32px;
+      }
+    }
+
+    .listview-meta {
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+
+      .listview-title {
+        font: var(--w7-font);
+        font-size: 9pt;
+        color: var(--w7-color-window-text, #000000);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .listview-subtitle {
+        font: var(--w7-font);
+        font-size: 8pt;
+        color: #666666;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+
+    &:hover {
+      background: var(--w7-listview-row-hover-bg);
+      border-color: var(--w7-listview-row-hover-border);
+    }
+
+    &.selected,
+    &[aria-selected="true"] {
+      background: var(--w7-listview-row-selected-bg);
+      border-color: var(--w7-listview-row-selected-border);
+    }
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/* Marquee Selection Rectangle (.listview-marquee)                            */
+/* -------------------------------------------------------------------------- */
+
+.listview-marquee {
+  position: absolute;
+  pointer-events: none;
+  background: rgba(51, 153, 255, 0.2);
+  border: 1px solid #3399ff;
+  border-radius: 1px;
+  z-index: 10;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Windows Vista Adaptation                                                   */
+/* -------------------------------------------------------------------------- */
+
+[data-theme="vista"] table,
+[data-theme="vista"] .listview-icons,
+[data-theme="vista"] .listview-tiles,
+.window[data-theme="vista"] table,
+.window[data-theme="vista"] .listview-icons,
+.window[data-theme="vista"] .listview-tiles {
+  --w7-listview-row-hover-bg: linear-gradient(to bottom, rgba(230, 245, 255, 0.8), rgba(210, 235, 255, 0.8));
+  --w7-listview-row-hover-border: rgba(0, 160, 240, 0.6);
+  --w7-listview-row-selected-bg: linear-gradient(to bottom, #cfe7fb 0%, #badafb 100%);
+  --w7-listview-row-selected-border: #7dbef9;
 }
