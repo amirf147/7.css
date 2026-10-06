@@ -83,3 +83,27 @@ document
       }
     });
   });
+
+// Theme Engine Switcher
+const themeSelector = document.getElementById("theme-selector");
+if (themeSelector) {
+  function applyTheme(theme) {
+    if (theme === "vista" || theme === "vista-basic") {
+      document.body.setAttribute("data-theme", theme);
+    } else {
+      document.body.removeAttribute("data-theme");
+    }
+  }
+
+  const savedTheme = localStorage.getItem("7css-theme");
+  if (savedTheme) {
+    themeSelector.value = savedTheme;
+    applyTheme(savedTheme);
+  }
+
+  themeSelector.addEventListener("change", (e) => {
+    const selected = e.target.value;
+    applyTheme(selected);
+    localStorage.setItem("7css-theme", selected);
+  });
+}

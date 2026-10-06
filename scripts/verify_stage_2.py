@@ -34,6 +34,7 @@ def test_button_scss():
     content = btn_path.read_text(encoding="utf-8")
 
     check("_button.scss references --w7-btn-bg", "--w7-btn-bg" in content)
+    check("_button.scss references --w7-btn-default-bg", "--w7-btn-default-bg" in content)
     check("_button.scss references --w7-btn-hover-bg", "--w7-btn-hover-bg" in content)
     check("_button.scss references --w7-btn-pressed-bg", "--w7-btn-pressed-bg" in content)
     check("_button.scss references --w7-btn-disabled-bg", "--w7-btn-disabled-bg" in content)

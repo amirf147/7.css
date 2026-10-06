@@ -45,6 +45,7 @@ def test_window_scss():
     check("_window.scss binds specular reflections", "var(--w7-glass-specular-reflection)" in content)
     check("_window.scss binds active text halo glow", "var(--w7-glass-text-halo-active)" in content)
     check("_window.scss binds inactive text halo glow", "var(--w7-glass-text-halo-inactive)" in content)
+    check("_window.scss binds active titlebar text color token", "--w7-titlebar-active-text" in content)
     check("_window.scss binds inactive state styling", "&:not(.active)" in content or ".inactive" in content)
     check("_window.scss binds maximized state styling", "&.maximized" in content)
 
@@ -57,6 +58,13 @@ def test_window_scss():
     check("_window.scss embeds caption-help SVG", "caption-help.svg" in content)
     check("_window.scss binds cyan caption button glow", "#5dc4f0" in content or "2aceda" in content)
     check("_window.scss binds crimson close button glow", "#e68e75" in content or "d42809" in content)
+    check("_window.scss binds caption glyph drop shadow", "drop-shadow(0 1px 1px rgba(0, 0, 0, 0.45))" in content)
+    check("caption-close.svg has white fill", 'fill="#ffffff"' in (ROOT_DIR / "gui" / "icon" / "caption-close.svg").read_text(encoding="utf-8"))
+    check("caption-minimize.svg has white fill", 'fill="#ffffff"' in (ROOT_DIR / "gui" / "icon" / "caption-minimize.svg").read_text(encoding="utf-8"))
+    check("caption-maximize.svg has white fill", 'fill="#ffffff"' in (ROOT_DIR / "gui" / "icon" / "caption-maximize.svg").read_text(encoding="utf-8"))
+    check("caption-restore.svg has white fill", 'fill="#ffffff"' in (ROOT_DIR / "gui" / "icon" / "caption-restore.svg").read_text(encoding="utf-8"))
+    check("caption-help.svg has white fill", 'fill="#ffffff"' in (ROOT_DIR / "gui" / "icon" / "caption-help.svg").read_text(encoding="utf-8"))
+
 
     # Vista Theming Adaptations
     check("_window.scss binds Vista theme attribute", '[data-theme="vista"]' in content)

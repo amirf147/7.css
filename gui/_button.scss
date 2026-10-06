@@ -58,6 +58,7 @@ input[type="file"]::file-selector-button {
   /* Default Button Breathing Pulse */
   &.default,
   &[type="submit"] {
+    background: var(--w7-btn-default-bg);
     border: var(--w7-btn-default-pulse-border);
     animation: w7-aero-button-pulse var(--w7-dur-btn-pulse) infinite alternate var(--w7-ease-sinusoidal-pulse);
 
@@ -237,6 +238,7 @@ label[role="button"] {
 
     &.default,
     &[type="submit"] {
+      background: var(--w7-vista-btn-default-pulse-bg);
       border-color: #1c6ba0;
       animation: w7-vista-button-pulse var(--w7-dur-btn-pulse) infinite alternate var(--w7-ease-sinusoidal-pulse);
 

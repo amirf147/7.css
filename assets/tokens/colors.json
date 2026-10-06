@@ -26,7 +26,7 @@
         "innerHighlight": "inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 -1px 0 rgba(255, 255, 255, 0.3)"
       },
       "hover": {
-        "background": "linear-gradient(to bottom, #eaf6fd 0%, #d9f0fc 50%, #bee6fd 51%, #a7d9f5 100%)",
+        "background": "radial-gradient(circle at bottom, #2aceda, transparent 65%), linear-gradient(#b6d9ee 50%, #1a6ca1 50%)",
         "border": "1px solid #3c7fb1",
         "boxShadow": "0 0 5px rgba(60, 127, 177, 0.6)",
         "innerHighlight": "inset 0 1px 0 rgba(255, 255, 255, 0.9), inset 0 0 5px rgba(167, 217, 245, 0.8)"
@@ -37,8 +37,11 @@
         "boxShadow": "inset 0 1px 3px rgba(0, 0, 0, 0.2)",
         "innerHighlight": "inset 0 1px 2px rgba(0, 0, 0, 0.3), inset 0 -1px 0 rgba(255, 255, 255, 0.4)"
       },
+      "default": {
+        "background": "radial-gradient(circle at bottom, #2aceda, transparent 65%), linear-gradient(#b6d9ee 50%, #1a6ca1 50%)"
+      },
       "defaultPulse": {
-        "background": "linear-gradient(to bottom, #dcedf8 0%, #c1e0f4 50%, #9dd0f0 51%, #79bbe6 100%)",
+        "background": "radial-gradient(circle at bottom, #2aceda, transparent 65%), linear-gradient(#b6d9ee 50%, #1a6ca1 50%)",
         "border": "1px solid #1c6ba0",
         "outerGlow": "0 0 8px rgba(53, 148, 219, 0.85), inset 0 0 4px rgba(255, 255, 255, 0.9)"
       },
